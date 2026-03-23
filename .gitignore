@@ -2,4 +2,5 @@ watcher_v*.py
 index_v*.html
 *.log
 *.zip
+watcher.log
 __pycache__/
