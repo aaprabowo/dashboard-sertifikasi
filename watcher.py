@@ -5,7 +5,7 @@
 =============================================================
 """
 
-import json, os, sys, time, logging
+import json, os, sys, time, logging, subprocess
 from datetime import datetime
 from collections import defaultdict, OrderedDict
 
@@ -726,6 +726,36 @@ def process_all_sheets():
         json.dump(output, f, ensure_ascii=False, indent=2)
     log.info(f"JSON diperbarui -> {OUTPUT_JSON}")
     log.info(f"  {total_peserta} peserta | capaian {pct_capaian}% | {tim_mencapai}/{len(teams_data)} tim capai target")
+
+    # Auto push ke GitHub → Netlify otomatis update
+    git_push()
+
+
+def git_push():
+    """Commit dan push dashboard_data.json ke GitHub → Netlify auto-deploy."""
+    repo_dir = os.path.dirname(os.path.abspath(__file__))
+    try:
+        subprocess.run(
+            ["git", "add", "data/dashboard_data.json"],
+            cwd=repo_dir, check=True, capture_output=True
+        )
+        msg = f"update data {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        result = subprocess.run(
+            ["git", "commit", "-m", msg],
+            cwd=repo_dir, capture_output=True, text=True
+        )
+        if "nothing to commit" in result.stdout:
+            log.info("Git: tidak ada perubahan, skip push.")
+            return
+        subprocess.run(
+            ["git", "push"],
+            cwd=repo_dir, check=True, capture_output=True
+        )
+        log.info("✓ Git push berhasil → Netlify sedang update (~30 detik)")
+    except subprocess.CalledProcessError as e:
+        log.warning(f"Git push gagal: {e} — JSON lokal tetap terupdate.")
+    except FileNotFoundError:
+        log.warning("Git tidak ditemukan di PATH — install Git terlebih dahulu.")
 
 
 # =============================================================
