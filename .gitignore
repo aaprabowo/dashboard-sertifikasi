@@ -3,4 +3,7 @@ index_v*.html
 *.log
 *.zip
 watcher.log
+watcher.py
+README.md
+
 __pycache__/
