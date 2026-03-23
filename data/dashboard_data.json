@@ -1,0 +1,2173 @@
+{
+  "generated_at": "23 March 2026, 10:47:15",
+  "generated_ts": "2026-03-23T10:47:15.898845",
+  "total_peserta": 1255,
+  "total_lulus": 241,
+  "avg_pct_lulus": 19.2,
+  "total_tim": 7,
+  "total_angkatan": 19,
+  "total_hadir": 1160,
+  "total_target": 4379,
+  "pct_capaian": 26.5,
+  "tim_mencapai": 2,
+  "total_beasiswa": 9,
+  "total_ac": 129,
+  "teams": [
+    {
+      "team": "JFKN",
+      "type": "pct",
+      "total": 194,
+      "total_hadir": 194,
+      "lulus": 0,
+      "tidak_lulus": 0,
+      "dalam_proses": 194,
+      "pct_lulus": 0,
+      "total_angkatan": 0,
+      "targets": {
+        "2026": 500
+      },
+      "error": null,
+      "months_by_year": {
+        "2026": {
+          "3": {
+            "total": 136,
+            "lulus": 0
+          }
+        }
+      },
+      "detail": {
+        "ue1": [
+          {
+            "label": "Setjen",
+            "total": 110,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "DJSPSK",
+            "total": 63,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "DJPPR",
+            "total": 21,
+            "lulus": 0,
+            "pct": 0.0
+          }
+        ],
+        "ue2": [
+          {
+            "label": "Biro Advokasi",
+            "total": 52,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "total": 47,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "total": 25,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "total": 20,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Sekretariat Komite Pengawas Perpajakan",
+            "total": 13,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Sekretariat Direktorat Jenderal",
+            "total": 7,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "total": 5,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Surat Utang Negara",
+            "total": 4,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "total": 3,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "total": 3,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pengelolaan Risiko Keuangan Negara",
+            "total": 3,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Evaluasi, Akuntansi dan Setelmen",
+            "total": 3,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
+            "total": 2,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Strategi dan Portofolio Pembiayaan",
+            "total": 2,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pembiayaan Syariah",
+            "total": 2,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Kerja Sama Regional dan Bilateral",
+            "total": 1,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pinjaman dan Hibah",
+            "total": 1,
+            "lulus": 0,
+            "pct": 0.0
+          },
+          {
+            "label": "Direktorat Pengelolaan Dukungan Pemerintah dan Pembiayaan Infrastruktur",
+            "total": 1,
+            "lulus": 0,
+            "pct": 0.0
+          }
+        ],
+        "jenjang": {
+          "JF Ahli Pertama": 66,
+          "JF Ahli Muda": 40,
+          "Ahli Muda": 11,
+          "Ahli Pertama": 10,
+          "JF Ahli Madya": 4
+        },
+        "jf": {
+          "Analis Keuangan Negara Ahli Pertama": 62,
+          "Analis Keuangan Negara": 57,
+          "Pengawas Keuangan Negara": 53,
+          "Analis Keuangan Negara Ahli Muda": 18,
+          "Analis Keuangan Negara Penyelia": 2,
+          "Analis Keuangan Negara Ahli Madya": 1,
+          "Analis Keuangan Negara Mahir": 1
+        },
+        "filter_options": {
+          "jenjang": [
+            "Ahli Muda",
+            "Ahli Pertama",
+            "JF Ahli Madya",
+            "JF Ahli Muda",
+            "JF Ahli Pertama"
+          ],
+          "jf": [
+            "Analis Keuangan Negara",
+            "Analis Keuangan Negara Ahli Madya",
+            "Analis Keuangan Negara Ahli Muda",
+            "Analis Keuangan Negara Ahli Pertama",
+            "Analis Keuangan Negara Mahir",
+            "Analis Keuangan Negara Penyelia",
+            "Pengawas Keuangan Negara"
+          ]
+        },
+        "rows": [
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Madya",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Madya",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Madya",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Madya",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Analis Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Sekretariat Komite Pengawas Perpajakan",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "Setjen",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Madya",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Penyelia",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Regional dan Bilateral",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Mahir",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Penyelia",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pengelolaan Risiko Keuangan Negara",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pengelolaan Risiko Keuangan Negara",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pinjaman dan Hibah",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Evaluasi, Akuntansi dan Setelmen",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Surat Utang Negara",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Surat Utang Negara",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Strategi dan Portofolio Pembiayaan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pengelolaan Dukungan Pemerintah dan Pembiayaan Infrastruktur",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pengelolaan Risiko Keuangan Negara",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Surat Utang Negara",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pembiayaan Syariah",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Surat Utang Negara",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Evaluasi, Akuntansi dan Setelmen",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Pembiayaan Syariah",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Strategi dan Portofolio Pembiayaan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          },
+          {
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Evaluasi, Akuntansi dan Setelmen",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "lulus": ""
+          }
+        ]
+      }
+    },
+    {
+      "team": "SAK",
+      "type": "pct",
+      "total": 1053,
+      "total_hadir": 819,
+      "lulus": 237,
+      "tidak_lulus": 816,
+      "pct_lulus": 22.5,
+      "total_angkatan": 1,
+      "targets": {
+        "2026": 550
+      },
+      "error": null,
+      "months_by_year": {
+        "2026": {
+          "2": {
+            "total": 1053,
+            "lulus": 237
+          }
+        }
+      },
+      "detail": {
+        "trend": [
+          {
+            "batch": "2026 - Februari",
+            "total": 1053,
+            "lulus": 237,
+            "pct": 22.5
+          }
+        ],
+        "lokasi": {
+          "Jakarta": 641,
+          "Surabaya": 166,
+          "Bogor": 62,
+          "Semarang": 47,
+          "Batam": 41,
+          "Bandung": 38,
+          "Medan": 25,
+          "Balikpapan": 13,
+          "Yogyakarta": 8,
+          "Palembang": 6,
+          "Pekanbaru": 4,
+          "DKI Jakarta": 1,
+          "Pontianak": 1
+        },
+        "funnel": {
+          "pendaftar": 1053,
+          "verif_dokumen": 1053,
+          "verif_pembayaran": 985,
+          "hadir": 819,
+          "lulus": 237
+        }
+      }
+    },
+    {
+      "team": "AC",
+      "type": "count",
+      "total": 129,
+      "total_hadir": 129,
+      "lulus": 0,
+      "tidak_lulus": 0,
+      "dalam_proses": 0,
+      "pct_lulus": 0,
+      "total_angkatan": 12,
+      "targets": {
+        "2026": 100
+      },
+      "error": null,
+      "months_by_year": {
+        "2025": {
+          "7": {
+            "total": 31,
+            "lulus": 0
+          },
+          "8": {
+            "total": 12,
+            "lulus": 0
+          },
+          "10": {
+            "total": 32,
+            "lulus": 0
+          },
+          "11": {
+            "total": 20,
+            "lulus": 0
+          },
+          "12": {
+            "total": 8,
+            "lulus": 0
+          }
+        },
+        "2026": {
+          "1": {
+            "total": 15,
+            "lulus": 0
+          },
+          "2": {
+            "total": 11,
+            "lulus": 0
+          }
+        }
+      },
+      "detail": {
+        "hasil": {
+          "Optimal": 99,
+          "Cukup Optimal": 21,
+          "Kurang Optimal": 9
+        },
+        "ue1": {
+          "BPPK": 129
+        },
+        "batch_stat": [
+          {
+            "batch": "Batch 6",
+            "total": 10,
+            "optimal": 5,
+            "cukup": 5,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 7",
+            "total": 10,
+            "optimal": 4,
+            "cukup": 6,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 8",
+            "total": 11,
+            "optimal": 5,
+            "cukup": 4,
+            "kurang": 2
+          },
+          {
+            "batch": "Batch 9",
+            "total": 12,
+            "optimal": 12,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 10",
+            "total": 15,
+            "optimal": 15,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 11",
+            "total": 17,
+            "optimal": 17,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 12",
+            "total": 10,
+            "optimal": 1,
+            "cukup": 2,
+            "kurang": 7
+          },
+          {
+            "batch": "Batch 13",
+            "total": 10,
+            "optimal": 10,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 14",
+            "total": 8,
+            "optimal": 4,
+            "cukup": 4,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 1",
+            "total": 7,
+            "optimal": 7,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 2",
+            "total": 8,
+            "optimal": 8,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 3",
+            "total": 11,
+            "optimal": 11,
+            "cukup": 0,
+            "kurang": 0
+          }
+        ],
+        "batch_by_year": {
+          "2025": [
+            {
+              "batch": "Batch 6",
+              "total": 10,
+              "optimal": 5,
+              "cukup": 5,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 7",
+              "total": 10,
+              "optimal": 4,
+              "cukup": 6,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 8",
+              "total": 11,
+              "optimal": 5,
+              "cukup": 4,
+              "kurang": 2
+            },
+            {
+              "batch": "Batch 9",
+              "total": 12,
+              "optimal": 12,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 10",
+              "total": 15,
+              "optimal": 15,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 11",
+              "total": 17,
+              "optimal": 17,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 12",
+              "total": 10,
+              "optimal": 1,
+              "cukup": 2,
+              "kurang": 7
+            },
+            {
+              "batch": "Batch 13",
+              "total": 10,
+              "optimal": 10,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 14",
+              "total": 8,
+              "optimal": 4,
+              "cukup": 4,
+              "kurang": 0
+            }
+          ],
+          "2026": [
+            {
+              "batch": "Batch 1",
+              "total": 7,
+              "optimal": 7,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 2",
+              "total": 8,
+              "optimal": 8,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 3",
+              "total": 11,
+              "optimal": 11,
+              "cukup": 0,
+              "kurang": 0
+            }
+          ]
+        },
+        "ue1_by_year": {
+          "2025": {
+            "BPPK": 103
+          },
+          "2026": {
+            "BPPK": 26
+          }
+        },
+        "hasil_by_year": {
+          "2025": {
+            "Cukup Optimal": 21,
+            "Optimal": 73,
+            "Kurang Optimal": 9
+          },
+          "2026": {
+            "Optimal": 26
+          }
+        }
+      }
+    },
+    {
+      "team": "Beasiswa",
+      "type": "count",
+      "total": 9,
+      "total_hadir": 9,
+      "lulus": 0,
+      "tidak_lulus": 0,
+      "pct_lulus": 0,
+      "total_angkatan": 2,
+      "targets": {
+        "2026": 179
+      },
+      "error": null,
+      "months_by_year": {
+        "2026": {
+          "3": {
+            "total": 5,
+            "lulus": 0
+          },
+          "2": {
+            "total": 4,
+            "lulus": 0
+          }
+        }
+      },
+      "detail": {
+        "status": {
+          "lulus": 7,
+          "tidak lulus": 2
+        },
+        "prodi": {
+          "Hukum": 3,
+          "Ekonomi": 2,
+          "Administrasi Bisnis": 2,
+          "Komputer": 1,
+          "Perpajakan": 1
+        },
+        "ue1": {
+          "BPPK": 3,
+          "DJA": 3,
+          "DJP": 1,
+          "DJBC": 1,
+          "LNSW": 1
+        },
+        "universitas": {},
+        "negara": {
+          "Bolivia": 7,
+          "Indonesia": 1,
+          "Jepang": 1
+        },
+        "jenjang": {
+          "S2": 7,
+          "S3": 2
+        },
+        "beasiswa": {
+          "NZ": 3,
+          "LPDP": 3,
+          "Bappenas": 2,
+          "MINTS": 1
+        },
+        "filter_options": {
+          "ue1": [
+            "BPPK",
+            "DJA",
+            "DJBC",
+            "DJP",
+            "LNSW"
+          ],
+          "jenjang": [
+            "S2",
+            "S3"
+          ],
+          "negara": [
+            "Bolivia",
+            "Indonesia",
+            "Jepang"
+          ]
+        },
+        "rows": [
+          {
+            "ue1": "BPPK",
+            "jenjang": "S2",
+            "negara": "Indonesia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Jepang",
+            "prodi": "Komputer",
+            "universitas": "",
+            "beasiswa": "MINTS",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJP",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJBC",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Perpajakan",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "LNSW",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          }
+        ]
+      }
+    },
+    {
+      "team": "USKP",
+      "type": "pct",
+      "total": 4,
+      "total_hadir": 3,
+      "lulus": 2,
+      "tidak_lulus": 2,
+      "pct_lulus": 50.0,
+      "total_angkatan": 1,
+      "targets": {
+        "2026": 2450
+      },
+      "error": null,
+      "months_by_year": {
+        "2026": {
+          "3": {
+            "total": 4,
+            "lulus": 2
+          }
+        }
+      },
+      "detail": {
+        "trend": [
+          {
+            "batch": "1",
+            "total": 4,
+            "lulus": 2,
+            "pct": 50.0
+          }
+        ],
+        "lokasi": {
+          "Jakarta": 2,
+          "Cimahi": 1,
+          "Malang": 1
+        },
+        "funnel": {
+          "pendaftar": 4,
+          "lolos_verifikasi": 3,
+          "hadir": 3,
+          "lulus": 2
+        },
+        "batch_list": [
+          "1"
+        ]
+      }
+    },
+    {
+      "team": "PBJ",
+      "type": "pct",
+      "total": 4,
+      "total_hadir": 2,
+      "lulus": 2,
+      "tidak_lulus": 2,
+      "pct_lulus": 50.0,
+      "total_angkatan": 1,
+      "targets": {
+        "2026": 280
+      },
+      "error": null,
+      "months_by_year": {
+        "2026": {
+          "3": {
+            "total": 4,
+            "lulus": 2
+          }
+        }
+      },
+      "detail": {
+        "trend": [
+          {
+            "batch": "1",
+            "total": 4,
+            "lulus": 2,
+            "pct": 50.0
+          }
+        ],
+        "jenis": {},
+        "funnel": {
+          "pendaftar": 4,
+          "lolos_verifikasi": 3,
+          "hadir": 2,
+          "lulus": 2
+        },
+        "batch_list": [
+          "1"
+        ]
+      }
+    },
+    {
+      "team": "PengTes",
+      "type": "count",
+      "total": 4,
+      "total_hadir": 4,
+      "lulus": 0,
+      "tidak_lulus": 0,
+      "pct_lulus": 0,
+      "total_angkatan": 2,
+      "targets": {
+        "2026": 320
+      },
+      "error": null,
+      "months_by_year": {
+        "2026": {
+          "3": {
+            "total": 1,
+            "lulus": 0
+          },
+          "2": {
+            "total": 2,
+            "lulus": 0
+          },
+          "6": {
+            "total": 1,
+            "lulus": 0
+          }
+        }
+      },
+      "detail": {
+        "ujian": {
+          "tpa": 3,
+          "tbi": 1
+        },
+        "ue1": {
+          "BPPK": 4
+        },
+        "batch_stat": [
+          {
+            "batch": "1",
+            "total": 2
+          },
+          {
+            "batch": "2",
+            "total": 2
+          }
+        ]
+      }
+    }
+  ]
+}
