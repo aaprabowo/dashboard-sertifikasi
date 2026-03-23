@@ -1,14 +1,14 @@
 {
-  "generated_at": "23 March 2026, 10:47:15",
-  "generated_ts": "2026-03-23T10:47:15.898845",
+  "generated_at": "23 March 2026, 12:42:16",
+  "generated_ts": "2026-03-23T12:42:16.211024",
   "total_peserta": 1255,
   "total_lulus": 241,
   "avg_pct_lulus": 19.2,
   "total_tim": 7,
   "total_angkatan": 19,
   "total_hadir": 1160,
-  "total_target": 4379,
-  "pct_capaian": 26.5,
+  "total_target": 4879,
+  "pct_capaian": 23.8,
   "tim_mencapai": 2,
   "total_beasiswa": 9,
   "total_ac": 129,
@@ -24,7 +24,7 @@
       "pct_lulus": 0,
       "total_angkatan": 0,
       "targets": {
-        "2026": 500
+        "2026": 1000
       },
       "error": null,
       "months_by_year": {
