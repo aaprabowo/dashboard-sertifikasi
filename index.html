@@ -1112,7 +1112,7 @@ function renderSAKDetail() {
         {label:'Verif. Dokumen',     n: fn.verif_dokumen||0},
         {label:'Verif. Pembayaran',  n: fn.verif_pembayaran||0},
         {label:'Hadir',              n: fn.hadir||0},
-        {label:'Lulus',              n: ft.lulus},
+        {label:'Lulus',              n: fn.lulus||0},
       ], c.color))}
     </div>
     ${psBlock('Tren Kelulusan per Periode', trendBars(d.trend, c.color, c.cb, fb))}
