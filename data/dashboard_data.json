@@ -1,16 +1,16 @@
 {
-  "generated_at": "24 March 2026, 22:02:10",
-  "generated_ts": "2026-03-24T22:02:10.057244",
+  "generated_at": "24 March 2026, 22:02:39",
+  "generated_ts": "2026-03-24T22:02:39.547673",
   "total_peserta": 1255,
   "total_lulus": 241,
   "avg_pct_lulus": 19.2,
   "total_tim": 7,
   "total_angkatan": 19,
-  "total_hadir": 1180,
+  "total_hadir": 1209,
   "total_target": 4329,
-  "pct_capaian": 27.3,
+  "pct_capaian": 27.9,
   "tim_mencapai": 2,
-  "total_beasiswa": 29,
+  "total_beasiswa": 58,
   "total_ac": 129,
   "teams": [
     {
@@ -1873,8 +1873,8 @@
     {
       "team": "Beasiswa",
       "type": "count",
-      "total": 29,
-      "total_hadir": 29,
+      "total": 58,
+      "total_hadir": 58,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
@@ -1886,49 +1886,49 @@
       "months_by_year": {
         "2026": {
           "3": {
-            "total": 16,
+            "total": 32,
             "lulus": 0
           },
           "2": {
-            "total": 13,
+            "total": 26,
             "lulus": 0
           }
         }
       },
       "detail": {
         "status": {
-          "lulus": 21,
-          "tidak lulus": 8
+          "lulus": 42,
+          "tidak lulus": 16
         },
         "prodi": {
-          "Hukum": 9,
-          "Ekonomi": 7,
-          "Administrasi Bisnis": 6,
-          "Komputer": 4,
-          "Perpajakan": 3
+          "Hukum": 18,
+          "Ekonomi": 14,
+          "Administrasi Bisnis": 12,
+          "Komputer": 8,
+          "Perpajakan": 6
         },
         "ue1": {
-          "BPPK": 10,
-          "DJA": 10,
-          "DJP": 3,
-          "DJBC": 3,
-          "LNSW": 3
+          "BPPK": 20,
+          "DJA": 20,
+          "DJP": 6,
+          "DJBC": 6,
+          "LNSW": 6
         },
         "universitas": {},
         "negara": {
-          "Bolivia": 21,
-          "Indonesia": 4,
-          "Jepang": 4
+          "Bolivia": 42,
+          "Indonesia": 8,
+          "Jepang": 8
         },
         "jenjang": {
-          "S2": 23,
-          "S3": 6
+          "S2": 46,
+          "S3": 12
         },
         "beasiswa": {
-          "NZ": 9,
-          "LPDP": 9,
-          "Bappenas": 7,
-          "MINTS": 4
+          "NZ": 18,
+          "LPDP": 18,
+          "Bappenas": 14,
+          "MINTS": 8
         },
         "filter_options": {
           "ue1": [
@@ -1949,6 +1949,267 @@
           ]
         },
         "rows": [
+          {
+            "ue1": "BPPK",
+            "jenjang": "S2",
+            "negara": "Indonesia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Jepang",
+            "prodi": "Komputer",
+            "universitas": "",
+            "beasiswa": "MINTS",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJP",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJBC",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Perpajakan",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "LNSW",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S2",
+            "negara": "Indonesia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Jepang",
+            "prodi": "Komputer",
+            "universitas": "",
+            "beasiswa": "MINTS",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJP",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJBC",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Perpajakan",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "LNSW",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S2",
+            "negara": "Indonesia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Jepang",
+            "prodi": "Komputer",
+            "universitas": "",
+            "beasiswa": "MINTS",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S3",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJP",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Hukum",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJBC",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Perpajakan",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "LNSW",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "LPDP",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Administrasi Bisnis",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Bolivia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "NZ",
+            "status": "lulus"
+          },
+          {
+            "ue1": "BPPK",
+            "jenjang": "S2",
+            "negara": "Indonesia",
+            "prodi": "Ekonomi",
+            "universitas": "",
+            "beasiswa": "Bappenas",
+            "status": "tidak lulus"
+          },
+          {
+            "ue1": "DJA",
+            "jenjang": "S2",
+            "negara": "Jepang",
+            "prodi": "Komputer",
+            "universitas": "",
+            "beasiswa": "MINTS",
+            "status": "tidak lulus"
+          },
           {
             "ue1": "BPPK",
             "jenjang": "S2",
