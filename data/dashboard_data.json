@@ -1,6 +1,6 @@
 {
-  "generated_at": "23 March 2026, 12:44:54",
-  "generated_ts": "2026-03-23T12:44:54.332376",
+  "generated_at": "24 March 2026, 08:22:06",
+  "generated_ts": "2026-03-24T08:22:06.095258",
   "total_peserta": 1255,
   "total_lulus": 241,
   "avg_pct_lulus": 19.2,
@@ -1569,7 +1569,7 @@
       "total_hadir": 819,
       "lulus": 237,
       "tidak_lulus": 816,
-      "pct_lulus": 22.5,
+      "pct_lulus": 28.9,
       "total_angkatan": 1,
       "targets": {
         "2026": 500
