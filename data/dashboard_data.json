@@ -1,15 +1,15 @@
 {
-  "generated_at": "25 March 2026, 10:49:47",
-  "generated_ts": "2026-03-25T10:49:47.231174",
+  "generated_at": "25 March 2026, 11:23:18",
+  "generated_ts": "2026-03-25T11:23:18.321202",
   "total_peserta": 1255,
   "total_lulus": 240,
   "avg_pct_lulus": 19.1,
   "total_tim": 7,
-  "total_angkatan": 19,
-  "total_hadir": 1209,
+  "total_angkatan": 24,
+  "total_hadir": 2277,
   "total_target": 4329,
-  "pct_capaian": 27.9,
-  "tim_mencapai": 2,
+  "pct_capaian": 52.6,
+  "tim_mencapai": 3,
   "total_beasiswa": 58,
   "total_ac": 129,
   "teams": [
@@ -2561,48 +2561,85 @@
     {
       "team": "PengTes",
       "type": "count",
-      "total": 4,
-      "total_hadir": 4,
+      "total": 1072,
+      "total_hadir": 1072,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 2,
+      "total_angkatan": 7,
       "targets": {
         "2026": 320
       },
       "error": null,
       "months_by_year": {
         "2026": {
-          "3": {
-            "total": 1,
-            "lulus": 0
-          },
           "2": {
-            "total": 2,
+            "total": 362,
             "lulus": 0
           },
-          "6": {
-            "total": 1,
+          "3": {
+            "total": 704,
+            "lulus": 0
+          },
+          "1": {
+            "total": 6,
             "lulus": 0
           }
         }
       },
       "detail": {
         "ujian": {
-          "tpa": 3,
-          "tbi": 1
+          "TBI": 704,
+          "Psikotes": 318,
+          "Ujian Lainnya": 50
         },
         "ue1": {
-          "BPPK": 4
+          "DJP": 288,
+          "DJBC": 180,
+          "DJKN": 143,
+          "Setjen": 86,
+          "DJPB": 80,
+          "BPPK": 55,
+          "Non Kemenkeu": 50,
+          "Itjen": 46,
+          "DJPPR": 31,
+          "DJA": 30,
+          "BaTii": 28,
+          "DJSPSK": 19,
+          "DJPK": 12,
+          "DJSEF": 11,
+          "LNSW": 11,
+          "SETJEN": 1,
+          "ITJEN": 1
         },
         "batch_stat": [
           {
-            "batch": "1",
-            "total": 2
+            "batch": "2026-I",
+            "total": 7
           },
           {
-            "batch": "2",
-            "total": 2
+            "batch": "SSMP AAI 2026-I",
+            "total": 14
+          },
+          {
+            "batch": "UPTB 2026-I",
+            "total": 704
+          },
+          {
+            "batch": "JFPK APBN 2026-I",
+            "total": 6
+          },
+          {
+            "batch": "PPNPN Setban 2026-I",
+            "total": 50
+          },
+          {
+            "batch": "Profilling 2026-I",
+            "total": 145
+          },
+          {
+            "batch": "Profilling 2026-II",
+            "total": 146
           }
         ]
       }
