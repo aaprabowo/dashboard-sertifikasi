@@ -1,9 +1,9 @@
 {
-  "generated_at": "25 March 2026, 10:23:26",
-  "generated_ts": "2026-03-25T10:23:26.072315",
+  "generated_at": "25 March 2026, 10:49:47",
+  "generated_ts": "2026-03-25T10:49:47.231174",
   "total_peserta": 1255,
-  "total_lulus": 241,
-  "avg_pct_lulus": 19.2,
+  "total_lulus": 240,
+  "avg_pct_lulus": 19.1,
   "total_tim": 7,
   "total_angkatan": 19,
   "total_hadir": 1209,
@@ -1578,38 +1578,32 @@
       "months_by_year": {
         "2026": {
           "2": {
-            "total": 1053,
+            "total": 819,
             "lulus": 237
           }
         }
-      },
-      "hadir_by_year": {
-        "2026": 819
       },
       "detail": {
         "trend": [
           {
             "batch": "2026 - Februari",
-            "total": 1053,
+            "total": 819,
             "lulus": 237,
-            "hadir": 819,
             "pct": 28.9
           }
         ],
         "lokasi": {
-          "Jakarta": 641,
-          "Surabaya": 166,
-          "Bogor": 62,
-          "Semarang": 47,
-          "Batam": 41,
-          "Bandung": 38,
-          "Medan": 25,
-          "Balikpapan": 13,
+          "Jakarta": 467,
+          "Surabaya": 148,
+          "Bogor": 52,
+          "Semarang": 41,
+          "Batam": 36,
+          "Bandung": 30,
+          "Medan": 22,
+          "Balikpapan": 9,
           "Yogyakarta": 8,
-          "Palembang": 6,
-          "Pekanbaru": 4,
-          "DKI Jakarta": 1,
-          "Pontianak": 1
+          "Palembang": 4,
+          "Pekanbaru": 2
         },
         "funnel": {
           "pendaftar": 1053,
@@ -2493,7 +2487,7 @@
       "months_by_year": {
         "2026": {
           "3": {
-            "total": 4,
+            "total": 3,
             "lulus": 2
           }
         }
@@ -2502,14 +2496,13 @@
         "trend": [
           {
             "batch": "1",
-            "total": 4,
+            "total": 3,
             "lulus": 2,
-            "pct": 50.0
+            "pct": 66.7
           }
         ],
         "lokasi": {
           "Jakarta": 2,
-          "Cimahi": 1,
           "Malang": 1
         },
         "funnel": {
@@ -2528,9 +2521,9 @@
       "type": "pct",
       "total": 4,
       "total_hadir": 2,
-      "lulus": 2,
-      "tidak_lulus": 0,
-      "pct_lulus": 100.0,
+      "lulus": 1,
+      "tidak_lulus": 1,
+      "pct_lulus": 50.0,
       "total_angkatan": 1,
       "targets": {
         "2026": 280
@@ -2539,8 +2532,8 @@
       "months_by_year": {
         "2026": {
           "3": {
-            "total": 4,
-            "lulus": 2
+            "total": 2,
+            "lulus": 1
           }
         }
       },
@@ -2548,8 +2541,8 @@
         "trend": [
           {
             "batch": "1",
-            "total": 4,
-            "lulus": 2,
+            "total": 2,
+            "lulus": 1,
             "pct": 50.0
           }
         ],
@@ -2558,7 +2551,7 @@
           "pendaftar": 4,
           "lolos_verifikasi": 3,
           "hadir": 2,
-          "lulus": 2
+          "lulus": 1
         },
         "batch_list": [
           "1"

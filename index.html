@@ -619,31 +619,33 @@ function selTahun() { return parseInt(document.getElementById('sel-tahun').value
 function filterTeam(t) {
   const bln = selBulan();
   const thn = selTahun();
+  const mby = t.months_by_year || {};
+
   if (bln === -1) {
-    // Semua bulan — tapi filter tahun tetap berlaku jika ada months_by_year
-    const mby = t.months_by_year || {};
-    if (!mby[thn]) return t; // tidak ada data tahun ini → tampilkan semua
+    // Filter tahun saja
+    if (!mby[thn]) return t;
     const yearData = mby[thn];
     const total = Object.values(yearData).reduce((s,v)=>s+(v.total||0),0);
     const lulus = Object.values(yearData).reduce((s,v)=>s+(v.lulus||0),0);
     if (total === 0) return t; // fallback ke total keseluruhan
     return {
-      ...t,
-      total, lulus,
+      ...t, total, lulus,
       tidak_lulus: total - lulus,
-      pct_lulus: total > 0 ? Math.round(lulus/total*1000)/10 : 0,
+      pct_lulus: Math.round(lulus/total*1000)/10,
       _filtered: true,
     };
   }
+
   // Filter bulan + tahun spesifik
-  const mby   = t.months_by_year || {};
-  const mData = (mby[thn] || {})[bln] || {total:0, lulus:0};
+  const mData = (mby[thn]||{})[bln] || {total:0, lulus:0};
+  // Fallback ke data keseluruhan jika tidak ada data bulan ini
+  if (mData.total === 0) return t;
   return {
     ...t,
     total:       mData.total,
     lulus:       mData.lulus,
     tidak_lulus: mData.total - mData.lulus,
-    pct_lulus:   mData.total > 0 ? Math.round(mData.lulus/mData.total*1000)/10 : 0,
+    pct_lulus:   Math.round(mData.lulus/mData.total*1000)/10,
     _filtered:   true,
   };
 }
@@ -918,9 +920,9 @@ function donutChart(lulus, tidakLulus, color, size=100) {
           style="font-size:16px;font-weight:600;fill:${color}">${pctL}%</text>
       </svg>
       <div class="donut-legend">
-        <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>Lulus<div class="donut-pct">${fmtN(lulus)}</div></div>
-        <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>Tidak Lulus<div class="donut-pct">${fmtN(tidakLulus)}</div></div>
-        <div class="donut-item" style="border-top:0.5px solid #EEF0F4;padding-top:4px"><div class="donut-dot" style="background:var(--text3)"></div>Total<div class="donut-pct">${fmtN(total)}</div></div>
+        <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>Lulus<div class="donut-pct">${fmtN(lulus)} (${pctL}%)</div></div>
+        <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>Tidak Lulus<div class="donut-pct">${fmtN(tidakLulus)} (${pctT}%)</div></div>
+        <div class="donut-item" style="border-top:0.5px solid #EEF0F4;padding-top:4px"><div class="donut-dot" style="background:var(--text3)"></div>Peserta Hadir<div class="donut-pct">${fmtN(total)}</div></div>
       </div>
     </div>`;
 }
@@ -1084,8 +1086,9 @@ function renderJFKNDetail() {
 function popupSAK(t, c) {
   const d  = t.detail||{};
   const ft = filterTeam(t);
+  const hadir = t.total_hadir||0;
   const batches = (d.trend||[]).map(x=>x.batch);
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} peserta · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%)`;
+  document.getElementById('popup-sub').textContent = `${fmtN(hadir)} hadir · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter batch:</span>
@@ -1122,8 +1125,9 @@ function renderSAKDetail() {
 function popupUSKP(t, c) {
   const d  = t.detail||{};
   const ft = filterTeam(t);
+  const hadir = t.total_hadir||0;
   const batches = (d.batch_list||[]).sort();
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} peserta · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%)`;
+  document.getElementById('popup-sub').textContent = `${fmtN(hadir)} hadir · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter batch:</span>
@@ -1159,8 +1163,9 @@ function renderUSKPDetail() {
 function popupPBJ(t, c) {
   const d  = t.detail||{};
   const ft = filterTeam(t);
+  const hadir = t.total_hadir||0;
   const batches = (d.batch_list||[]).sort();
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} peserta · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%)`;
+  document.getElementById('popup-sub').textContent = `${fmtN(hadir)} hadir · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter batch:</span>
