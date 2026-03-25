@@ -1,9 +1,9 @@
 {
-  "generated_at": "25 March 2026, 10:21:45",
-  "generated_ts": "2026-03-25T10:21:45.109118",
+  "generated_at": "25 March 2026, 10:23:17",
+  "generated_ts": "2026-03-25T10:23:17.445150",
   "total_peserta": 1255,
-  "total_lulus": 240,
-  "avg_pct_lulus": 19.1,
+  "total_lulus": 241,
+  "avg_pct_lulus": 19.2,
   "total_tim": 7,
   "total_angkatan": 19,
   "total_hadir": 1209,
@@ -2528,9 +2528,9 @@
       "type": "pct",
       "total": 4,
       "total_hadir": 2,
-      "lulus": 1,
-      "tidak_lulus": 1,
-      "pct_lulus": 50.0,
+      "lulus": 2,
+      "tidak_lulus": 0,
+      "pct_lulus": 100.0,
       "total_angkatan": 1,
       "targets": {
         "2026": 280
@@ -2540,7 +2540,7 @@
         "2026": {
           "3": {
             "total": 4,
-            "lulus": 1
+            "lulus": 2
           }
         }
       },
@@ -2549,8 +2549,8 @@
           {
             "batch": "1",
             "total": 4,
-            "lulus": 1,
-            "pct": 25.0
+            "lulus": 2,
+            "pct": 50.0
           }
         ],
         "jenis": {},
@@ -2558,7 +2558,7 @@
           "pendaftar": 4,
           "lolos_verifikasi": 3,
           "hadir": 2,
-          "lulus": 1
+          "lulus": 2
         },
         "batch_list": [
           "1"
