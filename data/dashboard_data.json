@@ -1,6 +1,6 @@
 {
-  "generated_at": "27 March 2026, 11:55:49",
-  "generated_ts": "2026-03-27T11:55:49.682256",
+  "generated_at": "27 March 2026, 11:56:15",
+  "generated_ts": "2026-03-27T11:56:15.514253",
   "total_peserta": 1255,
   "total_lulus": 240,
   "avg_pct_lulus": 19.1,
@@ -10725,7 +10725,408 @@
         "2026": 179
       },
       "error": null,
-      "months_by_year": {},
+      "months_by_year": {
+        "2024": {
+          "1": {
+            "total": 56,
+            "lulus": 0
+          },
+          "9": {
+            "total": 102,
+            "lulus": 0
+          },
+          "7": {
+            "total": 88,
+            "lulus": 0
+          },
+          "4": {
+            "total": 3,
+            "lulus": 0
+          },
+          "2": {
+            "total": 105,
+            "lulus": 0
+          },
+          "6": {
+            "total": 12,
+            "lulus": 0
+          },
+          "3": {
+            "total": 5,
+            "lulus": 0
+          },
+          "11": {
+            "total": 3,
+            "lulus": 0
+          }
+        },
+        "2023": {
+          "9": {
+            "total": 777,
+            "lulus": 0
+          },
+          "7": {
+            "total": 62,
+            "lulus": 0
+          },
+          "6": {
+            "total": 13,
+            "lulus": 0
+          },
+          "2": {
+            "total": 76,
+            "lulus": 0
+          },
+          "11": {
+            "total": 4,
+            "lulus": 0
+          },
+          "3": {
+            "total": 1,
+            "lulus": 0
+          },
+          "1": {
+            "total": 32,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2025": {
+          "7": {
+            "total": 55,
+            "lulus": 0
+          },
+          "2": {
+            "total": 45,
+            "lulus": 0
+          },
+          "3": {
+            "total": 12,
+            "lulus": 0
+          },
+          "1": {
+            "total": 38,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "9": {
+            "total": 46,
+            "lulus": 0
+          },
+          "6": {
+            "total": 11,
+            "lulus": 0
+          },
+          "11": {
+            "total": 419,
+            "lulus": 0
+          }
+        },
+        "2022": {
+          "9": {
+            "total": 542,
+            "lulus": 0
+          },
+          "6": {
+            "total": 21,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "3": {
+            "total": 22,
+            "lulus": 0
+          },
+          "2": {
+            "total": 79,
+            "lulus": 0
+          },
+          "1": {
+            "total": 37,
+            "lulus": 0
+          },
+          "11": {
+            "total": 42,
+            "lulus": 0
+          },
+          "7": {
+            "total": 32,
+            "lulus": 0
+          }
+        },
+        "2021": {
+          "1": {
+            "total": 32,
+            "lulus": 0
+          },
+          "9": {
+            "total": 81,
+            "lulus": 0
+          },
+          "6": {
+            "total": 7,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          },
+          "3": {
+            "total": 14,
+            "lulus": 0
+          },
+          "2": {
+            "total": 39,
+            "lulus": 0
+          },
+          "7": {
+            "total": 30,
+            "lulus": 0
+          }
+        },
+        "2020": {
+          "9": {
+            "total": 105,
+            "lulus": 0
+          },
+          "4": {
+            "total": 3,
+            "lulus": 0
+          },
+          "2": {
+            "total": 61,
+            "lulus": 0
+          },
+          "1": {
+            "total": 42,
+            "lulus": 0
+          },
+          "11": {
+            "total": 23,
+            "lulus": 0
+          },
+          "3": {
+            "total": 27,
+            "lulus": 0
+          },
+          "7": {
+            "total": 14,
+            "lulus": 0
+          },
+          "6": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2019": {
+          "11": {
+            "total": 2,
+            "lulus": 0
+          },
+          "9": {
+            "total": 86,
+            "lulus": 0
+          },
+          "7": {
+            "total": 40,
+            "lulus": 0
+          },
+          "2": {
+            "total": 52,
+            "lulus": 0
+          },
+          "3": {
+            "total": 5,
+            "lulus": 0
+          },
+          "6": {
+            "total": 14,
+            "lulus": 0
+          },
+          "4": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 26,
+            "lulus": 0
+          }
+        },
+        "2018": {
+          "2": {
+            "total": 42,
+            "lulus": 0
+          },
+          "4": {
+            "total": 6,
+            "lulus": 0
+          },
+          "1": {
+            "total": 38,
+            "lulus": 0
+          },
+          "9": {
+            "total": 335,
+            "lulus": 0
+          },
+          "7": {
+            "total": 37,
+            "lulus": 0
+          },
+          "6": {
+            "total": 23,
+            "lulus": 0
+          },
+          "3": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2017": {
+          "6": {
+            "total": 4,
+            "lulus": 0
+          },
+          "9": {
+            "total": 17,
+            "lulus": 0
+          },
+          "2": {
+            "total": 24,
+            "lulus": 0
+          },
+          "7": {
+            "total": 27,
+            "lulus": 0
+          },
+          "1": {
+            "total": 12,
+            "lulus": 0
+          },
+          "3": {
+            "total": 6,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2016": {
+          "9": {
+            "total": 29,
+            "lulus": 0
+          },
+          "7": {
+            "total": 21,
+            "lulus": 0
+          },
+          "2": {
+            "total": 6,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "3": {
+            "total": 2,
+            "lulus": 0
+          },
+          "6": {
+            "total": 3,
+            "lulus": 0
+          },
+          "1": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2015": {
+          "9": {
+            "total": 11,
+            "lulus": 0
+          },
+          "1": {
+            "total": 5,
+            "lulus": 0
+          },
+          "3": {
+            "total": 3,
+            "lulus": 0
+          },
+          "2": {
+            "total": 3,
+            "lulus": 0
+          },
+          "6": {
+            "total": 4,
+            "lulus": 0
+          },
+          "7": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2014": {
+          "9": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 1,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          },
+          "2": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2013": {
+          "11": {
+            "total": 1,
+            "lulus": 0
+          },
+          "9": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2026": {
+          "2": {
+            "total": 20,
+            "lulus": 0
+          },
+          "3": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 16,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "7": {
+            "total": 1,
+            "lulus": 0
+          }
+        }
+      },
       "detail": {
         "status": {
           "Selesai": 4566,
