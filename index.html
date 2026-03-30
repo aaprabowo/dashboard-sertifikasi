@@ -585,7 +585,9 @@ function selTahun() { return parseInt(document.getElementById('sel-tahun').value
 // Filter rows individual: tahun wajib, bulan opsional (-1 = semua)
 function filterRows(rows, thn, bln) {
   return (rows||[]).filter(r => {
-    if (r.year && r.year !== thn) return false;
+    // Kalau tidak ada year, tidak lolos filter tahun
+    if (!r.year) return false;
+    if (r.year !== thn) return false;
     if (bln !== -1 && r.month && r.month !== bln) return false;
     return true;
   });
@@ -699,9 +701,21 @@ function renderMetrics() {
   document.getElementById('mv-tim-target').textContent = timMencapai;
   document.getElementById('mn-tim-target').textContent = 'dari ' + d.teams.length + ' tim';
 
-  // Beasiswa & AC
-  document.getElementById('mv-beasiswa').textContent = fmtN(d.total_beasiswa||0);
-  document.getElementById('mv-ac').textContent       = fmtN(d.total_ac||0);
+  // Beasiswa & AC — filter berdasarkan tahun via months_by_year
+  const beasiswaT = d.teams.find(t=>t.team==='Beasiswa');
+  const acT       = d.teams.find(t=>t.team==='AC');
+  const beasiswaTahunan = beasiswaT
+    ? (beasiswaT.months_by_year||{})[thn]
+      ? Object.values(beasiswaT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (beasiswaT.total_hadir||beasiswaT.total)
+    : 0;
+  const acTahunan = acT
+    ? (acT.months_by_year||{})[thn]
+      ? Object.values(acT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (acT.total_hadir||acT.total)
+    : 0;
+  document.getElementById('mv-beasiswa').textContent = fmtN(beasiswaTahunan);
+  document.getElementById('mv-ac').textContent       = fmtN(acTahunan);
 }
 
 // =============================================
@@ -807,12 +821,22 @@ function renderNarrative() {
     const hadir=mby[thn]?Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0):(t.total_hadir||t.total);
     return hadir>=tgt;
   }).length;
+  const beasiswaT2 = d.teams.find(t=>t.team==='Beasiswa');
+  const acT2       = d.teams.find(t=>t.team==='AC');
+  const beasiswaThn = beasiswaT2
+    ? ((beasiswaT2.months_by_year||{})[thn]
+      ? Object.values(beasiswaT2.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (beasiswaT2.total_hadir||beasiswaT2.total)) : 0;
+  const acThn = acT2
+    ? ((acT2.months_by_year||{})[thn]
+      ? Object.values(acT2.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (acT2.total_hadir||acT2.total)) : 0;
   document.getElementById('narr-text').innerHTML = `
     Tahun <strong>${thn}</strong> — capaian output tahunan
     <strong>${pctCap}%</strong> (${fmtN(hadirTahunan)} peserta hadir dari target ${fmtN(targetTahunan)}).
     <strong>${timMencapai} dari ${d.teams.length} tim</strong> telah mencapai target.
-    Penerima beasiswa: <strong>${fmtN(d.total_beasiswa||0)}</strong>.
-    Peserta AC: <strong>${fmtN(d.total_ac||0)}</strong>.
+    Penerima beasiswa: <strong>${fmtN(beasiswaThn)}</strong>.
+    Peserta AC: <strong>${fmtN(acThn)}</strong>.
     <span style="color:var(--text3)">Update: ${d.generated_at}.</span>`;
 }
 
@@ -1206,41 +1230,59 @@ function popupAC(t, c) {
 //  POPUP: Beasiswa
 // =============================================
 function popupBeasiswa(t, c) {
-  const d  = t.detail||{};
-  const ft = filterTeam(t);
-  const fo = d.filter_options||{};
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} penerima beasiswa`;
+  const d   = t.detail||{};
+  const thn = selTahun();
+  // filter_options dari rows tahun berjalan
+  const rowsThn = filterRows(d.rows||[], thn, -1);
+  const fo = {
+    ue1:    [...new Set(rowsThn.map(r=>r.ue1).filter(Boolean))].sort(),
+    jenjang:[...new Set(rowsThn.map(r=>r.jenjang).filter(Boolean))].sort(),
+    negara: [...new Set(rowsThn.map(r=>r.negara).filter(Boolean))].sort(),
+  };
+  const hadirThn = rowsThn.length;
+  document.getElementById('popup-sub').textContent = `${fmtN(hadirThn)} penerima beasiswa tahun ${thn}`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter:</span>
-      <select class="p-filter-sel" id="bea-f-ue1"    onchange="renderBeasiswaDetail()">${['Semua',...(fo.ue1||[])].map(o=>`<option>${o}</option>`).join('')}</select>
-      <select class="p-filter-sel" id="bea-f-jenj"   onchange="renderBeasiswaDetail()">${['Semua',...(fo.jenjang||[])].map(o=>`<option>${o}</option>`).join('')}</select>
-      <select class="p-filter-sel" id="bea-f-negara" onchange="renderBeasiswaDetail()">${['Semua',...(fo.negara||[])].map(o=>`<option>${o}</option>`).join('')}</select>
+      ${bulanSelect('bea-f-bulan', 'renderBeasiswaDetail()')}
+      <select class="p-filter-sel" id="bea-f-ue1"    onchange="renderBeasiswaDetail()">${['Semua',...fo.ue1].map(o=>`<option>${o}</option>`).join('')}</select>
+      <select class="p-filter-sel" id="bea-f-jenj"   onchange="renderBeasiswaDetail()">${['Semua',...fo.jenjang].map(o=>`<option>${o}</option>`).join('')}</select>
+      <select class="p-filter-sel" id="bea-f-negara" onchange="renderBeasiswaDetail()">${['Semua',...fo.negara].map(o=>`<option>${o}</option>`).join('')}</select>
     </div>
     <div id="bea-detail-body"></div>`;
   renderBeasiswaDetail();
 }
 
 function renderBeasiswaDetail() {
-  const t  = dashData.teams.find(x=>x.team==='Beasiswa');
-  const d  = t.detail||{}, c = cfg('Beasiswa');
-  const fU = document.getElementById('bea-f-ue1')?.value||'Semua';
-  const fJ = document.getElementById('bea-f-jenj')?.value||'Semua';
-  const fN = document.getElementById('bea-f-negara')?.value||'Semua';
-  const rows = (d.rows||[]).filter(r=>
-    (fU==='Semua'||r.ue1===fU) && (fJ==='Semua'||r.jenjang===fJ) && (fN==='Semua'||r.negara===fN)
-  );
-  const cnt = k => { const x={}; rows.forEach(r=>{ if(r[k]) x[r[k]]=(x[r[k]]||0)+1; }); return Object.fromEntries(Object.entries(x).sort((a,b)=>b[1]-a[1])); };
+  const t   = dashData.teams.find(x=>x.team==='Beasiswa');
+  const d   = t.detail||{}, c = cfg('Beasiswa');
+  const thn = selTahun();
+  const bln = parseInt(document.getElementById('bea-f-bulan')?.value||'-1');
+  const fU  = document.getElementById('bea-f-ue1')?.value||'Semua';
+  const fJ  = document.getElementById('bea-f-jenj')?.value||'Semua';
+  const fN  = document.getElementById('bea-f-negara')?.value||'Semua';
   const body = document.getElementById('bea-detail-body'); if (!body) return;
+  const pl  = periodLabel(bln, thn);
+
+  const rows = filterRows(d.rows||[], thn, bln).filter(r=>
+    (fU==='Semua'||r.ue1===fU) &&
+    (fJ==='Semua'||r.jenjang===fJ) &&
+    (fN==='Semua'||r.negara===fN)
+  );
+  const cnt = k => {
+    const x={};
+    rows.forEach(r=>{ if(r[k]) x[r[k]]=(x[r[k]]||0)+1; });
+    return Object.fromEntries(Object.entries(x).sort((a,b)=>b[1]-a[1]));
+  };
   body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:6px">${fmtN(rows.length)} penerima setelah filter</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:6px">${fmtN(rows.length)} penerima — ${pl}</div>
     <div class="p-grid2">
-      ${psBlock('Negara',           distBars(cnt('negara'),      c.color))}
-      ${psBlock('Jenjang',          distBars(cnt('jenjang'),     c.color))}
-      ${psBlock('UE1',              distBars(cnt('ue1'),         c.color))}
-      ${psBlock('Program Studi',    distBars(cnt('prodi'),       c.color))}
-      ${psBlock('Universitas',      distBars(cnt('universitas'), c.color))}
-      ${psBlock('Beasiswa/Sponsor', distBars(cnt('beasiswa'),    c.color))}
+      ${psBlock('Negara — '           + pl, distBars(cnt('negara'),      c.color))}
+      ${psBlock('Jenjang — '          + pl, distBars(cnt('jenjang'),     c.color))}
+      ${psBlock('UE1 — '              + pl, distBars(cnt('ue1'),         c.color))}
+      ${psBlock('Program Studi — '    + pl, distBars(cnt('prodi'),       c.color))}
+      ${psBlock('Universitas — '      + pl, distBars(cnt('universitas'), c.color))}
+      ${psBlock('Beasiswa/Sponsor — ' + pl, distBars(cnt('beasiswa'),    c.color))}
     </div>`;
 }
 
