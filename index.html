@@ -449,33 +449,14 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
           <div class="filter-icon">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3.5h10M4 7h6M6 10.5h2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
-          <span class="filter-label">Global Filter:</span>
-          <select class="filter-sel" id="sel-bulan" onchange="applyFilter()">
-            <option value="-1">Semua Bulan</option>
-            <option value="1">Januari</option><option value="2">Februari</option>
-            <option value="3">Maret</option><option value="4">April</option>
-            <option value="5">Mei</option><option value="6">Juni</option>
-            <option value="7">Juli</option><option value="8">Agustus</option>
-            <option value="9">September</option><option value="10">Oktober</option>
-            <option value="11">November</option><option value="12">Desember</option>
-          </select>
+          <span class="filter-label">Tahun:</span>
           <select class="filter-sel" id="sel-tahun" onchange="applyFilter()">
           </select>
-          <div class="filter-period">Laporan Periode: <strong id="period-label">—</strong></div>
+          <div class="filter-period">Data Tahun: <strong id="period-label">—</strong></div>
         </div>
 
-        <!-- Metrics baris atas -->
+        <!-- Metrics: 4 card -->
         <div class="metric-grid" id="metric-grid">
-          <div class="metric-card">
-            <div class="metric-icon" style="background:#EFF6FF">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="#2563EB" stroke-width="1.5"/><path d="M3 17c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div>
-              <div class="metric-label">Total Peserta</div>
-              <div class="metric-value" id="mv-total">—</div>
-              <div class="metric-note" id="mn-total">Orang</div>
-            </div>
-          </div>
           <div class="metric-card">
             <div class="metric-icon" style="background:#EFF6FF">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10l5 5 9-9" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -498,35 +479,22 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
           </div>
           <div class="metric-card">
             <div class="metric-icon" style="background:#EFF6FF">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 16l5-9 5 9" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13h6" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div>
-              <div class="metric-label">Total Angkatan/Batch</div>
-              <div class="metric-value" id="mv-tim">—</div>
-              <div class="metric-note">Gabungan semua tim</div>
-            </div>
-          </div>
-        </div>
-        <!-- Metrics baris bawah -->
-        <div class="metric-grid-b" id="metric-grid-b">
-          <div class="metric-card-b">
-            <div class="metric-icon-b" style="background:#EFF6FF">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z" stroke="#2563EB" stroke-width="1.5"/><circle cx="10" cy="9" r="2.5" stroke="#2563EB" stroke-width="1.5"/></svg>
             </div>
             <div>
-              <div class="metric-label-b">Total Penerima Beasiswa</div>
-              <div class="metric-value-b" id="mv-beasiswa">—</div>
-              <div class="metric-note-b">Penerima Beasiswa</div>
+              <div class="metric-label">Total Penerima Beasiswa</div>
+              <div class="metric-value" id="mv-beasiswa">—</div>
+              <div class="metric-note">Penerima Beasiswa</div>
             </div>
           </div>
-          <div class="metric-card-b">
-            <div class="metric-icon-b" style="background:#EFF6FF">
+          <div class="metric-card">
+            <div class="metric-icon" style="background:#EFF6FF">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#2563EB" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
             <div>
-              <div class="metric-label-b">Total Peserta AC</div>
-              <div class="metric-value-b" id="mv-ac">—</div>
-              <div class="metric-note-b">Orang</div>
+              <div class="metric-label">Total Peserta AC</div>
+              <div class="metric-value" id="mv-ac">—</div>
+              <div class="metric-note">Assessment Center</div>
             </div>
           </div>
         </div>
@@ -602,8 +570,8 @@ const TEAM_CONFIG = [
   { id:'PBJ',      color:'#DB2777', bg:'#FDF2F8', cb:'#FBCFE8' },
   { id:'PengTes',  color:'#0D9488', bg:'#F0FDFA', cb:'#99F6E4' },
 ];
-const MONTHS_FULL = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-const MONTHS_SHORT= ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Ags','Sep','Okt','Nov','Des'];
+const MONTHS_FULL  = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+const MONTHS_SHORT = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Ags','Sep','Okt','Nov','Des'];
 
 let dashData = null, pollInterval = null;
 
@@ -612,68 +580,54 @@ let dashData = null, pollInterval = null;
 // =============================================
 function fmtN(n) { return Number(n||0).toLocaleString('id-ID'); }
 function cfg(id) { return TEAM_CONFIG.find(c=>c.id===id)||{color:'#6B7280',bg:'#F3F4F6',cb:'#D1D5DB'}; }
-function selBulan() { return parseInt(document.getElementById('sel-bulan').value); }
 function selTahun() { return parseInt(document.getElementById('sel-tahun').value); }
 
 // Filter rows individual: tahun wajib, bulan opsional (-1 = semua)
 function filterRows(rows, thn, bln) {
   return (rows||[]).filter(r => {
+    // Kalau tidak ada year, tidak lolos filter tahun
     if (!r.year) return false;
     if (r.year !== thn) return false;
     if (bln !== -1 && r.month && r.month !== bln) return false;
     return true;
   });
 }
-// Dropdown bulan untuk popup
+
+// Buat dropdown bulan untuk popup
 function bulanSelect(id, onchange) {
   const months = ['Semua Bulan','Januari','Februari','Maret','April','Mei','Juni',
                   'Juli','Agustus','September','Oktober','November','Desember'];
   const opts = months.map((m,i) => `<option value="${i===0?-1:i}">${m}</option>`).join('');
   return `<select class="p-filter-sel" id="${id}" onchange="${onchange}">${opts}</select>`;
 }
-// Label periode
-function periodLabel(bln, thn) {
-  const MF = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-  return bln === -1 ? 'Semua Bulan ' + thn : MF[bln-1] + ' ' + thn;
-}
-function funnelTitle(thn) { return 'Funnel Peserta — Tahun ' + thn; }
 
-// Filter data tim berdasarkan bulan & tahun yang dipilih
+// filterTeam — hanya filter tahun untuk card utama
 function filterTeam(t) {
-  const bln = selBulan();
   const thn = selTahun();
-  if (bln === -1) {
-    // Semua bulan — tapi filter tahun tetap berlaku jika ada months_by_year
-    const mby = t.months_by_year || {};
-    if (!mby[thn]) return t; // tidak ada data tahun ini → tampilkan semua
-    const yearData = mby[thn];
-    const total = Object.values(yearData).reduce((s,v)=>s+(v.total||0),0);
-    const lulus = Object.values(yearData).reduce((s,v)=>s+(v.lulus||0),0);
-    if (total === 0) return t; // fallback ke total keseluruhan
-    return {
-      ...t,
-      total, lulus,
-      tidak_lulus: total - lulus,
-      pct_lulus: total > 0 ? Math.round(lulus/total*1000)/10 : 0,
-      _filtered: true,
-    };
-  }
-  // Filter bulan + tahun spesifik
-  const mby   = t.months_by_year || {};
-  const mData = (mby[thn] || {})[bln] || {total:0, lulus:0};
+  const mby = t.months_by_year || {};
+  if (!mby[thn]) return t;
+  const yearData = mby[thn];
+  const total = Object.values(yearData).reduce((s,v)=>s+(v.total||0),0);
+  const lulus = Object.values(yearData).reduce((s,v)=>s+(v.lulus||0),0);
+  if (total === 0) return t;
   return {
-    ...t,
-    total:       mData.total,
-    lulus:       mData.lulus,
-    tidak_lulus: mData.total - mData.lulus,
-    pct_lulus:   mData.total > 0 ? Math.round(mData.lulus/mData.total*1000)/10 : 0,
-    _filtered:   true,
+    ...t, total, lulus,
+    tidak_lulus: total - lulus,
+    pct_lulus: total > 0 ? Math.round(lulus/total*1000)/10 : 0,
+    _filtered: true,
   };
 }
 
+
+// Label periode untuk judul section
+function periodLabel(bln, thn) {
+  if (bln === -1) return 'Semua Bulan ' + thn;
+  return MONTHS_FULL[bln-1] + ' ' + thn;
+}
+function funnelTitle(thn) { return 'Funnel Peserta — Tahun ' + thn; }
+
 function getTarget(t) {
-  const yr = selTahun();
-  return (t.targets||{})[yr] || 0;
+  return ((t.targets||{})[selTahun()]) || 0;
 }
 
 // =============================================
@@ -689,10 +643,10 @@ function fetchData() {
       dashData = data;
       setStatus('live', 'Data live dari watcher.py', data.generated_at);
       renderAll();
-      if (isFirst) console.log(`Data dimuat — ${fmtN(data.total_peserta)} peserta`);
-      else         console.log(`Diperbarui — ${data.generated_at}`);
+      if (isFirst) console.log('Data dimuat — ' + fmtN(data.total_peserta) + ' peserta');
+      else         console.log('Diperbarui — ' + data.generated_at);
     })
-    .catch(() => { if (!dashData) setStatus('idle','Watcher belum aktif — jalankan watcher.py di PC server',''); });
+    .catch(() => { if (!dashData) setStatus('idle','Watcher belum aktif — jalankan watcher.py',''); });
 }
 
 function setStatus(type, msg, time) {
@@ -714,38 +668,22 @@ function renderAll() {
 }
 
 function updatePeriodLabel() {
-  const bln = selBulan();
-  const thn = selTahun();
-  document.getElementById('period-label').textContent =
-    (bln === -1 ? 'Semua Bulan' : MONTHS_FULL[bln-1]) + ' ' + thn;
+  document.getElementById('period-label').textContent = selTahun();
 }
 
 // =============================================
-//  METRICS
+//  METRICS (4 card, tidak dipengaruhi filter bulan)
 // =============================================
 function renderMetrics() {
   if (!dashData) return;
   const d   = dashData;
   const thn = selTahun();
 
-  // Total peserta (filter bulan)
-  let totalP = 0;
-  d.teams.filter(t=>t.type==='pct').forEach(t => {
-    totalP += filterTeam(t).total;
-  });
-  document.getElementById('mv-total').textContent = fmtN(totalP);
-  document.getElementById('mn-total').textContent = 'Orang';
-
-  // Capaian output tahunan — total hadir tahun filter / total target tahun filter
-  let hadirTahunan = 0;
-  let targetTahunan = 0;
+  // Capaian output tahunan
+  let hadirTahunan = 0, targetTahunan = 0;
   d.teams.forEach(t => {
     const mby = t.months_by_year || {};
-    if (mby[thn]) {
-      hadirTahunan += Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0);
-    } else {
-      hadirTahunan += t.total_hadir || t.total;
-    }
+    hadirTahunan  += mby[thn] ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0) : (t.total_hadir||t.total);
     targetTahunan += (t.targets||{})[thn] || 0;
   });
   const pctCap = targetTahunan > 0 ? Math.round(hadirTahunan/targetTahunan*1000)/10 : 0;
@@ -755,22 +693,29 @@ function renderMetrics() {
 
   // Tim mencapai target
   const timMencapai = d.teams.filter(t => {
-    const tgt = (t.targets||{})[thn] || 0;
-    if (!tgt) return false;
-    const hadir = (t.months_by_year||{})[thn]
-      ? Object.values(t.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (t.total_hadir || t.total);
+    const tgt = (t.targets||{})[thn] || 0; if (!tgt) return false;
+    const mby = t.months_by_year || {};
+    const hadir = mby[thn] ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0) : (t.total_hadir||t.total);
     return hadir >= tgt;
   }).length;
   document.getElementById('mv-tim-target').textContent = timMencapai;
   document.getElementById('mn-tim-target').textContent = 'dari ' + d.teams.length + ' tim';
 
-  // Total angkatan
-  document.getElementById('mv-tim').textContent = fmtN(d.total_angkatan||0);
-
-  // Beasiswa & AC
-  document.getElementById('mv-beasiswa').textContent = fmtN(d.total_beasiswa||0);
-  document.getElementById('mv-ac').textContent       = fmtN(d.total_ac||0);
+  // Beasiswa & AC — filter berdasarkan tahun via months_by_year
+  const beasiswaT = d.teams.find(t=>t.team==='Beasiswa');
+  const acT       = d.teams.find(t=>t.team==='AC');
+  const beasiswaTahunan = beasiswaT
+    ? (beasiswaT.months_by_year||{})[thn]
+      ? Object.values(beasiswaT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (beasiswaT.total_hadir||beasiswaT.total)
+    : 0;
+  const acTahunan = acT
+    ? (acT.months_by_year||{})[thn]
+      ? Object.values(acT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (acT.total_hadir||acT.total)
+    : 0;
+  document.getElementById('mv-beasiswa').textContent = fmtN(beasiswaTahunan);
+  document.getElementById('mv-ac').textContent       = fmtN(acTahunan);
 }
 
 // =============================================
@@ -780,25 +725,19 @@ function renderTeamGrid() {
   if (!dashData) return;
   const thn  = selTahun();
   const grid = document.getElementById('team-grid');
-
   grid.innerHTML = dashData.teams.map(t => {
     const c      = cfg(t.team);
     const target = getTarget(t);
     const errHtml= t.error ? `<div class="tc-err">⚠ ${t.error}</div>` : '';
-
-    // Peserta hadir — SAK/USKP/PBJ dari kolom kehadiran, lainnya semua peserta
-    const hadir = t.total_hadir !== undefined ? t.total_hadir : t.total;
-
-    // Hadir tahunan dari months_by_year
-    const mby = t.months_by_year || {};
+    const mby    = t.months_by_year || {};
+    // Peserta hadir tahun sesuai filter — dari months_by_year, fallback ke total_hadir
     const hadirTahunan = mby[thn]
-      ? Object.values(mby[thn]).reduce((s,v) => s + (v.total||0), 0)
-      : hadir;
+      ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (t.total_hadir !== undefined ? t.total_hadir : t.total);
 
-    // Progress bar
     let targetHtml = '';
     if (target > 0) {
-      const pct = Math.min(100, Math.round(hadirTahunan / target * 100));
+      const pct = Math.min(100, Math.round(hadirTahunan/target*100));
       targetHtml = `
         <div class="tc-target-wrap">
           <div class="tc-target-lbl">
@@ -810,7 +749,6 @@ function renderTeamGrid() {
           </div>
         </div>`;
     }
-
     return `
       <div class="team-card ${t.error?'error-card':''}" onclick="openPopup('${t.team}')">
         <div class="tc-top">
@@ -821,7 +759,7 @@ function renderTeamGrid() {
             </svg>
           </div>
           <div style="text-align:right">
-            <div class="tc-pct" style="color:${c.color}">${fmtN(hadir)}</div>
+            <div class="tc-pct" style="color:${c.color}">${fmtN(hadirTahunan)}</div>
             <div class="tc-lbl" style="color:${c.color}">peserta</div>
           </div>
         </div>
@@ -834,7 +772,7 @@ function renderTeamGrid() {
 }
 
 // =============================================
-//  CHART OVERVIEW — capaian output per tim
+//  CHART — capaian output per tim
 // =============================================
 function renderChart() {
   if (!dashData) return;
@@ -843,26 +781,21 @@ function renderChart() {
   document.getElementById('unit-section').style.display = 'none';
   document.getElementById('chart-title').textContent = `Capaian Output per Tim — ${thn}`;
   document.getElementById('chart-sub').textContent   = 'peserta hadir vs target tahunan (%)';
-
   const teams = dashData.teams.filter(t => (t.targets||{})[thn] > 0);
   if (!teams.length) {
-    wrap.innerHTML = '<div class="empty-state" style="width:100%"><p>Belum ada data target. Tambahkan sheet "output" di Excel.</p></div>';
+    wrap.innerHTML = '<div class="empty-state" style="width:100%"><p>Belum ada data target di sheet "output".</p></div>';
     return;
   }
-
   wrap.innerHTML = teams.map(t => {
     const c      = cfg(t.team);
-    const target = (t.targets||{})[thn] || 0;
-    const mby    = t.months_by_year || {};
-    const hadir  = mby[thn]
-      ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (t.total_hadir || t.total);
+    const target = (t.targets||{})[thn]||0;
+    const mby    = t.months_by_year||{};
+    const hadir  = mby[thn] ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0) : (t.total_hadir||t.total);
     const pct    = target > 0 ? Math.min(100, Math.round(hadir/target*1000)/10) : 0;
-    const maxH   = 100;
     return `
       <div class="bar-col" style="cursor:pointer" onclick="openPopup('${t.team}')">
         <div class="bar-val">${pct}%</div>
-        <div class="bar-body" style="height:${Math.round(pct/100*maxH)}px;background:${c.color}"></div>
+        <div class="bar-body" style="height:${pct}px;background:${c.color}"></div>
         <div class="bar-month">${t.team}</div>
       </div>`;
   }).join('');
@@ -873,41 +806,37 @@ function renderChart() {
 // =============================================
 function renderNarrative() {
   if (!dashData) return;
-  const bln = selBulan();
   const thn = selTahun();
-  const blnTxt = bln===-1 ? 'Semua Bulan' : MONTHS_FULL[bln-1];
-  const d = dashData;
-
-  // Hitung capaian output tahunan
-  let hadirTahunan=0, targetTahunan=0;
-  d.teams.forEach(t=>{
+  const d   = dashData;
+  let hadirTahunan = 0, targetTahunan = 0;
+  d.teams.forEach(t => {
     const mby = t.months_by_year||{};
-    hadirTahunan += mby[thn]
-      ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (t.total_hadir||t.total);
+    hadirTahunan  += mby[thn] ? Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0) : (t.total_hadir||t.total);
     targetTahunan += (t.targets||{})[thn]||0;
   });
-  const pctCap = targetTahunan>0 ? Math.round(hadirTahunan/targetTahunan*1000)/10 : 0;
-
-  const timMencapai = d.teams.filter(t=>{
-    const tgt=(t.targets||{})[thn]||0;
-    if(!tgt) return false;
-    const hadir=(t.months_by_year||{})[thn]
-      ? Object.values(t.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (t.total_hadir||t.total);
+  const pctCap = targetTahunan > 0 ? Math.round(hadirTahunan/targetTahunan*1000)/10 : 0;
+  const timMencapai = d.teams.filter(t => {
+    const tgt=(t.targets||{})[thn]||0; if(!tgt) return false;
+    const mby=t.months_by_year||{};
+    const hadir=mby[thn]?Object.values(mby[thn]).reduce((s,v)=>s+(v.total||0),0):(t.total_hadir||t.total);
     return hadir>=tgt;
   }).length;
-
-  const totalP = d.teams.filter(t=>t.type==='pct').reduce((s,t)=>s+filterTeam(t).total,0);
-
+  const beasiswaT2 = d.teams.find(t=>t.team==='Beasiswa');
+  const acT2       = d.teams.find(t=>t.team==='AC');
+  const beasiswaThn = beasiswaT2
+    ? ((beasiswaT2.months_by_year||{})[thn]
+      ? Object.values(beasiswaT2.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (beasiswaT2.total_hadir||beasiswaT2.total)) : 0;
+  const acThn = acT2
+    ? ((acT2.months_by_year||{})[thn]
+      ? Object.values(acT2.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+      : (acT2.total_hadir||acT2.total)) : 0;
   document.getElementById('narr-text').innerHTML = `
-    Periode <strong>${blnTxt} ${thn}</strong> — total peserta tim sertifikasi
-    <strong>${fmtN(totalP)} orang</strong>.
-    Capaian output tahunan <strong>${pctCap}%</strong>
-    (${fmtN(hadirTahunan)} peserta hadir dari target ${fmtN(targetTahunan)}).
-    <strong>${timMencapai} dari ${d.teams.length} tim</strong> telah mencapai target tahunan.
-    Penerima beasiswa: <strong>${fmtN(d.total_beasiswa||0)}</strong>.
-    Peserta AC: <strong>${fmtN(d.total_ac||0)}</strong>.
+    Tahun <strong>${thn}</strong> — capaian output tahunan
+    <strong>${pctCap}%</strong> (${fmtN(hadirTahunan)} peserta hadir dari target ${fmtN(targetTahunan)}).
+    <strong>${timMencapai} dari ${d.teams.length} tim</strong> telah mencapai target.
+    Penerima beasiswa: <strong>${fmtN(beasiswaThn)}</strong>.
+    Peserta AC: <strong>${fmtN(acThn)}</strong>.
     <span style="color:var(--text3)">Update: ${d.generated_at}.</span>`;
 }
 
@@ -927,23 +856,25 @@ function donutChart(lulus, tidakLulus, color, size=100) {
   if (total === 0) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
   const pctL = Math.round(lulus/total*100);
   const pctT = 100 - pctL;
-  const r    = 38, cx=50, cy=50, stroke=14;
+  const r = 38, cx=50, cy=50, stroke=14;
   const circ = 2*Math.PI*r;
-  const dashL= circ * pctL/100;
-  const dashT= circ - dashL;
+  const dashL = circ * pctL/100;
   return `
     <div class="donut-wrap">
       <svg class="donut-svg" width="${size}" height="${size}" viewBox="0 0 100 100">
         <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${stroke}"/>
         <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${stroke}"
-          stroke-dasharray="${dashL} ${dashT}" stroke-dashoffset="${circ/4}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
+          stroke-dasharray="${dashL} ${circ-dashL}" stroke-dashoffset="${circ/4}"
+          stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
         <text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"
           style="font-size:16px;font-weight:600;fill:${color}">${pctL}%</text>
       </svg>
       <div class="donut-legend">
-        <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>Lulus<div class="donut-pct">${fmtN(lulus)}</div></div>
-        <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>Tidak Lulus<div class="donut-pct">${fmtN(tidakLulus)}</div></div>
-        <div class="donut-item" style="border-top:0.5px solid #EEF0F4;padding-top:4px"><div class="donut-dot" style="background:var(--text3)"></div>Total<div class="donut-pct">${fmtN(total)}</div></div>
+        <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>Lulus<div class="donut-pct">${fmtN(lulus)} (${pctL}%)</div></div>
+        <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>Tidak Lulus<div class="donut-pct">${fmtN(tidakLulus)} (${pctT}%)</div></div>
+        <div class="donut-item" style="border-top:0.5px solid #EEF0F4;padding-top:4px">
+          <div class="donut-dot" style="background:var(--text3)"></div>Peserta Hadir<div class="donut-pct">${fmtN(total)}</div>
+        </div>
       </div>
     </div>`;
 }
@@ -965,16 +896,14 @@ function funnelChart(steps, color) {
 }
 
 // =============================================
-//  TREND BARS (urutan asli Excel)
+//  TREND BARS
 // =============================================
-function trendBars(trend, color, cbColor, filterBatch='Semua') {
+function trendBars(trend, color, cbColor) {
   if (!trend||!trend.length)
     return '<div style="font-size:11px;color:var(--text3)">Belum ada data tren</div>';
-  const data = filterBatch==='Semua' ? trend : trend.filter(t=>t.batch===filterBatch);
-  if (!data.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data untuk batch ini</div>';
-  const maxP = Math.max(...data.map(t=>t.pct),1);
-  const last  = data.length-1;
-  return `<div class="p-bars">${data.map((t,i)=>`
+  const maxP = Math.max(...trend.map(t=>t.pct), 1);
+  const last  = trend.length-1;
+  return `<div class="p-bars">${trend.map((t,i)=>`
     <div class="p-bar-col">
       <div class="p-bar-val">${t.pct}%</div>
       <div class="p-bar-body" style="height:${Math.round(t.pct/maxP*90)}px;background:${i===last?color:cbColor}"></div>
@@ -985,7 +914,7 @@ function trendBars(trend, color, cbColor, filterBatch='Semua') {
 function distBars(dist, color, maxItems=10) {
   const entries = Object.entries(dist||{}).slice(0,maxItems);
   if (!entries.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
-  const maxV = Math.max(...entries.map(e=>e[1]),1);
+  const maxV = Math.max(...entries.map(e=>e[1]), 1);
   return `<div class="p-dist">${entries.map(([lbl,n])=>`
     <div class="p-dist-row">
       <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
@@ -998,157 +927,157 @@ function psBlock(title, content) {
   return `<div class="ps"><div class="ps-title">${title}</div>${content}</div>`;
 }
 
-function batchSelect(id, batches, onchange) {
+function batchSelectLocal(id, batches, onchange) {
   const opts = ['Semua',...batches].map(b=>`<option>${b}</option>`).join('');
   return `<select class="p-filter-sel" id="${id}" onchange="${onchange}">${opts}</select>`;
 }
 
 // =============================================
-//  POPUP RENDERERS
+//  POPUP: JFKN
 // =============================================
-
 function popupJFKN(t, c) {
   const d  = t.detail||{};
-  const ft = filterTeam(t);
-  const dp = t.dalam_proses || 0;
-  // tidak_lulus = peserta yang sudah ada hasil tapi tidak lulus
-  const ada_hasil = ft.total - dp;
-  const tidak_lulus_real = Math.max(0, ada_hasil - ft.lulus);
+  const fn = d.funnel||{};
+  const dp = t.dalam_proses||0;
   document.getElementById('popup-sub').textContent =
-    `${fmtN(ft.total)} peserta · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%)${dp?' · '+dp+' dalam proses':''}`;
-
-  const fo = d.filter_options || {};
-  const jenjangOpts = ['Semua', ...(fo.jenjang||[])];
-  const jfOpts      = ['Semua', ...(fo.jf||[])];
-
+    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%)${dp?' · '+fmtN(dp)+' belum diproses':''}`;
+  const fo = d.filter_options||{};
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      ${bulanSelect('jfkn-f-bulan','renderJFKNDetail()')}
       <select class="p-filter-sel" id="jfkn-f-jenjang" onchange="renderJFKNDetail()">
-        ${jenjangOpts.map(o=>`<option>${o}</option>`).join('')}
+        ${['Semua',...(fo.jenjang||[])].map(o=>`<option>${o}</option>`).join('')}
       </select>
       <select class="p-filter-sel" id="jfkn-f-jf" onchange="renderJFKNDetail()">
-        ${jfOpts.map(o=>`<option>${o}</option>`).join('')}
+        ${['Semua',...(fo.jf||[])].map(o=>`<option>${o}</option>`).join('')}
       </select>
-    </div>
-    <div class="p-grid2">
-      ${psBlock('Kelulusan', donutChart(ft.lulus, tidak_lulus_real, c.color, 120))}
-      ${psBlock('Sebaran per UE1', (() => {
-        const entries = (d.ue1||[]).slice(0,10);
-        if (!entries.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
-        const maxV = Math.max(...entries.map(e=>e.total),1);
-        return `<div class="p-dist">${entries.map(u=>`
-          <div class="p-dist-row">
-            <div class="p-dist-lbl" title="${u.label}">${u.label}</div>
-            <div class="p-dist-bar"><div class="p-dist-fill" style="width:${Math.round(u.total/maxV*100)}%;background:${c.color}"></div></div>
-            <div class="p-dist-n">${fmtN(u.total)}</div>
-          </div>`).join('')}</div>`;
-      })())}
     </div>
     <div id="jfkn-detail-body"></div>`;
   renderJFKNDetail();
 }
 
 function renderJFKNDetail() {
-  const t   = dashData.teams.find(x=>x.team==='JFKN');
-  const d   = t.detail||{};
-  const c   = cfg('JFKN');
+  const t = dashData.teams.find(x=>x.team==='JFKN');
+  const d = t.detail||{}, c = cfg('JFKN'), fn = d.funnel||{};
+  const thn = selTahun();
+  const bln = parseInt(document.getElementById('jfkn-f-bulan')?.value||'-1');
   const fJenjang = document.getElementById('jfkn-f-jenjang')?.value||'Semua';
   const fJF      = document.getElementById('jfkn-f-jf')?.value||'Semua';
-  const body = document.getElementById('jfkn-detail-body');
-  if (!body) return;
+  const body = document.getElementById('jfkn-detail-body'); if (!body) return;
 
-  // Filter rows
-  const rows = (d.rows||[]).filter(r=>
-    (fJenjang==='Semua'||r.jenjang===fJenjang) &&
-    (fJF==='Semua'||r.jf===fJF)
+  // Filter rows — hanya peserta hadir
+  const rows = filterRows(d.rows||[], thn, bln).filter(r => r.hadir &&
+    (fJenjang==='Semua'||r.jenjang===fJenjang) && (fJF==='Semua'||r.jf===fJF)
   );
+  const lulus       = rows.filter(r=>r.lulus).length;
+  const tidak_lulus = rows.length - lulus;
 
-  // Recompute UE2 from filtered rows
-  const ue2cnt = {};
-  rows.forEach(r=>{ if(r.ue2) ue2cnt[r.ue2]=(ue2cnt[r.ue2]||0)+1; });
-  const ue2sorted = Object.entries(ue2cnt).sort((a,b)=>b[1]-a[1]);
-  const maxUE2 = Math.max(...Object.values(ue2cnt),1);
-
-  // % kelulusan per UE1 dari filtered rows
-  const ue1map = {};
+  const ue1map={}, ue2map={};
   rows.forEach(r=>{
-    if(!r.ue1) return;
-    if(!ue1map[r.ue1]) ue1map[r.ue1]={total:0,lulus:0};
-    ue1map[r.ue1].total++;
-    if(r.lulus && r.lulus.toLowerCase()==='lulus') ue1map[r.ue1].lulus++;
+    if(r.ue1){if(!ue1map[r.ue1])ue1map[r.ue1]={total:0,lulus:0};ue1map[r.ue1].total++;if(r.lulus)ue1map[r.ue1].lulus++;}
+    if(r.ue2){if(!ue2map[r.ue2])ue2map[r.ue2]={total:0,lulus:0};ue2map[r.ue2].total++;if(r.lulus)ue2map[r.ue2].lulus++;}
   });
-  const ue1sorted = Object.entries(ue1map).sort((a,b)=>b[1].total-a[1].total);
+  const ue1s = Object.entries(ue1map).sort((a,b)=>b[1].total-a[1].total);
+  const ue2s = Object.entries(ue2map).sort((a,b)=>b[1].total-a[1].total);
+  const maxUE1 = Math.max(...ue1s.map(e=>e[1].total),1);
+  const maxUE2 = Math.max(...ue2s.map(e=>e[1].total),1);
+  const pl = periodLabel(bln, thn);
+
+  const distHtml = (entries, maxV) => entries.length
+    ? `<div class="p-dist">${entries.map(([lbl,v])=>`
+        <div class="p-dist-row">
+          <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
+          <div class="p-dist-bar"><div class="p-dist-fill" style="width:${Math.round(v.total/maxV*100)}%;background:${c.color}"></div></div>
+          <div class="p-dist-n">${fmtN(v.total)}</div>
+        </div>`).join('')}</div>`
+    : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
 
   body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:6px">${fmtN(rows.length)} peserta setelah filter</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} peserta hadir — ${pl}</div>
     <div class="p-grid2">
-      ${psBlock('Sebaran per UE2', ue2sorted.length
-        ? `<div class="p-dist">${ue2sorted.map(([lbl,n])=>`
-            <div class="p-dist-row">
-              <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
-              <div class="p-dist-bar"><div class="p-dist-fill" style="width:${Math.round(n/maxUE2*100)}%;background:${c.color}"></div></div>
-              <div class="p-dist-n">${fmtN(n)}</div>
-            </div>`).join('')}</div>`
-        : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>'
-      )}
-      ${psBlock('% Kelulusan per UE1', ue1sorted.length
-        ? `<div class="p-dist">${ue1sorted.map(([lbl,v])=>`
-            <div class="p-dist-row">
-              <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
-              <div class="p-dist-bar"><div class="p-dist-fill" style="width:${v.total>0?Math.round(v.lulus/v.total*100):0}%;background:${c.color}"></div></div>
-              <div class="p-dist-n">${v.total>0?Math.round(v.lulus/v.total*100):0}%</div>
-            </div>`).join('')}</div>`
-        : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>'
-      )}
-    </div>`;
+      ${psBlock('Kelulusan — ' + pl, donutChart(lulus, tidak_lulus, c.color, 120))}
+      ${psBlock(funnelTitle(thn), funnelChart([
+        {label:'Terdaftar',      n: fn.terdaftar||t.total},
+        {label:'Mengikuti',      n: fn.mengikuti||t.total_hadir||0},
+        {label:'Lulus',          n: fn.lulus||t.lulus||0},
+        {label:'Belum Diproses', n: fn.belum_diproses||t.dalam_proses||0},
+      ], c.color))}
+    </div>
+    <div class="p-grid2">
+      ${psBlock('Sebaran per UE1 — ' + pl, distHtml(ue1s, maxUE1))}
+      ${psBlock('Sebaran per UE2 — ' + pl, distHtml(ue2s, maxUE2))}
+    </div>
+    ${psBlock('% Kelulusan per UE1 — ' + pl, ue1s.length
+      ? `<div class="p-dist">${ue1s.map(([lbl,v])=>`
+          <div class="p-dist-row">
+            <div class="p-dist-lbl">${lbl}</div>
+            <div class="p-dist-bar"><div class="p-dist-fill" style="width:${v.total>0?Math.round(v.lulus/v.total*100):0}%;background:${c.color}"></div></div>
+            <div class="p-dist-n">${v.total>0?Math.round(v.lulus/v.total*100):0}%</div>
+          </div>`).join('')}</div>`
+      : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>'
+    )}`;
 }
 
+// =============================================
+//  POPUP: SAK
+// =============================================
 function popupSAK(t, c) {
-  const d  = t.detail||{};
-  const ft = filterTeam(t);
-  const batches = (d.trend||[]).map(x=>x.batch);
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} peserta · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%)`;
+  const d = t.detail||{};
+  document.getElementById('popup-sub').textContent =
+    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
-      <span style="font-size:11px;color:var(--text3)">Filter batch:</span>
-      ${batchSelect('sak-f-batch', batches, 'renderSAKDetail()')}
+      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
+      ${bulanSelect('sak-f-bulan','renderSAKDetail()')}
     </div>
     <div id="sak-detail-body"></div>`;
   renderSAKDetail();
 }
 
 function renderSAKDetail() {
-  const t  = dashData.teams.find(x=>x.team==='SAK');
-  const d  = t.detail||{};
-  const c  = cfg('SAK');
-  const ft = filterTeam(t);
-  const fb = document.getElementById('sak-f-batch')?.value||'Semua';
-  const body = document.getElementById('sak-detail-body');
-  if (!body) return;
-  const fn = d.funnel||{};
+  const t = dashData.teams.find(x=>x.team==='SAK');
+  const d = t.detail||{}, c = cfg('SAK'), fn = d.funnel||{};
+  const thn = selTahun();
+  const bln = parseInt(document.getElementById('sak-f-bulan')?.value||'-1');
+  const body = document.getElementById('sak-detail-body'); if (!body) return;
+  const pl = periodLabel(bln, thn);
+
+  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
+  const lulus = rows.filter(r=>r.lulus).length;
+  const tidak_lulus = rows.length - lulus;
+
+  const batchMap={}, lokasiMap={};
+  rows.forEach(r=>{
+    if(r.batch){if(!batchMap[r.batch])batchMap[r.batch]={total:0,lulus:0};batchMap[r.batch].total++;if(r.lulus)batchMap[r.batch].lulus++;}
+    if(r.lokasi) lokasiMap[r.lokasi]=(lokasiMap[r.lokasi]||0)+1;
+  });
+  const trend = Object.entries(batchMap).map(([b,v])=>({batch:b,total:v.total,lulus:v.lulus,pct:v.total>0?Math.round(v.lulus/v.total*1000)/10:0}));
+  // Urutkan lokasi terbanyak ke terkecil
+  const lokasiSorted = Object.fromEntries(Object.entries(lokasiMap).sort((a,b)=>b[1]-a[1]));
+
   body.innerHTML = `
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl}</div>
     <div class="p-grid2">
-      ${psBlock('Kelulusan', donutChart(ft.lulus, ft.tidak_lulus, c.color, 120))}
-      ${psBlock('Funnel Peserta', funnelChart([
-        {label:'Pendaftar',          n: fn.pendaftar||0},
-        {label:'Verif. Dokumen',     n: fn.verif_dokumen||0},
-        {label:'Verif. Pembayaran',  n: fn.verif_pembayaran||0},
-        {label:'Hadir',              n: fn.hadir||0},
-        {label:'Lulus',              n: fn.lulus||0},
+      ${psBlock('Kelulusan — ' + pl, donutChart(lulus, tidak_lulus, c.color, 120))}
+      ${psBlock(funnelTitle(thn), funnelChart([
+        {label:'Pendaftar',         n: fn.pendaftar||t.total},
+        {label:'Verif. Dokumen',    n: fn.verif_dokumen||0},
+        {label:'Verif. Pembayaran', n: fn.verif_pembayaran||0},
+        {label:'Hadir',             n: fn.hadir||t.total_hadir||0},
+        {label:'Lulus',             n: fn.lulus||t.lulus||0},
       ], c.color))}
     </div>
-    ${psBlock('Tren Kelulusan per Periode', trendBars(d.trend, c.color, c.cb, fb))}
-    ${psBlock('Sebaran Lokasi Ujian', distBars(d.lokasi||{}, c.color))}`;
+    ${psBlock('Tren per Batch — ' + pl, trendBars(trend, c.color, c.cb))}
+    ${psBlock('Sebaran Lokasi — ' + pl, distBars(lokasiSorted, c.color))}`;
 }
 
+// =============================================
+//  POPUP: USKP
+// =============================================
 function popupUSKP(t, c) {
-  const thn = selTahun();
-  const hadirThn = ((t.months_by_year||{})[thn]
-    ? Object.values(t.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-    : (t.total_hadir||0));
   document.getElementById('popup-sub').textContent =
-    `${fmtN(hadirThn)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
+    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
@@ -1159,33 +1088,33 @@ function popupUSKP(t, c) {
 }
 
 function renderUSKPDetail() {
-  const t   = dashData.teams.find(x=>x.team==='USKP');
-  const d   = t.detail||{}, c = cfg('USKP'), fn = d.funnel||{};
+  const t = dashData.teams.find(x=>x.team==='USKP');
+  const d = t.detail||{}, c = cfg('USKP'), fn = d.funnel||{};
   const thn = selTahun();
   const bln = parseInt(document.getElementById('uskp-f-bulan')?.value||'-1');
   const body = document.getElementById('uskp-detail-body'); if (!body) return;
-  const pl  = periodLabel(bln, thn);
 
   const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
-  const lulus       = rows.filter(r=>r.lulus).length;
+  const lulus = rows.filter(r=>r.lulus).length;
   const tidak_lulus = rows.length - lulus;
 
-  const batchMap={}, lokasiMap={}, tingkatMap={};
+  const batchMap={}, lokasi={}, tingkatMap={};
   rows.forEach(r=>{
     if(r.batch){if(!batchMap[r.batch])batchMap[r.batch]={total:0,lulus:0};batchMap[r.batch].total++;if(r.lulus)batchMap[r.batch].lulus++;}
-    if(r.lokasi)  lokasiMap[r.lokasi]=(lokasiMap[r.lokasi]||0)+1;
+    if(r.lokasi)  lokasi[r.lokasi]=(lokasi[r.lokasi]||0)+1;
     if(r.tingkat) tingkatMap[r.tingkat]=(tingkatMap[r.tingkat]||0)+1;
   });
   const trend = Object.entries(batchMap)
     .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0))
     .map(([b,v])=>({batch:b,total:v.total,lulus:v.lulus,pct:v.total>0?Math.round(v.lulus/v.total*1000)/10:0}));
-  const lokasiSorted  = Object.fromEntries(Object.entries(lokasiMap).sort((a,b)=>b[1]-a[1]));
-  const tingkatSorted = Object.fromEntries(Object.entries(tingkatMap).sort((a,b)=>b[1]-a[1]));
+  const lokasiSorted2  = Object.fromEntries(Object.entries(lokasi).sort((a,b)=>b[1]-a[1]));
+  const tingkatSorted  = Object.fromEntries(Object.entries(tingkatMap).sort((a,b)=>b[1]-a[1]));
 
+  const pl2 = periodLabel(bln, thn);
   body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl}</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl2}</div>
     <div class="p-grid2">
-      ${psBlock('Kelulusan — ' + pl, donutChart(lulus, tidak_lulus, c.color, 120))}
+      ${psBlock('Kelulusan — ' + pl2, donutChart(lulus, tidak_lulus, c.color, 120))}
       ${psBlock(funnelTitle(thn), funnelChart([
         {label:'Pendaftar',        n: fn.pendaftar||t.total},
         {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
@@ -1193,79 +1122,86 @@ function renderUSKPDetail() {
         {label:'Lulus',            n: fn.lulus||t.lulus||0},
       ], c.color))}
     </div>
-    ${psBlock('Tren per Batch — ' + pl, trendBars(trend, c.color, c.cb))}
+    ${psBlock('Tren per Batch — ' + pl2, trendBars(trend, c.color, c.cb))}
     <div class="p-grid2">
-      ${psBlock('Sebaran Lokasi — ' + pl, distBars(lokasiSorted, c.color))}
-      ${psBlock('Sebaran Tingkat — ' + pl, distBars(tingkatSorted, c.color))}
+      ${psBlock('Sebaran Lokasi — ' + pl2, distBars(lokasiSorted2, c.color))}
+      ${psBlock('Sebaran Tingkat — ' + pl2, distBars(tingkatSorted, c.color))}
     </div>`;
 }
 
+// =============================================
+//  POPUP: PBJ
+// =============================================
 function popupPBJ(t, c) {
-  const d  = t.detail||{};
-  const ft = filterTeam(t);
-  const batches = (d.batch_list||[]).sort();
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} peserta · ${fmtN(ft.lulus)} lulus (${ft.pct_lulus}%)`;
+  document.getElementById('popup-sub').textContent =
+    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
-      <span style="font-size:11px;color:var(--text3)">Filter batch:</span>
-      ${batchSelect('pbj-f-batch', batches, 'renderPBJDetail()')}
+      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
+      ${bulanSelect('pbj-f-bulan','renderPBJDetail()')}
     </div>
     <div id="pbj-detail-body"></div>`;
   renderPBJDetail();
 }
 
 function renderPBJDetail() {
-  const t  = dashData.teams.find(x=>x.team==='PBJ');
-  const d  = t.detail||{};
-  const c  = cfg('PBJ');
-  const ft = filterTeam(t);
-  const fb = document.getElementById('pbj-f-batch')?.value||'Semua';
-  const fn = d.funnel||{};
-  const body = document.getElementById('pbj-detail-body');
-  if (!body) return;
+  const t = dashData.teams.find(x=>x.team==='PBJ');
+  const d = t.detail||{}, c = cfg('PBJ'), fn = d.funnel||{};
+  const thn = selTahun();
+  const bln = parseInt(document.getElementById('pbj-f-bulan')?.value||'-1');
+  const body = document.getElementById('pbj-detail-body'); if (!body) return;
+
+  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
+  const lulus = rows.filter(r=>r.lulus).length;
+  const tidak_lulus = rows.length - lulus;
+
+  const batchMap={}, jenis={};
+  rows.forEach(r=>{
+    if(r.batch){if(!batchMap[r.batch])batchMap[r.batch]={total:0,lulus:0};batchMap[r.batch].total++;if(r.lulus)batchMap[r.batch].lulus++;}
+    if(r.jenis) jenis[r.jenis]=(jenis[r.jenis]||0)+1;
+  });
+  const trend = Object.entries(batchMap)
+    .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0))
+    .map(([b,v])=>({batch:b,total:v.total,lulus:v.lulus,pct:v.total>0?Math.round(v.lulus/v.total*1000)/10:0}));
+  const jenisSorted = Object.fromEntries(Object.entries(jenis).sort((a,b)=>b[1]-a[1]));
+
+  const pl3 = periodLabel(bln, thn);
   body.innerHTML = `
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl3}</div>
     <div class="p-grid2">
-      ${psBlock('Kelulusan', donutChart(ft.lulus, ft.tidak_lulus, c.color, 120))}
-      ${psBlock('Funnel Peserta', funnelChart([
-        {label:'Pendaftar',        n: fn.pendaftar||0},
+      ${psBlock('Kelulusan — ' + pl3, donutChart(lulus, tidak_lulus, c.color, 120))}
+      ${psBlock(funnelTitle(thn), funnelChart([
+        {label:'Pendaftar',        n: fn.pendaftar||t.total},
         {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
-        {label:'Hadir',            n: fn.hadir||0},
-        {label:'Lulus',            n: ft.lulus},
+        {label:'Hadir',            n: fn.hadir||t.total_hadir||0},
+        {label:'Lulus',            n: fn.lulus||t.lulus||0},
       ], c.color))}
     </div>
-    ${psBlock('Tren Kelulusan per Batch', trendBars(d.trend, c.color, c.cb, fb))}
-    ${psBlock('Sebaran Jenis Ujian', distBars(d.jenis||{}, c.color))}`;
+    ${psBlock('Tren per Batch — ' + pl3, trendBars(trend, c.color, c.cb))}
+    ${psBlock('Sebaran Jenis Ujian — ' + pl3, distBars(jenisSorted, c.color))}`;
 }
 
+// =============================================
+//  POPUP: AC
+// =============================================
 function popupAC(t, c) {
-  const d   = t.detail||{};
+  const d = t.detail||{};
   const thn = selTahun();
   const thnStr = String(thn);
-
-  // Gunakan data per tahun jika tersedia, fallback ke total
-  const hasilYear  = (d.hasil_by_year||{})[thnStr] || d.hasil||{};
-  const ue1Year    = (d.ue1_by_year||{})[thnStr]   || d.ue1||{};
-  const bsYear     = ((d.batch_by_year||{})[thnStr] || d.batch_stat||[]);
-
-  const totalYear  = Object.values(hasilYear).reduce((a,b)=>a+b,0);
+  const hasilYear = (d.hasil_by_year||{})[thnStr] || d.hasil||{};
+  const ue1Year   = (d.ue1_by_year||{})[thnStr]   || d.ue1||{};
+  const bsYear    = ((d.batch_by_year||{})[thnStr] || d.batch_stat||[]);
+  const totalYear = Object.values(hasilYear).reduce((a,b)=>a+b,0);
   const pO = totalYear?Math.round((hasilYear['Optimal']||0)/totalYear*100):0;
   const pC = totalYear?Math.round((hasilYear['Cukup Optimal']||0)/totalYear*100):0;
   const pK = totalYear?Math.round((hasilYear['Kurang Optimal']||0)/totalYear*100):0;
 
-  document.getElementById('popup-sub').textContent =
-    `${fmtN(totalYear)} peserta AC tahun ${thn}`;
+  document.getElementById('popup-sub').textContent = `${fmtN(totalYear)} peserta AC tahun ${thn}`;
 
-  // Sort batch numerically
-  const bsSorted = [...bsYear].sort((a,b)=>{
-    const na = parseInt((a.batch||'').replace(/\D/g,''))||0;
-    const nb = parseInt((b.batch||'').replace(/\D/g,''))||0;
-    return na - nb;
-  });
+  const bsSorted = [...bsYear].sort((a,b)=>(parseInt((a.batch||'').replace(/[^0-9]/g,''))||0)-(parseInt((b.batch||'').replace(/[^0-9]/g,''))||0));
   const maxV = Math.max(...bsSorted.map(b=>b.total),1);
-
-  // Sort UE1 by count desc
-  const ue1sorted = Object.entries(ue1Year).sort((a,b)=>b[1]-a[1]);
-  const maxUE1 = Math.max(...Object.values(ue1Year),1);
+  const ue1sorted = Object.entries(ue1Year||{}).sort((a,b)=>b[1]-a[1]);
+  const maxUE1 = Math.max(...Object.values(ue1Year||{}),1);
 
   document.getElementById('popup-body').innerHTML = `
     <div class="result-pills">
@@ -1277,7 +1213,7 @@ function popupAC(t, c) {
       ${psBlock('Sebaran per UE1', ue1sorted.length
         ? `<div class="p-dist">${ue1sorted.map(([lbl,n])=>`
             <div class="p-dist-row">
-              <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
+              <div class="p-dist-lbl">${lbl}</div>
               <div class="p-dist-bar"><div class="p-dist-fill" style="width:${Math.round(n/maxUE1*100)}%;background:${c.color}"></div></div>
               <div class="p-dist-n">${fmtN(n)}</div>
             </div>`).join('')}</div>`
@@ -1295,69 +1231,119 @@ function popupAC(t, c) {
     </div>`;
 }
 
+// =============================================
+//  POPUP: Beasiswa
+// =============================================
 function popupBeasiswa(t, c) {
-  const d  = t.detail||{};
-  const ft = filterTeam(t);
-  const fo = d.filter_options||{};
-  const ue1Opts    = ['Semua',...(fo.ue1||[])];
-  const jenjOpts   = ['Semua',...(fo.jenjang||[])];
-  const negaraOpts = ['Semua',...(fo.negara||[])];
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} penerima beasiswa`;
+  const d   = t.detail||{};
+  const thn = selTahun();
+  // filter_options dari rows tahun berjalan
+  const rowsThn = filterRows(d.rows||[], thn, -1);
+  const fo = {
+    ue1:    [...new Set(rowsThn.map(r=>r.ue1).filter(Boolean))].sort(),
+    jenjang:[...new Set(rowsThn.map(r=>r.jenjang).filter(Boolean))].sort(),
+    negara: [...new Set(rowsThn.map(r=>r.negara).filter(Boolean))].sort(),
+  };
+  const hadirThn = rowsThn.length;
+  document.getElementById('popup-sub').textContent = `${fmtN(hadirThn)} penerima beasiswa tahun ${thn}`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter:</span>
-      <select class="p-filter-sel" id="bea-f-ue1"    onchange="renderBeasiswaDetail()">${ue1Opts.map(o=>`<option>${o}</option>`).join('')}</select>
-      <select class="p-filter-sel" id="bea-f-jenj"   onchange="renderBeasiswaDetail()">${jenjOpts.map(o=>`<option>${o}</option>`).join('')}</select>
-      <select class="p-filter-sel" id="bea-f-negara" onchange="renderBeasiswaDetail()">${negaraOpts.map(o=>`<option>${o}</option>`).join('')}</select>
+      ${bulanSelect('bea-f-bulan', 'renderBeasiswaDetail()')}
+      <select class="p-filter-sel" id="bea-f-ue1"    onchange="renderBeasiswaDetail()">${['Semua',...fo.ue1].map(o=>`<option>${o}</option>`).join('')}</select>
+      <select class="p-filter-sel" id="bea-f-jenj"   onchange="renderBeasiswaDetail()">${['Semua',...fo.jenjang].map(o=>`<option>${o}</option>`).join('')}</select>
+      <select class="p-filter-sel" id="bea-f-negara" onchange="renderBeasiswaDetail()">${['Semua',...fo.negara].map(o=>`<option>${o}</option>`).join('')}</select>
     </div>
     <div id="bea-detail-body"></div>`;
   renderBeasiswaDetail();
 }
 
 function renderBeasiswaDetail() {
-  const t  = dashData.teams.find(x=>x.team==='Beasiswa');
-  const d  = t.detail||{};
-  const c  = cfg('Beasiswa');
-  const fU = document.getElementById('bea-f-ue1')?.value||'Semua';
-  const fJ = document.getElementById('bea-f-jenj')?.value||'Semua';
-  const fN = document.getElementById('bea-f-negara')?.value||'Semua';
-  const rows = (d.rows||[]).filter(r=>
+  const t   = dashData.teams.find(x=>x.team==='Beasiswa');
+  const d   = t.detail||{}, c = cfg('Beasiswa');
+  const thn = selTahun();
+  const bln = parseInt(document.getElementById('bea-f-bulan')?.value||'-1');
+  const fU  = document.getElementById('bea-f-ue1')?.value||'Semua';
+  const fJ  = document.getElementById('bea-f-jenj')?.value||'Semua';
+  const fN  = document.getElementById('bea-f-negara')?.value||'Semua';
+  const body = document.getElementById('bea-detail-body'); if (!body) return;
+  const pl  = periodLabel(bln, thn);
+
+  const rows = filterRows(d.rows||[], thn, bln).filter(r=>
     (fU==='Semua'||r.ue1===fU) &&
     (fJ==='Semua'||r.jenjang===fJ) &&
     (fN==='Semua'||r.negara===fN)
   );
-  const cnt = k => { const x={}; rows.forEach(r=>{ if(r[k]) x[r[k]]=(x[r[k]]||0)+1; }); return Object.fromEntries(Object.entries(x).sort((a,b)=>b[1]-a[1])); };
-  const body = document.getElementById('bea-detail-body');
-  if (!body) return;
+  const cnt = k => {
+    const x={};
+    rows.forEach(r=>{ if(r[k]) x[r[k]]=(x[r[k]]||0)+1; });
+    return Object.fromEntries(Object.entries(x).sort((a,b)=>b[1]-a[1]));
+  };
   body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:6px">${fmtN(rows.length)} penerima setelah filter</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:6px">${fmtN(rows.length)} penerima — ${pl}</div>
     <div class="p-grid2">
-      ${psBlock('Negara',             distBars(cnt('negara'),      c.color))}
-      ${psBlock('Jenjang',            distBars(cnt('jenjang'),     c.color))}
-      ${psBlock('UE1',                distBars(cnt('ue1'),         c.color))}
-      ${psBlock('Program Studi',      distBars(cnt('prodi'),       c.color))}
-      ${psBlock('Universitas',        distBars(cnt('universitas'), c.color))}
-      ${psBlock('Beasiswa/Sponsor',   distBars(cnt('beasiswa'),    c.color))}
+      ${psBlock('Negara — '           + pl, distBars(cnt('negara'),      c.color))}
+      ${psBlock('Jenjang — '          + pl, distBars(cnt('jenjang'),     c.color))}
+      ${psBlock('UE1 — '              + pl, distBars(cnt('ue1'),         c.color))}
+      ${psBlock('Program Studi — '    + pl, distBars(cnt('prodi'),       c.color))}
+      ${psBlock('Universitas — '      + pl, distBars(cnt('universitas'), c.color))}
+      ${psBlock('Beasiswa/Sponsor — ' + pl, distBars(cnt('beasiswa'),    c.color))}
     </div>`;
 }
 
+// =============================================
+//  POPUP: PengTes
+// =============================================
 function popupPengTes(t, c) {
   const d  = t.detail||{};
-  const ft = filterTeam(t);
-  document.getElementById('popup-sub').textContent = `${fmtN(ft.total)} peserta ujian`;
-  const bs = d.batch_stat||[];
-  const maxV = Math.max(...bs.map(b=>b.total),1);
+  const fn = d.funnel||{};
+  document.getElementById('popup-sub').textContent =
+    `${fmtN(fn.terdaftar||t.total)} terdaftar · ${fmtN(fn.mengikuti||t.total_hadir||0)} mengikuti`;
   document.getElementById('popup-body').innerHTML = `
-    <div class="p-grid2">
-      ${psBlock('Jenis Ujian', distBars(d.ujian||{}, c.color))}
-      ${psBlock('Sebaran per UE1', distBars(d.ue1||{}, c.color))}
+    <div class="p-filter-row">
+      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
+      ${bulanSelect('pengtes-f-bulan','renderPengTesDetail()')}
     </div>
-    ${psBlock('Jumlah Peserta per Batch', bs.length
-      ? `<div class="p-bars">${bs.map((b,i)=>`
+    <div id="pengtes-detail-body"></div>`;
+  renderPengTesDetail();
+}
+
+function renderPengTesDetail() {
+  const t = dashData.teams.find(x=>x.team==='PengTes');
+  const d = t.detail||{}, c = cfg('PengTes'), fn = d.funnel||{};
+  const thn = selTahun();
+  const bln = parseInt(document.getElementById('pengtes-f-bulan')?.value||'-1');
+  const body = document.getElementById('pengtes-detail-body'); if (!body) return;
+
+  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.mengikuti);
+  const ujian={}, ue1={}, batchMap={};
+  rows.forEach(r=>{
+    if(r.ujian) ujian[r.ujian]=(ujian[r.ujian]||0)+1;
+    if(r.ue1)   ue1[r.ue1]=(ue1[r.ue1]||0)+1;
+    if(r.batch) batchMap[r.batch]=(batchMap[r.batch]||0)+1;
+  });
+  const bsSorted = Object.entries(batchMap)
+    .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0));
+  const maxV = Math.max(...Object.values(batchMap),1);
+
+  const pl4 = periodLabel(bln, thn);
+  body.innerHTML = `
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} mengikuti — ${pl4}</div>
+    ${psBlock(funnelTitle(thn), funnelChart([
+      {label:'Terdaftar',       n: fn.terdaftar||t.total},
+      {label:'Mengikuti',       n: fn.mengikuti||t.total_hadir||0},
+      {label:'Belum Diproses',  n: fn.belum_diproses||0},
+    ], c.color))}
+    <div class="p-grid2">
+      ${psBlock('Jenis Ujian — ' + pl4,    distBars(ujian, c.color))}
+      ${psBlock('Sebaran per UE1 — ' + pl4, distBars(ue1, c.color))}
+    </div>
+    ${psBlock('Peserta Mengikuti per Batch — ' + pl4, bsSorted.length
+      ? `<div class="p-bars">${bsSorted.map(([b,n],i)=>`
           <div class="p-bar-col">
-            <div class="p-bar-val">${b.total}</div>
-            <div class="p-bar-body" style="height:${Math.round(b.total/maxV*90)}px;background:${i===bs.length-1?c.color:c.cb}"></div>
-            <div class="p-bar-lbl">${b.batch}</div>
+            <div class="p-bar-val">${n}</div>
+            <div class="p-bar-body" style="height:${Math.round(n/maxV*90)}px;background:${i===bsSorted.length-1?c.color:c.cb}"></div>
+            <div class="p-bar-lbl">${b}</div>
           </div>`).join('')}</div>`
       : '<div style="font-size:11px;color:var(--text3)">Belum ada data</div>'
     )}`;
@@ -1408,34 +1394,18 @@ function switchView(v) {
 }
 
 // =============================================
-//  MONITORING PANEL
-// =============================================
-
-
-
-
-
-// =============================================
 //  INIT
 // =============================================
 function init() {
   const now = new Date();
   const curYear = now.getFullYear();
-  const curMonth = now.getMonth() + 1; // 1-12
-
-  // Isi opsi tahun secara dinamis: 3 tahun lalu s/d 2 tahun ke depan
   const selThnEl = document.getElementById('sel-tahun');
   for (let y = curYear - 3; y <= curYear + 2; y++) {
     const opt = document.createElement('option');
-    opt.value = y;
-    opt.textContent = y;
+    opt.value = y; opt.textContent = y;
     if (y === curYear) opt.selected = true;
     selThnEl.appendChild(opt);
   }
-
-  // Set filter bulan ke bulan sekarang
-  document.getElementById('sel-bulan').value = curMonth;
-
   updatePeriodLabel();
   startPolling();
 }
