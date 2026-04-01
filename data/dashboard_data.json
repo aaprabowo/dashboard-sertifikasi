@@ -1,27 +1,27 @@
 {
-  "generated_at": "31 March 2026, 10:27:22",
-  "generated_ts": "2026-03-31T10:27:22.565371",
-  "total_peserta": 1255,
-  "total_lulus": 240,
-  "avg_pct_lulus": 19.1,
+  "generated_at": "01 April 2026, 15:04:59",
+  "generated_ts": "2026-04-01T15:04:59.656587",
+  "total_peserta": 1198,
+  "total_lulus": 330,
+  "avg_pct_lulus": 27.5,
   "total_tim": 7,
   "total_angkatan": 22,
-  "total_hadir": 8363,
-  "total_target": 4329,
-  "pct_capaian": 193.2,
-  "tim_mencapai": 4,
+  "total_hadir": 8364,
+  "total_target": 4009,
+  "pct_capaian": 208.6,
+  "tim_mencapai": 3,
   "total_beasiswa": 6255,
   "total_ac": 129,
   "teams": [
     {
       "team": "JFKN",
       "type": "pct",
-      "total": 194,
-      "total_hadir": 136,
-      "lulus": 0,
-      "tidak_lulus": 136,
-      "dalam_proses": 58,
-      "pct_lulus": 0.0,
+      "total": 137,
+      "total_hadir": 137,
+      "lulus": 90,
+      "tidak_lulus": 47,
+      "dalam_proses": 0,
+      "pct_lulus": 65.7,
       "total_angkatan": 0,
       "targets": {
         "2026": 500
@@ -29,27 +29,44 @@
       "error": null,
       "months_by_year": {
         "2026": {
+          "2": {
+            "total": 1,
+            "lulus": 1
+          },
           "3": {
             "total": 136,
-            "lulus": 0
+            "lulus": 89
           }
         }
       },
       "detail": {
         "funnel": {
-          "terdaftar": 194,
-          "mengikuti": 136,
-          "lulus": 0,
-          "belum_diproses": 58
+          "terdaftar": 137,
+          "mengikuti": 137,
+          "direkomendasikan": 90,
+          "belum_diproses": 0
+        },
+        "funnel_by_year": {
+          "2026": {
+            "terdaftar": 137,
+            "mengikuti": 137,
+            "direkomendasikan": 90,
+            "belum_diproses": 0
+          }
         },
         "filter_options": {
           "jenjang": [
+            "Ahli Madya",
             "Ahli Muda",
             "Ahli Pertama",
+            "JF Ahli Madya",
             "JF Ahli Muda",
-            "JF Ahli Pertama"
+            "JF Ahli Pertama",
+            "Mahir",
+            "Penyelia"
           ],
           "jf": [
+            "Analis Keuangan Negara",
             "Analis Keuangan Negara Ahli Madya",
             "Analis Keuangan Negara Ahli Muda",
             "Analis Keuangan Negara Ahli Pertama",
@@ -60,589 +77,21 @@
         },
         "rows": [
           {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJA",
+            "ue2": "Direktorat Potensi dan Pengawasan Penerimaan Negara Bukan Pajak",
             "jenjang": "JF Ahli Madya",
             "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Madya",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Madya",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Madya",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Stabilitas Sistem Keuangan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Pusat Analisis dan Harmonisasi Kebijakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Analis Keuangan Negara",
-            "month": null,
-            "year": 2026
-          },
-          {
-            "hadir": false,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Sekretariat Komite Pengawas Perpajakan",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": null,
+            "month": 2,
             "year": 2026
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Muda",
             "jf": "Pengawas Keuangan Negara",
@@ -652,7 +101,404 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "Setjen",
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Muda",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Muda",
             "jf": "Pengawas Keuangan Negara",
@@ -662,107 +508,8 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -772,7 +519,19 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "Setjen",
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -782,7 +541,41 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "Setjen",
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
+            "ue2": "Biro Advokasi",
+            "jenjang": "JF Ahli Pertama",
+            "jf": "Pengawas Keuangan Negara",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -792,7 +585,8 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "Setjen",
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -802,7 +596,8 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "Setjen",
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -811,18 +606,9 @@
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -831,8 +617,9 @@
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -841,8 +628,9 @@
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -851,8 +639,9 @@
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -861,8 +650,9 @@
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "SETJEN",
             "ue2": "Biro Advokasi",
             "jenjang": "JF Ahli Pertama",
             "jf": "Pengawas Keuangan Negara",
@@ -871,927 +661,19 @@
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Muda",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "Setjen",
-            "ue2": "Biro Advokasi",
-            "jenjang": "JF Ahli Pertama",
-            "jf": "Pengawas Keuangan Negara",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
+            "lulus": true,
+            "status": "mengulang",
+            "ue1": "DJPPR",
             "ue2": "Sekretariat Direktorat Jenderal",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Sekretariat Direktorat Jenderal",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Madya",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
-            "jenjang": "",
+            "jenjang": "Ahli Muda",
             "jf": "Analis Keuangan Negara Ahli Muda",
             "month": 3,
             "year": 2026
           },
           {
             "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Penyelia",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Kerja Sama Regional dan Bilateral",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Mahir",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Penyelia",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
-            "ue1": "DJSPSK",
-            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
-            "jenjang": "",
-            "jf": "Analis Keuangan Negara Ahli Pertama",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
+            "lulus": true,
+            "status": "mengulang",
             "ue1": "DJPPR",
             "ue2": "Sekretariat Direktorat Jenderal",
             "jenjang": "Ahli Muda",
@@ -1802,16 +684,7 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "DJPPR",
-            "ue2": "Sekretariat Direktorat Jenderal",
-            "jenjang": "Ahli Muda",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pengelolaan Risiko Keuangan Negara",
             "jenjang": "Ahli Muda",
@@ -1822,6 +695,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pengelolaan Risiko Keuangan Negara",
             "jenjang": "Ahli Muda",
@@ -1832,6 +706,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "mengulang",
             "ue1": "DJPPR",
             "ue2": "Sekretariat Direktorat Jenderal",
             "jenjang": "Ahli Muda",
@@ -1842,6 +717,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pinjaman dan Hibah",
             "jenjang": "Ahli Muda",
@@ -1852,6 +728,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Evaluasi, Akuntansi dan Setelmen",
             "jenjang": "Ahli Muda",
@@ -1861,7 +738,8 @@
           },
           {
             "hadir": true,
-            "lulus": false,
+            "lulus": true,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Sekretariat Direktorat Jenderal",
             "jenjang": "Ahli Muda",
@@ -1872,6 +750,18 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
+            "ue1": "DJPPR",
+            "ue2": "Direktorat Surat Utang Negara",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "mengulang",
             "ue1": "DJPPR",
             "ue2": "Direktorat Surat Utang Negara",
             "jenjang": "Ahli Muda",
@@ -1882,16 +772,7 @@
           {
             "hadir": true,
             "lulus": false,
-            "ue1": "DJPPR",
-            "ue2": "Direktorat Surat Utang Negara",
-            "jenjang": "Ahli Muda",
-            "jf": "Analis Keuangan Negara Ahli Muda",
-            "month": 3,
-            "year": 2026
-          },
-          {
-            "hadir": true,
-            "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Sekretariat Direktorat Jenderal",
             "jenjang": "Ahli Muda",
@@ -1902,6 +783,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Strategi dan Portofolio Pembiayaan",
             "jenjang": "Ahli Pertama",
@@ -1912,6 +794,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pengelolaan Dukungan Pemerintah dan Pembiayaan Infrastruktur",
             "jenjang": "Ahli Pertama",
@@ -1922,6 +805,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pengelolaan Risiko Keuangan Negara",
             "jenjang": "Ahli Pertama",
@@ -1932,6 +816,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "mengulang",
             "ue1": "DJPPR",
             "ue2": "Direktorat Surat Utang Negara",
             "jenjang": "Ahli Pertama",
@@ -1942,6 +827,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pembiayaan Syariah",
             "jenjang": "Ahli Pertama",
@@ -1951,7 +837,8 @@
           },
           {
             "hadir": true,
-            "lulus": false,
+            "lulus": true,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Surat Utang Negara",
             "jenjang": "Ahli Pertama",
@@ -1962,6 +849,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Evaluasi, Akuntansi dan Setelmen",
             "jenjang": "Ahli Pertama",
@@ -1972,6 +860,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Pembiayaan Syariah",
             "jenjang": "Ahli Pertama",
@@ -1982,6 +871,7 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Strategi dan Portofolio Pembiayaan",
             "jenjang": "Ahli Pertama",
@@ -1992,8 +882,702 @@
           {
             "hadir": true,
             "lulus": false,
+            "status": "pertama kali",
             "ue1": "DJPPR",
             "ue2": "Direktorat Evaluasi, Akuntansi dan Setelmen",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Sekretariat Direktorat Jenderal",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
+            "jenjang": "Ahli Madya",
+            "jf": "Analis Keuangan Negara Ahli Madya",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Perbankan, Pasar Keuangan, dan Pembiayaan Lainnya",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Stabilitas Sistem Keuangan dan Sinkronisasi Kebijakan Sektor Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Penyelia",
+            "jf": "Analis Keuangan Negara Penyelia",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Regional dan Bilateral",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Kerja Sama Multilateral dan Keuangan Berkelanjutan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Mahir",
+            "jf": "Analis Keuangan Negara Mahir",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Penyelia",
+            "jf": "Analis Keuangan Negara Penyelia",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pengembangan Dana Pensiun, Asuransi, dan Aktuaria",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Mengulang",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Muda",
+            "jf": "Analis Keuangan Negara Ahli Muda",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": false,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
+            "jenjang": "Ahli Pertama",
+            "jf": "Analis Keuangan Negara Ahli Pertama",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "hadir": true,
+            "lulus": true,
+            "status": "Pertama Kali",
+            "ue1": "DJSPSK",
+            "ue2": "Direktorat Pembinaan dan Pengawasan Profesi Keuangan",
             "jenjang": "Ahli Pertama",
             "jf": "Analis Keuangan Negara Ahli Pertama",
             "month": 3,
@@ -10456,6 +10040,15 @@
           "verif_pembayaran": 985,
           "hadir": 819,
           "lulus": 237
+        },
+        "funnel_by_year": {
+          "2026": {
+            "pendaftar": 1053,
+            "verif_dokumen": 0,
+            "verif_pembayaran": 0,
+            "hadir": 819,
+            "lulus": 237
+          }
         }
       }
     },
@@ -10512,9 +10105,6 @@
           "Optimal": 99,
           "Cukup Optimal": 21,
           "Kurang Optimal": 9
-        },
-        "ue1": {
-          "BPPK": 129
         },
         "batch_stat": [
           {
@@ -10692,12 +10282,49 @@
             }
           ]
         },
-        "ue1_by_year": {
+        "jabatan_by_year": {
           "2025": {
-            "BPPK": 103
+            "Dosen Lektor": 33,
+            "Widyaiswara Ahli Muda": 8,
+            "Pelaksana": 22,
+            "Kepala Subbagian Manajemen Pengetahuan": 1,
+            "Kepala Subbagian Pengelolaan Kinerja dan Risiko Organisasi": 1,
+            "Kepala Subbagian Komunikasi, Layanan Informasi, dan Kerja Sama": 1,
+            "Kepala Subbidang Manajemen Pengetahuan": 5,
+            "Kepala Subbagian Tata Usaha": 5,
+            "Kepala Subbagian Pengembangan Kompetensi": 1,
+            "Kepala Subbagian Akuntansi dan Pelaporan Keuangan": 1,
+            "Kepala Subbagian Rumah Tangga": 1,
+            "Kepala Subbagian Perencanaan Anggaran": 1,
+            "Kepala Subbagian Perbendaharaan II": 1,
+            "Kepala Subbagian Tata Usaha dan Kepatuhan Internal": 5,
+            "Kepala Seksi Penyelenggaraan Pembelajaran": 4,
+            "Kepala Subbagian Administrasi Kerja Sama dan Kehumasan": 1,
+            "Kepala Subbidang Program dan Sistem Kerja": 5,
+            "Kepala Subbagian Administrasi Akademik": 1,
+            "Kepala Subbagian Keuangan": 1,
+            "Kepala Subbagian Tata Usaha, Organisasi, Sumber Daya Manusia, dan Kepatuhan Internal": 1,
+            "Kepala Subbagian Analisis Data Pembelajaran": 1,
+            "Kepala Unit Perpustakaan": 1,
+            "Kepala Unit Peningkatan dan Pengembangan Aktivitas Instruksional": 1,
+            "Kepala Unit Pengembangan Layanan dan Bisnis": 1
           },
           "2026": {
-            "BPPK": 26
+            "Kepala Subbagian Tata Usaha dan Kepatuhan Internal": 1,
+            "Kepala Subbagian Organisasi": 1,
+            "Kepala Subbagian Perbendaharaan I": 1,
+            "Kepala Subbagian Manajemen Layanan Sumber Daya Manusia": 1,
+            "Kepala Subbidang Program dan Sistem Kerja": 1,
+            "Kepala Subbagian Tata Usaha": 2,
+            "Kepala Subbagian Pengembangan Karier": 1,
+            "Kepala Subbagian Tata Laksana": 1,
+            "Kepala Subbidang Manajemen Pengetahuan": 1,
+            "Kepala Subbagian Perencanaan dan Pengadaan": 1,
+            "Kepala Subbagian Hukum dan Kepatuhan Internal": 1,
+            "Kepala Subbagian Administrasi Kemahasiswaan dan Kealumnian": 1,
+            "Kepala Seksi Penyelenggaraan Pembelajaran": 1,
+            "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
+            "Dosen Lektor": 11
           }
         },
         "hasil_by_year": {
@@ -81776,7 +81403,7 @@
       "error": null,
       "months_by_year": {
         "2026": {
-          "3": {
+          "4": {
             "total": 3,
             "lulus": 2
           }
@@ -81790,7 +81417,7 @@
             "batch": "1",
             "lokasi": "Jakarta",
             "tingkat": "USKP A",
-            "month": 3,
+            "month": 4,
             "year": 2026
           },
           {
@@ -81799,7 +81426,7 @@
             "batch": "1",
             "lokasi": "Cimahi",
             "tingkat": "USKP B",
-            "month": 3,
+            "month": 4,
             "year": 2026
           },
           {
@@ -81808,7 +81435,7 @@
             "batch": "1",
             "lokasi": "Malang",
             "tingkat": "USKP C",
-            "month": 3,
+            "month": 4,
             "year": 2026
           },
           {
@@ -81817,7 +81444,7 @@
             "batch": "1",
             "lokasi": "Jakarta",
             "tingkat": "USKP A",
-            "month": 3,
+            "month": 4,
             "year": 2026
           }
         ],
@@ -81826,6 +81453,13 @@
           "lolos_verifikasi": 3,
           "hadir": 3,
           "lulus": 2
+        },
+        "funnel_by_year": {
+          "2026": {
+            "pendaftar": 4,
+            "hadir": 3,
+            "lulus": 2
+          }
         }
       }
     },
@@ -81844,7 +81478,7 @@
       "error": null,
       "months_by_year": {
         "2026": {
-          "3": {
+          "4": {
             "total": 2,
             "lulus": 1
           }
@@ -81857,7 +81491,7 @@
             "lulus": false,
             "batch": "1",
             "jenis": "",
-            "month": 3,
+            "month": 4,
             "year": 2026
           },
           {
@@ -81865,7 +81499,7 @@
             "lulus": false,
             "batch": "1",
             "jenis": "",
-            "month": 3,
+            "month": 4,
             "year": 2026
           },
           {
@@ -81873,7 +81507,7 @@
             "lulus": false,
             "batch": "1",
             "jenis": "",
-            "month": 3,
+            "month": 4,
             "year": 2026
           },
           {
@@ -81881,7 +81515,7 @@
             "lulus": true,
             "batch": "1",
             "jenis": "",
-            "month": 3,
+            "month": 4,
             "year": 2026
           }
         ],
@@ -81890,11 +81524,18 @@
           "lolos_verifikasi": 3,
           "hadir": 2,
           "lulus": 1
+        },
+        "funnel_by_year": {
+          "2026": {
+            "pendaftar": 4,
+            "hadir": 2,
+            "lulus": 1
+          }
         }
       }
     },
     {
-      "team": "PengTes",
+      "team": "Tes Lain",
       "type": "count",
       "total": 1141,
       "total_hadir": 1019,
@@ -81902,9 +81543,7 @@
       "tidak_lulus": 0,
       "pct_lulus": 0,
       "total_angkatan": 7,
-      "targets": {
-        "2026": 320
-      },
+      "targets": {},
       "error": null,
       "months_by_year": {
         "2026": {
@@ -87774,7 +87413,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87782,7 +87421,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87790,7 +87429,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87798,7 +87437,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87806,7 +87445,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87814,7 +87453,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87822,7 +87461,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87830,7 +87469,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87838,7 +87477,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87846,7 +87485,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87854,7 +87493,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87862,7 +87501,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87870,7 +87509,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87878,7 +87517,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87886,7 +87525,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87894,7 +87533,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87902,7 +87541,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87910,7 +87549,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87918,7 +87557,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87926,7 +87565,7 @@
           },
           {
             "mengikuti": true,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87934,7 +87573,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87942,7 +87581,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87950,7 +87589,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87958,7 +87597,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87966,7 +87605,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87974,7 +87613,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87982,7 +87621,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87990,7 +87629,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -87998,7 +87637,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88006,7 +87645,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88014,7 +87653,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88022,7 +87661,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88030,7 +87669,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88038,7 +87677,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88046,7 +87685,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88054,7 +87693,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88062,7 +87701,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88070,7 +87709,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88078,7 +87717,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88086,7 +87725,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88094,7 +87733,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88102,7 +87741,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88110,7 +87749,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88118,7 +87757,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88126,7 +87765,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88134,7 +87773,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88142,7 +87781,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88150,7 +87789,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88158,7 +87797,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -88166,7 +87805,7 @@
           },
           {
             "mengikuti": false,
-            "ujian": "Ujian Lainnya",
+            "ujian": "Psikotes",
             "ue1": "Non Kemenkeu",
             "batch": "PPNPN Setban 2026-I",
             "month": 2,
@@ -91057,6 +90696,13 @@
           "terdaftar": 1141,
           "mengikuti": 1019,
           "belum_diproses": 69
+        },
+        "funnel_by_year": {
+          "2026": {
+            "terdaftar": 1141,
+            "mengikuti": 1019,
+            "belum_diproses": 122
+          }
         }
       }
     }
