@@ -625,9 +625,9 @@ function periodLabel(bln, thn) {
 }
 function funnelTitle(thn) { return 'Funnel Peserta — Tahun ' + thn; }
 
-// Ambil funnel sesuai tahun — dari funnel_by_year[thn], fallback ke funnel global
+// Ambil funnel sesuai tahun — dari funnel_by_year[thn] saja; kembalikan {} jika tidak ada data
 function getFunnel(d, thn) {
-  return (d.funnel_by_year||{})[String(thn)] || d.funnel || {};
+  return (d.funnel_by_year||{})[String(thn)] || {};
 }
 
 function getTarget(t) {
@@ -944,7 +944,6 @@ function batchSelectLocal(id, batches, onchange) {
 // =============================================
 function popupJFKN(t, c) {
   const d  = t.detail||{};
-  const fn = d.funnel||{};
   const dp = t.dalam_proses||0;
   document.getElementById('popup-sub').textContent =
     `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%)${dp?' · '+fmtN(dp)+' belum diproses':''}`;
@@ -1010,10 +1009,10 @@ function renderJFKNDetail() {
     <div class="p-grid2">
       ${psBlock('Direkomendasikan — ' + pl, donutChart(direk, tidak_direk, c.color, 120, 'Direkomendasikan', 'Tidak Direkomendasikan'))}
       ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Terdaftar',          n: fn.terdaftar||t.total},
-        {label:'Mengikuti',          n: fn.mengikuti||t.total_hadir||0},
+        {label:'Terdaftar',          n: fn.terdaftar||0},
+        {label:'Mengikuti',          n: fn.mengikuti||0},
         {label:'Direkomendasikan',   n: fn.direkomendasikan||0},
-        {label:'Belum Diproses',     n: fn.belum_diproses||t.dalam_proses||0},
+        {label:'Belum Diproses',     n: fn.belum_diproses||0},
       ], c.color))}
     </div>
     ${psBlock('Status Peserta — ' + pl, distBars(statusSorted, c.color))}
@@ -1075,11 +1074,11 @@ function renderSAKDetail() {
     <div class="p-grid2">
       ${psBlock('Kelulusan — ' + pl, donutChart(lulus, tidak_lulus, c.color, 120))}
       ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Pendaftar',         n: fn.pendaftar||t.total},
+        {label:'Pendaftar',         n: fn.pendaftar||0},
         {label:'Verif. Dokumen',    n: fn.verif_dokumen||0},
         {label:'Verif. Pembayaran', n: fn.verif_pembayaran||0},
-        {label:'Hadir',             n: fn.hadir||t.total_hadir||0},
-        {label:'Lulus',             n: fn.lulus||t.lulus||0},
+        {label:'Hadir',             n: fn.hadir||0},
+        {label:'Lulus',             n: fn.lulus||0},
       ], c.color))}
     </div>
     ${psBlock('Tren per Batch — ' + pl, trendBars(trend, c.color, c.cb))}
@@ -1131,10 +1130,10 @@ function renderUSKPDetail() {
     <div class="p-grid2">
       ${psBlock('Kelulusan — ' + pl2, donutChart(lulus, tidak_lulus, c.color, 120))}
       ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Pendaftar',        n: fn.pendaftar||t.total},
+        {label:'Pendaftar',        n: fn.pendaftar||0},
         {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
-        {label:'Hadir',            n: fn.hadir||t.total_hadir||0},
-        {label:'Lulus',            n: fn.lulus||t.lulus||0},
+        {label:'Hadir',            n: fn.hadir||0},
+        {label:'Lulus',            n: fn.lulus||0},
       ], c.color))}
     </div>
     ${psBlock('Tren per Batch — ' + pl2, trendBars(trend, c.color, c.cb))}
@@ -1187,10 +1186,10 @@ function renderPBJDetail() {
     <div class="p-grid2">
       ${psBlock('Kelulusan — ' + pl3, donutChart(lulus, tidak_lulus, c.color, 120))}
       ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Pendaftar',        n: fn.pendaftar||t.total},
+        {label:'Pendaftar',        n: fn.pendaftar||0},
         {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
-        {label:'Hadir',            n: fn.hadir||t.total_hadir||0},
-        {label:'Lulus',            n: fn.lulus||t.lulus||0},
+        {label:'Hadir',            n: fn.hadir||0},
+        {label:'Lulus',            n: fn.lulus||0},
       ], c.color))}
     </div>
     ${psBlock('Tren per Batch — ' + pl3, trendBars(trend, c.color, c.cb))}
@@ -1302,7 +1301,7 @@ function popupTesTes(t, c) {
   const thn = selTahun();
   const fn  = getFunnel(d, thn);
   document.getElementById('popup-sub').textContent =
-    `${fmtN(fn.terdaftar||t.total)} terdaftar · ${fmtN(fn.mengikuti||t.total_hadir||0)} mengikuti`;
+    `${fmtN(fn.terdaftar||0)} terdaftar · ${fmtN(fn.mengikuti||0)} mengikuti`;
   document.getElementById('popup-body').innerHTML = `
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
@@ -1331,17 +1330,22 @@ function renderTesTesDetail() {
     .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0));
   const maxV = Math.max(...Object.values(batchMap),1);
 
+  // Sort ujian & ue1 descending by count
+  const ujianSorted = Object.fromEntries(Object.entries(ujian).sort((a,b)=>b[1]-a[1]));
+  const ue1Sorted   = Object.fromEntries(Object.entries(ue1).sort((a,b)=>b[1]-a[1]));
+
   const pl4 = periodLabel(bln, thn);
   body.innerHTML = `
     <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} mengikuti — ${pl4}</div>
     ${psBlock(funnelTitle(thn), funnelChart([
-      {label:'Terdaftar',       n: fn.terdaftar||t.total},
-      {label:'Mengikuti',       n: fn.mengikuti||t.total_hadir||0},
-      {label:'Belum Diproses',  n: fn.belum_diproses||0},
+      {label:'Terdaftar',        n: fn.terdaftar||0},
+      {label:'Mengikuti',        n: fn.mengikuti||0},
+      {label:'Tidak Mengikuti',  n: fn.tidak_mengikuti||0},
+      {label:'Belum Diproses',   n: fn.belum_diproses||0},
     ], c.color))}
     <div class="p-grid2">
-      ${psBlock('Jenis Ujian — ' + pl4,    distBars(ujian, c.color))}
-      ${psBlock('Sebaran per UE1 — ' + pl4, distBars(ue1, c.color))}
+      ${psBlock('Jenis Ujian — ' + pl4,    distBars(ujianSorted, c.color))}
+      ${psBlock('Sebaran per UE1 — ' + pl4, distBars(ue1Sorted, c.color))}
     </div>
     ${psBlock('Peserta Mengikuti per Batch — ' + pl4, bsSorted.length
       ? `<div class="p-bars">${bsSorted.map(([b,n],i)=>`
