@@ -1,17 +1,17 @@
 {
-  "generated_at": "22 April 2026, 09:25:58",
-  "generated_ts": "2026-04-22T09:25:58.169637",
+  "generated_at": "22 April 2026, 11:04:19",
+  "generated_ts": "2026-04-22T11:04:19.052425",
   "total_peserta": 3834,
   "total_lulus": 328,
   "avg_pct_lulus": 8.6,
   "total_tim": 7,
-  "total_angkatan": 21,
-  "total_hadir": 3861,
+  "total_angkatan": 23,
+  "total_hadir": 3884,
   "total_target": 4329,
-  "pct_capaian": 89.2,
+  "pct_capaian": 89.7,
   "tim_mencapai": 4,
   "total_beasiswa": 1687,
-  "total_ac": 129,
+  "total_ac": 152,
   "teams": [
     {
       "team": "JFKN",
@@ -12167,13 +12167,13 @@
     {
       "team": "AC",
       "type": "count",
-      "total": 129,
-      "total_hadir": 129,
+      "total": 152,
+      "total_hadir": 152,
       "lulus": 0,
       "tidak_lulus": 0,
       "dalam_proses": 0,
       "pct_lulus": 0,
-      "total_angkatan": 12,
+      "total_angkatan": 14,
       "targets": {
         "2026": 100
       },
@@ -12209,13 +12209,18 @@
           "2": {
             "total": 11,
             "lulus": 0
+          },
+          "4": {
+            "total": 23,
+            "lulus": 0
           }
         }
       },
       "detail": {
         "hasil": {
-          "Optimal": 99,
-          "Cukup Optimal": 21,
+          "Optimal": 103,
+          "Cukup Optimal": 29,
+          "belum diproses": 11,
           "Kurang Optimal": 9
         },
         "batch_stat": [
@@ -12300,6 +12305,20 @@
             "batch": "Batch 3",
             "total": 11,
             "optimal": 11,
+            "cukup": 0,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 4",
+            "total": 12,
+            "optimal": 4,
+            "cukup": 8,
+            "kurang": 0
+          },
+          {
+            "batch": "Batch 5",
+            "total": 11,
+            "optimal": 0,
             "cukup": 0,
             "kurang": 0
           }
@@ -12391,6 +12410,20 @@
               "optimal": 11,
               "cukup": 0,
               "kurang": 0
+            },
+            {
+              "batch": "Batch 4",
+              "total": 12,
+              "optimal": 4,
+              "cukup": 8,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 5",
+              "total": 11,
+              "optimal": 0,
+              "cukup": 0,
+              "kurang": 0
             }
           ]
         },
@@ -12436,7 +12469,8 @@
             "Kepala Subbagian Administrasi Kemahasiswaan dan Kealumnian": 1,
             "Kepala Seksi Penyelenggaraan Pembelajaran": 1,
             "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
-            "Dosen Lektor": 11
+            "Dosen Lektor": 29,
+            "Widyaiswara Ahli Muda": 5
           }
         },
         "hasil_by_year": {
@@ -12446,7 +12480,9 @@
             "Kurang Optimal": 9
           },
           "2026": {
-            "Optimal": 26
+            "Optimal": 30,
+            "Cukup Optimal": 8,
+            "belum diproses": 11
           }
         }
       }
