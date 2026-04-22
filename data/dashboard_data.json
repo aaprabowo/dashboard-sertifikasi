@@ -1,6 +1,6 @@
 {
-  "generated_at": "13 April 2026, 13:25:56",
-  "generated_ts": "2026-04-13T13:25:56.734841",
+  "generated_at": "22 April 2026, 09:25:58",
+  "generated_ts": "2026-04-22T09:25:58.169637",
   "total_peserta": 3834,
   "total_lulus": 328,
   "avg_pct_lulus": 8.6,
@@ -110016,7 +110016,7 @@
     {
       "team": "Tes Lain",
       "type": "count",
-      "total": 1493,
+      "total": 1553,
       "total_hadir": 1087,
       "lulus": 0,
       "tidak_lulus": 0,
@@ -124976,17 +124976,617 @@
             "batch": "OA TBI TW1",
             "month": 3,
             "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BPPK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BPPK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJPB",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJPK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJSEF",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJSEF",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BATII",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BATII",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "SETJEN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJSEF",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJSPSK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJSEF",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJPB",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BATII",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BPPK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJSPSK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJBC",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJKN",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "DJP",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BPPK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
+          },
+          {
+            "mengikuti": false,
+            "tidak_mengikuti": false,
+            "belum_diproses": false,
+            "ujian": "TPA",
+            "ue1": "BPPK",
+            "batch": "OA TPA TW1",
+            "month": 3,
+            "year": 2026
           }
         ],
         "funnel": {
-          "terdaftar": 1493,
+          "terdaftar": 1553,
           "mengikuti": 1087,
           "tidak_mengikuti": 54,
           "belum_diproses": 352
         },
         "funnel_by_year": {
           "2026": {
-            "terdaftar": 1493,
+            "terdaftar": 1553,
             "mengikuti": 1087,
             "tidak_mengikuti": 54,
             "belum_diproses": 352
