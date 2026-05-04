@@ -981,18 +981,18 @@ function renderJFKNDetail() {
 
   // Status: Pertama Kali / Mengulang
   const statusMap = {};
-  rows.forEach(r=>{ if(r.status) statusMap[r.status]=(statusMap[r.status]||0)+1; });
+  rows.forEach(r=>{ const s=(r.status||'').trim(); if(s) statusMap[s]=(statusMap[s]||0)+1; });
   const statusSorted = Object.fromEntries(Object.entries(statusMap).sort((a,b)=>b[1]-a[1]));
 
-  const ue1map={}, ue2map={};
+  const ue1map={}, jfmap={};
   rows.forEach(r=>{
     if(r.ue1){if(!ue1map[r.ue1])ue1map[r.ue1]={total:0,lulus:0};ue1map[r.ue1].total++;if(r.lulus)ue1map[r.ue1].lulus++;}
-    if(r.ue2){if(!ue2map[r.ue2])ue2map[r.ue2]={total:0,lulus:0};ue2map[r.ue2].total++;if(r.lulus)ue2map[r.ue2].lulus++;}
+    if(r.jf){if(!jfmap[r.jf])jfmap[r.jf]={total:0,lulus:0};jfmap[r.jf].total++;if(r.lulus)jfmap[r.jf].lulus++;}
   });
   const ue1s = Object.entries(ue1map).sort((a,b)=>b[1].total-a[1].total);
-  const ue2s = Object.entries(ue2map).sort((a,b)=>b[1].total-a[1].total);
+  const jfs  = Object.entries(jfmap).sort((a,b)=>b[1].total-a[1].total);
   const maxUE1 = Math.max(...ue1s.map(e=>e[1].total),1);
-  const maxUE2 = Math.max(...ue2s.map(e=>e[1].total),1);
+  const maxJF  = Math.max(...jfs.map(e=>e[1].total),1);
   const pl = periodLabel(bln, thn);
 
   const distHtml = (entries, maxV) => entries.length
@@ -1015,11 +1015,11 @@ function renderJFKNDetail() {
         {label:'Belum Diproses',     n: fn.belum_diproses||0},
       ], c.color))}
     </div>
-    ${psBlock('Status Peserta — ' + pl, distBars(statusSorted, c.color))}
     <div class="p-grid2">
       ${psBlock('Sebaran per UE1 — ' + pl, distHtml(ue1s, maxUE1))}
-      ${psBlock('Sebaran per UE2 — ' + pl, distHtml(ue2s, maxUE2))}
+      ${psBlock('Sebaran JF Target — ' + pl, distHtml(jfs, maxJF))}
     </div>
+    ${psBlock('Status Peserta — ' + pl, distBars(statusSorted, c.color))}
     ${psBlock('% Direkomendasikan per UE1 — ' + pl, ue1s.length
       ? `<div class="p-dist">${ue1s.map(([lbl,v])=>`
           <div class="p-dist-row">
