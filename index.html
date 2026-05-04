@@ -584,10 +584,9 @@ function selTahun() { return parseInt(document.getElementById('sel-tahun').value
 // Filter rows individual: tahun wajib, bulan opsional (-1 = semua)
 function filterRows(rows, thn, bln) {
   return (rows||[]).filter(r => {
-    // Kalau tidak ada year, tidak lolos filter tahun
     if (!r.year) return false;
     if (r.year !== thn) return false;
-    if (bln !== -1 && r.month && r.month !== bln) return false;
+    if (bln !== -1 && r.month !== bln) return false;  // null month tidak lolos filter bulan
     return true;
   });
 }
@@ -858,18 +857,28 @@ function applyFilter() {
 // =============================================
 //  DONUT CHART
 // =============================================
-function donutChart(lulus, tidakLulus, color, size=100, labelA='Lulus', labelB='Tidak Lulus') {
-  const total = lulus + tidakLulus;
+function donutChart(lulus, tidakLulus, color, size=100, labelA='Lulus', labelB='Tidak Lulus', belum=0) {
+  const total = lulus + tidakLulus + belum;
   if (total === 0) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
   const pctL = Math.round(lulus/total*100);
-  const pctT = 100 - pctL;
+  const pctT = Math.round(tidakLulus/total*100);
+  const pctB = 100 - pctL - pctT;
   const r = 38, cx=50, cy=50, stroke=14;
   const circ = 2*Math.PI*r;
   const dashL = circ * pctL/100;
+  const dashT = circ * pctT/100;
+  const dashB = circ * pctB/100;
+  const GRAY2 = '#C8CBD2';
   return `
     <div class="donut-wrap">
       <svg class="donut-svg" width="${size}" height="${size}" viewBox="0 0 100 100">
         <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${stroke}"/>
+        ${belum > 0 ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${GRAY2}" stroke-width="${stroke}"
+          stroke-dasharray="${dashL+dashT+dashB} ${circ-dashL-dashT-dashB}" stroke-dashoffset="${circ/4}"
+          transform="rotate(-90 ${cx} ${cy})"/>` : ''}
+        ${tidakLulus > 0 ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${stroke}"
+          stroke-dasharray="${dashL+dashT} ${circ-dashL-dashT}" stroke-dashoffset="${circ/4}"
+          transform="rotate(-90 ${cx} ${cy})"/>` : ''}
         <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${stroke}"
           stroke-dasharray="${dashL} ${circ-dashL}" stroke-dashoffset="${circ/4}"
           stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
@@ -879,6 +888,7 @@ function donutChart(lulus, tidakLulus, color, size=100, labelA='Lulus', labelB='
       <div class="donut-legend">
         <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>${labelA}<div class="donut-pct">${fmtN(lulus)} (${pctL}%)</div></div>
         <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>${labelB}<div class="donut-pct">${fmtN(tidakLulus)} (${pctT}%)</div></div>
+        ${belum > 0 ? `<div class="donut-item"><div class="donut-dot" style="background:${GRAY2}"></div>Belum Diproses<div class="donut-pct">${fmtN(belum)} (${pctB}%)</div></div>` : ''}
         <div class="donut-item" style="border-top:0.5px solid #EEF0F4;padding-top:4px">
           <div class="donut-dot" style="background:var(--text3)"></div>Peserta Hadir<div class="donut-pct">${fmtN(total)}</div>
         </div>
@@ -1110,7 +1120,8 @@ function renderUSKPDetail() {
 
   const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
   const lulus = rows.filter(r=>r.lulus).length;
-  const tidak_lulus = rows.length - lulus;
+  const belum = rows.filter(r=>r.belum_diproses).length;
+  const tidak_lulus = rows.length - lulus - belum;
 
   const batchMap={}, lokasi={}, tingkatMap={};
   rows.forEach(r=>{
@@ -1128,7 +1139,7 @@ function renderUSKPDetail() {
   body.innerHTML = `
     <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl2}</div>
     <div class="p-grid2">
-      ${psBlock('Kelulusan — ' + pl2, donutChart(lulus, tidak_lulus, c.color, 120))}
+      ${psBlock('Kelulusan — ' + pl2, donutChart(lulus, tidak_lulus, c.color, 120, 'Lulus', 'Tidak Lulus', belum))}
       ${psBlock(funnelTitle(thn), funnelChart([
         {label:'Pendaftar',        n: fn.pendaftar||0},
         {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
