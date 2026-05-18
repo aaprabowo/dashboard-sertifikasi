@@ -1,6 +1,6 @@
 {
-  "generated_at": "18 May 2026, 09:42:47",
-  "generated_ts": "2026-05-18T09:42:47.937504",
+  "generated_at": "18 May 2026, 14:00:11",
+  "generated_ts": "2026-05-18T14:00:11.895398",
   "total_peserta": 4893,
   "total_lulus": 1648,
   "avg_pct_lulus": 33.7,
@@ -13,6 +13,165 @@
   "total_beasiswa": 1689,
   "total_beasiswa_selesai": 4563,
   "total_ac": 152,
+  "akreditasi": {
+    "lembaga": 7,
+    "program": 17,
+    "dalam_proses": 2,
+    "items": [
+      {
+        "lembaga": "BPSDM PROVINSI DKI JAKARTA",
+        "program": "BENDAHARA PENERIMAAN (SUBSTANSI APBD)",
+        "status": "Terakreditasi",
+        "keterangan": "Reakreditasi Program",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI DKI JAKARTA",
+        "program": "BENDAHARA PENGELUARAN (SUBSTANSI APBD)",
+        "status": "Terakreditasi",
+        "keterangan": "Reakreditasi Program",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI DKI JAKARTA",
+        "program": "PENGELOLAAN DAN PELAPORAN KEUANGAN BERBASIS AKRUAL",
+        "status": "Terakreditasi",
+        "keterangan": "Reakreditasi Program",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI DKI JAKARTA",
+        "program": "PENATAUSAHAAN KEUANGAN",
+        "status": "Terakreditasi",
+        "keterangan": "Reakreditasi Program",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA BARAT",
+        "program": "PENGELOLAAN ASET",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA BARAT",
+        "program": "PAJAK DAERAH",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA BARAT",
+        "program": "PERENCANAAN PENGANGGARAN",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA BARAT",
+        "program": "PENGELOLAAN KEUANGAN",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA TIMUR",
+        "program": "PENINGKATAN POTENSI PAJAK DAN RETRIBUSI DAERAH",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA TIMUR",
+        "program": "PENINGKATAN KOMPETENSI BENDAHARA PENGELUARAN DALAM KEUANGAN DAERAH",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI JAWA TIMUR",
+        "program": "BENDAHARA PENGELUARAN",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI SUMATERA BARAT",
+        "program": "BENDAHARA PENGELUARAN SUBSTANSI APBD",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDMD PROVINSI JAWA TENGAH",
+        "program": "PERBENDAHARAAN",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDMD PROVINSI JAWA TENGAH",
+        "program": "PENGELOLAAN KEUANGAN DAERAH",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM KEMENTERIAN PEKERJAAN UMUM",
+        "program": "PERENCANAAN ANGGARAN",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "PUSBANGKOM MKMB KEMENTERIAN AGAMA",
+        "program": "BENDAHARA PENGELUARAN",
+        "status": "Terakreditasi",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDM PROVINSI SUMATERA BARAT",
+        "program": "BENDAHARA PENGELUARAN SUBSTANSI APBD",
+        "status": "Terakreditasi",
+        "keterangan": "Peningkatan Kualitas Peringkat Akreditasi Program",
+        "is_terakreditasi": true,
+        "is_proses": false
+      },
+      {
+        "lembaga": "BPSDMD PROVINSI SUMATERA SELATAN",
+        "program": "BENDAHARA KEUANGAN DAERAH",
+        "status": "Tahap Pelaksanaan Akreditasi Program",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": false,
+        "is_proses": true
+      },
+      {
+        "lembaga": "BPSDMD PROVINSI SUMATERA SELATAN",
+        "program": "BENDAHARA SEKOLAH",
+        "status": "Tahap Pelaksanaan Akreditasi Program",
+        "keterangan": "Akreditasi Program Baru",
+        "is_terakreditasi": false,
+        "is_proses": true
+      }
+    ]
+  },
   "teams": [
     {
       "team": "JFKN",
@@ -319,9 +478,571 @@
         "2026": 179
       },
       "months_by_year": {
-        "2026": {
+        "2024": {
+          "1": {
+            "total": 56,
+            "lulus": 0
+          },
+          "12": {
+            "total": 7,
+            "lulus": 0
+          },
+          "10": {
+            "total": 505,
+            "lulus": 0
+          },
+          "9": {
+            "total": 102,
+            "lulus": 0
+          },
+          "8": {
+            "total": 150,
+            "lulus": 0
+          },
+          "7": {
+            "total": 88,
+            "lulus": 0
+          },
+          "4": {
+            "total": 3,
+            "lulus": 0
+          },
+          "2": {
+            "total": 105,
+            "lulus": 0
+          },
+          "6": {
+            "total": 12,
+            "lulus": 0
+          },
           "5": {
-            "total": 6257,
+            "total": 8,
+            "lulus": 0
+          },
+          "3": {
+            "total": 5,
+            "lulus": 0
+          },
+          "11": {
+            "total": 3,
+            "lulus": 0
+          }
+        },
+        "2023": {
+          "9": {
+            "total": 778,
+            "lulus": 0
+          },
+          "8": {
+            "total": 180,
+            "lulus": 0
+          },
+          "7": {
+            "total": 62,
+            "lulus": 0
+          },
+          "6": {
+            "total": 13,
+            "lulus": 0
+          },
+          "5": {
+            "total": 10,
+            "lulus": 0
+          },
+          "2": {
+            "total": 75,
+            "lulus": 0
+          },
+          "11": {
+            "total": 4,
+            "lulus": 0
+          },
+          "3": {
+            "total": 1,
+            "lulus": 0
+          },
+          "12": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 32,
+            "lulus": 0
+          },
+          "10": {
+            "total": 9,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2025": {
+          "7": {
+            "total": 55,
+            "lulus": 0
+          },
+          "2": {
+            "total": 45,
+            "lulus": 0
+          },
+          "3": {
+            "total": 12,
+            "lulus": 0
+          },
+          "1": {
+            "total": 38,
+            "lulus": 0
+          },
+          "8": {
+            "total": 76,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "9": {
+            "total": 46,
+            "lulus": 0
+          },
+          "6": {
+            "total": 11,
+            "lulus": 0
+          },
+          "5": {
+            "total": 2,
+            "lulus": 0
+          },
+          "10": {
+            "total": 9,
+            "lulus": 0
+          },
+          "11": {
+            "total": 419,
+            "lulus": 0
+          },
+          "12": {
+            "total": 4,
+            "lulus": 0
+          }
+        },
+        "2022": {
+          "9": {
+            "total": 542,
+            "lulus": 0
+          },
+          "10": {
+            "total": 35,
+            "lulus": 0
+          },
+          "8": {
+            "total": 123,
+            "lulus": 0
+          },
+          "6": {
+            "total": 21,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "3": {
+            "total": 22,
+            "lulus": 0
+          },
+          "2": {
+            "total": 79,
+            "lulus": 0
+          },
+          "1": {
+            "total": 37,
+            "lulus": 0
+          },
+          "12": {
+            "total": 6,
+            "lulus": 0
+          },
+          "11": {
+            "total": 42,
+            "lulus": 0
+          },
+          "7": {
+            "total": 32,
+            "lulus": 0
+          },
+          "5": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2021": {
+          "1": {
+            "total": 32,
+            "lulus": 0
+          },
+          "9": {
+            "total": 81,
+            "lulus": 0
+          },
+          "10": {
+            "total": 6,
+            "lulus": 0
+          },
+          "8": {
+            "total": 57,
+            "lulus": 0
+          },
+          "6": {
+            "total": 7,
+            "lulus": 0
+          },
+          "5": {
+            "total": 5,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          },
+          "3": {
+            "total": 14,
+            "lulus": 0
+          },
+          "2": {
+            "total": 39,
+            "lulus": 0
+          },
+          "7": {
+            "total": 30,
+            "lulus": 0
+          },
+          "12": {
+            "total": 4,
+            "lulus": 0
+          }
+        },
+        "2020": {
+          "9": {
+            "total": 105,
+            "lulus": 0
+          },
+          "4": {
+            "total": 3,
+            "lulus": 0
+          },
+          "2": {
+            "total": 61,
+            "lulus": 0
+          },
+          "1": {
+            "total": 42,
+            "lulus": 0
+          },
+          "10": {
+            "total": 34,
+            "lulus": 0
+          },
+          "8": {
+            "total": 81,
+            "lulus": 0
+          },
+          "11": {
+            "total": 23,
+            "lulus": 0
+          },
+          "3": {
+            "total": 27,
+            "lulus": 0
+          },
+          "7": {
+            "total": 14,
+            "lulus": 0
+          },
+          "6": {
+            "total": 1,
+            "lulus": 0
+          },
+          "12": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2019": {
+          "11": {
+            "total": 2,
+            "lulus": 0
+          },
+          "10": {
+            "total": 2,
+            "lulus": 0
+          },
+          "9": {
+            "total": 86,
+            "lulus": 0
+          },
+          "8": {
+            "total": 348,
+            "lulus": 0
+          },
+          "7": {
+            "total": 40,
+            "lulus": 0
+          },
+          "2": {
+            "total": 52,
+            "lulus": 0
+          },
+          "3": {
+            "total": 5,
+            "lulus": 0
+          },
+          "12": {
+            "total": 4,
+            "lulus": 0
+          },
+          "6": {
+            "total": 14,
+            "lulus": 0
+          },
+          "5": {
+            "total": 6,
+            "lulus": 0
+          },
+          "4": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 26,
+            "lulus": 0
+          }
+        },
+        "2018": {
+          "10": {
+            "total": 5,
+            "lulus": 0
+          },
+          "8": {
+            "total": 58,
+            "lulus": 0
+          },
+          "2": {
+            "total": 42,
+            "lulus": 0
+          },
+          "4": {
+            "total": 6,
+            "lulus": 0
+          },
+          "5": {
+            "total": 2,
+            "lulus": 0
+          },
+          "1": {
+            "total": 38,
+            "lulus": 0
+          },
+          "9": {
+            "total": 335,
+            "lulus": 0
+          },
+          "7": {
+            "total": 37,
+            "lulus": 0
+          },
+          "6": {
+            "total": 23,
+            "lulus": 0
+          },
+          "3": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2017": {
+          "6": {
+            "total": 4,
+            "lulus": 0
+          },
+          "10": {
+            "total": 1,
+            "lulus": 0
+          },
+          "9": {
+            "total": 17,
+            "lulus": 0
+          },
+          "2": {
+            "total": 24,
+            "lulus": 0
+          },
+          "8": {
+            "total": 42,
+            "lulus": 0
+          },
+          "7": {
+            "total": 27,
+            "lulus": 0
+          },
+          "5": {
+            "total": 2,
+            "lulus": 0
+          },
+          "1": {
+            "total": 12,
+            "lulus": 0
+          },
+          "3": {
+            "total": 6,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2016": {
+          "9": {
+            "total": 29,
+            "lulus": 0
+          },
+          "12": {
+            "total": 3,
+            "lulus": 0
+          },
+          "8": {
+            "total": 126,
+            "lulus": 0
+          },
+          "7": {
+            "total": 21,
+            "lulus": 0
+          },
+          "2": {
+            "total": 6,
+            "lulus": 0
+          },
+          "5": {
+            "total": 1,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "3": {
+            "total": 2,
+            "lulus": 0
+          },
+          "10": {
+            "total": 1,
+            "lulus": 0
+          },
+          "6": {
+            "total": 3,
+            "lulus": 0
+          },
+          "1": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2015": {
+          "9": {
+            "total": 11,
+            "lulus": 0
+          },
+          "12": {
+            "total": 1,
+            "lulus": 0
+          },
+          "8": {
+            "total": 7,
+            "lulus": 0
+          },
+          "1": {
+            "total": 5,
+            "lulus": 0
+          },
+          "3": {
+            "total": 3,
+            "lulus": 0
+          },
+          "2": {
+            "total": 3,
+            "lulus": 0
+          },
+          "6": {
+            "total": 4,
+            "lulus": 0
+          },
+          "7": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2014": {
+          "10": {
+            "total": 1,
+            "lulus": 0
+          },
+          "9": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 1,
+            "lulus": 0
+          },
+          "4": {
+            "total": 1,
+            "lulus": 0
+          },
+          "8": {
+            "total": 1,
+            "lulus": 0
+          },
+          "2": {
+            "total": 1,
+            "lulus": 0
+          }
+        },
+        "2013": {
+          "11": {
+            "total": 1,
+            "lulus": 0
+          },
+          "9": {
+            "total": 2,
+            "lulus": 0
+          }
+        },
+        "2026": {
+          "2": {
+            "total": 20,
+            "lulus": 0
+          },
+          "3": {
+            "total": 8,
+            "lulus": 0
+          },
+          "1": {
+            "total": 16,
+            "lulus": 0
+          },
+          "4": {
+            "total": 2,
+            "lulus": 0
+          },
+          "7": {
+            "total": 3,
+            "lulus": 0
+          },
+          "6": {
+            "total": 1,
             "lulus": 0
           }
         }

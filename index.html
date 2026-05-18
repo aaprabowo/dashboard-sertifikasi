@@ -379,13 +379,13 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
       </div>
 
       <!-- Narrative -->
-      <!-- <div class="narr-panel">
+      <div class="narr-panel">
         <div class="narr-header">
           <div class="narr-dot"></div>
           <span class="narr-title">Narasi Laporan Otomatis</span>
         </div>
         <div class="narr-text" id="narr-text">Memuat data dari watcher — jalankan watcher.py untuk menghasilkan narasi laporan.</div>
-      </div> -->
+      </div>
 
     </div><!-- /content -->
   </main>
@@ -566,7 +566,6 @@ function renderMetrics() {
   document.getElementById('mv-beasiswa').textContent = fmtN(beaT?beaT.total:0);
   document.getElementById('mn-beasiswa').textContent = fmtN(beaT?(beaT.total||0)+(beaT.total_selesai||0):0)+' total penerima';
 
-  // AC: filter tahun via months_by_year
   const acT = d.teams.find(t=>t.team==='AC');
   const acThn = acT
     ? ((acT.months_by_year||{})[thn]
@@ -583,7 +582,8 @@ function renderMetrics() {
 function renderTeamGrid() {
   if (!dashData) return;
   const thn  = selTahun();
-  document.getElementById('team-grid').innerHTML = dashData.teams.map(t => {
+  const akr  = dashData.akreditasi||{};
+  const teamCards = dashData.teams.map(t => {
     const c   = cfg(t.team);
     const hby = t.hadir_by_year||{};
     const hadirThn = hby[thn]!==undefined ? hby[thn] : (t.total_hadir!==undefined?t.total_hadir:t.total);
@@ -616,6 +616,29 @@ function renderTeamGrid() {
         ${targetHtml}${errHtml}
       </div>`;
   }).join('');
+
+  // Card Akreditasi — selalu di posisi terakhir
+  const akrColor = '#7C3AED';
+  const akrCard = `
+    <div class="team-card" onclick="openPopup('Akreditasi')" style="border-color:#DDD6FE">
+      <div class="tc-top">
+        <div class="tc-icon" style="background:#F5F3FF">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5l1.2 3.5H12l-2.8 2 1.1 3.4-2.8-2-2.8 2 1.1-3.4-2.8-2h3.3z" stroke="${akrColor}" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        </div>
+        <div style="text-align:right">
+          <div class="tc-pct" style="color:${akrColor}">${akr.lembaga||'—'} / ${akr.program||'—'}</div>
+          <div class="tc-lbl" style="color:${akrColor}">lembaga / program</div>
+        </div>
+      </div>
+      <div class="tc-name">Akreditasi</div>
+      <div class="tc-sub">${fmtN((akr.program||0)+(akr.dalam_proses||0))} total program</div>
+      ${akr.dalam_proses ? `<div class="tc-target-wrap">
+        <div class="tc-target-lbl"><span>Dalam proses</span><span>${akr.dalam_proses} program</span></div>
+        <div class="tc-target-bar"><div class="tc-target-fill" style="width:100%;background:#DDD6FE"></div></div>
+      </div>` : ''}
+    </div>`;
+
+  document.getElementById('team-grid').innerHTML = teamCards + akrCard;
 }
 
 // ============================================================
@@ -1184,20 +1207,20 @@ function _renderAC(t,c,thn){
       <div class="result-pill" style="background:#FFFBEB;color:#D97706">~ Cukup Optimal: ${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
       <div class="result-pill" style="background:#FEF2F2;color:#DC2626">✗ Kurang Optimal: ${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
     </div>
-    ${psBlock('Hasil Penilaian dikategorikan sesuai Per BKN Nomor 26 2019— '+filterLabel, tot ? `
+    ${psBlock('Hasil Penilaian — '+filterLabel, tot ? `
       <div class="p-dist">
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Optimal (memenuhi minimal 90% standar penilaian)</div>
+          <div class="p-dist-lbl">Optimal</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pO}%;background:#059669"></div></div>
           <div class="p-dist-n" style="color:#059669">${fmtN(hY['Optimal'])} (${pO}%)</div>
         </div>
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Cukup Optimal (memenuhi minimal 78% s.d. 90% standar penilaian)</div>
+          <div class="p-dist-lbl">Cukup Optimal</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pC}%;background:#D97706"></div></div>
           <div class="p-dist-n" style="color:#D97706">${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
         </div>
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Kurang Optimal (memenuhi kurang dari 78% standar penilaian)</div>
+          <div class="p-dist-lbl">Kurang Optimal</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pK}%;background:#DC2626"></div></div>
           <div class="p-dist-n" style="color:#DC2626">${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
         </div>
@@ -1356,17 +1379,97 @@ async function _tesLain(t,c,thn){
 }
 
 // ============================================================
-//  POPUP OPEN / CLOSE
+//  POPUP: Akreditasi — dari summary.akreditasi
+//  Tabel: Lembaga · Program · Status (badge)
 // ============================================================
+function popupAkreditasi(t, c) {
+  const akr = dashData.akreditasi||{};
+  const items = akr.items||[];
+  document.getElementById('popup-sub').textContent =
+    `${fmtN(akr.lembaga||0)} lembaga · ${fmtN(akr.program||0)} program terakreditasi · ${fmtN(akr.dalam_proses||0)} dalam proses`;
+
+  // Render tabel dengan filter status
+  function render(filterStatus) {
+    const filtered = filterStatus
+      ? items.filter(it => {
+          if (filterStatus==='ter')  return it.is_terakreditasi;
+          if (filterStatus==='pros') return it.is_proses;
+          return true;
+        })
+      : items;
+
+    const rows = filtered.map((it,i) => {
+      const badge = it.is_terakreditasi
+        ? `<span style="font-size:10px;padding:2px 8px;border-radius:20px;background:#ECFDF5;color:#065F46;white-space:nowrap">Terakreditasi</span>`
+        : `<span style="font-size:10px;padding:2px 8px;border-radius:20px;background:#FFFBEB;color:#92400E;white-space:nowrap">Tahap Pelaksanaan</span>`;
+      const rowBg = i%2===0 ? '' : 'style="background:var(--bg)"';
+      return `<tr ${rowBg}>
+        <td style="padding:7px 10px;font-size:12px;color:var(--text2);vertical-align:top">${it.lembaga}</td>
+        <td style="padding:7px 10px;font-size:12px;color:var(--text1);vertical-align:top">${it.program}</td>
+        <td style="padding:7px 10px;vertical-align:top">${badge}</td>
+      </tr>`;
+    }).join('');
+
+    document.getElementById('akr-table-wrap').innerHTML = rows.length
+      ? `<table style="width:100%;border-collapse:collapse">
+          <thead>
+            <tr style="border-bottom:1px solid var(--border2)">
+              <th style="text-align:left;padding:6px 10px;font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.04em;width:35%;position:sticky;top:0;background:var(--surface);z-index:1">Lembaga</th>
+              <th style="text-align:left;padding:6px 10px;font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.04em;position:sticky;top:0;background:var(--surface);z-index:1">Program</th>
+              <th style="text-align:left;padding:6px 10px;font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.04em;width:130px;position:sticky;top:0;background:var(--surface);z-index:1">Status</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>`
+      : `<div style="padding:20px;text-align:center;font-size:12px;color:var(--text3)">Tidak ada data</div>`;
+  }
+
+  document.getElementById('popup-body').innerHTML = `
+    <div class="p-filter-row">
+      <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      <select class="p-filter-sel" id="akr-f-status" onchange="akrFilter()">
+        <option value="">Semua Status</option>
+        <option value="ter">Terakreditasi</option>
+        <option value="pros">Tahap Pelaksanaan</option>
+      </select>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+      <div class="ps" style="text-align:center">
+        <div class="ps-title">Terakreditasi</div>
+        <div style="font-size:26px;font-weight:600;color:#059669;line-height:1">${fmtN(akr.program||0)}</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:3px">program</div>
+      </div>
+      <div class="ps" style="text-align:center">
+        <div class="ps-title">Lembaga</div>
+        <div style="font-size:26px;font-weight:600;color:#7C3AED;line-height:1">${fmtN(akr.lembaga||0)}</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:3px">lembaga penyelenggara</div>
+      </div>
+      <div class="ps" style="text-align:center">
+        <div class="ps-title">Tahap Pelaksanaan</div>
+        <div style="font-size:26px;font-weight:600;color:#D97706;line-height:1">${fmtN(akr.dalam_proses||0)}</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:3px">program</div>
+      </div>
+    </div>
+    <div class="ps" id="akr-table-wrap" style="padding:0;overflow-y:auto;max-height:340px"></div>`;
+
+  window.akrFilter = () => {
+    const v = document.getElementById('akr-f-status')?.value||'';
+    render(v);
+  };
+  render('');
+}
+
+
 const POPUP_RENDERERS={
   JFKN:popupJFKN, SAK:popupSAK, USKP:popupUSKP, PBJ:popupPBJ,
   AC:popupAC, Beasiswa:popupBeasiswa, 'Tes Lain':popupTesTes,
+  Akreditasi:popupAkreditasi,
 };
 
 async function openPopup(teamId){
   if(!dashData)return;
-  const t=dashData.teams.find(x=>x.team===teamId);
-  if(!t)return;
+  const t=dashData.teams.find(x=>x.team===teamId) || (teamId==='Akreditasi'?{}:null);
+  if(t===null)return;
   const c=cfg(teamId);
   document.getElementById('popup-title').textContent=teamId+' — Detail';
   document.getElementById('popup-body').innerHTML='<div class="p-loading">Memuat data...</div>';
