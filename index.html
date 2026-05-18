@@ -31,65 +31,34 @@
   --radius:   12px;
   --radius-s: 8px;
 }
-
 html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text1); font-size: 14px; }
 
 /* =============================================
    LAYOUT
 ============================================= */
 .app { display: flex; flex-direction: column; height: 100vh; }
-
-/* Header */
 .hdr {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: 0 28px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  height: 56px;
-  flex-shrink: 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 0 28px; display: flex; align-items: center; gap: 16px;
+  height: 56px; flex-shrink: 0; position: sticky; top: 0; z-index: 100;
 }
 .hdr-brand { display: flex; flex-direction: column; }
 .hdr-title { font-size: 14px; font-weight: 600; color: var(--text1); letter-spacing: -.01em; }
 .hdr-sub   { font-size: 11px; color: var(--text3); }
 .hdr-divider { width: 1px; height: 28px; background: var(--border); margin: 0 4px; }
-.hdr-nav { display: flex; gap: 4px; margin-left: auto; }
-.nav-btn {
-  padding: 7px 16px; font-size: 12px; border-radius: var(--radius-s);
-  border: 1px solid var(--border); background: var(--surface);
-  color: var(--text2); cursor: pointer; display: flex; align-items: center;
-  gap: 6px; font-family: inherit; transition: all .15s; font-weight: 400;
-}
-.nav-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 500; }
-.nav-btn:hover:not(.active) { background: var(--bg); }
-
-/* Status bar */
 .status-bar {
-  display: flex; align-items: center; gap: 8px;
-  padding: 6px 28px; font-size: 11px;
-  background: var(--surface); border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
+  display: flex; align-items: center; gap: 8px; padding: 6px 28px; font-size: 11px;
+  background: var(--surface); border-bottom: 1px solid var(--border); flex-shrink: 0;
 }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; }
 .status-dot.live  { background: var(--green); animation: pulse 2s infinite; }
 .status-dot.error { background: var(--red); }
 .status-dot.idle  { background: var(--text3); }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
-.status-txt { color: var(--text2); }
+.status-txt  { color: var(--text2); }
 .status-time { margin-left: auto; color: var(--text3); }
-
-/* Main area */
-.main { display: flex; flex: 1; overflow: hidden; }
-
-/* Content */
-.content {
-  flex: 1; padding: 24px 28px;
-  overflow-y: auto; display: flex; flex-direction: column; gap: 20px;
-}
+.main    { display: flex; flex: 1; overflow: hidden; }
+.content { flex: 1; padding: 24px 28px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
 
 /* =============================================
    FILTER BAR
@@ -99,10 +68,7 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 10px 16px;
 }
-.filter-icon {
-  width: 28px; height: 28px; border-radius: 7px;
-  background: var(--blue-l); display: flex; align-items: center; justify-content: center;
-}
+.filter-icon { width: 28px; height: 28px; border-radius: 7px; background: var(--blue-l); display: flex; align-items: center; justify-content: center; }
 .filter-label { font-size: 11px; font-weight: 500; color: var(--text3); text-transform: uppercase; letter-spacing: .05em; }
 .filter-sel {
   font-size: 13px; padding: 5px 12px; border-radius: 7px;
@@ -118,176 +84,64 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .metric-card {
   background: #EFF6FF; border: 1px solid #BFDBFE;
-  border-radius: var(--radius); padding: 16px;
-  display: flex; align-items: flex-start; gap: 12px;
+  border-radius: var(--radius); padding: 16px; display: flex; align-items: flex-start; gap: 12px;
 }
-.metric-icon {
-  width: 42px; height: 42px; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
+.metric-icon { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .metric-label { font-size: 10px; font-weight: 600; color: #2563EB; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 5px; }
 .metric-value { font-size: 26px; font-weight: 600; color: var(--text1); line-height: 1; }
 .metric-note  { font-size: 11px; color: var(--text2); margin-top: 5px; }
-.metric-up    { color: var(--green); font-weight: 500; }
-.metric-warn  { color: var(--amber); font-weight: 500; }
 
 /* =============================================
-   TEAM SECTION
+   TEAM GRID
 ============================================= */
 .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
 .section-title  { font-size: 13px; font-weight: 600; color: var(--text1); }
 .section-hint   { font-size: 11px; color: var(--text3); font-style: italic; margin-left: auto; }
-.all-btn {
-  padding: 4px 14px; font-size: 11px; border-radius: 20px;
-  border: 1px solid var(--border2); background: var(--surface);
-  color: var(--text2); cursor: pointer; font-family: inherit; transition: all .15s;
-  margin-left: 8px; font-weight: 400;
-}
-.all-btn.active { background: var(--text1); color: #fff; border-color: var(--text1); font-weight: 500; }
-
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-
 .team-card {
   background: var(--surface); border: 1.5px solid var(--border);
   border-radius: var(--radius); padding: 14px; cursor: pointer;
   transition: all .2s; position: relative; overflow: hidden;
 }
 .team-card:hover { border-color: var(--border2); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,.06); }
-.team-card.selected { border-width: 2px; }
 .team-card.error-card { border-color: var(--red-l); opacity: .7; }
-
 .tc-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
 .tc-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .tc-pct  { font-size: 22px; font-weight: 600; line-height: 1; text-align: right; }
 .tc-lbl  { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; text-align: right; margin-top: 2px; }
 .tc-name { font-size: 12px; font-weight: 600; color: var(--text1); margin-bottom: 3px; }
 .tc-sub  { font-size: 10px; color: var(--text3); margin-bottom: 8px; }
-.tc-prog { height: 3px; border-radius: 2px; background: var(--border); }
-.tc-fill { height: 3px; border-radius: 2px; transition: width .5s ease; }
 .tc-err  { font-size: 10px; color: var(--red); margin-top: 6px; }
+.tc-target-wrap { margin-top: 6px; }
+.tc-target-lbl  { display: flex; justify-content: space-between; font-size: 9px; color: var(--text3); margin-bottom: 3px; }
+.tc-target-bar  { height: 4px; border-radius: 2px; background: var(--border); }
+.tc-target-fill { height: 4px; border-radius: 2px; transition: width .5s ease; }
 
 /* =============================================
    CHART PANEL
 ============================================= */
-.chart-panel {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 18px;
-}
+.chart-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
 .chart-header { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
 .chart-title  { font-size: 13px; font-weight: 600; color: var(--text1); }
 .chart-sub    { font-size: 11px; color: var(--text3); margin-left: auto; }
-
 .bars-wrap { display: flex; align-items: flex-end; gap: 8px; height: 130px; }
 .bar-col   { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; min-width: 0; }
 .bar-val   { font-size: 10px; font-weight: 500; color: var(--text2); }
-.bar-body  { border-radius: 4px 4px 0 0; width: 100%; min-height: 4px; transition: height .5s ease, background .3s; }
+.bar-body  { border-radius: 4px 4px 0 0; width: 100%; min-height: 4px; }
 .bar-month { font-size: 9px; color: var(--text3); }
-
-/* Unit kerja mini table */
-.unit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 14px; }
-.unit-row  { display: flex; align-items: center; gap: 8px; font-size: 11px; }
-.unit-name { flex: 1; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.unit-pct  { font-size: 11px; font-weight: 500; color: var(--text1); min-width: 36px; text-align: right; }
-.unit-bar  { height: 3px; border-radius: 2px; background: var(--border); flex: 1; max-width: 60px; }
-.unit-fill { height: 3px; border-radius: 2px; }
 
 /* =============================================
    NARRATIVE
 ============================================= */
 .narr-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
 .narr-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
-.narr-dot  { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
-.narr-title { font-size: 13px; font-weight: 600; color: var(--text1); }
-.narr-text  { font-size: 12px; color: var(--text2); line-height: 1.9; }
+.narr-dot    { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
+.narr-title  { font-size: 13px; font-weight: 600; color: var(--text1); }
+.narr-text   { font-size: 12px; color: var(--text2); line-height: 1.9; }
 .narr-text strong { color: var(--text1); font-weight: 600; }
 
 /* =============================================
-   OPERATOR TAB
-============================================= */
-/* =============================================
-   MONITORING PANEL (Operator Tab)
-============================================= */
-.mon-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 18px;
-}
-.mon-card.watcher-live  { border-color: #A7F3D0; background: #FAFFFE; }
-.mon-card.watcher-error { border-color: #FCA5A5; background: #FFFAFA; }
-.mon-card.watcher-idle  { border-color: var(--border); }
-
-.mon-hdr { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-.mon-hdr-left { display: flex; align-items: center; gap: 10px; flex: 1; }
-.mon-icon { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: var(--green-l); flex-shrink: 0; }
-.mon-icon.idle  { background: #F3F4F6; }
-.mon-icon.error { background: var(--red-l); }
-
-.force-btn {
-  display: flex; align-items: center; gap: 6px;
-  padding: 7px 14px; font-size: 12px; font-weight: 500;
-  border-radius: var(--radius-s); border: 1px solid var(--border2);
-  background: var(--surface); color: var(--text2);
-  cursor: pointer; font-family: inherit; transition: all .15s;
-}
-.force-btn:hover { background: var(--blue-l); color: var(--blue); border-color: var(--blue-m); }
-.force-btn:active { transform: scale(.97); }
-.force-btn.spinning svg { animation: spin .6s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
-.mon-info-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-s); overflow: hidden; }
-.mon-info-item { background: var(--bg); padding: 10px 14px; }
-.mon-info-lbl  { font-size: 10px; color: var(--text3); font-weight: 500; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
-.mon-info-val  { font-size: 15px; font-weight: 600; color: var(--text1); }
-
-
-.sheet-status-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.sheet-status-card { border-radius: var(--radius-s); padding: 12px; border: 1px solid var(--border); }
-.ss-top   { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-.ss-name  { font-size: 12px; font-weight: 600; color: var(--text1); }
-.ss-dot   { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-.ss-pct   { font-size: 18px; font-weight: 600; line-height: 1; }
-.ss-meta  { font-size: 10px; color: var(--text3); margin-top: 2px; }
-.ss-err   { font-size: 10px; color: var(--red); margin-top: 4px; }
-.ss-bar   { height: 2px; border-radius: 1px; background: var(--border); margin-top: 8px; }
-.ss-bar-fill { height: 2px; border-radius: 1px; }
-
-.log-wrap { max-height: 200px; overflow-y: auto; display: flex; flex-direction: column; gap: 1px; }
-.log-entry { font-size: 11px; font-family: 'Courier New', monospace; padding: 5px 10px; border-radius: 5px; line-height: 1.5; }
-.log-info    { background: var(--bg); color: var(--text2); }
-.log-success { background: var(--green-l); color: var(--green); }
-.log-warning { background: var(--amber-l); color: var(--amber); }
-.log-error   { background: var(--red-l); color: var(--red); }
-
-.sheet-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; background: var(--blue-l); color: var(--blue); border: 1px solid var(--blue-m); font-weight: 500; }
-
-.steps-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
-.step-row  { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #F9FAFB; }
-.step-row:last-child { border-bottom: none; }
-.step-num  { width: 26px; height: 26px; border-radius: 50%; background: var(--blue-l); color: var(--blue); font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
-.step-t    { font-size: 12px; font-weight: 600; color: var(--text1); margin-bottom: 2px; }
-.step-d    { font-size: 11px; color: var(--text2); line-height: 1.6; }
-.step-code {
-  font-size: 11px; background: var(--text1); color: #E5E7EB;
-  padding: 8px 12px; border-radius: 6px; margin-top: 6px;
-  font-family: 'Courier New', monospace; line-height: 1.6;
-}
-
-/* =============================================
-   VIEW TOGGLING
-============================================= */
-.view { display: none; flex-direction: column; gap: 20px; }
-.view.active { display: flex; }
-
-/* =============================================
-   EMPTY / LOADING STATE
-============================================= */
-.empty-state {
-  text-align: center; padding: 48px 24px; color: var(--text3);
-}
-.empty-state h3 { font-size: 14px; font-weight: 500; color: var(--text2); margin-bottom: 8px; }
-.empty-state p  { font-size: 12px; line-height: 1.7; }
-
-/* =============================================
-   POPUP / DRAWER DETAIL
+   POPUP
 ============================================= */
 .popup-overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,.45);
@@ -297,16 +151,14 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 .popup-overlay.open { opacity: 1; }
 .popup-box {
   background: var(--surface); border-radius: 16px;
-  width: 100%; max-width: 820px; max-height: 88vh;
+  width: 100%; max-width: 960px; max-height: 92vh;
   display: flex; flex-direction: column;
-  transform: translateY(16px); transition: transform .2s;
-  overflow: hidden;
+  transform: translateY(16px); transition: transform .2s; overflow: hidden;
 }
 .popup-overlay.open .popup-box { transform: translateY(0); }
 .popup-hdr {
   display: flex; align-items: center; gap: 10px;
-  padding: 16px 20px; border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
+  padding: 16px 20px; border-bottom: 1px solid var(--border); flex-shrink: 0;
 }
 .popup-title { font-size: 14px; font-weight: 600; color: var(--text1); }
 .popup-sub   { font-size: 11px; color: var(--text3); }
@@ -314,17 +166,28 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
   margin-left: auto; width: 28px; height: 28px; border-radius: 7px;
   border: 1px solid var(--border); background: var(--bg);
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; color: var(--text2); flex-shrink: 0;
-  font-size: 16px; line-height: 1;
+  cursor: pointer; color: var(--text2); flex-shrink: 0; font-size: 16px; line-height: 1;
 }
 .popup-close:hover { background: var(--red-l); color: var(--red); border-color: #FCA5A5; }
-.popup-body  { overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+.popup-body { overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+
+/* Loading spinner */
+.p-loading {
+  display: flex; align-items: center; gap: 10px;
+  padding: 32px 0; color: var(--text3); font-size: 12px;
+}
+.p-loading::before {
+  content: ''; width: 16px; height: 16px; flex-shrink: 0;
+  border: 2px solid var(--border2); border-top-color: var(--blue);
+  border-radius: 50%; animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* Popup section blocks */
 .ps { background: var(--bg); border-radius: 10px; padding: 14px; }
 .ps-title { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
 
-/* Bar chart in popup */
+/* Bars in popup */
 .p-bars { display: flex; align-items: flex-end; gap: 6px; height: 100px; margin-top: 4px; }
 .p-bar-col { display: flex; flex-direction: column; align-items: center; gap: 3px; flex: 1; min-width: 0; }
 .p-bar-val { font-size: 9px; color: var(--text2); font-weight: 500; }
@@ -339,6 +202,17 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 .p-dist-fill { height: 6px; border-radius: 3px; }
 .p-dist-n { font-size: 11px; font-weight: 500; color: var(--text1); min-width: 36px; text-align: right; }
 
+/* Stacked bar Opsi B */
+.stk-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+.stk-lbl { font-size: 11px; color: var(--text1); min-width: 90px; max-width: 130px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; }
+.stk-bar { flex: 1; height: 18px; border-radius: 3px; overflow: hidden; display: flex; background: var(--border); }
+.stk-seg-a { height: 18px; display: flex; align-items: center; padding-left: 6px; font-size: 10px; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; flex-shrink: 0; }
+.stk-seg-b { height: 18px; display: flex; align-items: center; padding-left: 6px; font-size: 10px; color: #555; white-space: nowrap; overflow: hidden; flex-shrink: 0; }
+.stk-meta { font-size: 11px; color: var(--text2); min-width: 90px; text-align: right; white-space: nowrap; }
+.stk-legend { display: flex; gap: 14px; margin-top: 8px; }
+.stk-legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text2); }
+.stk-legend-dot  { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+
 /* Two-col grid in popup */
 .p-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
@@ -351,30 +225,12 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 }
 
 /* AC result pills */
-.result-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.result-pills { display: flex; gap: 8px; flex-wrap: wrap; }
 .result-pill  { display: flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; }
 
-/* Bottom metric row — Beasiswa & AC */
-.metric-grid-b {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
-}
-.metric-card-b {
-  background: #EFF6FF;
-  border: 1px solid #BFDBFE;
-  border-radius: var(--radius); padding: 14px;
-  display: flex; align-items: flex-start; gap: 12px;
-}
-.metric-icon-b {
-  width: 38px; height: 38px; border-radius: 9px;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.metric-label-b { font-size: 10px; font-weight: 600; color: #7C3AED; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
-.metric-value-b { font-size: 24px; font-weight: 600; color: var(--text1); line-height: 1; }
-.metric-note-b  { font-size: 11px; color: #9CA3AF; margin-top: 4px; }
-
-/* Donut chart */
-.donut-wrap { display: flex; align-items: center; gap: 16px; }
-.donut-svg  { flex-shrink: 0; }
+/* Donut */
+.donut-wrap   { display: flex; align-items: center; gap: 16px; }
+.donut-svg    { flex-shrink: 0; }
 .donut-legend { display: flex; flex-direction: column; gap: 6px; }
 .donut-item   { display: flex; align-items: center; gap: 7px; font-size: 11px; color: var(--text2); }
 .donut-dot    { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
@@ -385,24 +241,36 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 .funnel-row { display: flex; align-items: center; gap: 8px; }
 .funnel-lbl { font-size: 11px; color: var(--text2); min-width: 130px; }
 .funnel-bar-wrap { flex: 1; height: 20px; background: var(--border); border-radius: 4px; overflow: hidden; }
-.funnel-bar-fill { height: 20px; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 10px; font-weight: 500; color: #fff; transition: width .5s ease; white-space: nowrap; }
+.funnel-bar-fill { height: 20px; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 10px; font-weight: 500; color: #fff; white-space: nowrap; }
 
-/* Progress bar target on card */
-.tc-target-wrap { margin-top: 6px; }
-.tc-target-lbl  { display: flex; justify-content: space-between; font-size: 9px; color: var(--text3); margin-bottom: 3px; }
-.tc-target-bar  { height: 4px; border-radius: 2px; background: var(--border); }
-.tc-target-fill { height: 4px; border-radius: 2px; transition: width .5s ease; }
+/* Batch table */
+.batch-tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
+.batch-tbl th { font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .04em; padding: 5px 8px; border-bottom: 1px solid var(--border2); text-align: left; }
+.batch-tbl th.r, .batch-tbl td.r { text-align: right; }
+.batch-tbl td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.batch-tbl tr.active td { background: var(--blue-l); font-weight: 600; }
+.batch-tbl tr:last-child td { border-bottom: none; }
 
-/* Popup bigger */
-.popup-box { max-width: 960px; max-height: 92vh; }
+/* Beasiswa 3-metric mini cards */
+.bea-3cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+.bea-card     { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 14px; text-align: center; }
+.bea-card-lbl { font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
+.bea-card-val { font-size: 26px; font-weight: 600; line-height: 1.1; }
+.bea-card-sub { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+/* Provider / PTUD table */
+.prov-tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
+.prov-tbl th { font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .04em; padding: 5px 8px; border-bottom: 1px solid var(--border2); text-align: right; }
+.prov-tbl th:first-child { text-align: left; }
+.prov-tbl td { padding: 5px 8px; border-bottom: 1px solid var(--border); text-align: right; }
+.prov-tbl td:first-child { text-align: left; max-width: 170px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.prov-tbl tr:last-child td { border-bottom: none; }
+.prov-tbl tr:hover td { background: var(--bg); }
 
 /* =============================================
    RESPONSIVE
 ============================================= */
-@media (max-width: 1100px) {
-  .team-grid   { grid-template-columns: repeat(4, 1fr); }
-  .metric-grid { grid-template-columns: repeat(2, 1fr); }
-}
+@media (max-width: 1100px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 800px) {
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .content   { padding: 16px; }
@@ -416,17 +284,11 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
   <!-- ===================== HEADER ===================== -->
   <header class="hdr">
     <div class="hdr-brand">
-      <div class="hdr-title">Dashboard Monitoring Terpadu - Pusbin JFPM</div>
+      <div class="hdr-title">Dashboard Monitoring Terpadu — Pusbin JFPM</div>
       <div class="hdr-sub">untuk digunakan secara internal</div>
     </div>
     <div class="hdr-divider"></div>
-    <div class="hdr-nav">
-      <button class="nav-btn active" id="tab-int" onclick="switchView('internal')">
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1" y="1" width="4.5" height="4.5" rx="1" fill="currentColor"/><rect x="7.5" y="1" width="4.5" height="4.5" rx="1" fill="currentColor"/><rect x="1" y="7.5" width="4.5" height="4.5" rx="1" fill="currentColor"/><rect x="7.5" y="7.5" width="4.5" height="4.5" rx="1" fill="currentColor"/></svg>
-        Internal Report
-      </button>
-
-    </div>
+    <span style="font-size:12px;font-weight:500;color:var(--text2);margin-left:auto">Internal Report</span>
   </header>
 
   <!-- ===================== STATUS BAR ===================== -->
@@ -440,109 +302,97 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
   <main class="main">
     <div class="content">
 
-      <!-- ============ VIEW: INTERNAL ============ -->
-      <div class="view active" id="view-internal">
-
-        <!-- Filter -->
-        <div class="filter-bar">
-          <div class="filter-icon">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3.5h10M4 7h6M6 10.5h2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <span class="filter-label">Tahun:</span>
-          <select class="filter-sel" id="sel-tahun" onchange="applyFilter()">
-          </select>
-          <div class="filter-period">Data Tahun: <strong id="period-label">—</strong></div>
+      <!-- Filter global: hanya Tahun -->
+      <div class="filter-bar">
+        <div class="filter-icon">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3.5h10M4 7h6M6 10.5h2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
+        <span class="filter-label">Tahun:</span>
+        <select class="filter-sel" id="sel-tahun" onchange="applyFilter()"></select>
+        <div class="filter-period">Data Tahun: <strong id="period-label">—</strong></div>
+      </div>
 
-        <!-- Metrics: 4 card -->
-        <div class="metric-grid" id="metric-grid">
-          <div class="metric-card">
-            <div class="metric-icon" style="background:#EFF6FF">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10l5 5 9-9" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <div class="metric-label">Capaian Output Tahunan</div>
-              <div class="metric-value" id="mv-capaian">—</div>
-              <div class="metric-note" id="mn-capaian">Peserta hadir vs target</div>
-            </div>
+      <!-- 4 Metric cards -->
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-icon" style="background:#EFF6FF">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10l5 5 9-9" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <div class="metric-card">
-            <div class="metric-icon" style="background:#EFF6FF">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.4 4.8 5.3.8-3.8 3.7.9 5.3L10 14l-4.8 2.6.9-5.3L2.3 7.6l5.3-.8z" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <div class="metric-label">Tim Mencapai Target Output</div>
-              <div class="metric-value" id="mv-tim-target">—</div>
-              <div class="metric-note" id="mn-tim-target"></div>
-            </div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon" style="background:#EFF6FF">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z" stroke="#2563EB" stroke-width="1.5"/><circle cx="10" cy="9" r="2.5" stroke="#2563EB" stroke-width="1.5"/></svg>
-            </div>
-            <div>
-              <div class="metric-label">Total Penerima Beasiswa</div>
-              <div class="metric-value" id="mv-beasiswa">—</div>
-              <div class="metric-note">Penerima Beasiswa</div>
-            </div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon" style="background:#EFF6FF">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#2563EB" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div>
-              <div class="metric-label">Total Peserta AC</div>
-              <div class="metric-value" id="mv-ac">—</div>
-              <div class="metric-note">Assessment Center</div>
-            </div>
+          <div>
+            <div class="metric-label">Capaian Output Tahunan</div>
+            <div class="metric-value" id="mv-capaian">—</div>
+            <div class="metric-note" id="mn-capaian">Peserta hadir vs target</div>
           </div>
         </div>
-
-        <!-- Team Cards -->
-        <div>
-          <div class="section-header">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 10.5l3-5 3 3 2.5-4.5 2.5 5" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="section-title">Kinerja Per Tim</span>
-            <span class="section-hint">*Klik kartu untuk lihat detail</span>
+        <div class="metric-card">
+          <div class="metric-icon" style="background:#EFF6FF">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.4 4.8 5.3.8-3.8 3.7.9 5.3L10 14l-4.8 2.6.9-5.3L2.3 7.6l5.3-.8z" stroke="#2563EB" stroke-width="1.5" stroke-linejoin="round"/></svg>
           </div>
-          <div class="team-grid" id="team-grid"></div>
-        </div>
-
-        <!-- Chart -->
-        <div class="chart-panel">
-          <div class="chart-header">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 10.5l3-5 3 3 2.5-4.5 2.5 5" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="chart-title" id="chart-title">Tren Kelulusan — Semua Tim</span>
-            <span class="chart-sub" id="chart-sub">rata-rata gabungan per batch</span>
-          </div>
-          <div class="bars-wrap" id="bars-wrap">
-            <div class="empty-state" style="width:100%"><p>Data belum tersedia. Jalankan watcher.py di PC server.</p></div>
-          </div>
-          <!-- Unit kerja breakdown -->
-          <div id="unit-section" style="display:none">
-            <div style="font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin:16px 0 8px">Top Unit Kerja</div>
-            <div class="unit-grid" id="unit-grid"></div>
+          <div>
+            <div class="metric-label">Tim Mencapai Target Output</div>
+            <div class="metric-value" id="mv-tim-target">—</div>
+            <div class="metric-note" id="mn-tim-target"></div>
           </div>
         </div>
-
-        <!-- Narrative -->
-        <div class="narr-panel">
-          <div class="narr-header">
-            <div class="narr-dot"></div>
-            <span class="narr-title">Narasi Laporan Otomatis</span>
+        <div class="metric-card">
+          <div class="metric-icon" style="background:#EFF6FF">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z" stroke="#2563EB" stroke-width="1.5"/><circle cx="10" cy="9" r="2.5" stroke="#2563EB" stroke-width="1.5"/></svg>
           </div>
-          <div class="narr-text" id="narr-text">Memuat data dari watcher — jalankan watcher.py untuk menghasilkan narasi laporan.</div>
+          <div>
+            <div class="metric-label">Penerima Beasiswa Aktif</div>
+            <div class="metric-value" id="mv-beasiswa">—</div>
+            <div class="metric-note" id="mn-beasiswa">dari total penerima</div>
+          </div>
         </div>
+        <div class="metric-card">
+          <div class="metric-icon" style="background:#EFF6FF">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#2563EB" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="metric-label">Total Peserta AC</div>
+            <div class="metric-value" id="mv-ac">—</div>
+            <div class="metric-note" id="mn-ac">Assessment Center</div>
+          </div>
+        </div>
+      </div>
 
-      </div><!-- /view-internal -->
+      <!-- Team Cards -->
+      <div>
+        <div class="section-header">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 10.5l3-5 3 3 2.5-4.5 2.5 5" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="section-title">Kinerja Per Tim</span>
+          <span class="section-hint">*Klik kartu untuk detail</span>
+        </div>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
 
+      <!-- Chart -->
+      <div class="chart-panel">
+        <div class="chart-header">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 10.5l3-5 3 3 2.5-4.5 2.5 5" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="chart-title" id="chart-title">Capaian Output per Tim</span>
+          <span class="chart-sub" id="chart-sub">peserta hadir vs target tahunan (%)</span>
+        </div>
+        <div class="bars-wrap" id="bars-wrap">
+          <div style="width:100%;text-align:center;font-size:11px;color:var(--text3);padding:20px 0">Data belum tersedia. Jalankan watcher.py.</div>
+        </div>
+      </div>
 
+      <!-- Narrative -->
+      <!-- <div class="narr-panel">
+        <div class="narr-header">
+          <div class="narr-dot"></div>
+          <span class="narr-title">Narasi Laporan Otomatis</span>
+        </div>
+        <div class="narr-text" id="narr-text">Memuat data dari watcher — jalankan watcher.py untuk menghasilkan narasi laporan.</div>
+      </div> -->
 
     </div><!-- /content -->
   </main>
-  <!-- ===================== POPUP DETAIL ===================== -->
+
+  <!-- ===================== POPUP ===================== -->
   <div class="popup-overlay" id="popup-overlay" onclick="closePopupIfOverlay(event)">
-    <div class="popup-box" id="popup-box">
+    <div class="popup-box">
       <div class="popup-hdr">
         <div>
           <div class="popup-title" id="popup-title">Detail</div>
@@ -557,9 +407,11 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 </div><!-- /app -->
 
 <script>
-// =============================================
-//  STATE & CONFIG
-// =============================================
+'use strict';
+
+// ============================================================
+//  CONFIG
+// ============================================================
 const TEAM_CONFIG = [
   { id:'JFKN',     color:'#2563EB', bg:'#EFF6FF', cb:'#BFDBFE' },
   { id:'SAK',      color:'#4338CA', bg:'#EEF2FF', cb:'#C7D2FE' },
@@ -569,85 +421,96 @@ const TEAM_CONFIG = [
   { id:'PBJ',      color:'#DB2777', bg:'#FDF2F8', cb:'#FBCFE8' },
   { id:'Tes Lain', color:'#0D9488', bg:'#F0FDFA', cb:'#99F6E4' },
 ];
-const MONTHS_FULL  = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-const MONTHS_SHORT = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Ags','Sep','Okt','Nov','Des'];
+const MONTHS_FULL = ['Januari','Februari','Maret','April','Mei','Juni',
+                     'Juli','Agustus','September','Oktober','November','Desember'];
 
-let dashData = null, pollInterval = null;
+// ============================================================
+//  STATE
+// ============================================================
+let dashData     = null;   // summary.json
+let pollInterval = null;
+const detailCache = {};    // "slug_year" → rows[]
 
-// =============================================
+// ============================================================
 //  HELPERS
-// =============================================
-function fmtN(n) { return Number(n||0).toLocaleString('id-ID'); }
-function cfg(id) { return TEAM_CONFIG.find(c=>c.id===id)||{color:'#6B7280',bg:'#F3F4F6',cb:'#D1D5DB'}; }
-function selTahun() { return parseInt(document.getElementById('sel-tahun').value); }
+// ============================================================
+const fmtN  = n  => Number(n||0).toLocaleString('id-ID');
+const cfg   = id => TEAM_CONFIG.find(c=>c.id===id) || {color:'#6B7280',bg:'#F3F4F6',cb:'#D1D5DB'};
+const selTahun = () => parseInt(document.getElementById('sel-tahun').value);
+const teamSlug = id => id.toLowerCase().replace(/ /g,'_');
+const periodLabel = (bln, thn) => {
+  if (thn === 'semua') return bln === -1 ? 'Semua Tahun' : MONTHS_FULL[bln-1] + ' (semua tahun)';
+  return bln === -1 ? 'Semua Bulan ' + thn : MONTHS_FULL[bln-1] + ' ' + thn;
+};
+const getFunnel   = (t, thn)   => (t.funnel_by_year||{})[String(thn)] || {};
+const getTarget   = t => ((t.targets||{})[selTahun()]) || 0;
 
-// Filter rows individual: tahun wajib, bulan opsional (-1 = semua)
+// Filter rows detail: cocokkan year, lalu month (opsional)
 function filterRows(rows, thn, bln) {
   return (rows||[]).filter(r => {
-    if (!r.year) return false;
-    if (r.year !== thn) return false;
-    if (bln !== -1 && r.month !== bln) return false;  // null month tidak lolos filter bulan
+    if (thn !== 'semua') {
+      if (!r.year || r.year !== thn) return false;
+    }
+    if (bln !== -1 && r.month !== bln) return false;
     return true;
   });
 }
 
-// Buat dropdown bulan untuk popup
+// Dropdown bulan popup
 function bulanSelect(id, onchange) {
-  const months = ['Semua Bulan','Januari','Februari','Maret','April','Mei','Juni',
-                  'Juli','Agustus','September','Oktober','November','Desember'];
-  const opts = months.map((m,i) => `<option value="${i===0?-1:i}">${m}</option>`).join('');
-  return `<select class="p-filter-sel" id="${id}" onchange="${onchange}">${opts}</select>`;
+  const ms = ['Semua Bulan',...MONTHS_FULL];
+  return `<select class="p-filter-sel" id="${id}" onchange="${onchange}">
+    ${ms.map((m,i)=>`<option value="${i===0?-1:i}">${m}</option>`).join('')}
+  </select>`;
 }
 
-// filterTeam — hanya filter tahun untuk card utama
-function filterTeam(t) {
-  const thn = selTahun();
-  const mby = t.months_by_year || {};
-  if (!mby[thn]) return t;
-  const yearData = mby[thn];
-  const total = Object.values(yearData).reduce((s,v)=>s+(v.total||0),0);
-  const lulus = Object.values(yearData).reduce((s,v)=>s+(v.lulus||0),0);
-  if (total === 0) return t;
-  return {
-    ...t, total, lulus,
-    tidak_lulus: total - lulus,
-    pct_lulus: total > 0 ? Math.round(lulus/total*1000)/10 : 0,
-    _filtered: true,
-  };
+// Dropdown tahun popup (dari hadir_by_year keys)
+function tahunSelect(id, t, curThn, onchange) {
+  const years = [...new Set(Object.keys(t.hadir_by_year||{}).map(Number).filter(Boolean))].sort((a,b)=>b-a);
+  if (!years.includes(curThn)) years.unshift(curThn);
+  return `<select class="p-filter-sel" id="${id}" onchange="${onchange}">
+    <option value="semua">Semua Tahun</option>
+    ${years.map(y=>`<option value="${y}"${y===curThn?' selected':''}>${y}</option>`).join('')}
+  </select>`;
 }
 
-
-// Label periode untuk judul section
-function periodLabel(bln, thn) {
-  if (bln === -1) return 'Semua Bulan ' + thn;
-  return MONTHS_FULL[bln-1] + ' ' + thn;
+// ============================================================
+//  LAZY-LOAD detail_{tim}_{tahun}.json
+// ============================================================
+async function loadDetail(slug, year) {
+  // year bisa number spesifik atau string 'semua'
+  if (year === 'semua') {
+    // Cari semua tahun yang tersedia dari semua tim (hadir_by_year)
+    const t = dashData && dashData.teams.find(x => teamSlug(x.team) === slug);
+    const years = t ? Object.keys(t.hadir_by_year||{}).map(Number).filter(Boolean) : [];
+    if (!years.length) return [];
+    const allRows = await Promise.all(years.map(y => loadDetail(slug, y)));
+    return allRows.flat();
+  }
+  const key = `${slug}_${year}`;
+  if (detailCache[key]) return detailCache[key];
+  try {
+    const r = await fetch(`data/detail_${slug}_${year}.json?t=${Date.now()}`);
+    if (!r.ok) return [];
+    detailCache[key] = await r.json();
+    return detailCache[key];
+  } catch { return []; }
 }
-function funnelTitle(thn) { return 'Funnel Peserta — Tahun ' + thn; }
 
-// Ambil funnel sesuai tahun — dari funnel_by_year[thn] saja; kembalikan {} jika tidak ada data
-function getFunnel(d, thn) {
-  return (d.funnel_by_year||{})[String(thn)] || {};
-}
-
-function getTarget(t) {
-  return ((t.targets||{})[selTahun()]) || 0;
-}
-
-// =============================================
-//  POLLING
-// =============================================
+// ============================================================
+//  POLLING — summary.json setiap 5 detik
+// ============================================================
 function startPolling() { fetchData(); pollInterval = setInterval(fetchData, 5000); }
 
 function fetchData() {
-  fetch('data/dashboard_data.json?t=' + Date.now())
+  fetch('data/summary.json?t=' + Date.now())
     .then(r => { if (!r.ok) throw new Error(); return r.json(); })
     .then(data => {
       const isFirst = !dashData;
       dashData = data;
       setStatus('live', 'Data live dari watcher.py', data.generated_at);
       renderAll();
-      if (isFirst) console.log('Data dimuat — ' + fmtN(data.total_peserta) + ' peserta');
-      else         console.log('Diperbarui — ' + data.generated_at);
+      if (isFirst) console.log('Summary dimuat —', fmtN(data.total_peserta), 'peserta');
     })
     .catch(() => { if (!dashData) setStatus('idle','Watcher belum aktif — jalankan watcher.py',''); });
 }
@@ -658,9 +521,9 @@ function setStatus(type, msg, time) {
   document.getElementById('status-time').textContent = time ? 'Diperbarui: '+time : '';
 }
 
-// =============================================
+// ============================================================
 //  RENDER ALL
-// =============================================
+// ============================================================
 function renderAll() {
   if (!dashData) return;
   updatePeriodLabel();
@@ -669,90 +532,70 @@ function renderAll() {
   renderChart();
   renderNarrative();
 }
+function updatePeriodLabel() { document.getElementById('period-label').textContent = selTahun(); }
 
-function updatePeriodLabel() {
-  document.getElementById('period-label').textContent = selTahun();
-}
-
-// =============================================
-//  METRICS (4 card, tidak dipengaruhi filter bulan)
-// =============================================
+// ============================================================
+//  METRICS
+// ============================================================
 function renderMetrics() {
   if (!dashData) return;
-  const d   = dashData;
-  const thn = selTahun();
+  const d = dashData, thn = selTahun();
 
-  // Capaian output tahunan
-  let hadirTahunan = 0, targetTahunan = 0;
+  let hadirT=0, targetT=0;
   d.teams.filter(t=>t.team!=='Tes Lain').forEach(t => {
-    const hby = t.hadir_by_year || {};
-    hadirTahunan  += hby[thn] !== undefined ? hby[thn] : (t.total_hadir||t.total);
-    targetTahunan += (t.targets||{})[thn] || 0;
+    const hby = t.hadir_by_year||{};
+    hadirT  += hby[thn]!==undefined ? hby[thn] : (t.total_hadir||t.total);
+    targetT += (t.targets||{})[thn]||0;
   });
-  const pctCap = targetTahunan > 0 ? Math.round(hadirTahunan/targetTahunan*1000)/10 : 0;
-  document.getElementById('mv-capaian').textContent = pctCap + '%';
-  document.getElementById('mn-capaian').textContent =
-    fmtN(hadirTahunan) + (targetTahunan ? ' / ' + fmtN(targetTahunan) : '');
+  const pctCap = targetT>0 ? Math.round(hadirT/targetT*1000)/10 : 0;
+  document.getElementById('mv-capaian').textContent = pctCap+'%';
+  document.getElementById('mn-capaian').textContent = fmtN(hadirT)+(targetT?' / '+fmtN(targetT):'');
 
-  // Tim mencapai target
   const timMencapai = d.teams.filter(t => {
     if(t.team==='Tes Lain') return false;
-    const tgt = (t.targets||{})[thn] || 0; if (!tgt) return false;
-    const hby2 = t.hadir_by_year || {};
-    const hadir = hby2[thn] !== undefined ? hby2[thn] : (t.total_hadir||t.total);
-    return hadir >= tgt;
+    const tgt=(t.targets||{})[thn]||0; if(!tgt) return false;
+    const hby=t.hadir_by_year||{};
+    return (hby[thn]!==undefined?hby[thn]:(t.total_hadir||t.total))>=tgt;
   }).length;
-  const timTarget = d.teams.filter(t=>t.team!=='Tes Lain'&&(t.targets||{})[thn]>0).length;
+  const timAda = d.teams.filter(t=>t.team!=='Tes Lain'&&(t.targets||{})[thn]>0).length;
   document.getElementById('mv-tim-target').textContent = timMencapai;
-  document.getElementById('mn-tim-target').textContent = 'dari ' + timTarget + ' tim';
+  document.getElementById('mn-tim-target').textContent = 'dari '+timAda+' tim';
 
-  // Beasiswa & AC — filter berdasarkan tahun via months_by_year
-  const beasiswaT = d.teams.find(t=>t.team==='Beasiswa');
-  const acT       = d.teams.find(t=>t.team==='AC');
-  const totalAktif = beasiswaT ? (beasiswaT.total||0) : 0;
-  const beasiswaTahunan = beasiswaT
-    ? (beasiswaT.months_by_year||{})[thn]
-      ? Object.values(beasiswaT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (beasiswaT.total_hadir||beasiswaT.total)
-    : 0;
-  const acTahunan = acT
-    ? (acT.months_by_year||{})[thn]
+  // Beasiswa: total aktif (tidak filter tahun — sesuai spesifikasi)
+  const beaT = d.teams.find(t=>t.team==='Beasiswa');
+  document.getElementById('mv-beasiswa').textContent = fmtN(beaT?beaT.total:0);
+  document.getElementById('mn-beasiswa').textContent = fmtN(beaT?(beaT.total||0)+(beaT.total_selesai||0):0)+' total penerima';
+
+  // AC: filter tahun via months_by_year
+  const acT = d.teams.find(t=>t.team==='AC');
+  const acThn = acT
+    ? ((acT.months_by_year||{})[thn]
       ? Object.values(acT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (acT.total_hadir||acT.total)
+      : (acT.total_hadir||acT.total))
     : 0;
-  document.getElementById('mv-beasiswa').textContent = fmtN(totalAktif);
-  document.getElementById('mv-ac').textContent       = fmtN(acTahunan);
+  document.getElementById('mv-ac').textContent = fmtN(acThn);
+  document.getElementById('mn-ac').textContent = 'peserta AC tahun '+thn;
 }
 
-// =============================================
+// ============================================================
 //  TEAM GRID
-// =============================================
+// ============================================================
 function renderTeamGrid() {
   if (!dashData) return;
   const thn  = selTahun();
-  const grid = document.getElementById('team-grid');
-  grid.innerHTML = dashData.teams.map(t => {
-    const c      = cfg(t.team);
-    const target = getTarget(t);
-    const errHtml= t.error ? `<div class="tc-err">⚠ ${t.error}</div>` : '';
-    // Peserta hadir tahun sesuai filter — dari hadir_by_year
-    const hby = t.hadir_by_year || {};
-    const hadirTahunan = hby[thn] !== undefined ? hby[thn]
-      : (t.total_hadir !== undefined ? t.total_hadir : t.total);
-
+  document.getElementById('team-grid').innerHTML = dashData.teams.map(t => {
+    const c   = cfg(t.team);
+    const hby = t.hadir_by_year||{};
+    const hadirThn = hby[thn]!==undefined ? hby[thn] : (t.total_hadir!==undefined?t.total_hadir:t.total);
+    const target   = getTarget(t);
+    const errHtml  = t.error ? `<div class="tc-err">⚠ ${t.error}</div>` : '';
     let targetHtml = '';
-    if (target > 0) {
-      const pct = Math.min(100, Math.round(hadirTahunan/target*100));
-      targetHtml = `
-        <div class="tc-target-wrap">
-          <div class="tc-target-lbl">
-            <span>Output Tahunan ${thn}</span>
-            <span>${fmtN(hadirTahunan)} / ${fmtN(target)}</span>
-          </div>
-          <div class="tc-target-bar">
-            <div class="tc-target-fill" style="width:${pct}%;background:${c.color}"></div>
-          </div>
-        </div>`;
+    if (target>0) {
+      const pct = Math.min(100,Math.round(hadirThn/target*100));
+      targetHtml = `<div class="tc-target-wrap">
+        <div class="tc-target-lbl"><span>Output ${thn}</span><span>${fmtN(hadirThn)} / ${fmtN(target)}</span></div>
+        <div class="tc-target-bar"><div class="tc-target-fill" style="width:${pct}%;background:${c.color}"></div></div>
+      </div>`;
     }
     return `
       <div class="team-card ${t.error?'error-card':''}" onclick="openPopup('${t.team}')">
@@ -764,174 +607,133 @@ function renderTeamGrid() {
             </svg>
           </div>
           <div style="text-align:right">
-            <div class="tc-pct" style="color:${c.color}">${fmtN(hadirTahunan)}</div>
+            <div class="tc-pct" style="color:${c.color}">${fmtN(hadirThn)}</div>
             <div class="tc-lbl" style="color:${c.color}">peserta</div>
           </div>
         </div>
         <div class="tc-name">${t.team}</div>
         <div class="tc-sub">${fmtN(t.total)} terdaftar</div>
-        ${targetHtml}
-        ${errHtml}
+        ${targetHtml}${errHtml}
       </div>`;
   }).join('');
 }
 
-// =============================================
-//  CHART — capaian output per tim
-// =============================================
+// ============================================================
+//  CHART
+// ============================================================
 function renderChart() {
   if (!dashData) return;
-  const wrap = document.getElementById('bars-wrap');
   const thn  = selTahun();
-  document.getElementById('unit-section').style.display = 'none';
   document.getElementById('chart-title').textContent = `Capaian Output per Tim — ${thn}`;
   document.getElementById('chart-sub').textContent   = 'peserta hadir vs target tahunan (%)';
-  const teams = dashData.teams.filter(t => t.team !== 'Tes Lain' && (t.targets||{})[thn] > 0);
+  const wrap  = document.getElementById('bars-wrap');
+  const teams = dashData.teams.filter(t=>t.team!=='Tes Lain'&&(t.targets||{})[thn]>0);
   if (!teams.length) {
-    wrap.innerHTML = '<div class="empty-state" style="width:100%"><p>Belum ada data target di sheet "output".</p></div>';
+    wrap.innerHTML = '<div style="width:100%;text-align:center;font-size:11px;color:var(--text3);padding:20px 0">Belum ada data target di sheet "output".</div>';
     return;
   }
   wrap.innerHTML = teams.map(t => {
     const c      = cfg(t.team);
     const target = (t.targets||{})[thn]||0;
-    const hbyC   = t.hadir_by_year||{};
-    const hadir  = hbyC[thn] !== undefined ? hbyC[thn] : (t.total_hadir||t.total);
-    const pct    = target > 0 ? Math.min(100, Math.round(hadir/target*1000)/10) : 0;
-    return `
-      <div class="bar-col" style="cursor:pointer" onclick="openPopup('${t.team}')">
-        <div class="bar-val">${pct}%</div>
-        <div class="bar-body" style="height:${pct}px;background:${c.color}"></div>
-        <div class="bar-month">${t.team}</div>
-      </div>`;
+    const hby    = t.hadir_by_year||{};
+    const hadir  = hby[thn]!==undefined?hby[thn]:(t.total_hadir||t.total);
+    const pct    = target>0 ? Math.min(100,Math.round(hadir/target*1000)/10) : 0;
+    return `<div class="bar-col" style="cursor:pointer" onclick="openPopup('${t.team}')">
+      <div class="bar-val">${pct}%</div>
+      <div class="bar-body" style="height:${pct}px;background:${c.color}"></div>
+      <div class="bar-month">${t.team}</div>
+    </div>`;
   }).join('');
 }
 
-// =============================================
+// ============================================================
 //  NARRATIVE
-// =============================================
+// ============================================================
 function renderNarrative() {
   if (!dashData) return;
-  const thn = selTahun();
-  const d   = dashData;
-  let hadirTahunan = 0, targetTahunan = 0;
-  d.teams.filter(t=>t.team!=='Tes Lain').forEach(t => {
-    const hby = t.hadir_by_year || {};
-    hadirTahunan  += hby[thn] !== undefined ? hby[thn] : (t.total_hadir||t.total);
-    targetTahunan += (t.targets||{})[thn]||0;
+  const thn=selTahun(), d=dashData;
+  let hadirT=0,targetT=0;
+  d.teams.filter(t=>t.team!=='Tes Lain').forEach(t=>{
+    const hby=t.hadir_by_year||{};
+    hadirT  +=hby[thn]!==undefined?hby[thn]:(t.total_hadir||t.total);
+    targetT +=(t.targets||{})[thn]||0;
   });
-  const pctCap = targetTahunan > 0 ? Math.round(hadirTahunan/targetTahunan*1000)/10 : 0;
-  const timMencapai = d.teams.filter(t => {
-    if(t.team==='Tes Lain') return false;
-    const tgt=(t.targets||{})[thn]||0; if(!tgt) return false;
-    const hby3=t.hadir_by_year||{};
-    const hadir=hby3[thn]!==undefined?hby3[thn]:(t.total_hadir||t.total);
-    return hadir>=tgt;
+  const pctCap=targetT>0?Math.round(hadirT/targetT*1000)/10:0;
+  const timM=d.teams.filter(t=>{
+    if(t.team==='Tes Lain')return false;
+    const tgt=(t.targets||{})[thn]||0;if(!tgt)return false;
+    const hby=t.hadir_by_year||{};
+    return (hby[thn]!==undefined?hby[thn]:(t.total_hadir||t.total))>=tgt;
   }).length;
-  const beasiswaT2 = d.teams.find(t=>t.team==='Beasiswa');
-  const acT2       = d.teams.find(t=>t.team==='AC');
-  const beasiswaThn = beasiswaT2
-    ? ((beasiswaT2.months_by_year||{})[thn]
-      ? Object.values(beasiswaT2.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (beasiswaT2.total_hadir||beasiswaT2.total)) : 0;
-  const acThn = acT2
-    ? ((acT2.months_by_year||{})[thn]
-      ? Object.values(acT2.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
-      : (acT2.total_hadir||acT2.total)) : 0;
-  document.getElementById('narr-text').innerHTML = `
+  const beaT=d.teams.find(t=>t.team==='Beasiswa');
+  const acT =d.teams.find(t=>t.team==='AC');
+  const acThn=acT?((acT.months_by_year||{})[thn]
+    ?Object.values(acT.months_by_year[thn]).reduce((s,v)=>s+(v.total||0),0)
+    :(acT.total_hadir||acT.total)):0;
+  document.getElementById('narr-text').innerHTML=`
     Tahun <strong>${thn}</strong> — capaian output tahunan
-    <strong>${pctCap}%</strong> (${fmtN(hadirTahunan)} peserta hadir dari target ${fmtN(targetTahunan)}).
-    <strong>${timMencapai} dari ${d.teams.length} tim</strong> telah mencapai target.
-    Penerima beasiswa: <strong>${fmtN(beasiswaThn)}</strong>.
-    Peserta AC: <strong>${fmtN(acThn)}</strong>.
+    <strong>${pctCap}%</strong> (${fmtN(hadirT)} peserta hadir dari target ${fmtN(targetT)}).
+    <strong>${timM} dari ${d.teams.length} tim</strong> telah mencapai target.
+    Penerima beasiswa aktif: <strong>${fmtN(beaT?beaT.total:0)}</strong>
+    (alumni: ${fmtN(beaT?beaT.total_selesai||0:0)}).
+    Peserta AC ${thn}: <strong>${fmtN(acThn)}</strong>.
     <span style="color:var(--text3)">Update: ${d.generated_at}.</span>`;
 }
 
-// =============================================
-//  FILTER
-// =============================================
 function applyFilter() {
   updatePeriodLabel();
   if (dashData) { renderMetrics(); renderTeamGrid(); renderChart(); renderNarrative(); }
 }
 
-// =============================================
-//  DONUT CHART
-// =============================================
-function donutChart(lulus, tidakLulus, color, size=100, labelA='Lulus', labelB='Tidak Lulus', belum=0) {
-  const total = lulus + tidakLulus + belum;
-  if (total === 0) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
-  const pctL = Math.round(lulus/total*100);
-  const pctT = Math.round(tidakLulus/total*100);
-  const pctB = 100 - pctL - pctT;
-  const r = 38, cx=50, cy=50, stroke=14;
-  const circ = 2*Math.PI*r;
-  const dashL = circ * pctL/100;
-  const dashT = circ * pctT/100;
-  const dashB = circ * pctB/100;
-  const GRAY2 = '#C8CBD2';
-  return `
-    <div class="donut-wrap">
-      <svg class="donut-svg" width="${size}" height="${size}" viewBox="0 0 100 100">
-        <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${stroke}"/>
-        ${belum > 0 ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${GRAY2}" stroke-width="${stroke}"
-          stroke-dasharray="${dashL+dashT+dashB} ${circ-dashL-dashT-dashB}" stroke-dashoffset="${circ/4}"
-          transform="rotate(-90 ${cx} ${cy})"/>` : ''}
-        ${tidakLulus > 0 ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${stroke}"
-          stroke-dasharray="${dashL+dashT} ${circ-dashL-dashT}" stroke-dashoffset="${circ/4}"
-          transform="rotate(-90 ${cx} ${cy})"/>` : ''}
-        <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${stroke}"
-          stroke-dasharray="${dashL} ${circ-dashL}" stroke-dashoffset="${circ/4}"
-          stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
-        <text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"
-          style="font-size:16px;font-weight:600;fill:${color}">${pctL}%</text>
-      </svg>
-      <div class="donut-legend">
-        <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>${labelA}<div class="donut-pct">${fmtN(lulus)} (${pctL}%)</div></div>
-        <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>${labelB}<div class="donut-pct">${fmtN(tidakLulus)} (${pctT}%)</div></div>
-        ${belum > 0 ? `<div class="donut-item"><div class="donut-dot" style="background:${GRAY2}"></div>Belum Diproses<div class="donut-pct">${fmtN(belum)} (${pctB}%)</div></div>` : ''}
-        <div class="donut-item" style="border-top:0.5px solid #EEF0F4;padding-top:4px">
-          <div class="donut-dot" style="background:var(--text3)"></div>Peserta Hadir<div class="donut-pct">${fmtN(total)}</div>
-        </div>
+// ============================================================
+//  CHART UTILITIES
+// ============================================================
+function donutChart(lulus, tidakLulus, color, size=120, labelA='Lulus', labelB='Tidak Lulus', belum=0) {
+  const total=lulus+tidakLulus+belum;
+  if(!total) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  const pL=Math.round(lulus/total*100), pT=Math.round(tidakLulus/total*100), pB=100-pL-pT;
+  const r=38,cx=50,cy=50,sw=14,circ=2*Math.PI*r;
+  const dL=circ*pL/100,dT=circ*pT/100,dB=circ*pB/100;
+  const G='#C8CBD2';
+  return `<div class="donut-wrap">
+    <svg class="donut-svg" width="${size}" height="${size}" viewBox="0 0 100 100">
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${sw}"/>
+      ${belum>0?`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${G}" stroke-width="${sw}"
+        stroke-dasharray="${dL+dT+dB} ${circ-dL-dT-dB}" stroke-dashoffset="${circ/4}" transform="rotate(-90 ${cx} ${cy})"/>`:''}
+      ${tidakLulus>0?`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EEF0F4" stroke-width="${sw}"
+        stroke-dasharray="${dL+dT} ${circ-dL-dT}" stroke-dashoffset="${circ/4}" transform="rotate(-90 ${cx} ${cy})"/>`:''}
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${sw}"
+        stroke-dasharray="${dL} ${circ-dL}" stroke-dashoffset="${circ/4}"
+        stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
+      <text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"
+        style="font-size:16px;font-weight:600;fill:${color}">${pL}%</text>
+    </svg>
+    <div class="donut-legend">
+      <div class="donut-item"><div class="donut-dot" style="background:${color}"></div>${labelA}<div class="donut-pct">${fmtN(lulus)} (${pL}%)</div></div>
+      <div class="donut-item"><div class="donut-dot" style="background:#EEF0F4"></div>${labelB}<div class="donut-pct">${fmtN(tidakLulus)} (${pT}%)</div></div>
+      ${belum>0?`<div class="donut-item"><div class="donut-dot" style="background:${G}"></div>Belum Diproses<div class="donut-pct">${fmtN(belum)} (${pB}%)</div></div>`:''}
+      <div class="donut-item" style="border-top:.5px solid #EEF0F4;padding-top:4px">
+        <div class="donut-dot" style="background:var(--text3)"></div>Total Hadir<div class="donut-pct">${fmtN(total)}</div>
       </div>
-    </div>`;
+    </div>
+  </div>`;
 }
 
-// =============================================
-//  FUNNEL CHART
-// =============================================
 function funnelChart(steps, color) {
-  const maxV = Math.max(...steps.map(s=>s.n), 1);
+  const maxV=Math.max(...steps.map(s=>s.n),1);
   return `<div class="funnel">${steps.map(s=>`
     <div class="funnel-row">
       <div class="funnel-lbl">${s.label}</div>
       <div class="funnel-bar-wrap">
-        <div class="funnel-bar-fill" style="width:${Math.round(s.n/maxV*100)}%;background:${color}">
-          ${s.n > 0 ? fmtN(s.n) : ''}
-        </div>
+        <div class="funnel-bar-fill" style="width:${Math.round(s.n/maxV*100)}%;background:${color}">${s.n>0?fmtN(s.n):''}</div>
       </div>
     </div>`).join('')}</div>`;
 }
 
-// =============================================
-//  TREND BARS
-// =============================================
-function trendBars(trend, color, cbColor) {
-  if (!trend||!trend.length)
-    return '<div style="font-size:11px;color:var(--text3)">Belum ada data tren</div>';
-  const maxP = Math.max(...trend.map(t=>t.pct), 1);
-  const last  = trend.length-1;
-  return `<div class="p-bars">${trend.map((t,i)=>`
-    <div class="p-bar-col">
-      <div class="p-bar-val">${t.pct}%</div>
-      <div class="p-bar-body" style="height:${Math.round(t.pct/maxP*90)}px;background:${i===last?color:cbColor}"></div>
-      <div class="p-bar-lbl">${t.batch}</div>
-    </div>`).join('')}</div>`;
-}
-
-function distBars(dist, color, maxItems=10) {
-  const entries = Object.entries(dist||{}).slice(0,maxItems);
-  if (!entries.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
-  const maxV = Math.max(...entries.map(e=>e[1]), 1);
+function distBars(dist, color, maxItems=12) {
+  const entries=Object.entries(dist||{}).slice(0,maxItems);
+  if(!entries.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  const maxV=Math.max(...entries.map(e=>e[1]),1);
   return `<div class="p-dist">${entries.map(([lbl,n])=>`
     <div class="p-dist-row">
       <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
@@ -940,496 +742,668 @@ function distBars(dist, color, maxItems=10) {
     </div>`).join('')}</div>`;
 }
 
+// Stacked bar Opsi B: kiri=A (solid), kanan=B (muted)
+// entries: [{label, a, b}]
+function stackedBars(entries, colorA, colorB, labelA, labelB) {
+  if(!entries||!entries.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  const maxT=Math.max(...entries.map(e=>e.a+e.b),1);
+  const rows=entries.map(e=>{
+    const total=e.a+e.b, pctA=total>0?Math.round(e.a/total*100):0;
+    const wA=Math.round(e.a/maxT*100), wB=Math.round(e.b/maxT*100);
+    return `<div class="stk-row">
+      <div class="stk-lbl" title="${e.label}">${e.label}</div>
+      <div class="stk-bar">
+        <div class="stk-seg-a" style="width:${wA}%;background:${colorA}">${e.a>0?fmtN(e.a):''}</div>
+        <div class="stk-seg-b" style="width:${wB}%;background:${colorB}">${e.b>0?fmtN(e.b):''}</div>
+      </div>
+      <div class="stk-meta">${fmtN(total)} · ${pctA}%</div>
+    </div>`;
+  }).join('');
+  return rows+`<div class="stk-legend">
+    <div class="stk-legend-item"><div class="stk-legend-dot" style="background:${colorA}"></div>${labelA}</div>
+    <div class="stk-legend-item"><div class="stk-legend-dot" style="background:${colorB}"></div>${labelB}</div>
+  </div>`;
+}
+
 function psBlock(title, content) {
   return `<div class="ps"><div class="ps-title">${title}</div>${content}</div>`;
 }
 
-function batchSelectLocal(id, batches, onchange) {
-  const opts = ['Semua',...batches].map(b=>`<option>${b}</option>`).join('');
-  return `<select class="p-filter-sel" id="${id}" onchange="${onchange}">${opts}</select>`;
+// Tabel batch: [{batch, hadir, lulus}]
+function batchTable(rows) {
+  if(!rows||!rows.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  return `<table class="batch-tbl">
+    <thead><tr><th>Batch</th><th class="r">Hadir</th><th class="r">Lulus</th><th class="r">% Lulus</th></tr></thead>
+    <tbody>${rows.map(b=>`<tr>
+      <td>${b.batch}</td>
+      <td class="r">${fmtN(b.hadir)}</td>
+      <td class="r">${fmtN(b.lulus)}</td>
+      <td class="r">${b.hadir>0?(b.lulus/b.hadir*100).toFixed(1)+'%':'—'}</td>
+    </tr>`).join('')}</tbody>
+  </table>`;
 }
 
-// =============================================
+function makeBatchMap(rows, hadirF='hadir', lulusF='lulus') {
+  const map={};
+  (rows||[]).forEach(r=>{
+    if(!r[hadirF])return;
+    const b=r.batch||'(tanpa batch)';
+    if(!map[b])map[b]={batch:b,hadir:0,lulus:0};
+    map[b].hadir++;
+    if(r[lulusF])map[b].lulus++;
+  });
+  return Object.values(map).sort((a,b)=>a.batch.localeCompare(b.batch));
+}
+
+// ============================================================
 //  POPUP: JFKN
-// =============================================
-function popupJFKN(t, c) {
-  const d  = t.detail||{};
-  const dp = t.dalam_proses||0;
-  document.getElementById('popup-sub').textContent =
-    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%)${dp?' · '+fmtN(dp)+' belum diproses':''}`;
-  const fo = d.filter_options||{};
-  document.getElementById('popup-body').innerHTML = `
+//  Spesifikasi: donut + status peserta + stacked bar UE1 + JF target
+//  TIDAK ada funnel
+// ============================================================
+async function popupJFKN(t, c) {
+  const thn=selTahun();
+  document.getElementById('popup-sub').textContent=
+    `${fmtN(t.total_hadir||0)} mengikuti · ${fmtN(t.lulus)} direkomendasikan (${t.pct_lulus}%)`;
+  document.getElementById('popup-body').innerHTML=`
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter:</span>
-      ${bulanSelect('jfkn-f-bulan','renderJFKNDetail()')}
-      <select class="p-filter-sel" id="jfkn-f-jenjang" onchange="renderJFKNDetail()">
-        ${['Semua',...(fo.jenjang||[])].map(o=>`<option>${o}</option>`).join('')}
-      </select>
-      <select class="p-filter-sel" id="jfkn-f-jf" onchange="renderJFKNDetail()">
-        ${['Semua',...(fo.jf||[])].map(o=>`<option>${o}</option>`).join('')}
-      </select>
+      ${tahunSelect('jf-f-thn',t,thn,'reloadJFKN()')}
+      ${bulanSelect('jf-f-bln','reloadJFKN()')}
     </div>
-    <div id="jfkn-detail-body"></div>`;
-  renderJFKNDetail();
+    <div id="jf-body"><div class="p-loading">Memuat detail...</div></div>`;
+  await _jfkn(t,c,thn);
+}
+window.reloadJFKN=async()=>{
+  const t=dashData.teams.find(x=>x.team==='JFKN'),c=cfg('JFKN');
+  const raw=document.getElementById('jf-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  const b=document.getElementById('jf-body');if(!b)return;
+  b.innerHTML='<div class="p-loading">Memuat detail...</div>';
+  await _jfkn(t,c,thn);
+};
+async function _jfkn(t,c,thn){
+  const bln=parseInt(document.getElementById('jf-f-bln')?.value||'-1');
+  const b=document.getElementById('jf-body');if(!b)return;
+  const rows=await loadDetail(teamSlug('JFKN'),thn);
+  const fil=filterRows(rows,thn,bln).filter(r=>r.hadir);
+  const direk=fil.filter(r=>r.lulus).length, tidakDirek=fil.length-direk;
+
+  // Status peserta
+  const stMap={};
+  fil.forEach(r=>{const s=(r.status||'').trim();if(s)stMap[s]=(stMap[s]||0)+1;});
+  const stSorted=Object.fromEntries(Object.entries(stMap).sort((a,b2)=>b2[1]-a[1]));
+
+  // UE1 stacked bar
+  const ue1m={};
+  fil.forEach(r=>{if(!r.ue1)return;if(!ue1m[r.ue1])ue1m[r.ue1]={a:0,b:0};r.lulus?ue1m[r.ue1].a++:ue1m[r.ue1].b++;});
+  const ue1E=Object.entries(ue1m).sort((x,y)=>(y[1].a+y[1].b)-(x[1].a+x[1].b)).map(([l,v])=>({label:l,a:v.a,b:v.b}));
+
+  // JF target
+  const jfm={};
+  fil.forEach(r=>{if(r.jf)jfm[r.jf]=(jfm[r.jf]||0)+1;});
+  const jfS=Object.fromEntries(Object.entries(jfm).sort((a,b2)=>b2[1]-a[1]));
+
+  const pl=periodLabel(bln,thn);
+  b.innerHTML=`
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} peserta mengikuti — ${pl}</div>
+    <div class="p-grid2">
+      ${psBlock('Direkomendasikan — '+pl,donutChart(direk,tidakDirek,c.color,120,'Direkomendasikan','Tidak Direkomendasikan'))}
+      ${psBlock('Status Peserta',Object.keys(stSorted).length
+        ?Object.entries(stSorted).map(([k,v])=>`
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:12px">
+            <span style="color:var(--text2)">${k}</span><span style="font-weight:600;color:var(--text1)">${fmtN(v)}</span>
+          </div>`).join('')
+        :'<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>')}
+    </div>
+    ${psBlock('Sebaran UE1 — Direkomendasikan vs Tidak ('+pl+')',stackedBars(ue1E,c.color,c.cb,'Direkomendasikan','Tidak'))}
+    ${psBlock('JF Target — '+pl,distBars(jfS,c.color))}`;
 }
 
-function renderJFKNDetail() {
-  const t = dashData.teams.find(x=>x.team==='JFKN');
-  const d = t.detail||{}, c = cfg('JFKN');
-  const thn = selTahun();
-  const fn = getFunnel(d, thn);
-  const bln = parseInt(document.getElementById('jfkn-f-bulan')?.value||'-1');
-  const fJenjang = document.getElementById('jfkn-f-jenjang')?.value||'Semua';
-  const fJF      = document.getElementById('jfkn-f-jf')?.value||'Semua';
-  const body = document.getElementById('jfkn-detail-body'); if (!body) return;
-
-  const rows = filterRows(d.rows||[], thn, bln).filter(r => r.hadir &&
-    (fJenjang==='Semua'||r.jenjang===fJenjang) && (fJF==='Semua'||r.jf===fJF)
-  );
-  const direk       = rows.filter(r=>r.lulus).length;
-  const tidak_direk = rows.length - direk;
-
-  // Status: Pertama Kali / Mengulang
-  const statusMap = {};
-  rows.forEach(r=>{ const s=(r.status||'').trim(); if(s) statusMap[s]=(statusMap[s]||0)+1; });
-  const statusSorted = Object.fromEntries(Object.entries(statusMap).sort((a,b)=>b[1]-a[1]));
-
-  const ue1map={}, jfmap={};
-  rows.forEach(r=>{
-    if(r.ue1){if(!ue1map[r.ue1])ue1map[r.ue1]={total:0,lulus:0};ue1map[r.ue1].total++;if(r.lulus)ue1map[r.ue1].lulus++;}
-    if(r.jf){if(!jfmap[r.jf])jfmap[r.jf]={total:0,lulus:0};jfmap[r.jf].total++;if(r.lulus)jfmap[r.jf].lulus++;}
-  });
-  const ue1s = Object.entries(ue1map).sort((a,b)=>b[1].total-a[1].total);
-  const jfs  = Object.entries(jfmap).sort((a,b)=>b[1].total-a[1].total);
-  const maxUE1 = Math.max(...ue1s.map(e=>e[1].total),1);
-  const maxJF  = Math.max(...jfs.map(e=>e[1].total),1);
-  const pl = periodLabel(bln, thn);
-
-  const distHtml = (entries, maxV) => entries.length
-    ? `<div class="p-dist">${entries.map(([lbl,v])=>`
-        <div class="p-dist-row">
-          <div class="p-dist-lbl" title="${lbl}">${lbl}</div>
-          <div class="p-dist-bar"><div class="p-dist-fill" style="width:${Math.round(v.total/maxV*100)}%;background:${c.color}"></div></div>
-          <div class="p-dist-n">${fmtN(v.total)}</div>
-        </div>`).join('')}</div>`
-    : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
-
-  body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} peserta hadir — ${pl}</div>
-    <div class="p-grid2">
-      ${psBlock('Direkomendasikan — ' + pl, donutChart(direk, tidak_direk, c.color, 120, 'Direkomendasikan', 'Tidak Direkomendasikan'))}
-      ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Terdaftar',          n: fn.terdaftar||0},
-        {label:'Mengikuti',          n: fn.mengikuti||0},
-        {label:'Direkomendasikan',   n: fn.direkomendasikan||0},
-        {label:'Belum Diproses',     n: fn.belum_diproses||0},
-      ], c.color))}
-    </div>
-    <div class="p-grid2">
-      ${psBlock('Sebaran per UE1 — ' + pl, distHtml(ue1s, maxUE1))}
-      ${psBlock('Sebaran JF Target — ' + pl, distHtml(jfs, maxJF))}
-    </div>
-    ${psBlock('Status Peserta — ' + pl, distBars(statusSorted, c.color))}
-    ${psBlock('% Direkomendasikan per UE1 — ' + pl, ue1s.length
-      ? `<div class="p-dist">${ue1s.map(([lbl,v])=>`
-          <div class="p-dist-row">
-            <div class="p-dist-lbl">${lbl}</div>
-            <div class="p-dist-bar"><div class="p-dist-fill" style="width:${v.total>0?Math.round(v.lulus/v.total*100):0}%;background:${c.color}"></div></div>
-            <div class="p-dist-n">${v.total>0?Math.round(v.lulus/v.total*100):0}%</div>
-          </div>`).join('')}</div>`
-      : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>'
-    )}`;
-}
-
-// =============================================
+// ============================================================
 //  POPUP: SAK
-// =============================================
-function popupSAK(t, c) {
-  const d = t.detail||{};
-  document.getElementById('popup-sub').textContent =
+//  Spesifikasi: donut + funnel + tabel batch + stacked bar lokasi
+// ============================================================
+async function popupSAK(t,c){
+  const thn=selTahun();
+  document.getElementById('popup-sub').textContent=
     `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
-  document.getElementById('popup-body').innerHTML = `
-    <div class="p-filter-row">
-      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
-      ${bulanSelect('sak-f-bulan','renderSAKDetail()')}
-    </div>
-    <div id="sak-detail-body"></div>`;
-  renderSAKDetail();
-}
-
-function renderSAKDetail() {
-  const t = dashData.teams.find(x=>x.team==='SAK');
-  const d = t.detail||{}, c = cfg('SAK');
-  const thn = selTahun();
-  const fn = getFunnel(d, thn);
-  const bln = parseInt(document.getElementById('sak-f-bulan')?.value||'-1');
-  const body = document.getElementById('sak-detail-body'); if (!body) return;
-  const pl = periodLabel(bln, thn);
-
-  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
-  const lulus = rows.filter(r=>r.lulus).length;
-  const tidak_lulus = rows.length - lulus;
-
-  const batchMap={}, lokasiMap={};
-  rows.forEach(r=>{
-    if(r.batch){if(!batchMap[r.batch])batchMap[r.batch]={total:0,lulus:0};batchMap[r.batch].total++;if(r.lulus)batchMap[r.batch].lulus++;}
-    if(r.lokasi) lokasiMap[r.lokasi]=(lokasiMap[r.lokasi]||0)+1;
-  });
-  const trend = Object.entries(batchMap).map(([b,v])=>({batch:b,total:v.total,lulus:v.lulus,pct:v.total>0?Math.round(v.lulus/v.total*1000)/10:0}));
-  // Urutkan lokasi terbanyak ke terkecil
-  const lokasiSorted = Object.fromEntries(Object.entries(lokasiMap).sort((a,b)=>b[1]-a[1]));
-
-  body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl}</div>
-    <div class="p-grid2">
-      ${psBlock('Kelulusan — ' + pl, donutChart(lulus, tidak_lulus, c.color, 120))}
-      ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Pendaftar',         n: fn.pendaftar||0},
-        {label:'Verif. Dokumen',    n: fn.verif_dokumen||0},
-        {label:'Verif. Pembayaran', n: fn.verif_pembayaran||0},
-        {label:'Hadir',             n: fn.hadir||0},
-        {label:'Lulus',             n: fn.lulus||0},
-      ], c.color))}
-    </div>
-    ${psBlock('Tren per Batch — ' + pl, trendBars(trend, c.color, c.cb))}
-    ${psBlock('Sebaran Lokasi — ' + pl, distBars(lokasiSorted, c.color))}`;
-}
-
-// =============================================
-//  POPUP: USKP
-// =============================================
-function popupUSKP(t, c) {
-  document.getElementById('popup-sub').textContent =
-    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
-  document.getElementById('popup-body').innerHTML = `
-    <div class="p-filter-row">
-      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
-      ${bulanSelect('uskp-f-bulan','renderUSKPDetail()')}
-    </div>
-    <div id="uskp-detail-body"></div>`;
-  renderUSKPDetail();
-}
-
-function renderUSKPDetail() {
-  const t = dashData.teams.find(x=>x.team==='USKP');
-  const d = t.detail||{}, c = cfg('USKP');
-  const thn = selTahun();
-  const fn = getFunnel(d, thn);
-  const bln = parseInt(document.getElementById('uskp-f-bulan')?.value||'-1');
-  const body = document.getElementById('uskp-detail-body'); if (!body) return;
-
-  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
-  const lulus = rows.filter(r=>r.lulus).length;
-  const belum = rows.filter(r=>r.belum_diproses).length;
-  const tidak_lulus = rows.length - lulus - belum;
-
-  const batchMap={}, lokasi={}, tingkatMap={};
-  rows.forEach(r=>{
-    if(r.batch){if(!batchMap[r.batch])batchMap[r.batch]={total:0,lulus:0};batchMap[r.batch].total++;if(r.lulus)batchMap[r.batch].lulus++;}
-    if(r.lokasi)  lokasi[r.lokasi]=(lokasi[r.lokasi]||0)+1;
-    if(r.tingkat) tingkatMap[r.tingkat]=(tingkatMap[r.tingkat]||0)+1;
-  });
-  const trend = Object.entries(batchMap)
-    .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0))
-    .map(([b,v])=>({batch:b,total:v.total,lulus:v.lulus,pct:v.total>0?Math.round(v.lulus/v.total*1000)/10:0}));
-  const lokasiSorted2  = Object.fromEntries(Object.entries(lokasi).sort((a,b)=>b[1]-a[1]));
-  const tingkatSorted  = Object.fromEntries(Object.entries(tingkatMap).sort((a,b)=>b[1]-a[1]));
-
-  const pl2 = periodLabel(bln, thn);
-  body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl2}</div>
-    <div class="p-grid2">
-      ${psBlock('Kelulusan — ' + pl2, donutChart(lulus, tidak_lulus, c.color, 120, 'Lulus', 'Tidak Lulus', belum))}
-      ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Pendaftar',        n: fn.pendaftar||0},
-        {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
-        {label:'Hadir',            n: fn.hadir||0},
-        {label:'Lulus',            n: fn.lulus||0},
-      ], c.color))}
-    </div>
-    ${psBlock('Tren per Batch — ' + pl2, trendBars(trend, c.color, c.cb))}
-    <div class="p-grid2">
-      ${psBlock('Sebaran Lokasi — ' + pl2, distBars(lokasiSorted2, c.color))}
-      ${psBlock('Sebaran Tingkat — ' + pl2, distBars(tingkatSorted, c.color))}
-    </div>`;
-}
-
-// =============================================
-//  POPUP: PBJ
-// =============================================
-function popupPBJ(t, c) {
-  document.getElementById('popup-sub').textContent =
-    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
-  document.getElementById('popup-body').innerHTML = `
-    <div class="p-filter-row">
-      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
-      ${bulanSelect('pbj-f-bulan','renderPBJDetail()')}
-    </div>
-    <div id="pbj-detail-body"></div>`;
-  renderPBJDetail();
-}
-
-function renderPBJDetail() {
-  const t = dashData.teams.find(x=>x.team==='PBJ');
-  const d = t.detail||{}, c = cfg('PBJ');
-  const thn = selTahun();
-  const fn = getFunnel(d, thn);
-  const bln = parseInt(document.getElementById('pbj-f-bulan')?.value||'-1');
-  const body = document.getElementById('pbj-detail-body'); if (!body) return;
-
-  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.hadir);
-  const lulus = rows.filter(r=>r.lulus).length;
-  const tidak_lulus = rows.length - lulus;
-
-  const batchMap={}, jenis={};
-  rows.forEach(r=>{
-    if(r.batch){if(!batchMap[r.batch])batchMap[r.batch]={total:0,lulus:0};batchMap[r.batch].total++;if(r.lulus)batchMap[r.batch].lulus++;}
-    if(r.jenis) jenis[r.jenis]=(jenis[r.jenis]||0)+1;
-  });
-  const trend = Object.entries(batchMap)
-    .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0))
-    .map(([b,v])=>({batch:b,total:v.total,lulus:v.lulus,pct:v.total>0?Math.round(v.lulus/v.total*1000)/10:0}));
-  const jenisSorted = Object.fromEntries(Object.entries(jenis).sort((a,b)=>b[1]-a[1]));
-
-  const pl3 = periodLabel(bln, thn);
-  body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} hadir — ${pl3}</div>
-    <div class="p-grid2">
-      ${psBlock('Kelulusan — ' + pl3, donutChart(lulus, tidak_lulus, c.color, 120))}
-      ${psBlock(funnelTitle(thn), funnelChart([
-        {label:'Pendaftar',        n: fn.pendaftar||0},
-        {label:'Lolos Verifikasi', n: fn.lolos_verifikasi||0},
-        {label:'Hadir',            n: fn.hadir||0},
-        {label:'Lulus',            n: fn.lulus||0},
-      ], c.color))}
-    </div>
-    ${psBlock('Tren per Batch — ' + pl3, trendBars(trend, c.color, c.cb))}
-    ${psBlock('Sebaran Jenis Ujian — ' + pl3, distBars(jenisSorted, c.color))}`;
-}
-
-// =============================================
-//  POPUP: AC
-// =============================================
-function popupAC(t, c) {
-  const d = t.detail||{};
-  const thn = selTahun();
-  const thnStr = String(thn);
-  const hasilYear   = (d.hasil_by_year||{})[thnStr]   || d.hasil||{};
-  const jabatanYear = (d.jabatan_by_year||{})[thnStr] || {};
-  const bsYear      = ((d.batch_by_year||{})[thnStr]  || d.batch_stat||[]);
-  const totalYear   = Object.values(hasilYear).reduce((a,b)=>a+b,0);
-  const pO = totalYear?Math.round((hasilYear['Optimal']||0)/totalYear*100):0;
-  const pC = totalYear?Math.round((hasilYear['Cukup Optimal']||0)/totalYear*100):0;
-  const pK = totalYear?Math.round((hasilYear['Kurang Optimal']||0)/totalYear*100):0;
-
-  document.getElementById('popup-sub').textContent = `${fmtN(totalYear)} peserta AC tahun ${thn}`;
-
-  const bsSorted    = [...bsYear].sort((a,b)=>(parseInt((a.batch||'').replace(/[^0-9]/g,''))||0)-(parseInt((b.batch||'').replace(/[^0-9]/g,''))||0));
-  const maxV        = Math.max(...bsSorted.map(b=>b.total),1);
-  const jabSorted   = Object.fromEntries(Object.entries(jabatanYear).sort((a,b)=>b[1]-a[1]));
-
-  document.getElementById('popup-body').innerHTML = `
-    <div class="result-pills">
-      <div class="result-pill" style="background:#ECFDF5;color:#059669">✓ Optimal: ${fmtN(hasilYear['Optimal']||0)} (${pO}%)</div>
-      <div class="result-pill" style="background:#FFFBEB;color:#D97706">~ Cukup Optimal: ${fmtN(hasilYear['Cukup Optimal']||0)} (${pC}%)</div>
-      <div class="result-pill" style="background:#FEF2F2;color:#DC2626">✗ Kurang Optimal: ${fmtN(hasilYear['Kurang Optimal']||0)} (${pK}%)</div>
-    </div>
-    <div class="p-grid2">
-      ${psBlock('Sebaran Jabatan — ' + thn, distBars(jabSorted, c.color))}
-      ${psBlock('Tren per Batch — ' + thn, bsSorted.length
-        ? `<div class="p-bars">${bsSorted.map((b,i)=>`
-            <div class="p-bar-col">
-              <div class="p-bar-val">${b.total}</div>
-              <div class="p-bar-body" style="height:${Math.round(b.total/maxV*90)}px;background:${i===bsSorted.length-1?c.color:c.cb}"></div>
-              <div class="p-bar-lbl">${b.batch}</div>
-            </div>`).join('')}</div>`
-        : '<div style="font-size:11px;color:var(--text3)">Tidak ada data untuk tahun ini</div>'
-      )}
-    </div>`;
-}
-
-// =============================================
-//  POPUP: Beasiswa
-// =============================================
-function popupBeasiswa(t, c) {
-  const d   = t.detail||{};
-  // Filter hanya status Aktif — tidak berdasarkan tgl_regis atau tahun
-  const rowsAktif = (d.rows||[]).filter(r=>(r.status||'').trim()==='Aktif');
-  const fo = {
-    ue1:    [...new Set(rowsAktif.map(r=>r.ue1).filter(Boolean))].sort(),
-    jenjang:[...new Set(rowsAktif.map(r=>r.jenjang).filter(Boolean))].sort(),
-    negara: [...new Set(rowsAktif.map(r=>r.negara).filter(Boolean))].sort(),
-  };
-  document.getElementById('popup-sub').textContent = `${fmtN(rowsAktif.length)} penerima aktif`;
-  document.getElementById('popup-body').innerHTML = `
+  document.getElementById('popup-body').innerHTML=`
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter:</span>
-      <select class="p-filter-sel" id="bea-f-ue1"    onchange="renderBeasiswaDetail()">${['Semua',...fo.ue1].map(o=>`<option>${o}</option>`).join('')}</select>
-      <select class="p-filter-sel" id="bea-f-jenj"   onchange="renderBeasiswaDetail()">${['Semua',...fo.jenjang].map(o=>`<option>${o}</option>`).join('')}</select>
-      <select class="p-filter-sel" id="bea-f-negara" onchange="renderBeasiswaDetail()">${['Semua',...fo.negara].map(o=>`<option>${o}</option>`).join('')}</select>
+      ${tahunSelect('sak-f-thn',t,thn,'reloadSAK()')}
+      <select class="p-filter-sel" id="sak-f-batch"   onchange="reloadSAK()"><option value="">Semua Batch</option></select>
+      <select class="p-filter-sel" id="sak-f-tingkat" onchange="reloadSAK()"><option value="">Semua Tingkat</option></select>
     </div>
-    <div id="bea-detail-body"></div>`;
-  renderBeasiswaDetail();
+    <div id="sak-body"><div class="p-loading">Memuat detail...</div></div>`;
+  await _sak(t,c,thn);
+}
+window.reloadSAK=async()=>{
+  const t=dashData.teams.find(x=>x.team==='SAK'),c=cfg('SAK');
+  const raw=document.getElementById('sak-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  const b=document.getElementById('sak-body');if(!b)return;
+  b.innerHTML='<div class="p-loading">Memuat detail...</div>';
+  await _sak(t,c,thn);
+};
+async function _sak(t,c,thn){
+  const selBatch  =document.getElementById('sak-f-batch')?.value||'';
+  const selTingkat=document.getElementById('sak-f-tingkat')?.value||'';
+  const b=document.getElementById('sak-body');if(!b)return;
+  const rows=await loadDetail(teamSlug('SAK'),thn);
+  const allYr=filterRows(rows,thn,-1);           // semua rows tahun ini (incl. tidak hadir)
+  const allHadir=allYr.filter(r=>r.hadir);       // untuk isi dropdown & tabel batch
+
+  // Isi dropdown batch (dinamis)
+  const batchSel=document.getElementById('sak-f-batch');
+  if(batchSel){
+    const batches=[...new Set(allHadir.map(r=>r.batch).filter(Boolean))].sort();
+    const cur=batchSel.value;
+    batchSel.innerHTML='<option value="">Semua Batch</option>'+batches.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
+  }
+
+  // Isi dropdown tingkat (dinamis)
+  const tingkatSel=document.getElementById('sak-f-tingkat');
+  if(tingkatSel){
+    const tingkats=[...new Set(allHadir.map(r=>(r.tingkat||'').trim()).filter(Boolean))].sort();
+    const cur=tingkatSel.value;
+    tingkatSel.innerHTML='<option value="">Semua Tingkat</option>'+tingkats.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
+  }
+
+  // Filter semua rows (pendaftar) berdasarkan batch + tingkat — untuk funnel
+  const filAll=allYr.filter(r=>
+    (!selBatch   || r.batch===selBatch) &&
+    (!selTingkat || (r.tingkat||'').trim()===selTingkat)
+  );
+  // Filter hanya yang hadir — untuk donut & sebaran lokasi
+  const fil=filAll.filter(r=>r.hadir);
+  const lulus=fil.filter(r=>r.lulus).length, tidakLulus=fil.length-lulus;
+  const bData=makeBatchMap(allHadir);
+
+  // Funnel dihitung dari rows terfilter (bukan getFunnel dari summary)
+  const fnFil = thn==='semua' ? null : {
+    pendaftar:         filAll.length,
+    verif_dokumen:     filAll.filter(r=>r.verif_dok).length,
+    verif_pembayaran:  filAll.filter(r=>r.verif_pay).length,
+    hadir:             fil.length,
+    lulus:             lulus,
+  };
+
+  // Lokasi stacked bar
+  const lokm={};
+  fil.forEach(r=>{if(!r.lokasi)return;if(!lokm[r.lokasi])lokm[r.lokasi]={a:0,b:0};r.lulus?lokm[r.lokasi].a++:lokm[r.lokasi].b++;});
+  const lokE=Object.entries(lokm).sort((x,y)=>(y[1].a+y[1].b)-(x[1].a+x[1].b)).map(([l,v])=>({label:l,a:v.a,b:v.b}));
+
+  const parts=[selBatch,selTingkat].filter(Boolean);
+  const filterLabel=parts.length?parts.join(' · '):(thn==='semua'?'Semua Tahun':String(thn));
+  const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
+  const funnelBlock=fnFil
+    ?psBlock('Funnel — '+filterLabel,funnelChart([
+        {label:'Pendaftar',         n:fnFil.pendaftar},
+        {label:'Verif. Dokumen',    n:fnFil.verif_dokumen},
+        {label:'Verif. Pembayaran', n:fnFil.verif_pembayaran},
+        {label:'Hadir',             n:fnFil.hadir},
+        {label:'Lulus',             n:fnFil.lulus},
+      ],c.color))
+    :'';
+  b.innerHTML=`
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir — ${filterLabel}</div>
+    <div class="p-grid2">
+      ${psBlock('Kelulusan — '+filterLabel,donutChart(lulus,tidakLulus,c.color,120))}
+      ${funnelBlock || `<div></div>`}
+    </div>
+    ${psBlock('Tabel Batch — '+thnLabel,batchTable(bData))}
+    ${psBlock('Sebaran Lokasi — Lulus vs Tidak ('+filterLabel+')',stackedBars(lokE,c.color,c.cb,'Lulus','Tidak Lulus'))}`;
 }
 
-function renderBeasiswaDetail() {
-  const t   = dashData.teams.find(x=>x.team==='Beasiswa');
-  const d   = t.detail||{}, c = cfg('Beasiswa');
-  const fU  = document.getElementById('bea-f-ue1')?.value||'Semua';
-  const fJ  = document.getElementById('bea-f-jenj')?.value||'Semua';
-  const fN  = document.getElementById('bea-f-negara')?.value||'Semua';
-  const body = document.getElementById('bea-detail-body'); if (!body) return;
+// ============================================================
+//  POPUP: USKP
+//  Spesifikasi: donut + funnel + stacked bar tingkat + tabel batch
+// ============================================================
+async function popupUSKP(t,c){
+  const thn=selTahun();
+  document.getElementById('popup-sub').textContent=
+    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
+  document.getElementById('popup-body').innerHTML=`
+    <div class="p-filter-row">
+      <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      ${tahunSelect('uskp-f-thn',t,thn,'reloadUSKP()')}
+      <select class="p-filter-sel" id="uskp-f-batch"   onchange="reloadUSKP()"><option value="">Semua Batch</option></select>
+      <select class="p-filter-sel" id="uskp-f-tingkat" onchange="reloadUSKP()"><option value="">Semua Tingkat</option></select>
+    </div>
+    <div id="uskp-body"><div class="p-loading">Memuat detail...</div></div>`;
+  await _uskp(t,c,thn);
+}
+window.reloadUSKP=async()=>{
+  const t=dashData.teams.find(x=>x.team==='USKP'),c=cfg('USKP');
+  const raw=document.getElementById('uskp-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  const b=document.getElementById('uskp-body');if(!b)return;
+  b.innerHTML='<div class="p-loading">Memuat detail...</div>';
+  await _uskp(t,c,thn);
+};
+async function _uskp(t,c,thn){
+  const selBatch  =document.getElementById('uskp-f-batch')?.value||'';
+  const selTingkat=document.getElementById('uskp-f-tingkat')?.value||'';
+  const b=document.getElementById('uskp-body');if(!b)return;
+  const rows=await loadDetail(teamSlug('USKP'),thn);
+  const allYr=filterRows(rows,thn,-1);           // semua rows tahun ini (incl. tidak hadir)
+  const allHadir=allYr.filter(r=>r.hadir);       // untuk dropdown & tabel batch
 
-  // Filter: status Aktif + dropdown (tidak pakai filter tahun/tgl_regis)
-  const rows = (d.rows||[]).filter(r=>
-    (r.status||'').trim() === 'Aktif' &&
-    (fU==='Semua'||r.ue1===fU) &&
-    (fJ==='Semua'||r.jenjang===fJ) &&
-    (fN==='Semua'||r.negara===fN)
+  // Normalisasi tingkat
+  const normTingkat=r=>(r.tingkat||'').replace(/tingkat\s*/i,'').trim().toUpperCase();
+
+  // Isi dropdown batch (dinamis)
+  const batchSel=document.getElementById('uskp-f-batch');
+  if(batchSel){
+    const batches=[...new Set(allHadir.map(r=>r.batch).filter(Boolean))].sort();
+    const cur=batchSel.value;
+    batchSel.innerHTML='<option value="">Semua Batch</option>'+batches.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
+  }
+
+  // Isi dropdown tingkat (dinamis, urutan A B C)
+  const tingkatSel=document.getElementById('uskp-f-tingkat');
+  if(tingkatSel){
+    const rawTingkats=[...new Set(allHadir.map(normTingkat).filter(Boolean))];
+    const ORDER=['A','B','C'];
+    const tingkats=[...ORDER.filter(k=>rawTingkats.includes(k)),...rawTingkats.filter(k=>!ORDER.includes(k))];
+    const cur=tingkatSel.value;
+    tingkatSel.innerHTML='<option value="">Semua Tingkat</option>'+tingkats.map(v=>`<option value="${v}"${v===cur?' selected':''}>Tingkat ${v}</option>`).join('');
+  }
+
+  // Filter semua rows (termasuk tidak hadir) untuk pendaftar & lolos verif
+  const filAll=allYr.filter(r=>
+    (!selBatch   || r.batch===selBatch) &&
+    (!selTingkat || normTingkat(r)===selTingkat)
   );
-  const cnt = k => {
-    const x={};
-    rows.forEach(r=>{ if(r[k]) x[r[k]]=(x[r[k]]||0)+1; });
-    return Object.fromEntries(Object.entries(x).sort((a,b)=>b[1]-a[1]));
+  // Filter hanya yang hadir
+  const fil=filAll.filter(r=>r.hadir);
+  const lulus=fil.filter(r=>r.lulus).length;
+  const belum=fil.filter(r=>r.belum_diproses).length;
+  const tidak=fil.length-lulus-belum;
+  const bData=makeBatchMap(allHadir);
+
+  // Funnel dihitung dari rows terfilter
+  const fnFil=thn==='semua'?null:{
+    pendaftar:        filAll.length,
+    lolos_verifikasi: filAll.filter(r=>r.lolos_verif).length,
+    hadir:            fil.length,
+    lulus:            lulus,
   };
-  body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:6px">${fmtN(rows.length)} penerima aktif setelah filter</div>
+
+  // Tingkat stacked bar
+  const tingm={};
+  fil.forEach(r=>{
+    const k=normTingkat(r); if(!k)return;
+    if(!tingm[k])tingm[k]={a:0,b:0};
+    r.lulus?tingm[k].a++:tingm[k].b++;
+  });
+  const ORDER_T=['A','B','C'];
+  const tingE=[...ORDER_T.filter(k=>tingm[k]),...Object.keys(tingm).filter(k=>!ORDER_T.includes(k))]
+    .map(k=>({label:'Tingkat '+k,a:tingm[k].a,b:tingm[k].b}));
+
+  const parts=[selBatch,selTingkat?'Tingkat '+selTingkat:''].filter(Boolean);
+  const filterLabel=parts.length?parts.join(' · '):(thn==='semua'?'Semua Tahun':String(thn));
+  const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
+  const funnelBlock=fnFil
+    ?psBlock('Funnel — '+filterLabel,funnelChart([
+        {label:'Pendaftar',        n:fnFil.pendaftar},
+        {label:'Lolos Verifikasi', n:fnFil.lolos_verifikasi},
+        {label:'Hadir',            n:fnFil.hadir},
+        {label:'Lulus',            n:fnFil.lulus},
+      ],c.color))
+    :'';
+  b.innerHTML=`
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir — ${filterLabel}</div>
     <div class="p-grid2">
-      ${psBlock('Beasiswa/Sponsor', distBars(cnt('beasiswa'),    c.color))}
-      ${psBlock('Negara',           distBars(cnt('negara'),      c.color))}
-      ${psBlock('Jenjang',          distBars(cnt('jenjang'),     c.color))}
-      ${psBlock('UE1',              distBars(cnt('ue1'),         c.color))}
-      ${psBlock('Program Studi',    distBars(cnt('prodi'),       c.color))}
-      ${psBlock('Universitas',      distBars(cnt('universitas'), c.color))}
+      ${psBlock('Kelulusan — '+filterLabel,donutChart(lulus,tidak,c.color,120,'Lulus','Tidak Lulus',belum))}
+      ${funnelBlock || `<div></div>`}
+    </div>
+    ${psBlock('Sebaran Tingkat — Lulus vs Tidak ('+filterLabel+')',stackedBars(tingE,c.color,c.cb,'Lulus','Tidak Lulus'))}
+    ${psBlock('Tabel Batch — '+thnLabel,batchTable(bData))}`;
+}
+
+// ============================================================
+//  TIDAK ada funnel
+// ============================================================
+async function popupPBJ(t,c){
+  const thn=selTahun();
+  document.getElementById('popup-sub').textContent=
+    `${fmtN(t.total_hadir||0)} hadir · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%) · ${fmtN(t.total)} terdaftar`;
+  document.getElementById('popup-body').innerHTML=`
+    <div class="p-filter-row">
+      <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      ${tahunSelect('pbj-f-thn',t,thn,'reloadPBJ()')}
+    </div>
+    <div id="pbj-body"><div class="p-loading">Memuat detail...</div></div>`;
+  await _pbj(t,c,thn);
+}
+window.reloadPBJ=async()=>{
+  const t=dashData.teams.find(x=>x.team==='PBJ'),c=cfg('PBJ');
+  const raw=document.getElementById('pbj-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  const b=document.getElementById('pbj-body');if(!b)return;
+  b.innerHTML='<div class="p-loading">Memuat detail...</div>';
+  await _pbj(t,c,thn);
+};
+async function _pbj(t,c,thn){
+  const b=document.getElementById('pbj-body');if(!b)return;
+  const rows=await loadDetail(teamSlug('PBJ'),thn);
+  const fil=rows.filter(r=>r.hadir);
+  const lulus=fil.filter(r=>r.lulus).length, tidakLulus=fil.length-lulus;
+  const levelM={};
+  fil.forEach(r=>{if(r.level)levelM[r.level]=(levelM[r.level]||0)+1;});
+  const levelS=Object.fromEntries(Object.entries(levelM).sort((a,b2)=>b2[1]-a[1]));
+  const bData=makeBatchMap(fil);
+  const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
+  b.innerHTML=`
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir — ${thnLabel}</div>
+    <div class="p-grid2">
+      ${psBlock('Kelulusan — '+thnLabel,donutChart(lulus,tidakLulus,c.color,120))}
+      ${psBlock('Level Ujian — '+thnLabel,distBars(levelS,c.color))}
+    </div>
+    ${psBlock('Tabel Batch — '+thnLabel,batchTable(bData))}`;
+}
+
+// ============================================================
+//  POPUP: AC — dari summary.detail (tidak ada detail file)
+//  Spesifikasi: result pills + jabatan + tren batch
+// ============================================================
+function popupAC(t,c){
+  const thn=selTahun();
+  document.getElementById('popup-sub').textContent='';
+  document.getElementById('popup-body').innerHTML=`
+    <div class="p-filter-row">
+      <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      ${tahunSelect('ac-f-thn',t,thn,'reloadAC()')}
+      <select class="p-filter-sel" id="ac-f-batch" onchange="reloadAC()"><option value="">Semua Batch</option></select>
+    </div>
+    <div id="ac-body"><div class="p-loading">Memuat data...</div></div>`;
+  _renderAC(t,c,thn);
+}
+window.reloadAC=function(){
+  const t=dashData.teams.find(x=>x.team==='AC'),c=cfg('AC');
+  const raw=document.getElementById('ac-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  _renderAC(t,c,thn);
+};
+function _renderAC(t,c,thn){
+  const b=document.getElementById('ac-body');if(!b)return;
+  const d=t.detail||{};
+  const selBatch=document.getElementById('ac-f-batch')?.value||'';
+
+  // Kumpulkan semua batch dari tahun terpilih (untuk dropdown)
+  let allBatches=[];
+  if(thn==='semua'){
+    const bMap={};
+    Object.values(d.batch_by_year||{}).forEach(arr=>{
+      (arr||[]).forEach(bObj=>{ if(!bMap[bObj.batch])bMap[bObj.batch]={batch:bObj.batch,total:0,optimal:0,cukup:0,kurang:0};
+        bMap[bObj.batch].total+=bObj.total||0; bMap[bObj.batch].optimal+=bObj.optimal||0;
+        bMap[bObj.batch].cukup+=bObj.cukup||0; bMap[bObj.batch].kurang+=bObj.kurang||0; });
+    });
+    allBatches=Object.values(bMap);
+  } else {
+    allBatches=(d.batch_by_year||{})[String(thn)]||[];
+  }
+  allBatches=[...allBatches].sort((a,bx)=>(parseInt((a.batch||'').replace(/\D/g,''))||0)-(parseInt((bx.batch||'').replace(/\D/g,''))||0));
+
+  // Isi dropdown batch (dinamis)
+  const batchSel=document.getElementById('ac-f-batch');
+  if(batchSel){
+    const cur=batchSel.value;
+    batchSel.innerHTML='<option value="">Semua Batch</option>'+
+      allBatches.map(bx=>`<option value="${bx.batch}"${bx.batch===cur?' selected':''}>${bx.batch}</option>`).join('');
+  }
+
+  // Filter batch
+  const filtered=selBatch ? allBatches.filter(bx=>bx.batch===selBatch) : allBatches;
+
+  // Agregat hasil dari batch terfilter
+  const hY={Optimal:0,'Cukup Optimal':0,'Kurang Optimal':0};
+  filtered.forEach(bx=>{ hY['Optimal']+=bx.optimal||0; hY['Cukup Optimal']+=bx.cukup||0; hY['Kurang Optimal']+=bx.kurang||0; });
+
+  // Jabatan: agregat dari tahun (tidak bisa filter per batch karena tidak ada di data jabatan)
+  let jYraw={};
+  if(thn==='semua'){
+    Object.values(d.jabatan_by_year||{}).forEach(j=>{ Object.entries(j).forEach(([k,v])=>{ jYraw[k]=(jYraw[k]||0)+v; }); });
+  } else {
+    jYraw=(d.jabatan_by_year||{})[String(thn)]||{};
+  }
+  const jS=Object.fromEntries(Object.entries(jYraw).sort((a,bx)=>bx[1]-a[1]));
+
+  const tot=(hY['Optimal']||0)+(hY['Cukup Optimal']||0)+(hY['Kurang Optimal']||0);
+  const pO=tot?Math.round(hY['Optimal']/tot*100):0;
+  const pC=tot?Math.round(hY['Cukup Optimal']/tot*100):0;
+  const pK=tot?Math.round(hY['Kurang Optimal']/tot*100):0;
+  const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
+  const filterLabel=selBatch?selBatch:thnLabel;
+  document.getElementById('popup-sub').textContent=`${fmtN(tot)} peserta AC — ${filterLabel}`;
+
+  b.innerHTML=`
+    <div class="result-pills">
+      <div class="result-pill" style="background:#ECFDF5;color:#059669">✓ Optimal: ${fmtN(hY['Optimal'])} (${pO}%)</div>
+      <div class="result-pill" style="background:#FFFBEB;color:#D97706">~ Cukup Optimal: ${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
+      <div class="result-pill" style="background:#FEF2F2;color:#DC2626">✗ Kurang Optimal: ${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
+    </div>
+    ${psBlock('Hasil Penilaian dikategorikan sesuai Per BKN Nomor 26 2019— '+filterLabel, tot ? `
+      <div class="p-dist">
+        <div class="p-dist-row">
+          <div class="p-dist-lbl">Optimal (memenuhi minimal 90% standar penilaian)</div>
+          <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pO}%;background:#059669"></div></div>
+          <div class="p-dist-n" style="color:#059669">${fmtN(hY['Optimal'])} (${pO}%)</div>
+        </div>
+        <div class="p-dist-row">
+          <div class="p-dist-lbl">Cukup Optimal (memenuhi minimal 78% s.d. 90% standar penilaian)</div>
+          <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pC}%;background:#D97706"></div></div>
+          <div class="p-dist-n" style="color:#D97706">${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
+        </div>
+        <div class="p-dist-row">
+          <div class="p-dist-lbl">Kurang Optimal (memenuhi kurang dari 78% standar penilaian)</div>
+          <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pK}%;background:#DC2626"></div></div>
+          <div class="p-dist-n" style="color:#DC2626">${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
+        </div>
+      </div>` : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>')}
+    ${psBlock('Sebaran Jabatan — '+thnLabel,distBars(jS,c.color))}`;
+}
+
+// ============================================================
+//  POPUP: Beasiswa — dari summary.detail (aggregat)
+//  Spesifikasi: 3 cards + stacked bar DN/LN & jenjang
+//               + tabel provider + tabel PTUD + UE1 + prodi
+//  TANPA filter tahun
+// ============================================================
+function popupBeasiswa(t,c){
+  const d=t.detail||{};
+  const nA=t.total||0, nS=t.total_selesai||0;
+  document.getElementById('popup-sub').textContent=`${fmtN(nA)} penerima aktif · ${fmtN(nS)} alumni`;
+
+  // DN/LN stacked bar
+  const dnln=d.dn_ln||{};
+  const dnlnE=Object.entries(dnln).map(([l,v])=>({label:l,a:v.aktif||0,b:v.selesai||0}));
+
+  // Jenjang stacked bar
+  const jenj=d.jenjang||{};
+  const jenjE=Object.entries(jenj)
+    .sort((x,y)=>(y[1].aktif+y[1].selesai)-(x[1].aktif+x[1].selesai))
+    .map(([l,v])=>({label:l,a:v.aktif||0,b:v.selesai||0}));
+
+  // Provider table (top 7 + lainnya)
+  const prov=d.provider||{};
+  const provL=Object.entries(prov).sort((x,y)=>(y[1].aktif+y[1].selesai)-(x[1].aktif+x[1].selesai));
+  const top7=provL.slice(0,7), sisa=provL.slice(7);
+  const siA=sisa.reduce((s,[,v])=>s+(v.aktif||0),0);
+  const siS=sisa.reduce((s,[,v])=>s+(v.selesai||0),0);
+  const allProv=[...top7,...(sisa.length?[['+'+(sisa.length)+' lainnya',{aktif:siA,selesai:siS}]]:[])];
+  const provHTML=`<table class="prov-tbl">
+    <thead><tr><th>Provider</th><th>Aktif</th><th>Alumni</th><th>Total</th></tr></thead>
+    <tbody>${allProv.map(([nm,v])=>`<tr>
+      <td title="${nm}">${nm}</td>
+      <td>${fmtN(v.aktif||0)}</td>
+      <td>${fmtN(v.selesai||0)}</td>
+      <td>${fmtN((v.aktif||0)+(v.selesai||0))}</td>
+    </tr>`).join('')}</tbody></table>`;
+
+  // PTUD table
+  const ptud=d.ptud||{};
+  const ptudL=Object.entries(ptud).sort((x,y)=>(y[1].aktif+y[1].selesai)-(x[1].aktif+x[1].selesai));
+  const ptudHTML=ptudL.length
+    ?`<table class="prov-tbl">
+        <thead><tr><th>Kampus PTUD</th><th>Aktif</th><th>Alumni</th></tr></thead>
+        <tbody>${ptudL.map(([nm,v])=>`<tr>
+          <td title="${nm}">${nm}</td>
+          <td>${fmtN(v.aktif||0)}</td>
+          <td>${fmtN(v.selesai||0)}</td>
+        </tr>`).join('')}</tbody></table>`
+    :'<div style="font-size:11px;color:var(--text3)">Tidak ada data PTUD</div>';
+
+  document.getElementById('popup-body').innerHTML=`
+    <div class="bea-3cards">
+      <div class="bea-card">
+        <div class="bea-card-lbl">Aktif</div>
+        <div class="bea-card-val" style="color:${c.color}">${fmtN(nA)}</div>
+        <div class="bea-card-sub">sedang kuliah</div>
+      </div>
+      <div class="bea-card">
+        <div class="bea-card-lbl">Alumni</div>
+        <div class="bea-card-val" style="color:var(--text2)">${fmtN(nS)}</div>
+        <div class="bea-card-sub">selesai studi</div>
+      </div>
+      <div class="bea-card">
+        <div class="bea-card-lbl">Total</div>
+        <div class="bea-card-val" style="color:var(--text1)">${fmtN(nA+nS)}</div>
+        <div class="bea-card-sub">aktif + alumni</div>
+      </div>
+    </div>
+    <div class="p-grid2">
+      ${psBlock('Lokasi (DN/LN) — Aktif vs Alumni',stackedBars(dnlnE,c.color,c.cb,'Aktif','Alumni'))}
+      ${psBlock('Jenjang — Aktif vs Alumni',stackedBars(jenjE,c.color,c.cb,'Aktif','Alumni'))}
+    </div>
+    ${psBlock('Provider / Pemberi Beasiswa',provHTML)}
+    ${psBlock('Kampus PTUD (Top World Ranking)',ptudHTML)}
+    <div class="p-grid2">
+      ${psBlock('Sebaran UE1',distBars(d.ue1||{},c.color))}
+      ${psBlock('Program Studi (Top 12)',distBars(d.prodi||{},c.color))}
     </div>`;
 }
 
-// =============================================
+// ============================================================
 //  POPUP: Tes Lain
-// =============================================
-function popupTesTes(t, c) {
-  const d   = t.detail||{};
-  const thn = selTahun();
-  const fn  = getFunnel(d, thn);
-  document.getElementById('popup-sub').textContent =
+//  Spesifikasi: tabel batch×jenis + bar jenis + bar UE1
+//  TIDAK ada funnel, TIDAK ada konsep lulus
+// ============================================================
+async function popupTesTes(t,c){
+  const thn=selTahun();
+  const fn=getFunnel(t,thn);
+  document.getElementById('popup-sub').textContent=
     `${fmtN(fn.terdaftar||0)} terdaftar · ${fmtN(fn.mengikuti||0)} mengikuti`;
-  document.getElementById('popup-body').innerHTML = `
+  document.getElementById('popup-body').innerHTML=`
     <div class="p-filter-row">
-      <span style="font-size:11px;color:var(--text3)">Filter bulan:</span>
-      ${bulanSelect('pengtes-f-bulan','renderTesTesDetail()')}
+      <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      ${tahunSelect('tes-f-thn',t,thn,'reloadTesTes()')}
     </div>
-    <div id="pengtes-detail-body"></div>`;
-  renderTesTesDetail();
+    <div id="tes-body"><div class="p-loading">Memuat detail...</div></div>`;
+  await _tesLain(t,c,thn);
 }
+window.reloadTesTes=async()=>{
+  const t=dashData.teams.find(x=>x.team==='Tes Lain'),c=cfg('Tes Lain');
+  const raw=document.getElementById('tes-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  const fn=thn==='semua'?{}:getFunnel(t,thn);
+  document.getElementById('popup-sub').textContent=
+    thn==='semua'
+      ?`${fmtN(t.total||0)} terdaftar · ${fmtN(t.total_hadir||0)} mengikuti (semua tahun)`
+      :`${fmtN(fn.terdaftar||0)} terdaftar · ${fmtN(fn.mengikuti||0)} mengikuti`;
+  const b=document.getElementById('tes-body');if(!b)return;
+  b.innerHTML='<div class="p-loading">Memuat detail...</div>';
+  await _tesLain(t,c,thn);
+};
+async function _tesLain(t,c,thn){
+  const b=document.getElementById('tes-body');if(!b)return;
+  const rows=await loadDetail(teamSlug('Tes Lain'),thn);
+  const fil=rows.filter(r=>r.mengikuti);
 
-function renderTesTesDetail() {
-  const t = dashData.teams.find(x=>x.team==='Tes Lain');
-  const d = t.detail||{}, c = cfg('Tes Lain');
-  const thn = selTahun();
-  const fn  = getFunnel(d, thn);
-  const bln = parseInt(document.getElementById('pengtes-f-bulan')?.value||'-1');
-  const body = document.getElementById('pengtes-detail-body'); if (!body) return;
-
-  const rows = filterRows(d.rows||[], thn, bln).filter(r=>r.mengikuti);
-  const ujian={}, ue1={}, batchMap={};
-  rows.forEach(r=>{
-    if(r.ujian) ujian[r.ujian]=(ujian[r.ujian]||0)+1;
-    if(r.ue1)   ue1[r.ue1]=(ue1[r.ue1]||0)+1;
-    if(r.batch) batchMap[r.batch]=(batchMap[r.batch]||0)+1;
+  const ujianM={},ue1M={},batchJ={};
+  fil.forEach(r=>{
+    if(r.ujian)ujianM[r.ujian]=(ujianM[r.ujian]||0)+1;
+    if(r.ue1)  ue1M[r.ue1]=(ue1M[r.ue1]||0)+1;
+    const bk=r.batch||'(tanpa batch)', jk=r.ujian||'(tanpa jenis)';
+    if(!batchJ[bk])batchJ[bk]={};
+    batchJ[bk][jk]=(batchJ[bk][jk]||0)+1;
   });
-  const bsSorted = Object.entries(batchMap)
-    .sort((a,b)=>(parseInt(a[0].replace(/[^0-9]/g,''))||0)-(parseInt(b[0].replace(/[^0-9]/g,''))||0));
-  const maxV = Math.max(...Object.values(batchMap),1);
+  const ujianS=Object.fromEntries(Object.entries(ujianM).sort((a,b2)=>b2[1]-a[1]));
+  const ue1S  =Object.fromEntries(Object.entries(ue1M).sort((a,b2)=>b2[1]-a[1]));
 
-  // Sort ujian & ue1 descending by count
-  const ujianSorted = Object.fromEntries(Object.entries(ujian).sort((a,b)=>b[1]-a[1]));
-  const ue1Sorted   = Object.fromEntries(Object.entries(ue1).sort((a,b)=>b[1]-a[1]));
+  // Tabel batch × jenis
+  const bRows=Object.entries(batchJ).sort((a,b2)=>a[0].localeCompare(b2[0]));
+  const tabelHTML=bRows.length
+    ?`<table class="batch-tbl">
+        <thead><tr><th>Batch</th><th>Jenis Ujian</th><th class="r">Peserta</th></tr></thead>
+        <tbody>${bRows.flatMap(([bk,jObj])=>
+          Object.entries(jObj).sort((a,b2)=>b2[1]-a[1]).map(([jk,n],i)=>`<tr>
+            ${i===0?`<td rowspan="${Object.keys(jObj).length}" style="vertical-align:top;padding-top:7px">${bk}</td>`:''}
+            <td>${jk}</td><td class="r">${fmtN(n)}</td>
+          </tr>`)
+        ).join('')}</tbody>
+      </table>`
+    :'<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
 
-  const pl4 = periodLabel(bln, thn);
-  body.innerHTML = `
-    <div style="font-size:11px;color:var(--text3);margin-bottom:8px">${fmtN(rows.length)} mengikuti — ${pl4}</div>
-    ${psBlock(funnelTitle(thn), funnelChart([
-      {label:'Terdaftar',        n: fn.terdaftar||0},
-      {label:'Mengikuti',        n: fn.mengikuti||0},
-      {label:'Tidak Mengikuti',  n: fn.tidak_mengikuti||0},
-      {label:'Belum Diproses',   n: fn.belum_diproses||0},
-    ], c.color))}
+  b.innerHTML=`
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} mengikuti — ${thn==='semua'?'Semua Tahun':thn}</div>
+    ${psBlock('Tabel Batch × Jenis Ujian',tabelHTML)}
     <div class="p-grid2">
-      ${psBlock('Jenis Ujian — ' + pl4,    distBars(ujianSorted, c.color))}
-      ${psBlock('Sebaran per UE1 — ' + pl4, distBars(ue1Sorted, c.color))}
-    </div>
-    ${psBlock('Peserta Mengikuti per Batch — ' + pl4, bsSorted.length
-      ? `<div class="p-bars">${bsSorted.map(([b,n],i)=>`
-          <div class="p-bar-col">
-            <div class="p-bar-val">${n}</div>
-            <div class="p-bar-body" style="height:${Math.round(n/maxV*90)}px;background:${i===bsSorted.length-1?c.color:c.cb}"></div>
-            <div class="p-bar-lbl">${b}</div>
-          </div>`).join('')}</div>`
-      : '<div style="font-size:11px;color:var(--text3)">Belum ada data</div>'
-    )}`;
+      ${psBlock('Sebaran Jenis Ujian',distBars(ujianS,c.color))}
+      ${psBlock('Sebaran UE1',distBars(ue1S,c.color))}
+    </div>`;
 }
 
-// =============================================
+// ============================================================
 //  POPUP OPEN / CLOSE
-// =============================================
-const POPUP_RENDERERS = {
-  JFKN: popupJFKN, SAK: popupSAK, USKP: popupUSKP, PBJ: popupPBJ,
-  AC: popupAC, Beasiswa: popupBeasiswa, 'Tes Lain': popupTesTes,
+// ============================================================
+const POPUP_RENDERERS={
+  JFKN:popupJFKN, SAK:popupSAK, USKP:popupUSKP, PBJ:popupPBJ,
+  AC:popupAC, Beasiswa:popupBeasiswa, 'Tes Lain':popupTesTes,
 };
 
-function openPopup(teamId) {
-  if (!dashData) return;
-  const t = dashData.teams.find(x=>x.team===teamId);
-  const c = cfg(teamId);
-  if (!t) return;
-  document.getElementById('popup-title').textContent = teamId + ' — Detail';
-  document.getElementById('popup-body').innerHTML    = '';
-  document.getElementById('popup-sub').textContent   = '';
-  const renderer = POPUP_RENDERERS[teamId];
-  if (renderer) renderer(t, c);
-  else document.getElementById('popup-body').innerHTML = '<div style="padding:20px;color:var(--text3)">Tidak ada detail.</div>';
-  const ov = document.getElementById('popup-overlay');
-  ov.style.display = 'flex';
+async function openPopup(teamId){
+  if(!dashData)return;
+  const t=dashData.teams.find(x=>x.team===teamId);
+  if(!t)return;
+  const c=cfg(teamId);
+  document.getElementById('popup-title').textContent=teamId+' — Detail';
+  document.getElementById('popup-body').innerHTML='<div class="p-loading">Memuat data...</div>';
+  document.getElementById('popup-sub').textContent='';
+  const ov=document.getElementById('popup-overlay');
+  ov.style.display='flex';
   requestAnimationFrame(()=>ov.classList.add('open'));
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow='hidden';
+  const renderer=POPUP_RENDERERS[teamId];
+  if(renderer){ document.getElementById('popup-body').innerHTML=''; await renderer(t,c); }
+  else document.getElementById('popup-body').innerHTML='<div style="padding:20px;color:var(--text3)">Tidak ada detail.</div>';
 }
 
-function closePopup() {
-  const ov = document.getElementById('popup-overlay');
+function closePopup(){
+  const ov=document.getElementById('popup-overlay');
   ov.classList.remove('open');
-  setTimeout(()=>{ ov.style.display='none'; }, 200);
-  document.body.style.overflow = '';
+  setTimeout(()=>{ ov.style.display='none'; },200);
+  document.body.style.overflow='';
 }
+function closePopupIfOverlay(e){ if(e.target===document.getElementById('popup-overlay'))closePopup(); }
+document.addEventListener('keydown',e=>{ if(e.key==='Escape')closePopup(); });
 
-function closePopupIfOverlay(e) {
-  if (e.target===document.getElementById('popup-overlay')) closePopup();
-}
-
-// =============================================
-//  VIEW SWITCH
-// =============================================
-function switchView(v) {
-  document.getElementById('view-internal').classList.toggle('active', v==='internal');
-  document.getElementById('tab-int').classList.toggle('active', v==='internal');
-}
-
-// =============================================
+// ============================================================
 //  INIT
-// =============================================
-function init() {
-  const now = new Date();
-  const curYear = now.getFullYear();
-  const selThnEl = document.getElementById('sel-tahun');
-  for (let y = curYear - 3; y <= curYear + 2; y++) {
-    const opt = document.createElement('option');
-    opt.value = y; opt.textContent = y;
-    if (y === curYear) opt.selected = true;
-    selThnEl.appendChild(opt);
+// ============================================================
+function init(){
+  const curYear=new Date().getFullYear();
+  const el=document.getElementById('sel-tahun');
+  for(let y=curYear-3;y<=curYear+2;y++){
+    const o=document.createElement('option');
+    o.value=y; o.textContent=y;
+    if(y===curYear)o.selected=true;
+    el.appendChild(o);
   }
   updatePeriodLabel();
   startPolling();
 }
-
 init();
 </script>
 </body>
