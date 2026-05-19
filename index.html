@@ -379,13 +379,13 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
       </div>
 
       <!-- Narrative -->
-      <div class="narr-panel">
+      <!-- <div class="narr-panel">
         <div class="narr-header">
           <div class="narr-dot"></div>
           <span class="narr-title">Narasi Laporan Otomatis</span>
         </div>
         <div class="narr-text" id="narr-text">Memuat data dari watcher — jalankan watcher.py untuk menghasilkan narasi laporan.</div>
-      </div>
+      </div> -->
 
     </div><!-- /content -->
   </main>
@@ -407,6 +407,7 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 </div><!-- /app -->
 
 <script>
+
 'use strict';
 
 // ============================================================
@@ -1154,14 +1155,15 @@ function _renderAC(t,c,thn){
   const d=t.detail||{};
   const selBatch=document.getElementById('ac-f-batch')?.value||'';
 
-  // Kumpulkan semua batch dari tahun terpilih (untuk dropdown)
   let allBatches=[];
   if(thn==='semua'){
     const bMap={};
     Object.values(d.batch_by_year||{}).forEach(arr=>{
-      (arr||[]).forEach(bObj=>{ if(!bMap[bObj.batch])bMap[bObj.batch]={batch:bObj.batch,total:0,optimal:0,cukup:0,kurang:0};
+      (arr||[]).forEach(bObj=>{
+        if(!bMap[bObj.batch])bMap[bObj.batch]={batch:bObj.batch,total:0,optimal:0,cukup:0,kurang:0};
         bMap[bObj.batch].total+=bObj.total||0; bMap[bObj.batch].optimal+=bObj.optimal||0;
-        bMap[bObj.batch].cukup+=bObj.cukup||0; bMap[bObj.batch].kurang+=bObj.kurang||0; });
+        bMap[bObj.batch].cukup+=bObj.cukup||0; bMap[bObj.batch].kurang+=bObj.kurang||0;
+      });
     });
     allBatches=Object.values(bMap);
   } else {
@@ -1169,7 +1171,6 @@ function _renderAC(t,c,thn){
   }
   allBatches=[...allBatches].sort((a,bx)=>(parseInt((a.batch||'').replace(/\D/g,''))||0)-(parseInt((bx.batch||'').replace(/\D/g,''))||0));
 
-  // Isi dropdown batch (dinamis)
   const batchSel=document.getElementById('ac-f-batch');
   if(batchSel){
     const cur=batchSel.value;
@@ -1177,14 +1178,10 @@ function _renderAC(t,c,thn){
       allBatches.map(bx=>`<option value="${bx.batch}"${bx.batch===cur?' selected':''}>${bx.batch}</option>`).join('');
   }
 
-  // Filter batch
-  const filtered=selBatch ? allBatches.filter(bx=>bx.batch===selBatch) : allBatches;
-
-  // Agregat hasil dari batch terfilter
+  const filtered=selBatch?allBatches.filter(bx=>bx.batch===selBatch):allBatches;
   const hY={Optimal:0,'Cukup Optimal':0,'Kurang Optimal':0};
   filtered.forEach(bx=>{ hY['Optimal']+=bx.optimal||0; hY['Cukup Optimal']+=bx.cukup||0; hY['Kurang Optimal']+=bx.kurang||0; });
 
-  // Jabatan: agregat dari tahun (tidak bisa filter per batch karena tidak ada di data jabatan)
   let jYraw={};
   if(thn==='semua'){
     Object.values(d.jabatan_by_year||{}).forEach(j=>{ Object.entries(j).forEach(([k,v])=>{ jYraw[k]=(jYraw[k]||0)+v; }); });
@@ -1193,7 +1190,7 @@ function _renderAC(t,c,thn){
   }
   const jS=Object.fromEntries(Object.entries(jYraw).sort((a,bx)=>bx[1]-a[1]));
 
-  const tot=(hY['Optimal']||0)+(hY['Cukup Optimal']||0)+(hY['Kurang Optimal']||0);
+  const tot=hY['Optimal']+hY['Cukup Optimal']+hY['Kurang Optimal'];
   const pO=tot?Math.round(hY['Optimal']/tot*100):0;
   const pC=tot?Math.round(hY['Cukup Optimal']/tot*100):0;
   const pK=tot?Math.round(hY['Kurang Optimal']/tot*100):0;
@@ -1207,24 +1204,25 @@ function _renderAC(t,c,thn){
       <div class="result-pill" style="background:#FFFBEB;color:#D97706">~ Cukup Optimal: ${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
       <div class="result-pill" style="background:#FEF2F2;color:#DC2626">✗ Kurang Optimal: ${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
     </div>
-    ${psBlock('Hasil Penilaian — '+filterLabel, tot ? `
+    ${psBlock('Hasil Penilaian disusun dalam kategori berdasarkan Peraturan BKN Nomor 26 tahun 2019 — '+filterLabel, tot ? `
       <div class="p-dist">
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Optimal</div>
+          <div class="p-dist-lbl">Optimal (memenuhi minimal 90% dari kriteria JPM) </div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pO}%;background:#059669"></div></div>
           <div class="p-dist-n" style="color:#059669">${fmtN(hY['Optimal'])} (${pO}%)</div>
         </div>
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Cukup Optimal</div>
+          <div class="p-dist-lbl">Cukup Optimal (memenuhi minimal 78% s.d. 90% dari kriteria JPM)</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pC}%;background:#D97706"></div></div>
           <div class="p-dist-n" style="color:#D97706">${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
         </div>
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Kurang Optimal</div>
+          <div class="p-dist-lbl">Kurang Optimal (memenuhi s.d 78% dari kriteria JPM)</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pK}%;background:#DC2626"></div></div>
           <div class="p-dist-n" style="color:#DC2626">${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
         </div>
       </div>` : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>')}
+
     ${psBlock('Sebaran Jabatan — '+thnLabel,distBars(jS,c.color))}`;
 }
 
@@ -1316,12 +1314,21 @@ function popupBeasiswa(t,c){
 async function popupTesTes(t,c){
   const thn=selTahun();
   const fn=getFunnel(t,thn);
+  // Kumpulkan semua nilai tag yang ada di data untuk dropdown
+  const allTags=[...new Set(
+    Object.values(t.tag_ujian_by_year||{}).flatMap(yr=>Object.keys(yr))
+  )].sort();
+  const tagOpts=allTags.map(tg=>`<option value="${tg}">${tg}</option>`).join('');
   document.getElementById('popup-sub').textContent=
     `${fmtN(fn.terdaftar||0)} terdaftar · ${fmtN(fn.mengikuti||0)} mengikuti`;
   document.getElementById('popup-body').innerHTML=`
     <div class="p-filter-row">
       <span style="font-size:11px;color:var(--text3)">Filter:</span>
       ${tahunSelect('tes-f-thn',t,thn,'reloadTesTes()')}
+      <select class="p-filter-sel" id="tes-f-tag" onchange="reloadTesTes()">
+        <option value="">Semua Jenis</option>
+        ${tagOpts}
+      </select>
     </div>
     <div id="tes-body"><div class="p-loading">Memuat detail...</div></div>`;
   await _tesLain(t,c,thn);
@@ -1341,11 +1348,14 @@ window.reloadTesTes=async()=>{
 };
 async function _tesLain(t,c,thn){
   const b=document.getElementById('tes-body');if(!b)return;
+  const selTag=document.getElementById('tes-f-tag')?.value||'';
   const rows=await loadDetail(teamSlug('Tes Lain'),thn);
   const fil=rows.filter(r=>r.mengikuti);
+  // Terapkan filter tag (case-insensitive)
+  const filTag=selTag?fil.filter(r=>(r.tag||'').toLowerCase()===selTag.toLowerCase()):fil;
 
   const ujianM={},ue1M={},batchJ={};
-  fil.forEach(r=>{
+  filTag.forEach(r=>{
     if(r.ujian)ujianM[r.ujian]=(ujianM[r.ujian]||0)+1;
     if(r.ue1)  ue1M[r.ue1]=(ue1M[r.ue1]||0)+1;
     const bk=r.batch||'(tanpa batch)', jk=r.ujian||'(tanpa jenis)';
@@ -1369,8 +1379,70 @@ async function _tesLain(t,c,thn){
       </table>`
     :'<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
 
+  // Bar chart tag × ujian dari summary (tidak perlu hitung dari rows)
+  const tagUjianAll=(t.tag_ujian_by_year)||{};
+  let tagUjianRaw={};
+  if(thn==='semua'){
+    Object.values(tagUjianAll).forEach(ty=>{
+      Object.entries(ty).forEach(([tag,ujMap])=>{
+        if(!tagUjianRaw[tag])tagUjianRaw[tag]={};
+        Object.entries(ujMap).forEach(([uj,n])=>{ tagUjianRaw[tag][uj]=(tagUjianRaw[tag][uj]||0)+n; });
+      });
+    });
+  } else {
+    tagUjianRaw=tagUjianAll[String(thn)]||{};
+  }
+  // Filter tag: case-insensitive
+  const selTagLow=selTag.toLowerCase();
+  const tagUjian=selTag
+    ?Object.fromEntries(Object.entries(tagUjianRaw).filter(([k])=>k.toLowerCase()===selTagLow))
+    :tagUjianRaw;
+  const allUjian=[...new Set(Object.values(tagUjian).flatMap(u=>Object.keys(u)))].sort();
+  const UJIAN_COLORS=['#2563EB','#D97706','#059669','#DC2626','#7C3AED','#0D9488'];
+  const ujianColor=function(u){return UJIAN_COLORS[allUjian.indexOf(u)%UJIAN_COLORS.length];};
+  const tags2=selTag?[selTag]:Object.keys(tagUjian).sort();
+
+  function buildTagBar(){
+    if(!tags2.length||!allUjian.length)
+      return '<div style="font-size:11px;color:var(--text3)">Tidak ada data profiling/non profiling</div>';
+    var maxV=0;
+    tags2.forEach(function(tag){allUjian.forEach(function(uj){var n=(tagUjian[tag]||{})[uj]||0;if(n>maxV)maxV=n;});});
+    if(maxV<1)maxV=1;
+    var BAR_H=90;
+    var html='<div style="display:flex;align-items:flex-end;gap:24px;height:'+(BAR_H+48)+'px;padding:0 8px">';
+    tags2.forEach(function(tag){
+      var ujMap=tagUjian[tag]||{};
+      var subBars='';
+      allUjian.forEach(function(uj){
+        var n=ujMap[uj]||0;
+        var h=Math.max(3,Math.round(n/maxV*BAR_H));
+        subBars+='<div style="display:flex;flex-direction:column;align-items:center;gap:3px">'
+          +'<span style="font-size:10px;font-weight:600;color:'+ujianColor(uj)+'">'+n+'</span>'
+          +'<div style="width:28px;height:'+h+'px;background:'+ujianColor(uj)+';border-radius:3px 3px 0 0"></div>'
+          +'<span style="font-size:9px;color:var(--text3);margin-top:2px;max-width:32px;text-align:center;line-height:1.2">'+uj+'</span>'
+          +'</div>';
+      });
+      var total=allUjian.reduce(function(s,uj){return s+(ujMap[uj]||0);},0);
+      html+='<div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;min-width:0">'
+        +'<div style="display:flex;align-items:flex-end;gap:6px;height:'+BAR_H+'px">'+subBars+'</div>'
+        +'<div style="font-size:12px;font-weight:600;color:var(--text1);margin-top:4px">'+tag+'</div>'
+        +'<div style="font-size:10px;color:var(--text3)">Total: '+total+'</div>'
+        +'</div>';
+    });
+    html+='</div><div style="display:flex;gap:14px;margin-top:10px;flex-wrap:wrap">';
+    allUjian.forEach(function(uj){
+      html+='<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text2)">'
+        +'<div style="width:10px;height:10px;border-radius:2px;background:'+ujianColor(uj)+'"></div>'+uj+'</div>';
+    });
+    html+='</div>';
+    return html;
+  }
+
+  const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
+  const filterLabel=selTag?selTag+' — '+thnLabel:thnLabel;
   b.innerHTML=`
-    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} mengikuti — ${thn==='semua'?'Semua Tahun':thn}</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(filTag.length)} mengikuti — ${filterLabel}</div>
+    ${psBlock('Profiling vs Non Profiling — '+thnLabel,buildTagBar())}
     ${psBlock('Tabel Batch × Jenis Ujian',tabelHTML)}
     <div class="p-grid2">
       ${psBlock('Sebaran Jenis Ujian',distBars(ujianS,c.color))}

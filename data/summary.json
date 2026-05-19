@@ -1,14 +1,14 @@
 {
-  "generated_at": "18 May 2026, 14:00:11",
-  "generated_ts": "2026-05-18T14:00:11.895398",
+  "generated_at": "19 May 2026, 11:04:50",
+  "generated_ts": "2026-05-19T11:04:50.584234",
   "total_peserta": 4893,
   "total_lulus": 1648,
   "avg_pct_lulus": 33.7,
   "total_tim": 7,
-  "total_angkatan": 30,
-  "total_hadir": 7556,
+  "total_angkatan": 32,
+  "total_hadir": 8525,
   "total_target": 4329,
-  "pct_capaian": 174.5,
+  "pct_capaian": 196.9,
   "tim_mencapai": 5,
   "total_beasiswa": 1689,
   "total_beasiswa_selesai": 4563,
@@ -2696,44 +2696,59 @@
     {
       "team": "Tes Lain",
       "type": "count",
-      "total": 2187,
-      "total_hadir": 2130,
+      "total": 3180,
+      "total_hadir": 3099,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 11,
+      "total_angkatan": 13,
       "targets": {
         "2026": 320
       },
       "months_by_year": {
         "2026": {
+          "1": {
+            "total": 338,
+            "lulus": 0
+          },
           "2": {
-            "total": 321,
+            "total": 992,
             "lulus": 0
           },
           "3": {
-            "total": 1071,
-            "lulus": 0
-          },
-          "1": {
-            "total": 6,
+            "total": 68,
             "lulus": 0
           },
           "4": {
-            "total": 732,
+            "total": 1701,
             "lulus": 0
           }
         }
       },
       "hadir_by_year": {
-        "2026": 2130
+        "2026": 3099
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 2187,
-          "mengikuti": 2130,
-          "tidak_mengikuti": 57,
+          "terdaftar": 3180,
+          "mengikuti": 3099,
+          "tidak_mengikuti": 81,
           "belum_diproses": 0
+        }
+      },
+      "tag_ujian_by_year": {
+        "2026": {
+          "non profilling": {
+            "Psikotes": 95,
+            "TBI": 943,
+            "Ujian Lainnya": 20,
+            "TPA": 60,
+            "TPA & TBI": 630
+          },
+          "profilling": {
+            "Psikotes": 458,
+            "TBI": 893
+          }
         }
       },
       "error": null
