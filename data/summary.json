@@ -1,14 +1,14 @@
 {
-  "generated_at": "19 May 2026, 11:04:50",
-  "generated_ts": "2026-05-19T11:04:50.584234",
-  "total_peserta": 4893,
-  "total_lulus": 1648,
-  "avg_pct_lulus": 33.7,
+  "generated_at": "19 May 2026, 14:44:12",
+  "generated_ts": "2026-05-19T14:44:12.315201",
+  "total_peserta": 19183,
+  "total_lulus": 5475,
+  "avg_pct_lulus": 28.5,
   "total_tim": 7,
-  "total_angkatan": 32,
-  "total_hadir": 8525,
+  "total_angkatan": 42,
+  "total_hadir": 21546,
   "total_target": 4329,
-  "pct_capaian": 196.9,
+  "pct_capaian": 497.7,
   "tim_mencapai": 5,
   "total_beasiswa": 1689,
   "total_beasiswa_selesai": 4563,
@@ -214,25 +214,35 @@
     {
       "team": "SAK",
       "type": "pct",
-      "total": 1053,
-      "total_hadir": 819,
-      "lulus": 237,
-      "tidak_lulus": 582,
-      "pct_lulus": 28.9,
-      "total_angkatan": 1,
+      "total": 6343,
+      "total_hadir": 5195,
+      "lulus": 1672,
+      "tidak_lulus": 3523,
+      "pct_lulus": 32.2,
+      "total_angkatan": 7,
       "targets": {
         "2026": 500
       },
       "months_by_year": {
         "2026": {
           "2": {
-            "total": 819,
-            "lulus": 237
+            "total": 2135,
+            "lulus": 669
+          },
+          "6": {
+            "total": 1324,
+            "lulus": 394
+          },
+          "10": {
+            "total": 1736,
+            "lulus": 609
           }
         }
       },
       "hadir_by_year": {
-        "2026": 819
+        "2026": 819,
+        "2024": 2089,
+        "2025": 2287
       },
       "funnel_by_year": {
         "2026": {
@@ -241,6 +251,20 @@
           "verif_pembayaran": 985,
           "hadir": 819,
           "lulus": 237
+        },
+        "2024": {
+          "pendaftar": 2550,
+          "verif_dokumen": 2550,
+          "verif_pembayaran": 2467,
+          "hadir": 2089,
+          "lulus": 588
+        },
+        "2025": {
+          "pendaftar": 2740,
+          "verif_dokumen": 2740,
+          "verif_pembayaran": 2683,
+          "hadir": 2287,
+          "lulus": 847
         }
       },
       "error": null
@@ -2611,34 +2635,47 @@
     {
       "team": "USKP",
       "type": "pct",
-      "total": 3633,
-      "total_hadir": 2559,
-      "lulus": 1285,
-      "tidak_lulus": 1274,
-      "belum_diproses": 0,
-      "pct_lulus": 50.2,
-      "total_angkatan": 1,
+      "total": 12633,
+      "total_hadir": 11204,
+      "lulus": 3677,
+      "tidak_lulus": 7527,
+      "kelulusan_dist_by_year": {
+        "2026": {
+          "Lulus": 1285,
+          "Mengulang": 1037,
+          "Tidak Lulus": 236,
+          "Batal": 1
+        },
+        "2025": {
+          "Mengulang": 5108,
+          "Lulus": 2392,
+          "Tidak Lulus": 974,
+          "Batal": 8,
+          "Penalti": 163
+        }
+      },
+      "pct_lulus": 32.8,
+      "total_angkatan": 5,
       "targets": {
         "2026": 2450
       },
-      "months_by_year": {
-        "2026": {
-          "4": {
-            "total": 2559,
-            "lulus": 1285
-          }
-        }
-      },
+      "months_by_year": {},
       "hadir_by_year": {
-        "2026": 2559
+        "2026": 2559,
+        "2025": 8645
       },
       "funnel_by_year": {
         "2026": {
           "pendaftar": 3633,
           "lolos_verifikasi": 2640,
           "hadir": 2559,
-          "lulus": 1285,
-          "belum_diproses": 0
+          "lulus": 1285
+        },
+        "2025": {
+          "pendaftar": 9000,
+          "lolos_verifikasi": 9000,
+          "hadir": 8645,
+          "lulus": 2392
         }
       },
       "error": null

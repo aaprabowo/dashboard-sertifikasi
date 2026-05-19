@@ -1042,9 +1042,35 @@ async function _uskp(t,c,thn){
   // Filter hanya yang hadir
   const fil=filAll.filter(r=>r.hadir);
   const lulus=fil.filter(r=>r.lulus).length;
-  const belum=fil.filter(r=>r.belum_diproses).length;
-  const tidak=fil.length-lulus-belum;
   const bData=makeBatchMap(allHadir);
+
+  // Distribusi kelulusan dinamis — hitung dari rows terfilter
+  const kelDist={};
+  fil.forEach(r=>{ const k=r.kelulusan||'(kosong)'; kelDist[k]=(kelDist[k]||0)+1; });
+  const kelEntries=Object.entries(kelDist).sort((a,b)=>b[1]-a[1]);
+  const totalHadir=fil.length;
+
+  // Warna per kategori kelulusan
+  const KEL_COLOR={
+    'lulus':       '#059669',
+    'tidak lulus': '#DC2626',
+    'batal':       '#9CA3AF',
+    'mengulang':   '#D97706',
+  };
+  function kelColor(k){ return KEL_COLOR[k.toLowerCase()] || '#6B7280'; }
+
+  // Panel distribusi kelulusan (horizontal bars)
+  const kelHTML=kelEntries.length
+    ? '<div class="p-dist">'+kelEntries.map(([k,n])=>{
+        const pct=totalHadir>0?Math.round(n/totalHadir*100):0;
+        const col=kelColor(k);
+        return '<div class="p-dist-row">'
+          +'<div class="p-dist-lbl">'+k+'</div>'
+          +'<div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'
+          +'<div class="p-dist-n" style="color:'+col+'">'+fmtN(n)+' ('+pct+'%)</div>'
+          +'</div>';
+      }).join('')+'</div>'
+    : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
 
   // Funnel dihitung dari rows terfilter
   const fnFil=thn==='semua'?null:{
@@ -1054,7 +1080,7 @@ async function _uskp(t,c,thn){
     lulus:            lulus,
   };
 
-  // Tingkat stacked bar
+  // Tingkat stacked bar — tiap tingkat dipecah per kategori kelulusan (lulus vs lainnya)
   const tingm={};
   fil.forEach(r=>{
     const k=normTingkat(r); if(!k)return;
@@ -1079,10 +1105,10 @@ async function _uskp(t,c,thn){
   b.innerHTML=`
     <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir — ${filterLabel}</div>
     <div class="p-grid2">
-      ${psBlock('Kelulusan — '+filterLabel,donutChart(lulus,tidak,c.color,120,'Lulus','Tidak Lulus',belum))}
+      ${psBlock('Distribusi Kelulusan — '+filterLabel, kelHTML)}
       ${funnelBlock || `<div></div>`}
     </div>
-    ${psBlock('Sebaran Tingkat — Lulus vs Tidak ('+filterLabel+')',stackedBars(tingE,c.color,c.cb,'Lulus','Tidak Lulus'))}
+    ${psBlock('Sebaran Tingkat — Lulus vs Lainnya ('+filterLabel+')',stackedBars(tingE,c.color,c.cb,'Lulus','Lainnya'))}
     ${psBlock('Tabel Batch — '+thnLabel,batchTable(bData))}`;
 }
 
@@ -1204,25 +1230,24 @@ function _renderAC(t,c,thn){
       <div class="result-pill" style="background:#FFFBEB;color:#D97706">~ Cukup Optimal: ${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
       <div class="result-pill" style="background:#FEF2F2;color:#DC2626">✗ Kurang Optimal: ${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
     </div>
-    ${psBlock('Hasil Penilaian disusun dalam kategori berdasarkan Peraturan BKN Nomor 26 tahun 2019 — '+filterLabel, tot ? `
+    ${psBlock('Hasil Penilaian — '+filterLabel, tot ? `
       <div class="p-dist">
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Optimal (memenuhi minimal 90% dari kriteria JPM) </div>
+          <div class="p-dist-lbl">Optimal</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pO}%;background:#059669"></div></div>
           <div class="p-dist-n" style="color:#059669">${fmtN(hY['Optimal'])} (${pO}%)</div>
         </div>
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Cukup Optimal (memenuhi minimal 78% s.d. 90% dari kriteria JPM)</div>
+          <div class="p-dist-lbl">Cukup Optimal</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pC}%;background:#D97706"></div></div>
           <div class="p-dist-n" style="color:#D97706">${fmtN(hY['Cukup Optimal'])} (${pC}%)</div>
         </div>
         <div class="p-dist-row">
-          <div class="p-dist-lbl">Kurang Optimal (memenuhi s.d 78% dari kriteria JPM)</div>
+          <div class="p-dist-lbl">Kurang Optimal</div>
           <div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:${pK}%;background:#DC2626"></div></div>
           <div class="p-dist-n" style="color:#DC2626">${fmtN(hY['Kurang Optimal'])} (${pK}%)</div>
         </div>
       </div>` : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>')}
-
     ${psBlock('Sebaran Jabatan — '+thnLabel,distBars(jS,c.color))}`;
 }
 
