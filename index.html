@@ -819,6 +819,49 @@ function makeBatchMap(rows, hadirF='hadir', lulusF='lulus') {
   return Object.values(map).sort((a,b)=>a.batch.localeCompare(b.batch));
 }
 
+// Batch map khusus PBJ — pisahkan lulus, tidak_lulus, belum_ada
+function makeBatchMapPBJ(rows) {
+  const map={};
+  (rows||[]).forEach(r=>{
+    if(!r.hadir)return;
+    const b=r.batch||'(tanpa batch)';
+    if(!map[b])map[b]={batch:b,hadir:0,lulus:0,tidak_lulus:0,belum_ada:0};
+    map[b].hadir++;
+    if(r.lulus)map[b].lulus++;
+    else if(r.belum_ada)map[b].belum_ada++;
+    else map[b].tidak_lulus++;
+  });
+  return Object.values(map).sort((a,b)=>a.batch.localeCompare(b.batch));
+}
+
+// Tabel batch khusus PBJ — ada kolom Belum Ada
+function batchTablePBJ(rows) {
+  if(!rows||!rows.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  const hasBelum=rows.some(b=>b.belum_ada>0);
+  return `<table class="batch-tbl">
+    <thead><tr>
+      <th>Batch</th>
+      <th class="r">Hadir</th>
+      <th class="r" style="color:#059669">Lulus</th>
+      <th class="r" style="color:#DC2626">Tidak Lulus</th>
+      ${hasBelum?'<th class="r" style="color:#9CA3AF">Belum Ada</th>':''}
+      <th class="r">% Lulus</th>
+    </tr></thead>
+    <tbody>${rows.map(b=>{
+      const base=b.hadir-b.belum_ada;
+      const pct=base>0?(b.lulus/base*100).toFixed(1)+'%':'—';
+      return `<tr>
+        <td>${b.batch}</td>
+        <td class="r">${fmtN(b.hadir)}</td>
+        <td class="r" style="color:#059669">${fmtN(b.lulus)}</td>
+        <td class="r" style="color:#DC2626">${fmtN(b.tidak_lulus)}</td>
+        ${hasBelum?`<td class="r" style="color:#9CA3AF">${fmtN(b.belum_ada)}</td>`:''}
+        <td class="r">${pct}</td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table>`;
+}
+
 // ============================================================
 //  POPUP: JFKN
 //  Spesifikasi: donut + status peserta + stacked bar UE1 + JF target
@@ -1139,19 +1182,30 @@ async function _pbj(t,c,thn){
   const b=document.getElementById('pbj-body');if(!b)return;
   const rows=await loadDetail(teamSlug('PBJ'),thn);
   const fil=rows.filter(r=>r.hadir);
-  const lulus=fil.filter(r=>r.lulus).length, tidakLulus=fil.length-lulus;
+  const lulus=fil.filter(r=>r.lulus).length;
+  const belumAda=fil.filter(r=>r.belum_ada).length;
+  const tidakLulus=fil.length-lulus-belumAda;
+
+  // Update popup-sub agar tampilkan belum ada jika ada
+  const subEl=document.getElementById('popup-sub');
+  if(subEl){
+    let subTxt=`${fmtN(fil.length)} hadir \xb7 ${fmtN(lulus)} lulus (${fil.length?Math.round(lulus/fil.length*100):0}%) \xb7 ${fmtN(t.total||0)} terdaftar`;
+    if(belumAda>0) subTxt+=` \xb7 ${fmtN(belumAda)} belum ada pengumuman`;
+    subEl.textContent=subTxt;
+  }
+
   const levelM={};
   fil.forEach(r=>{if(r.level)levelM[r.level]=(levelM[r.level]||0)+1;});
   const levelS=Object.fromEntries(Object.entries(levelM).sort((a,b2)=>b2[1]-a[1]));
-  const bData=makeBatchMap(fil);
+  const bData=makeBatchMapPBJ(fil);
   const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
   b.innerHTML=`
-    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir — ${thnLabel}</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir \u2014 ${thnLabel}</div>
     <div class="p-grid2">
-      ${psBlock('Kelulusan — '+thnLabel,donutChart(lulus,tidakLulus,c.color,120))}
-      ${psBlock('Level Ujian — '+thnLabel,distBars(levelS,c.color))}
+      ${psBlock('Kelulusan \u2014 '+thnLabel,donutChart(lulus,tidakLulus,c.color,120,'Lulus','Tidak Lulus',belumAda))}
+      ${psBlock('Level Ujian \u2014 '+thnLabel,distBars(levelS,c.color))}
     </div>
-    ${psBlock('Tabel Batch — '+thnLabel,batchTable(bData))}`;
+    ${psBlock('Tabel Batch \u2014 '+thnLabel,batchTablePBJ(bData))}`;
 }
 
 // ============================================================
