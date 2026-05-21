@@ -770,15 +770,15 @@ function distBars(dist, color, maxItems=12) {
 // entries: [{label, a, b}]
 function stackedBars(entries, colorA, colorB, labelA, labelB) {
   if(!entries||!entries.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
-  const maxT=Math.max(...entries.map(e=>e.a+e.b),1);
   const rows=entries.map(e=>{
-    const total=e.a+e.b, pctA=total>0?Math.round(e.a/total*100):0;
-    const wA=Math.round(e.a/maxT*100), wB=Math.round(e.b/maxT*100);
+    const total=e.a+e.b;
+    const pctA=total>0?Math.round(e.a/total*100):0;
+    const pctB=total>0?(100-pctA):0;
     return `<div class="stk-row">
       <div class="stk-lbl" title="${e.label}">${e.label}</div>
       <div class="stk-bar">
-        <div class="stk-seg-a" style="width:${wA}%;background:${colorA}">${e.a>0?fmtN(e.a):''}</div>
-        <div class="stk-seg-b" style="width:${wB}%;background:${colorB}">${e.b>0?fmtN(e.b):''}</div>
+        <div class="stk-seg-a" style="width:${pctA}%;background:${colorA}">${e.a>0?fmtN(e.a):''}</div>
+        <div class="stk-seg-b" style="width:${pctB}%;background:${colorB}">${e.b>0?fmtN(e.b):''}</div>
       </div>
       <div class="stk-meta">${fmtN(total)} · ${pctA}%</div>
     </div>`;
