@@ -1326,6 +1326,10 @@ function popupBeasiswa(t,c){
     .sort((x,y)=>(y[1].aktif+y[1].selesai)-(x[1].aktif+x[1].selesai))
     .map(([l,v])=>({label:l,a:v.aktif||0,b:v.selesai||0}));
 
+  // PTUD vs Non PTUD stacked bar
+  const ptudSt=d.ptud_status||{};
+  const ptudStE=Object.entries(ptudSt).map(([l,v])=>({label:l,a:v.aktif||0,b:v.selesai||0}));
+
   // Provider table (top 7 + lainnya)
   const prov=d.provider||{};
   const provL=Object.entries(prov).sort((x,y)=>(y[1].aktif+y[1].selesai)-(x[1].aktif+x[1].selesai));
@@ -1377,6 +1381,7 @@ function popupBeasiswa(t,c){
       ${psBlock('Lokasi (DN/LN) — Aktif vs Alumni',stackedBars(dnlnE,c.color,c.cb,'Aktif','Alumni'))}
       ${psBlock('Jenjang — Aktif vs Alumni',stackedBars(jenjE,c.color,c.cb,'Aktif','Alumni'))}
     </div>
+    ${psBlock('PTUD vs Non PTUD — Aktif vs Alumni',stackedBars(ptudStE,c.color,c.cb,'Aktif','Alumni'))}
     ${psBlock('Provider / Pemberi Beasiswa',provHTML)}
     ${psBlock('Kampus PTUD (Top World Ranking)',ptudHTML)}
     <div class="p-grid2">

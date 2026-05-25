@@ -1,6 +1,6 @@
 {
-  "generated_at": "19 May 2026, 14:44:12",
-  "generated_ts": "2026-05-19T14:44:12.315201",
+  "generated_at": "25 May 2026, 11:07:43",
+  "generated_ts": "2026-05-25T11:07:43.880705",
   "total_peserta": 19183,
   "total_lulus": 5475,
   "avg_pct_lulus": 28.5,
@@ -1464,6 +1464,16 @@
             "selesai": 1
           }
         },
+        "ptud_status": {
+          "PTUD": {
+            "aktif": 150,
+            "selesai": 385
+          },
+          "Non PTUD": {
+            "aktif": 1539,
+            "selesai": 4178
+          }
+        },
         "ue1": {
           "DJP": 2625,
           "DJBC": 1460,
@@ -2686,7 +2696,8 @@
       "total": 70,
       "total_hadir": 70,
       "lulus": 36,
-      "tidak_lulus": 34,
+      "tidak_lulus": 3,
+      "belum_ada": 31,
       "pct_lulus": 51.4,
       "total_angkatan": 3,
       "targets": {
@@ -2719,13 +2730,15 @@
           "pendaftar": 10,
           "lolos_verifikasi": 10,
           "hadir": 10,
-          "lulus": 10
+          "lulus": 10,
+          "belum_ada": 0
         },
         "2026": {
           "pendaftar": 60,
           "lolos_verifikasi": 60,
           "hadir": 60,
-          "lulus": 26
+          "lulus": 26,
+          "belum_ada": 31
         }
       },
       "error": null
