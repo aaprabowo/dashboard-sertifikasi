@@ -1,18 +1,18 @@
 {
-  "generated_at": "04 June 2026, 10:07:21",
-  "generated_ts": "2026-06-04T10:07:21.292243",
-  "total_peserta": 20134,
+  "generated_at": "04 June 2026, 14:23:00",
+  "generated_ts": "2026-06-04T14:23:00.918843",
+  "total_peserta": 20342,
   "total_lulus": 5475,
-  "avg_pct_lulus": 27.2,
+  "avg_pct_lulus": 26.9,
   "total_tim": 7,
   "total_angkatan": 49,
-  "total_hadir": 33677,
+  "total_hadir": 33722,
   "total_target": 4329,
-  "pct_capaian": 777.9,
+  "pct_capaian": 779.0,
   "tim_mencapai": 5,
   "total_beasiswa": 1689,
   "total_beasiswa_selesai": 4563,
-  "total_ac": 152,
+  "total_ac": 197,
   "akreditasi": {
     "lembaga": 7,
     "program": 17,
@@ -176,11 +176,11 @@
     {
       "team": "JFKN",
       "type": "pct",
-      "total": 137,
+      "total": 345,
       "total_hadir": 137,
       "lulus": 90,
       "tidak_lulus": 47,
-      "dalam_proses": 0,
+      "dalam_proses": 208,
       "pct_lulus": 65.7,
       "total_angkatan": 0,
       "targets": {
@@ -203,10 +203,10 @@
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 137,
+          "terdaftar": 345,
           "mengikuti": 137,
           "direkomendasikan": 90,
-          "belum_diproses": 0
+          "belum_diproses": 208
         }
       },
       "error": null
@@ -272,8 +272,8 @@
     {
       "team": "AC",
       "type": "count",
-      "total": 152,
-      "total_hadir": 152,
+      "total": 197,
+      "total_hadir": 197,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
@@ -314,14 +314,18 @@
             "lulus": 0
           },
           "4": {
-            "total": 23,
+            "total": 35,
+            "lulus": 0
+          },
+          "5": {
+            "total": 33,
             "lulus": 0
           }
         }
       },
       "hadir_by_year": {
         "2025": 103,
-        "2026": 49
+        "2026": 94
       },
       "detail": {
         "hasil_by_year": {
@@ -331,8 +335,9 @@
             "Kurang Optimal": 9
           },
           "2026": {
-            "Optimal": 30,
-            "Cukup Optimal": 8
+            "Optimal": 49,
+            "Cukup Optimal": 25,
+            "Kurang Optimal": 4
           }
         },
         "batch_by_year": {
@@ -433,6 +438,34 @@
             {
               "batch": "Batch 5",
               "total": 11,
+              "optimal": 8,
+              "cukup": 1,
+              "kurang": 2
+            },
+            {
+              "batch": "Batch 6",
+              "total": 12,
+              "optimal": 0,
+              "cukup": 10,
+              "kurang": 2
+            },
+            {
+              "batch": "Batch 7",
+              "total": 12,
+              "optimal": 7,
+              "cukup": 5,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 8",
+              "total": 5,
+              "optimal": 4,
+              "cukup": 1,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 9",
+              "total": 16,
               "optimal": 0,
               "cukup": 0,
               "kurang": 0
@@ -481,8 +514,13 @@
             "Kepala Subbagian Administrasi Kemahasiswaan dan Kealumnian": 1,
             "Kepala Seksi Penyelenggaraan Pembelajaran": 1,
             "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
-            "Dosen Lektor": 29,
-            "Widyaiswara Ahli Muda": 5
+            "Dosen Lektor": 44,
+            "Widyaiswara Ahli Muda": 14,
+            "Kepala Seksi Pengawasan I": 1,
+            "Kepala Seksi Pengawasan IV": 2,
+            "Kepala Seksi Administrasi dan Bimbingan Pemeriksaan": 1,
+            "Kepala Subbagian Umum dan Kepatuhan Internal": 1,
+            "Pelaksana": 16
           }
         }
       },
