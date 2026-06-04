@@ -1,11 +1,11 @@
 {
-  "generated_at": "04 June 2026, 14:23:00",
-  "generated_ts": "2026-06-04T14:23:00.918843",
+  "generated_at": "04 June 2026, 14:31:08",
+  "generated_ts": "2026-06-04T14:31:08.670270",
   "total_peserta": 20342,
   "total_lulus": 5475,
   "avg_pct_lulus": 26.9,
   "total_tim": 7,
-  "total_angkatan": 49,
+  "total_angkatan": 48,
   "total_hadir": 33722,
   "total_target": 4329,
   "pct_capaian": 779.0,
@@ -2789,7 +2789,7 @@
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 20,
+      "total_angkatan": 19,
       "targets": {
         "2026": 320
       },
