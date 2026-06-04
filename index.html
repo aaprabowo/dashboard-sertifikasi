@@ -807,6 +807,56 @@ function batchTable(rows) {
   </table>`;
 }
 
+// Batch map khusus SAK — pisahkan hadir/lulus/belum ujian + verif bayar
+function makeBatchMapSAK(rows) {
+  const map={};
+  (rows||[]).forEach(r=>{
+    const b=r.batch||'(tanpa batch)';
+    if(!map[b])map[b]={batch:b,terdaftar:0,bayar:0,hadir:0,lulus:0,tidak_lulus:0,belum_ujian:0};
+    map[b].terdaftar++;
+    if(r.verif_pay) map[b].bayar++;
+    if(r.hadir){
+      map[b].hadir++;
+      if(r.lulus)map[b].lulus++;
+      else map[b].tidak_lulus++;
+    } else {
+      map[b].belum_ujian++;
+    }
+  });
+  return Object.values(map).sort((a,b)=>a.batch.localeCompare(b.batch));
+}
+
+// Tabel batch khusus SAK — ada kolom Bayar dan Belum Ujian
+function batchTableSAK(rows) {
+  if(!rows||!rows.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  const hasBelum=rows.some(b=>b.belum_ujian>0);
+  return `<table class="batch-tbl">
+    <thead><tr>
+      <th>Batch</th>
+      <th class="r">Terdaftar</th>
+      <th class="r" style="color:#7C3AED">Bayar</th>
+      <th class="r">Hadir</th>
+      <th class="r" style="color:#059669">Lulus</th>
+      <th class="r" style="color:#DC2626">Tidak Lulus</th>
+      ${hasBelum?'<th class="r" style="color:#9CA3AF">Belum Ujian</th>':''}
+      <th class="r">% Lulus</th>
+    </tr></thead>
+    <tbody>${rows.map(b=>{
+      const pct=b.hadir>0?(b.lulus/b.hadir*100).toFixed(1)+'%':'—';
+      return `<tr${b.belum_ujian>0&&b.hadir===0?' style="color:var(--text3)"':''}>
+        <td>${b.batch}</td>
+        <td class="r">${fmtN(b.terdaftar)}</td>
+        <td class="r" style="color:#7C3AED">${b.bayar>0?fmtN(b.bayar):'—'}</td>
+        <td class="r">${b.hadir>0?fmtN(b.hadir):'—'}</td>
+        <td class="r" style="color:#059669">${b.lulus>0?fmtN(b.lulus):'—'}</td>
+        <td class="r" style="color:#DC2626">${b.tidak_lulus>0?fmtN(b.tidak_lulus):'—'}</td>
+        ${hasBelum?`<td class="r" style="color:#9CA3AF">${b.belum_ujian>0?fmtN(b.belum_ujian):'—'}</td>`:''}
+        <td class="r">${pct}</td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table>`;
+}
+
 function makeBatchMap(rows, hadirF='hadir', lulusF='lulus') {
   const map={};
   (rows||[]).forEach(r=>{
@@ -958,20 +1008,19 @@ async function _sak(t,c,thn){
   const b=document.getElementById('sak-body');if(!b)return;
   const rows=await loadDetail(teamSlug('SAK'),thn);
   const allYr=filterRows(rows,thn,-1);           // semua rows tahun ini (incl. tidak hadir)
-  const allHadir=allYr.filter(r=>r.hadir);       // untuk isi dropdown & tabel batch
 
-  // Isi dropdown batch (dinamis)
+  // Isi dropdown batch (dari semua rows, termasuk belum ujian)
   const batchSel=document.getElementById('sak-f-batch');
   if(batchSel){
-    const batches=[...new Set(allHadir.map(r=>r.batch).filter(Boolean))].sort();
+    const batches=[...new Set(allYr.map(r=>r.batch).filter(Boolean))].sort();
     const cur=batchSel.value;
     batchSel.innerHTML='<option value="">Semua Batch</option>'+batches.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
   }
 
-  // Isi dropdown tingkat (dinamis)
+  // Isi dropdown tingkat (dari semua rows, termasuk belum ujian)
   const tingkatSel=document.getElementById('sak-f-tingkat');
   if(tingkatSel){
-    const tingkats=[...new Set(allHadir.map(r=>(r.tingkat||'').trim()).filter(Boolean))].sort();
+    const tingkats=[...new Set(allYr.map(r=>(r.tingkat||'').trim()).filter(Boolean))].sort();
     const cur=tingkatSel.value;
     tingkatSel.innerHTML='<option value="">Semua Tingkat</option>'+tingkats.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
   }
@@ -984,7 +1033,8 @@ async function _sak(t,c,thn){
   // Filter hanya yang hadir — untuk donut & sebaran lokasi
   const fil=filAll.filter(r=>r.hadir);
   const lulus=fil.filter(r=>r.lulus).length, tidakLulus=fil.length-lulus;
-  const bData=makeBatchMap(allHadir);
+  // Tabel batch: pakai semua rows (termasuk belum ujian)
+  const bData=makeBatchMapSAK(allYr);
 
   // Funnel dihitung dari rows terfilter (bukan getFunnel dari summary)
   const fnFil = thn==='semua' ? null : {
@@ -1013,12 +1063,12 @@ async function _sak(t,c,thn){
       ],c.color))
     :'';
   b.innerHTML=`
-    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(fil.length)} hadir — ${filterLabel}</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(filAll.length)} terdaftar · ${fmtN(fil.length)} hadir — ${filterLabel}</div>
     <div class="p-grid2">
       ${psBlock('Kelulusan — '+filterLabel,donutChart(lulus,tidakLulus,c.color,120))}
       ${funnelBlock || `<div></div>`}
     </div>
-    ${psBlock('Tabel Batch — '+thnLabel,batchTable(bData))}
+    ${psBlock('Tabel Batch — '+thnLabel,batchTableSAK(bData))}
     ${psBlock('Sebaran Lokasi — Lulus vs Tidak ('+filterLabel+')',stackedBars(lokE,c.color,c.cb,'Lulus','Tidak Lulus'))}`;
 }
 
@@ -1398,10 +1448,9 @@ function popupBeasiswa(t,c){
 async function popupTesTes(t,c){
   const thn=selTahun();
   const fn=getFunnel(t,thn);
-  // Kumpulkan semua nilai tag yang ada di data untuk dropdown
-  const allTags=[...new Set(
-    Object.values(t.tag_ujian_by_year||{}).flatMap(yr=>Object.keys(yr))
-  )].sort();
+  // Kumpulkan tag dari detail rows agar sinkron dengan data terbaru
+  const _rowsForTags=await loadDetail(teamSlug('Tes Lain'),thn);
+  const allTags=[...new Set(_rowsForTags.map(r=>(r.tag||'').trim()).filter(Boolean))].sort();
   const tagOpts=allTags.map(tg=>`<option value="${tg}">${tg}</option>`).join('');
   document.getElementById('popup-sub').textContent=
     `${fmtN(fn.terdaftar||0)} terdaftar · ${fmtN(fn.mengikuti||0)} mengikuti`;
@@ -1436,7 +1485,7 @@ async function _tesLain(t,c,thn){
   const rows=await loadDetail(teamSlug('Tes Lain'),thn);
   const fil=rows.filter(r=>r.mengikuti);
   // Terapkan filter tag (case-insensitive)
-  const filTag=selTag?fil.filter(r=>(r.tag||'').toLowerCase()===selTag.toLowerCase()):fil;
+  const filTag=selTag?fil.filter(r=>(r.tag||'').trim().toLowerCase()===selTag.trim().toLowerCase()):fil;
 
   const ujianM={},ue1M={},batchJ={};
   filTag.forEach(r=>{
@@ -1522,11 +1571,68 @@ async function _tesLain(t,c,thn){
     return html;
   }
 
+  // ── Grouped bar horizontal: tiap grup = 1 jenis tes, tiap bar = 1 kategori ──
+  const KAT_COLORS=['#2563EB','#059669','#D97706','#7C3AED','#DC2626','#0D9488','#F59E0B','#6366F1'];
+  function buildKategoriChart(){
+    const ujianKat={};
+    filTag.forEach(function(r){
+      if(!r.mengikuti||!r.kategori) return;
+      const u=r.ujian||'(tanpa jenis)';
+      const k=r.kategori;
+      if(!ujianKat[u]) ujianKat[u]={};
+      ujianKat[u][k]=(ujianKat[u][k]||0)+1;
+    });
+    const ujianList=Object.keys(ujianKat).sort();
+    if(!ujianList.length)
+      return '<div style="font-size:11px;color:var(--text3)">Belum ada data kategori</div>';
+    // Kumpulkan semua kategori unik, urutkan frekuensi desc
+    const katCount={};
+    ujianList.forEach(function(u){
+      Object.entries(ujianKat[u]).forEach(function([k,n]){ katCount[k]=(katCount[k]||0)+n; });
+    });
+    const allKat=Object.keys(katCount).sort(function(a,b){ return katCount[b]-katCount[a]; });
+    const katColor=function(k){ return KAT_COLORS[allKat.indexOf(k)%KAT_COLORS.length]; };
+    const maxVal=Math.max(...ujianList.flatMap(u=>allKat.map(k=>ujianKat[u][k]||0)),1);
+    const BAR_H=14; const BAR_GAP=4; const GROUP_GAP=16;
+    var rows='';
+    ujianList.forEach(function(u,ui){
+      const katMap=ujianKat[u];
+      const total=Object.values(katMap).reduce(function(s,n){return s+n;},0);
+      // Header grup
+      rows+='<div style="display:flex;align-items:center;gap:8px;margin-top:'+(ui===0?0:GROUP_GAP)+'px;margin-bottom:6px">'
+        +'<span style="font-size:12px;font-weight:600;color:var(--text1)">'+u+'</span>'
+        +'<span style="font-size:11px;color:var(--text3)">— '+fmtN(total)+' peserta</span>'
+        +'</div>';
+      // Satu bar per kategori
+      allKat.forEach(function(k){
+        const n=katMap[k]||0;
+        if(!n) return;
+        const pct=Math.round(n/maxVal*100);
+        rows+='<div style="display:flex;align-items:center;gap:8px;margin-bottom:'+BAR_GAP+'px">'
+          +'<div style="font-size:11px;color:var(--text2);min-width:100px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+k+'</div>'
+          +'<div style="flex:1;height:'+BAR_H+'px;background:var(--border);border-radius:3px;overflow:hidden">'
+            +'<div style="height:'+BAR_H+'px;width:'+pct+'%;background:'+katColor(k)+';border-radius:3px;transition:width .4s ease"></div>'
+          +'</div>'
+          +'<div style="font-size:11px;font-weight:600;color:var(--text1);min-width:32px">'+fmtN(n)+'</div>'
+        +'</div>';
+      });
+    });
+    // Legend
+    var legend='';
+    allKat.forEach(function(k){
+      legend+='<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text2)">'
+        +'<div style="width:10px;height:10px;border-radius:2px;flex-shrink:0;background:'+katColor(k)+'"></div>'+k+'</div>';
+    });
+    return '<div>'+rows+'</div>'
+      +(allKat.length>1?'<div style="display:flex;gap:14px;margin-top:10px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:10px">'+legend+'</div>':'');
+  }
+
   const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
   const filterLabel=selTag?selTag+' — '+thnLabel:thnLabel;
   b.innerHTML=`
     <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(filTag.length)} mengikuti — ${filterLabel}</div>
     ${psBlock('Profiling vs Non Profiling — '+thnLabel,buildTagBar())}
+    ${psBlock('Sebaran Kategori per Jenis Tes — '+filterLabel,buildKategoriChart())}
     ${psBlock('Tabel Batch × Jenis Ujian',tabelHTML)}
     <div class="p-grid2">
       ${psBlock('Sebaran Jenis Ujian',distBars(ujianS,c.color))}
