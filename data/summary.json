@@ -1,18 +1,18 @@
 {
-  "generated_at": "04 June 2026, 15:47:39",
-  "generated_ts": "2026-06-04T15:47:39.315172",
-  "total_peserta": 20342,
+  "generated_at": "25 June 2026, 09:48:02",
+  "generated_ts": "2026-06-25T09:48:02.967291",
+  "total_peserta": 25028,
   "total_lulus": 5475,
-  "avg_pct_lulus": 26.9,
+  "avg_pct_lulus": 21.9,
   "total_tim": 7,
   "total_angkatan": 48,
-  "total_hadir": 33722,
+  "total_hadir": 33757,
   "total_target": 4329,
-  "pct_capaian": 779.0,
+  "pct_capaian": 779.8,
   "tim_mencapai": 5,
   "total_beasiswa": 1689,
   "total_beasiswa_selesai": 4563,
-  "total_ac": 197,
+  "total_ac": 232,
   "akreditasi": {
     "lembaga": 7,
     "program": 17,
@@ -176,11 +176,11 @@
     {
       "team": "JFKN",
       "type": "pct",
-      "total": 345,
+      "total": 5031,
       "total_hadir": 137,
       "lulus": 90,
       "tidak_lulus": 47,
-      "dalam_proses": 208,
+      "dalam_proses": 4894,
       "pct_lulus": 65.7,
       "total_angkatan": 0,
       "targets": {
@@ -203,10 +203,10 @@
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 345,
+          "terdaftar": 5031,
           "mengikuti": 137,
           "direkomendasikan": 90,
-          "belum_diproses": 208
+          "belum_diproses": 4894
         }
       },
       "error": null
@@ -272,8 +272,8 @@
     {
       "team": "AC",
       "type": "count",
-      "total": 197,
-      "total_hadir": 197,
+      "total": 232,
+      "total_hadir": 232,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
@@ -320,12 +320,16 @@
           "5": {
             "total": 33,
             "lulus": 0
+          },
+          "6": {
+            "total": 35,
+            "lulus": 0
           }
         }
       },
       "hadir_by_year": {
         "2025": 103,
-        "2026": 94
+        "2026": 129
       },
       "detail": {
         "hasil_by_year": {
@@ -335,7 +339,7 @@
             "Kurang Optimal": 9
           },
           "2026": {
-            "Optimal": 49,
+            "Optimal": 78,
             "Cukup Optimal": 25,
             "Kurang Optimal": 4
           }
@@ -466,6 +470,27 @@
             {
               "batch": "Batch 9",
               "total": 16,
+              "optimal": 16,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 10",
+              "total": 13,
+              "optimal": 13,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 11",
+              "total": 12,
+              "optimal": 0,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 12",
+              "total": 10,
               "optimal": 0,
               "cukup": 0,
               "kurang": 0
@@ -514,13 +539,13 @@
             "Kepala Subbagian Administrasi Kemahasiswaan dan Kealumnian": 1,
             "Kepala Seksi Penyelenggaraan Pembelajaran": 1,
             "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
-            "Dosen Lektor": 44,
-            "Widyaiswara Ahli Muda": 14,
+            "Dosen Lektor": 59,
+            "Widyaiswara Ahli Muda": 21,
             "Kepala Seksi Pengawasan I": 1,
             "Kepala Seksi Pengawasan IV": 2,
             "Kepala Seksi Administrasi dan Bimbingan Pemeriksaan": 1,
             "Kepala Subbagian Umum dan Kepatuhan Internal": 1,
-            "Pelaksana": 16
+            "Pelaksana": 29
           }
         }
       },
@@ -2784,7 +2809,7 @@
     {
       "team": "Tes Lain",
       "type": "count",
-      "total": 15315,
+      "total": 16207,
       "total_hadir": 15230,
       "lulus": 0,
       "tidak_lulus": 0,
@@ -2804,7 +2829,7 @@
             "lulus": 0
           },
           "3": {
-            "total": 380,
+            "total": 379,
             "lulus": 0
           },
           "4": {
@@ -2812,7 +2837,7 @@
             "lulus": 0
           },
           "5": {
-            "total": 1331,
+            "total": 1332,
             "lulus": 0
           }
         },
@@ -2829,7 +2854,7 @@
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 4516,
+          "terdaftar": 5408,
           "mengikuti": 4431,
           "tidak_mengikuti": 85,
           "belum_diproses": 0
