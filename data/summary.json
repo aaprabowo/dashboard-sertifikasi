@@ -1,9 +1,9 @@
 {
-  "generated_at": "22 July 2026, 10:04:40",
-  "generated_ts": "2026-07-22T10:04:40.990235",
-  "total_peserta": 20642,
+  "generated_at": "22 July 2026, 11:29:46",
+  "generated_ts": "2026-07-22T11:29:46.369892",
+  "total_peserta": 19712,
   "total_lulus": 5650,
-  "avg_pct_lulus": 27.4,
+  "avg_pct_lulus": 28.7,
   "total_tim": 7,
   "total_angkatan": 56,
   "total_hadir": 36552,
@@ -222,7 +222,7 @@
     {
       "team": "SAK",
       "type": "pct",
-      "total": 7294,
+      "total": 6364,
       "total_hadir": 5161,
       "lulus": 1538,
       "tidak_lulus": 3623,
@@ -268,9 +268,9 @@
           "lulus": 811
         },
         "2026": {
-          "pendaftar": 2934,
-          "verif_dokumen": 2934,
-          "verif_pembayaran": 2697,
+          "pendaftar": 2004,
+          "verif_dokumen": 2004,
+          "verif_pembayaran": 1841,
           "hadir": 1539,
           "lulus": 376
         }
