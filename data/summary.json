@@ -1,18 +1,18 @@
 {
-  "generated_at": "01 July 2026, 19:33:50",
-  "generated_ts": "2026-07-01T19:33:50.337331",
-  "total_peserta": 25028,
-  "total_lulus": 5475,
-  "avg_pct_lulus": 21.9,
+  "generated_at": "22 July 2026, 10:04:40",
+  "generated_ts": "2026-07-22T10:04:40.990235",
+  "total_peserta": 20642,
+  "total_lulus": 5650,
+  "avg_pct_lulus": 27.4,
   "total_tim": 7,
-  "total_angkatan": 54,
-  "total_hadir": 36031,
+  "total_angkatan": 56,
+  "total_hadir": 36552,
   "total_target": 4329,
-  "pct_capaian": 832.3,
-  "tim_mencapai": 5,
+  "pct_capaian": 844.4,
+  "tim_mencapai": 6,
   "total_beasiswa": 1689,
   "total_beasiswa_selesai": 4563,
-  "total_ac": 242,
+  "total_ac": 289,
   "akreditasi": {
     "lembaga": 7,
     "program": 17,
@@ -176,12 +176,12 @@
     {
       "team": "JFKN",
       "type": "pct",
-      "total": 5031,
-      "total_hadir": 137,
-      "lulus": 90,
-      "tidak_lulus": 47,
-      "dalam_proses": 4894,
-      "pct_lulus": 65.7,
+      "total": 645,
+      "total_hadir": 645,
+      "lulus": 399,
+      "tidak_lulus": 246,
+      "dalam_proses": 0,
+      "pct_lulus": 61.9,
       "total_angkatan": 0,
       "targets": {
         "2026": 500
@@ -189,24 +189,32 @@
       "months_by_year": {
         "2026": {
           "2": {
-            "total": 1,
-            "lulus": 1
+            "total": 137,
+            "lulus": 90
           },
-          "3": {
-            "total": 136,
-            "lulus": 89
+          "4": {
+            "total": 49,
+            "lulus": 28
+          },
+          "5": {
+            "total": 42,
+            "lulus": 28
+          },
+          "6": {
+            "total": 417,
+            "lulus": 253
           }
         }
       },
       "hadir_by_year": {
-        "2026": 137
+        "2026": 645
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 5031,
-          "mengikuti": 137,
-          "direkomendasikan": 90,
-          "belum_diproses": 4894
+          "terdaftar": 645,
+          "mengikuti": 645,
+          "direkomendasikan": 399,
+          "belum_diproses": 0
         }
       },
       "error": null
@@ -215,10 +223,10 @@
       "team": "SAK",
       "type": "pct",
       "total": 7294,
-      "total_hadir": 5195,
-      "lulus": 1672,
-      "tidak_lulus": 3523,
-      "pct_lulus": 32.2,
+      "total_hadir": 5161,
+      "lulus": 1538,
+      "tidak_lulus": 3623,
+      "pct_lulus": 29.8,
       "total_angkatan": 7,
       "targets": {
         "2026": 500
@@ -226,45 +234,45 @@
       "months_by_year": {
         "2026": {
           "2": {
-            "total": 2135,
-            "lulus": 669
+            "total": 1558,
+            "lulus": 443
           },
           "6": {
-            "total": 1324,
-            "lulus": 394
+            "total": 2663,
+            "lulus": 723
           },
           "10": {
-            "total": 1736,
-            "lulus": 609
+            "total": 940,
+            "lulus": 372
           }
         }
       },
       "hadir_by_year": {
-        "2024": 2089,
-        "2025": 2287,
-        "2026": 819
+        "2024": 1293,
+        "2025": 2329,
+        "2026": 1539
       },
       "funnel_by_year": {
         "2024": {
-          "pendaftar": 2550,
-          "verif_dokumen": 2550,
-          "verif_pembayaran": 2467,
-          "hadir": 2089,
-          "lulus": 588
+          "pendaftar": 1567,
+          "verif_dokumen": 1567,
+          "verif_pembayaran": 1513,
+          "hadir": 1293,
+          "lulus": 351
         },
         "2025": {
-          "pendaftar": 2740,
-          "verif_dokumen": 2740,
-          "verif_pembayaran": 2683,
-          "hadir": 2287,
-          "lulus": 847
+          "pendaftar": 2793,
+          "verif_dokumen": 2793,
+          "verif_pembayaran": 2726,
+          "hadir": 2329,
+          "lulus": 811
         },
         "2026": {
-          "pendaftar": 2004,
-          "verif_dokumen": 2004,
-          "verif_pembayaran": 1841,
-          "hadir": 819,
-          "lulus": 237
+          "pendaftar": 2934,
+          "verif_dokumen": 2934,
+          "verif_pembayaran": 2697,
+          "hadir": 1539,
+          "lulus": 376
         }
       },
       "error": null
@@ -272,12 +280,12 @@
     {
       "team": "AC",
       "type": "count",
-      "total": 242,
-      "total_hadir": 242,
+      "total": 289,
+      "total_hadir": 289,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 14,
+      "total_angkatan": 16,
       "targets": {
         "2026": 100
       },
@@ -300,7 +308,7 @@
             "lulus": 0
           },
           "12": {
-            "total": 8,
+            "total": 16,
             "lulus": 0
           }
         },
@@ -324,24 +332,28 @@
           "6": {
             "total": 45,
             "lulus": 0
+          },
+          "7": {
+            "total": 39,
+            "lulus": 0
           }
         }
       },
       "hadir_by_year": {
-        "2025": 103,
-        "2026": 139
+        "2025": 111,
+        "2026": 178
       },
       "detail": {
         "hasil_by_year": {
           "2025": {
-            "Cukup Optimal": 21,
-            "Optimal": 73,
+            "Cukup Optimal": 25,
+            "Optimal": 77,
             "Kurang Optimal": 9
           },
           "2026": {
-            "Optimal": 84,
-            "Cukup Optimal": 34,
-            "Kurang Optimal": 11
+            "Optimal": 111,
+            "Cukup Optimal": 42,
+            "Kurang Optimal": 14
           }
         },
         "batch_by_year": {
@@ -404,9 +416,9 @@
             },
             {
               "batch": "Batch 14",
-              "total": 8,
-              "optimal": 4,
-              "cukup": 4,
+              "total": 16,
+              "optimal": 8,
+              "cukup": 8,
               "kurang": 0
             }
           ],
@@ -498,6 +510,27 @@
             {
               "batch": "Batch 13",
               "total": 10,
+              "optimal": 10,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 14",
+              "total": 10,
+              "optimal": 3,
+              "cukup": 5,
+              "kurang": 2
+            },
+            {
+              "batch": "Batch 15",
+              "total": 18,
+              "optimal": 14,
+              "cukup": 3,
+              "kurang": 1
+            },
+            {
+              "batch": "Batch 16",
+              "total": 11,
               "optimal": 0,
               "cukup": 0,
               "kurang": 0
@@ -513,23 +546,23 @@
             "Kepala Subbagian Pengelolaan Kinerja dan Risiko Organisasi": 1,
             "Kepala Subbagian Komunikasi, Layanan Informasi, dan Kerja Sama": 1,
             "Kepala Subbidang Manajemen Pengetahuan": 5,
-            "Kepala Subbagian Tata Usaha": 5,
+            "Kepala Subbagian Tata Usaha": 6,
             "Kepala Subbagian Pengembangan Kompetensi": 1,
             "Kepala Subbagian Akuntansi dan Pelaporan Keuangan": 1,
             "Kepala Subbagian Rumah Tangga": 1,
             "Kepala Subbagian Perencanaan Anggaran": 1,
             "Kepala Subbagian Perbendaharaan II": 1,
-            "Kepala Subbagian Tata Usaha dan Kepatuhan Internal": 5,
+            "Kepala Subbagian Tata Usaha dan Kepatuhan Internal": 7,
             "Kepala Seksi Penyelenggaraan Pembelajaran": 4,
             "Kepala Subbagian Administrasi Kerja Sama dan Kehumasan": 1,
-            "Kepala Subbidang Program dan Sistem Kerja": 5,
+            "Kepala Subbidang Program dan Sistem Kerja": 7,
             "Kepala Subbagian Administrasi Akademik": 1,
             "Kepala Subbagian Keuangan": 1,
             "Kepala Subbagian Tata Usaha, Organisasi, Sumber Daya Manusia, dan Kepatuhan Internal": 1,
             "Kepala Subbagian Analisis Data Pembelajaran": 1,
-            "Kepala Unit Perpustakaan": 1,
-            "Kepala Unit Peningkatan dan Pengembangan Aktivitas Instruksional": 1,
-            "Kepala Unit Pengembangan Layanan dan Bisnis": 1
+            "Kepala Unit Perpustakaan": 2,
+            "Kepala Unit Peningkatan dan Pengembangan Aktivitas Instruksional": 2,
+            "Kepala Unit Pengembangan Layanan dan Bisnis": 2
           },
           "2026": {
             "Kepala Subbagian Tata Usaha dan Kepatuhan Internal": 5,
@@ -546,14 +579,17 @@
             "Kepala Subbagian Administrasi Kemahasiswaan dan Kealumnian": 1,
             "Kepala Seksi Penyelenggaraan Pembelajaran": 6,
             "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
-            "Dosen Lektor": 59,
+            "Dosen Lektor": 69,
             "Widyaiswara Ahli Muda": 21,
             "Kepala Seksi Pengawasan I": 1,
             "Kepala Seksi Pengawasan IV": 2,
             "Kepala Seksi Administrasi dan Bimbingan Pemeriksaan": 1,
             "Kepala Subbagian Umum dan Kepatuhan Internal": 1,
-            "Pelaksana": 29,
-            "Kepala Subbagian Pengelolaan Barang Milik Negara": 1
+            "Pelaksana": 42,
+            "Kepala Subbagian Pengelolaan Barang Milik Negara": 1,
+            "PTP Ahli Pertama": 4,
+            "Arsiparis Ahli Pertama": 1,
+            "Pengembang Teknologi Pembelajaran Ahli Muda": 11
           }
         }
       },
@@ -1892,13 +1928,13 @@
           "Lulus": 1285,
           "Mengulang": 1037,
           "Tidak Lulus": 236,
-          "Batal": 1
+          "Pembatalan": 1
         },
         "2025": {
           "Mengulang": 5108,
           "Lulus": 2392,
           "Tidak Lulus": 974,
-          "Batal": 8,
+          "Pembatalan": 8,
           "Penalti": 163
         }
       },
@@ -1915,13 +1951,13 @@
       "funnel_by_year": {
         "2026": {
           "pendaftar": 3633,
-          "lolos_verifikasi": 2640,
+          "lolos_verifikasi": 0,
           "hadir": 2559,
           "lulus": 1285
         },
         "2025": {
           "pendaftar": 9000,
-          "lolos_verifikasi": 9000,
+          "lolos_verifikasi": 0,
           "hadir": 8645,
           "lulus": 2392
         }
@@ -2050,9 +2086,9 @@
           "non profilling": {
             "Psikotes": 449,
             "TBI": 966,
-            "Ujian Lainnya": 77,
+            "Lainnya": 77,
             "TPA": 60,
-            "TPA & TBI": 630
+            "Mints Globe": 630
           },
           "profilling": {
             "Psikotes": 569,
