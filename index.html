@@ -814,27 +814,7 @@ function renderTeamGrid() {
       </div>` : ''}
     </div>`;
 
-  // Subcard JFKN Detail — status peserta, sebaran UE1, JF target (selalu tampil)
-  const jfknColor = '#2563EB';
-  const jfknDetailCard = `
-    <div class="team-card" onclick="openPopup('JFKNDetail')" style="border-color:#BFDBFE;border-style:dashed">
-      <div class="tc-top">
-        <div class="tc-icon" style="background:#EFF6FF">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-            <rect x="2" y="2" width="11" height="11" rx="1.5" stroke="${jfknColor}" stroke-width="1.3"/>
-            <path d="M4.5 5.5h6M4.5 7.5h6M4.5 9.5h4" stroke="${jfknColor}" stroke-width="1.1" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div style="text-align:right">
-          <div class="tc-pct" style="color:${jfknColor};font-size:14px">Detail</div>
-          <div class="tc-lbl" style="color:${jfknColor}">JFKN</div>
-        </div>
-      </div>
-      <div class="tc-name">JFKN — Analisis</div>
-      <div class="tc-sub">Status peserta · Sebaran UE1 · JF Target</div>
-    </div>`;
-
-  document.getElementById('team-grid').innerHTML = teamCards + akrCard + jfknDetailCard;
+  document.getElementById('team-grid').innerHTML = teamCards + akrCard;
 }
 
 // ============================================================
