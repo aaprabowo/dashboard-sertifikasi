@@ -1,18 +1,18 @@
 {
-  "generated_at": "22 July 2026, 11:29:46",
-  "generated_ts": "2026-07-22T11:29:46.369892",
+  "generated_at": "10 August 2026, 14:04:09",
+  "generated_ts": "2026-08-10T14:04:09.401388",
   "total_peserta": 19712,
   "total_lulus": 5650,
   "avg_pct_lulus": 28.7,
   "total_tim": 7,
-  "total_angkatan": 56,
-  "total_hadir": 36552,
+  "total_angkatan": 60,
+  "total_hadir": 37320,
   "total_target": 4329,
-  "pct_capaian": 844.4,
+  "pct_capaian": 862.1,
   "tim_mencapai": 6,
-  "total_beasiswa": 1689,
-  "total_beasiswa_selesai": 4563,
-  "total_ac": 289,
+  "total_beasiswa": 1584,
+  "total_beasiswa_selesai": 4703,
+  "total_ac": 321,
   "akreditasi": {
     "lembaga": 7,
     "program": 17,
@@ -172,6 +172,31 @@
       }
     ]
   },
+  "monthly_by_year": {
+    "2024": {
+      "2": 588,
+      "6": 705
+    },
+    "2025": {
+      "2": 151,
+      "6": 1238,
+      "7": 31,
+      "8": 12,
+      "10": 972,
+      "11": 20,
+      "12": 10825
+    },
+    "2026": {
+      "1": 42,
+      "2": 1959,
+      "3": 408,
+      "4": 4344,
+      "5": 1439,
+      "6": 3445,
+      "7": 62,
+      "8": 841
+    }
+  },
   "teams": [
     {
       "team": "JFKN",
@@ -217,7 +242,121 @@
           "belum_diproses": 0
         }
       },
-      "error": null
+      "error": null,
+      "sub_exams": {
+        "PKAPK APBN": {
+          "name": "PKAPK APBN",
+          "total": 4708,
+          "lulus": 2201,
+          "tidak_lulus": 0,
+          "pct_lulus": 100.0,
+          "label_lulus": "Lulus",
+          "label_tidak": "Tidak Lulus",
+          "col_tgl2_label": "Wawancara",
+          "by_periode": [
+            {
+              "periode": "I",
+              "total": 4708,
+              "ukom_teknis": 0,
+              "tgl2": 0,
+              "mansoskul": 0,
+              "lulus": 2201,
+              "tidak_lulus": 0,
+              "pct_lulus": 100.0
+            }
+          ],
+          "error": null
+        },
+        "Pelelang": {
+          "name": "Pelelang",
+          "total": 104,
+          "lulus": 0,
+          "tidak_lulus": 0,
+          "pct_lulus": 0,
+          "label_lulus": "Lulus",
+          "label_tidak": "Tidak Lulus",
+          "col_tgl2_label": "Wawancara",
+          "by_periode": [
+            {
+              "periode": "Juni",
+              "total": 57,
+              "ukom_teknis": 57,
+              "tgl2": 57,
+              "mansoskul": 57,
+              "lulus": 0,
+              "tidak_lulus": 0,
+              "pct_lulus": 0
+            },
+            {
+              "periode": "Mei",
+              "total": 47,
+              "ukom_teknis": 47,
+              "tgl2": 47,
+              "mansoskul": 47,
+              "lulus": 0,
+              "tidak_lulus": 0,
+              "pct_lulus": 0
+            }
+          ],
+          "error": null
+        },
+        "AKPD": {
+          "name": "AKPD",
+          "total": 131,
+          "lulus": 92,
+          "tidak_lulus": 39,
+          "pct_lulus": 70.2,
+          "label_lulus": "Kompeten",
+          "label_tidak": "Belum Kompeten",
+          "col_tgl2_label": "UKOM Tertulis",
+          "by_periode": [
+            {
+              "periode": "Periode 1",
+              "total": 65,
+              "ukom_teknis": 51,
+              "tgl2": 65,
+              "mansoskul": 44,
+              "lulus": 49,
+              "tidak_lulus": 16,
+              "pct_lulus": 75.4
+            },
+            {
+              "periode": "Periode 2",
+              "total": 66,
+              "ukom_teknis": 60,
+              "tgl2": 66,
+              "mansoskul": 43,
+              "lulus": 43,
+              "tidak_lulus": 23,
+              "pct_lulus": 65.2
+            }
+          ],
+          "error": null
+        },
+        "AA": {
+          "name": "AA",
+          "total": 233,
+          "lulus": 233,
+          "tidak_lulus": 0,
+          "pct_lulus": 100.0,
+          "label_lulus": "Lulus",
+          "label_tidak": "Tidak Lulus",
+          "col_tgl2_label": "Wawancara",
+          "by_periode": [
+            {
+              "periode": "-",
+              "total": 233,
+              "ukom_teknis": 0,
+              "tgl2": 0,
+              "mansoskul": 0,
+              "lulus": 233,
+              "tidak_lulus": 0,
+              "pct_lulus": 100.0
+            }
+          ],
+          "error": null
+        }
+      }
     },
     {
       "team": "SAK",
@@ -232,18 +371,38 @@
         "2026": 500
       },
       "months_by_year": {
-        "2026": {
+        "2024": {
           "2": {
-            "total": 1558,
-            "lulus": 443
+            "total": 588,
+            "lulus": 147
           },
           "6": {
-            "total": 2663,
-            "lulus": 723
+            "total": 705,
+            "lulus": 204
+          }
+        },
+        "2025": {
+          "6": {
+            "total": 1238,
+            "lulus": 380
+          },
+          "2": {
+            "total": 151,
+            "lulus": 59
           },
           "10": {
             "total": 940,
             "lulus": 372
+          }
+        },
+        "2026": {
+          "2": {
+            "total": 819,
+            "lulus": 237
+          },
+          "6": {
+            "total": 720,
+            "lulus": 139
           }
         }
       },
@@ -280,12 +439,12 @@
     {
       "team": "AC",
       "type": "count",
-      "total": 289,
-      "total_hadir": 289,
+      "total": 321,
+      "total_hadir": 321,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 16,
+      "total_angkatan": 19,
       "targets": {
         "2026": 100
       },
@@ -334,14 +493,14 @@
             "lulus": 0
           },
           "7": {
-            "total": 39,
+            "total": 62,
             "lulus": 0
           }
         }
       },
       "hadir_by_year": {
         "2025": 111,
-        "2026": 178
+        "2026": 210
       },
       "detail": {
         "hasil_by_year": {
@@ -351,9 +510,9 @@
             "Kurang Optimal": 9
           },
           "2026": {
-            "Optimal": 111,
-            "Cukup Optimal": 42,
-            "Kurang Optimal": 14
+            "Optimal": 123,
+            "Cukup Optimal": 48,
+            "Kurang Optimal": 30
           }
         },
         "batch_by_year": {
@@ -532,6 +691,27 @@
               "batch": "Batch 16",
               "total": 11,
               "optimal": 0,
+              "cukup": 2,
+              "kurang": 9
+            },
+            {
+              "batch": "Batch 17",
+              "total": 12,
+              "optimal": 11,
+              "cukup": 0,
+              "kurang": 1
+            },
+            {
+              "batch": "Batch 18",
+              "total": 11,
+              "optimal": 1,
+              "cukup": 4,
+              "kurang": 6
+            },
+            {
+              "batch": "Batch 19",
+              "total": 9,
+              "optimal": 0,
               "cukup": 0,
               "kurang": 0
             }
@@ -580,16 +760,17 @@
             "Kepala Seksi Penyelenggaraan Pembelajaran": 6,
             "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
             "Dosen Lektor": 69,
-            "Widyaiswara Ahli Muda": 21,
+            "Widyaiswara Ahli Muda": 27,
             "Kepala Seksi Pengawasan I": 1,
             "Kepala Seksi Pengawasan IV": 2,
             "Kepala Seksi Administrasi dan Bimbingan Pemeriksaan": 1,
             "Kepala Subbagian Umum dan Kepatuhan Internal": 1,
-            "Pelaksana": 42,
+            "Pelaksana": 61,
             "Kepala Subbagian Pengelolaan Barang Milik Negara": 1,
             "PTP Ahli Pertama": 4,
-            "Arsiparis Ahli Pertama": 1,
-            "Pengembang Teknologi Pembelajaran Ahli Muda": 11
+            "Arsiparis Ahli Pertama": 2,
+            "Pengembang Teknologi Pembelajaran Ahli Muda": 16,
+            "Pranata Komputer Ahli Pertama": 1
           }
         }
       },
@@ -598,9 +779,9 @@
     {
       "team": "Beasiswa",
       "type": "count",
-      "total": 1689,
-      "total_hadir": 1689,
-      "total_selesai": 4563,
+      "total": 1584,
+      "total_hadir": 1584,
+      "total_selesai": 4703,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
@@ -619,7 +800,7 @@
             "lulus": 0
           },
           "10": {
-            "total": 505,
+            "total": 506,
             "lulus": 0
           },
           "9": {
@@ -639,7 +820,7 @@
             "lulus": 0
           },
           "2": {
-            "total": 105,
+            "total": 104,
             "lulus": 0
           },
           "6": {
@@ -665,7 +846,7 @@
             "lulus": 0
           },
           "8": {
-            "total": 180,
+            "total": 181,
             "lulus": 0
           },
           "7": {
@@ -673,7 +854,7 @@
             "lulus": 0
           },
           "6": {
-            "total": 13,
+            "total": 12,
             "lulus": 0
           },
           "5": {
@@ -719,7 +900,7 @@
             "lulus": 0
           },
           "3": {
-            "total": 12,
+            "total": 11,
             "lulus": 0
           },
           "1": {
@@ -727,7 +908,7 @@
             "lulus": 0
           },
           "8": {
-            "total": 76,
+            "total": 75,
             "lulus": 0
           },
           "4": {
@@ -761,7 +942,7 @@
         },
         "2022": {
           "9": {
-            "total": 542,
+            "total": 541,
             "lulus": 0
           },
           "10": {
@@ -769,11 +950,11 @@
             "lulus": 0
           },
           "8": {
-            "total": 123,
+            "total": 122,
             "lulus": 0
           },
           "6": {
-            "total": 21,
+            "total": 20,
             "lulus": 0
           },
           "4": {
@@ -877,19 +1058,19 @@
             "lulus": 0
           },
           "8": {
-            "total": 81,
+            "total": 84,
             "lulus": 0
           },
           "11": {
             "total": 23,
             "lulus": 0
           },
-          "3": {
-            "total": 27,
+          "7": {
+            "total": 16,
             "lulus": 0
           },
-          "7": {
-            "total": 14,
+          "3": {
+            "total": 27,
             "lulus": 0
           },
           "6": {
@@ -1152,16 +1333,16 @@
           }
         },
         "2026": {
+          "1": {
+            "total": 28,
+            "lulus": 0
+          },
           "2": {
-            "total": 20,
+            "total": 25,
             "lulus": 0
           },
           "3": {
             "total": 8,
-            "lulus": 0
-          },
-          "1": {
-            "total": 16,
             "lulus": 0
           },
           "4": {
@@ -1169,11 +1350,23 @@
             "lulus": 0
           },
           "7": {
-            "total": 3,
+            "total": 11,
             "lulus": 0
           },
           "6": {
+            "total": 8,
+            "lulus": 0
+          },
+          "8": {
+            "total": 23,
+            "lulus": 0
+          },
+          "5": {
             "total": 1,
+            "lulus": 0
+          },
+          "9": {
+            "total": 10,
             "lulus": 0
           }
         }
@@ -1181,70 +1374,70 @@
       "detail": {
         "dn_ln": {
           "Dalam Negeri": {
-            "aktif": 1251,
-            "selesai": 3130
+            "aktif": 1210,
+            "selesai": 3186
           },
           "Luar Negeri": {
-            "aktif": 438,
-            "selesai": 1433
+            "aktif": 374,
+            "selesai": 1517
           }
         },
         "jenjang": {
           "S2": {
-            "aktif": 523,
-            "selesai": 2482
+            "aktif": 451,
+            "selesai": 2585
           },
           "DIII": {
-            "aktif": 624,
-            "selesai": 1512
+            "aktif": 629,
+            "selesai": 1507
           },
           "DIV": {
-            "aktif": 331,
-            "selesai": 315
+            "aktif": 324,
+            "selesai": 322
           },
           "S3": {
-            "aktif": 131,
-            "selesai": 136
+            "aktif": 130,
+            "selesai": 141
           },
           "S1": {
-            "aktif": 80,
-            "selesai": 118
+            "aktif": 50,
+            "selesai": 148
           }
         },
         "provider": {
           "PKN STAN": {
-            "aktif": 955,
-            "selesai": 1827
+            "aktif": 953,
+            "selesai": 1829
           },
           "LPDP": {
-            "aktif": 420,
-            "selesai": 1530
+            "aktif": 358,
+            "selesai": 1615
           },
           "FETA": {
             "aktif": 5,
             "selesai": 328
           },
-          "Kominfo": {
-            "aktif": 19,
-            "selesai": 157
-          },
           "MINTS": {
-            "aktif": 93,
-            "selesai": 81
+            "aktif": 81,
+            "selesai": 124
+          },
+          "Kominfo": {
+            "aktif": 20,
+            "selesai": 156
           },
           "AAS": {
-            "aktif": 26,
-            "selesai": 132
+            "aktif": 29,
+            "selesai": 134
           },
           "TOPP": {
             "aktif": 0,
             "selesai": 147
           },
-          "S1 Binus": {
-            "aktif": 30,
-            "selesai": 30
-          },
           "Bappenas": {
+            "aktif": 0,
+            "selesai": 60
+          },
+          "S1 Binus": {
             "aktif": 0,
             "selesai": 60
           },
@@ -1256,17 +1449,13 @@
             "aktif": 30,
             "selesai": 0
           },
-          "MINTS 2": {
-            "aktif": 4,
-            "selesai": 24
+          "JISPA": {
+            "aktif": 12,
+            "selesai": 16
           },
           "S1 UT": {
             "aktif": 0,
             "selesai": 26
-          },
-          "JISPA": {
-            "aktif": 10,
-            "selesai": 15
           },
           "STIN": {
             "aktif": 7,
@@ -1281,8 +1470,12 @@
             "selesai": 18
           },
           "Unhan": {
-            "aktif": 10,
-            "selesai": 9
+            "aktif": 9,
+            "selesai": 10
+          },
+          "ADB": {
+            "aktif": 13,
+            "selesai": 4
           },
           "FETA-AAI": {
             "aktif": 0,
@@ -1292,17 +1485,13 @@
             "aktif": 7,
             "selesai": 8
           },
-          "ADB": {
-            "aktif": 13,
-            "selesai": 0
-          },
           "MINTS-AAI": {
             "aktif": 0,
             "selesai": 12
           },
           "New Zealand Scholarship": {
-            "aktif": 3,
-            "selesai": 4
+            "aktif": 2,
+            "selesai": 5
           },
           "GRIPS": {
             "aktif": 0,
@@ -1327,10 +1516,6 @@
           "LPDP-JICA": {
             "aktif": 4,
             "selesai": 0
-          },
-          "ADB-JSP": {
-            "aktif": 0,
-            "selesai": 4
           },
           "Japan - IMF": {
             "aktif": 0,
@@ -1405,6 +1590,10 @@
             "selesai": 0
           },
           "Beasiswa Yayasan Bakti Enam Nusantara": {
+            "aktif": 1,
+            "selesai": 0
+          },
+          "Nakayama Memorial Scholarship": {
             "aktif": 1,
             "selesai": 0
           },
@@ -1487,31 +1676,31 @@
         },
         "ptud": {
           "The University of Melbourne": {
-            "aktif": 78,
-            "selesai": 201
+            "aktif": 81,
+            "selesai": 204
           },
           "Columbia University": {
-            "aktif": 22,
-            "selesai": 31
+            "aktif": 13,
+            "selesai": 40
           },
           "The University of Edinburgh": {
             "aktif": 7,
             "selesai": 27
           },
           "London School of Economics and Political Science (LSE)": {
-            "aktif": 6,
-            "selesai": 21
+            "aktif": 5,
+            "selesai": 22
           },
           "Cornell University": {
-            "aktif": 17,
-            "selesai": 10
+            "aktif": 5,
+            "selesai": 22
           },
           "The University of Melbourne - Universitas Indonesia": {
             "aktif": 0,
             "selesai": 18
           },
           "National University of Singapore (NUS)": {
-            "aktif": 6,
+            "aktif": 7,
             "selesai": 9
           },
           "UCL (University College London)": {
@@ -1519,8 +1708,8 @@
             "selesai": 12
           },
           "University of Michigan-Ann Arbor": {
-            "aktif": 2,
-            "selesai": 12
+            "aktif": 1,
+            "selesai": 13
           },
           "Harvard University": {
             "aktif": 4,
@@ -1573,52 +1762,52 @@
         },
         "ptud_status": {
           "PTUD": {
-            "aktif": 150,
-            "selesai": 385
+            "aktif": 131,
+            "selesai": 411
           },
           "Non PTUD": {
-            "aktif": 1539,
-            "selesai": 4178
+            "aktif": 1453,
+            "selesai": 4292
           }
         },
         "ue1": {
-          "DJP": 2625,
-          "DJBC": 1460,
-          "DJPB": 646,
-          "DJKN": 340,
-          "Setjen": 290,
+          "DJP": 2634,
+          "DJBC": 1464,
+          "DJPB": 651,
+          "DJKN": 345,
+          "Setjen": 292,
           "BPPK": 197,
-          "Itjen": 152,
-          "DJA": 129,
+          "Itjen": 155,
+          "DJA": 130,
           "DJSEF": 113,
-          "DJPPR": 79,
+          "DJPPR": 81,
           "DJSPSK": 76,
-          "DJPK": 56,
+          "DJPK": 59,
           "BaTii": 36,
           "LNSW": 18,
           "BKF": 11,
           "SETJEN": 10,
           "ITJEN": 7,
           "SKSSK": 5,
-          "BATII": 1,
+          "BATII": 2,
           "KNEKS": 1
         },
         "prodi": {
           "Politeknik Keuangan Negara STAN": 2782,
-          "Universitas Indonesia": 639,
-          "Universitas Gadjah Mada": 364,
-          "The University of Melbourne": 282,
+          "Universitas Indonesia": 644,
+          "Universitas Gadjah Mada": 365,
+          "The University of Melbourne": 288,
           "The Australian National University": 91,
-          "Monash University": 88,
+          "Monash University": 89,
           "Universitas Brawijaya": 80,
-          "Universitas Bina Nusantara": 65,
+          "Universitas Bina Nusantara": 66,
           "Pusat Pengembangan ASN Badan Kepegawaian Negara": 56,
           "Universitas Airlangga": 54,
           "Columbia University": 53,
+          "The University of Sydney": 41,
           "The University of Queensland": 40,
           "Universitas Padjadjaran": 40,
-          "The University of Sydney": 40,
-          "The University of Western Australia": 35,
+          "The University of Western Australia": 38,
           "The University of Glasgow": 35,
           "University of Illinois at Urbana-Champaign": 34,
           "The University of Edinburgh": 34,
@@ -1632,67 +1821,67 @@
           "University of York": 27,
           "Universitas Terbuka": 27,
           "Institut Teknologi Bandung": 26,
-          "Boston University": 25,
+          "Boston University": 26,
           "Queen Mary University of London": 24,
+          "Universitas Diponegoro": 24,
           "The University of Manchester": 24,
           "King’s College London": 23,
-          "Universitas Diponegoro": 22,
           "Institut Pertanian Bogor": 21,
+          "Monash University Indonesia": 21,
           "Universitas Pertahanan": 21,
           "Sekolah Tinggi Intelijen Negara": 21,
           "Erasmus University Rotterdam": 19,
-          "Duke University": 18,
           "The University of New South Wales": 18,
+          "Duke University": 18,
           "The University of Melbourne - Universitas Indonesia": 18,
           "Japan National Graduate Institute for Policy Studies": 17,
           "The University of Birmingham": 17,
-          "Monash University Indonesia": 16,
-          "National University of Singapore (NUS)": 15,
+          "National University of Singapore (NUS)": 16,
           "University of Leeds": 15,
           "University of Southern California": 15,
           "UCL (University College London)": 14,
+          "Hitotsubashi University": 14,
           "Universitas Sriwijaya": 14,
           "University of Michigan-Ann Arbor": 14,
-          "Hitotsubashi University": 13,
           "University of Exeter": 13,
           "Georgetown University": 13,
           "New York University": 12,
           "The Australian National University - Universitas Indonesia": 12,
           "Queen Mary University of London - Universitas Gadjah Mada": 12,
+          "Institut Teknologi Sepuluh Nopember": 11,
           "University of Nottingham": 11,
-          "Pennsylvania State University": 11,
           "Keio University": 11,
           "Universitas Andalas": 11,
+          "Pennsylvania State University": 11,
           "ISS Erasmus University Rotterdam - Universitas Indonesia": 11,
           "Flinders University": 10,
-          "Institut Teknologi Sepuluh Nopember": 10,
+          "National Graduate Institute for Policy Studies (GRIPS)": 10,
           "University of Minnesota": 10,
           "Harvard University": 10,
           "University of Chicago": 10,
           "Leiden University": 10,
           "The University of Adelaide - Universitas Indonesia": 10,
           "Queen Mary University of London - Universitas Gadjah Mada Jakarta": 10,
-          "National Graduate Institute for Policy Studies (GRIPS)": 9,
+          "International University of Japan": 9,
           "Carnegie Mellon University": 9,
           "The University of Sheffield": 9,
-          "Indiana University": 9,
           "The University of Melbourne - Universitas Gadjah Mada": 9,
           "ISS Erasmus University Rotterdam": 9,
+          "Indiana University": 9,
           "Cardiff University": 8,
           "Hiroshima University": 8,
+          "University of Auckland": 8,
           "The University of Tokyo": 8,
           "Korea University": 8,
           "Maastricht University": 8,
           "Queensland University of Technology": 8,
           "Tilburg University": 8,
-          "University of Auckland": 7,
-          "International University of Japan": 7,
+          "Australian National University": 7,
           "Victoria University of Wellington": 7,
-          "Nanyang Technological University": 7,
           "University of Bristol": 7,
+          "Nanyang Technological University": 7,
           "Newcastle University": 6,
           "University of Technology Sydney": 6,
-          "Australian National University": 6,
           "University of Kentucky": 6,
           "Waseda University": 6,
           "Wageningen University and Research": 6,
@@ -1701,6 +1890,7 @@
           "The University of Nottingham": 6,
           "University of Southampton": 5,
           "University of Adelaide": 5,
+          "KDI School of Public Policy and Management": 5,
           "Universitas Gadjah Mada - Hiroshima University": 5,
           "King's College London Indonesia": 5,
           "The University of Warwick": 5,
@@ -1713,7 +1903,6 @@
           "Universitas Jenderal Soedirman": 4,
           "Lund University": 4,
           "Macquarie University": 4,
-          "KDI School of Public Policy and Management": 4,
           "University of Glasgow": 4,
           "University of Groningen - Universitas Indonesia": 4,
           "The University of Glasgow - Sekolah Bisnis dan Manajemen Institut Teknologi Bandung": 4,
@@ -1742,11 +1931,9 @@
           "Universiti Malaya": 2,
           "Aarhus University": 2,
           "Victoria University of Wellington - Universitas Indonesia": 2,
-          "University of Queensland": 2,
           "Sekolah Tinggi Intelejen Negara": 2,
-          "Queensland University": 2,
           "Massey University": 2,
-          "University of Western Australia": 2,
+          "Queensland University": 2,
           "Universitas Telkom": 2,
           "International Islamic University Malaysia": 2,
           "University of Electro-Communications": 2,
@@ -1767,11 +1954,12 @@
           "Kobe University - Universitas Gadjah Mada": 2,
           "Erasmus University Rotterdam - Universitas Indonesia": 2,
           "Kobe University - Universitas Indonesia": 2,
-          "Universitas Brawijaya - National Graduate Institute for Policy Studies": 2,
+          "Universitas Brawijaya - \tNational Graduate Institute for Policy Studies": 2,
           "Griffith University - Universitas Hasanuddin": 2,
           "International Islamic University Malaysia (IIUM)": 2,
           "The University of Canberra": 2,
           "Durham University": 2,
+          "University of Queensland": 2,
           "The University of Melbourne - Universitas Gadjah Mada Jakarta": 2,
           "IESEG School of Management": 2,
           "University of Hull - Sekolah Bisnis dan Manajemen Institut Teknologi Bandung": 2,
@@ -1811,6 +1999,8 @@
           "Universitas Indonesia - University of Melbourne": 1,
           "Al-Farabi Kazakh National University": 1,
           "Kyoto University": 1,
+          "King's College London": 1,
+          "Rheinische Friedrich-Wilhelms-Universität Bonn": 1,
           "Florida International University": 1,
           "Korea Advanced Institute of Science and Technology (KAIST)": 1,
           "Tohoku University": 1,
@@ -1943,7 +2133,14 @@
       "targets": {
         "2026": 2450
       },
-      "months_by_year": {},
+      "months_by_year": {
+        "2026": {
+          "4": {
+            "total": 2559,
+            "lulus": 1285
+          }
+        }
+      },
       "hadir_by_year": {
         "2026": 2559,
         "2025": 8645
@@ -2020,12 +2217,12 @@
     {
       "team": "Tes Lain",
       "type": "count",
-      "total": 19843,
-      "total_hadir": 17494,
+      "total": 20684,
+      "total_hadir": 18335,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 25,
+      "total_angkatan": 26,
       "targets": {
         "2026": 320
       },
@@ -2054,6 +2251,10 @@
           "6": {
             "total": 2263,
             "lulus": 0
+          },
+          "8": {
+            "total": 841,
+            "lulus": 0
           }
         },
         "2025": {
@@ -2064,13 +2265,13 @@
         }
       },
       "hadir_by_year": {
-        "2026": 6695,
+        "2026": 7536,
         "2025": 10799
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 9044,
-          "mengikuti": 6695,
+          "terdaftar": 9885,
+          "mengikuti": 7536,
           "tidak_mengikuti": 85,
           "belum_diproses": 0
         },
@@ -2088,7 +2289,8 @@
             "TBI": 966,
             "Lainnya": 77,
             "TPA": 60,
-            "Mints Globe": 630
+            "Mints Globe": 630,
+            "TPA TBI & Psikotes": 841
           },
           "profilling": {
             "Psikotes": 569,
