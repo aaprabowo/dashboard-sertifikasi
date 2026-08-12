@@ -253,6 +253,7 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 
 /* Beasiswa 3-metric mini cards */
 .bea-3cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+.bea-4cards { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
 .bea-card     { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 14px; text-align: center; }
 .bea-card-lbl { font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
 .bea-card-val { font-size: 26px; font-weight: 600; line-height: 1.1; }
@@ -1809,8 +1810,16 @@ function _renderAC(t,c,thn){
 // ============================================================
 function popupBeasiswa(t,c){
   const d=t.detail||{};
-  const nA=t.total||0, nS=t.total_selesai||0;
-  document.getElementById('popup-sub').textContent=`${fmtN(nA)} penerima aktif · ${fmtN(nS)} alumni`;
+  const nA=t.total||0, nS=t.total_selesai||0, nT=t.total_terdaftar||(nA+nS);
+  document.getElementById('popup-sub').textContent=`${fmtN(nT)} terdaftar · ${fmtN(nA)} aktif · ${fmtN(nS)} alumni`;
+
+  // Aktif per jenjang (urutan tetap dari backend: DIII, DIV, S1, S2, S3)
+  const aktifJenjang=d.aktif_per_jenjang||{};
+
+  // Sebaran prodi pascasarjana (S2 & S3) — PTUD vs Non-PTUD
+  const prodiPasca=d.prodi_pasca||{};
+  const prodiPascaE=(jn)=>Object.entries(prodiPasca[jn]||{}).slice(0,8)
+    .map(([lbl,v])=>({label:lbl,a:v.ptud||0,b:v.non_ptud||0}));
 
   // DN/LN stacked bar
   const dnln=d.dn_ln||{};
@@ -1856,7 +1865,12 @@ function popupBeasiswa(t,c){
     :'<div style="font-size:11px;color:var(--text3)">Tidak ada data PTUD</div>';
 
   document.getElementById('popup-body').innerHTML=`
-    <div class="bea-3cards">
+    <div class="bea-4cards">
+      <div class="bea-card">
+        <div class="bea-card-lbl">Terdaftar</div>
+        <div class="bea-card-val" style="color:var(--text1)">${fmtN(nT)}</div>
+        <div class="bea-card-sub">total s.d. saat ini</div>
+      </div>
       <div class="bea-card">
         <div class="bea-card-lbl">Aktif</div>
         <div class="bea-card-val" style="color:${c.color}">${fmtN(nA)}</div>
@@ -1874,12 +1888,17 @@ function popupBeasiswa(t,c){
       </div>
     </div>
     <div class="p-grid2">
+      ${psBlock('Aktif per Jenjang',distBars(aktifJenjang,c.color,10))}
       ${psBlock('Lokasi (DN/LN) — Aktif vs Alumni',stackedBars(dnlnE,c.color,c.cb,'Aktif','Alumni'))}
-      ${psBlock('Jenjang — Aktif vs Alumni',stackedBars(jenjE,c.color,c.cb,'Aktif','Alumni'))}
     </div>
+    ${psBlock('Jenjang — Aktif vs Alumni',stackedBars(jenjE,c.color,c.cb,'Aktif','Alumni'))}
     ${psBlock('PTUD vs Non PTUD — Aktif vs Alumni',stackedBars(ptudStE,c.color,c.cb,'Aktif','Alumni'))}
     ${psBlock('Provider / Pemberi Beasiswa',provHTML)}
     ${psBlock('Kampus PTUD (Top World Ranking)',ptudHTML)}
+    <div class="p-grid2">
+      ${psBlock('Prodi Pascasarjana S2 — PTUD vs Non-PTUD',stackedBars(prodiPascaE('S2'),'#534AB7','#B4B2A9','PTUD','Non-PTUD'))}
+      ${psBlock('Prodi Pascasarjana S3 — PTUD vs Non-PTUD',stackedBars(prodiPascaE('S3'),'#534AB7','#B4B2A9','PTUD','Non-PTUD'))}
+    </div>
     <div class="p-grid2">
       ${psBlock('Sebaran UE1',distBars(d.ue1||{},c.color))}
       ${psBlock('Program Studi (Top 12)',distBars(d.prodi||{},c.color))}

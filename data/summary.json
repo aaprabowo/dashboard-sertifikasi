@@ -1,6 +1,6 @@
 {
-  "generated_at": "12 August 2026, 08:30:19",
-  "generated_ts": "2026-08-12T08:30:19.356654",
+  "generated_at": "12 August 2026, 08:55:42",
+  "generated_ts": "2026-08-12T08:55:42.471437",
   "total_peserta": 19712,
   "total_lulus": 5650,
   "avg_pct_lulus": 28.7,
@@ -782,6 +782,7 @@
       "total": 1584,
       "total_hadir": 1584,
       "total_selesai": 4703,
+      "total_terdaftar": 6323,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
@@ -1404,6 +1405,13 @@
             "selesai": 148
           }
         },
+        "aktif_per_jenjang": {
+          "DIII": 629,
+          "DIV": 324,
+          "S1": 50,
+          "S2": 451,
+          "S3": 130
+        },
         "provider": {
           "PKN STAN": {
             "aktif": 953,
@@ -1768,6 +1776,4512 @@
           "Non PTUD": {
             "aktif": 1453,
             "selesai": 4292
+          }
+        },
+        "prodi_pasca": {
+          "S2": {
+            "Magister Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 223
+            },
+            "Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 179
+            },
+            "Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 106
+            },
+            "Master of Public Administration": {
+              "ptud": 62,
+              "non_ptud": 35
+            },
+            "Magister Ilmu Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 93
+            },
+            "Master of Public Policy and Management": {
+              "ptud": 74,
+              "non_ptud": 18
+            },
+            "Master of Public Policy": {
+              "ptud": 25,
+              "non_ptud": 61
+            },
+            "Magister Ekonomika Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 62
+            },
+            "Master of International Tax": {
+              "ptud": 49,
+              "non_ptud": 0
+            },
+            "Magister Perencanaan Ekonomi dan Kebijakan Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 45
+            },
+            "Magister Ilmu Hukum": {
+              "ptud": 0,
+              "non_ptud": 33
+            },
+            "Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 33
+            },
+            "Master of Business Administration": {
+              "ptud": 6,
+              "non_ptud": 26
+            },
+            "Master of Management": {
+              "ptud": 25,
+              "non_ptud": 5
+            },
+            "Manajemen": {
+              "ptud": 0,
+              "non_ptud": 29
+            },
+            "Master of Management (Accounting and Finance)": {
+              "ptud": 26,
+              "non_ptud": 0
+            },
+            "Magister Teknologi Informasi": {
+              "ptud": 0,
+              "non_ptud": 22
+            },
+            "Magister Kepemimpinan dan Inovasi Kebijakan": {
+              "ptud": 0,
+              "non_ptud": 21
+            },
+            "Master in Public Policy": {
+              "ptud": 11,
+              "non_ptud": 9
+            },
+            "Magister Manajemen dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 18
+            },
+            "Magister Kajian Intelijen": {
+              "ptud": 0,
+              "non_ptud": 18
+            },
+            "Ilmu Hukum": {
+              "ptud": 0,
+              "non_ptud": 17
+            },
+            "Master of Laws": {
+              "ptud": 10,
+              "non_ptud": 6
+            },
+            "Master of Data Science": {
+              "ptud": 1,
+              "non_ptud": 14
+            },
+            "Master of Accounting": {
+              "ptud": 0,
+              "non_ptud": 15
+            },
+            "Master of International and Development Economics": {
+              "ptud": 0,
+              "non_ptud": 15
+            },
+            "Master of International Development Policy": {
+              "ptud": 0,
+              "non_ptud": 14
+            },
+            "Magister Ilmu Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 13
+            },
+            "Magister Media dan Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 13
+            },
+            "Master of Applied Economics": {
+              "ptud": 0,
+              "non_ptud": 13
+            },
+            "Magister Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 13
+            },
+            "Master of Commerce": {
+              "ptud": 0,
+              "non_ptud": 12
+            },
+            "Magister Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 12
+            },
+            "Magister Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 11
+            },
+            "Magister Kebijakan Publik": {
+              "ptud": 1,
+              "non_ptud": 10
+            },
+            "Master in Public Administration": {
+              "ptud": 7,
+              "non_ptud": 4
+            },
+            "Master of Science in Accountancy": {
+              "ptud": 0,
+              "non_ptud": 11
+            },
+            "Ilmu Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 11
+            },
+            "Ekonomika Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 11
+            },
+            "Perencanaan dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 11
+            },
+            "Executive Master in Diplomacy and International Affairs": {
+              "ptud": 0,
+              "non_ptud": 11
+            },
+            "Magister Ekonomi Pertahanan": {
+              "ptud": 0,
+              "non_ptud": 10
+            },
+            "Magister Ilmu Manajemen": {
+              "ptud": 0,
+              "non_ptud": 9
+            },
+            "International Tax Law LLM": {
+              "ptud": 0,
+              "non_ptud": 9
+            },
+            "Master of Professional Accounting": {
+              "ptud": 0,
+              "non_ptud": 9
+            },
+            "Master of International Relations": {
+              "ptud": 7,
+              "non_ptud": 2
+            },
+            "Magister Sains Manajemen": {
+              "ptud": 0,
+              "non_ptud": 9
+            },
+            "Master of Taxation": {
+              "ptud": 1,
+              "non_ptud": 8
+            },
+            "Teknologi Informasi": {
+              "ptud": 0,
+              "non_ptud": 9
+            },
+            "Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Magister Hukum": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Magister Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Master of Science in Accounting": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Public Policy": {
+              "ptud": 1,
+              "non_ptud": 7
+            },
+            "Public Administration": {
+              "ptud": 5,
+              "non_ptud": 3
+            },
+            "Perencanaan Ekonomi dan Kebijakan Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Master of International and Development Economics - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Economics of Development - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 8
+            },
+            "Master in Public Policy and Management": {
+              "ptud": 7,
+              "non_ptud": 0
+            },
+            "Master of Management (Human Resources)": {
+              "ptud": 7,
+              "non_ptud": 0
+            },
+            "Master of Management (Finance)": {
+              "ptud": 7,
+              "non_ptud": 0
+            },
+            "Master of Business": {
+              "ptud": 0,
+              "non_ptud": 7
+            },
+            "Master of Property": {
+              "ptud": 0,
+              "non_ptud": 7
+            },
+            "Public Policy and Management": {
+              "ptud": 3,
+              "non_ptud": 4
+            },
+            "Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 7
+            },
+            "Magister Teknologi Informasi e-Government": {
+              "ptud": 0,
+              "non_ptud": 7
+            },
+            "Magister Perencanaan dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 6
+            },
+            "Master in Taxation Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 6
+            },
+            "Master of Law": {
+              "ptud": 3,
+              "non_ptud": 3
+            },
+            "Master of Business Taxation": {
+              "ptud": 0,
+              "non_ptud": 6
+            },
+            "Master of Public Administration (Enhanced)": {
+              "ptud": 6,
+              "non_ptud": 0
+            },
+            "Master of Management - Magister Manajemen": {
+              "ptud": 6,
+              "non_ptud": 0
+            },
+            "Master of Public Policy Management - Magister Ilmu Administrasi": {
+              "ptud": 6,
+              "non_ptud": 0
+            },
+            "Master of Information Systems - Magister Teknologi Informasi": {
+              "ptud": 6,
+              "non_ptud": 0
+            },
+            "Master of Business Analytics": {
+              "ptud": 1,
+              "non_ptud": 4
+            },
+            "Master of Global Media Communication": {
+              "ptud": 5,
+              "non_ptud": 0
+            },
+            "Master of Information Technology": {
+              "ptud": 1,
+              "non_ptud": 4
+            },
+            "Master of International Tax Law": {
+              "ptud": 1,
+              "non_ptud": 4
+            },
+            "MPA in Comparative Applied Social and Public Policy, Evaluation and Research": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of Business Information Systems": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Magister Hukum Bisnis dan Kenegaraan": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of Governance and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Magister Manajemen Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of Science in Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of International Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "MSc Accounting and Finance": {
+              "ptud": 1,
+              "non_ptud": 4
+            },
+            "Master in Accounting and Finance": {
+              "ptud": 2,
+              "non_ptud": 3
+            },
+            "Sains Manajemen": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of Applied Economics - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "MSc FT Investment and Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of Science in International Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Master of Public Policy - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Science in Public Policy and Management": {
+              "ptud": 1,
+              "non_ptud": 3
+            },
+            "Magister Ilmu Perpustakaan": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Data Science and Innovation": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Finance": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Computer Science": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Commerce (Extension)": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "MPA in Comparative Applied Social & Public Policy, Evaluation & Research": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Magister Ilmu Komputer": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Macroeconomic Policy Program": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Public Management": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Magister Ekonomika Pembangunan - Graduate School of Innovation and Practice for Smart Society": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Magister Keamanan Maritim": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master in International and Development Economics": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Science in Computer Information Systems": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Science in Management": {
+              "ptud": 2,
+              "non_ptud": 2
+            },
+            "PUBLIC POLICY": {
+              "ptud": 2,
+              "non_ptud": 2
+            },
+            "Magister Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "MSc Management": {
+              "ptud": 3,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Wilayah dan Kota": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Magister Ekonomi Terapan": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Perencanaan Dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Finance and Tax Policy": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Msc Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Science in Accounting and Finance": {
+              "ptud": 2,
+              "non_ptud": 2
+            },
+            "Master of Economics - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Arts in Development Studies Major Governance and Development Policies": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "MSc FT Accounting and Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Public Policy and Management - Ilmu Administrasi-Administrasi dan Kebijakan": {
+              "ptud": 4,
+              "non_ptud": 0
+            },
+            "International Economics and Business - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Master of Public Affairs": {
+              "ptud": 1,
+              "non_ptud": 3
+            },
+            "Magister Statistika dan Sains Data": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Magister Manajemen dan Bisnis": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of International Business": {
+              "ptud": 2,
+              "non_ptud": 1
+            },
+            "Master of Economics": {
+              "ptud": 1,
+              "non_ptud": 2
+            },
+            "Master of Science in Human Capital Management": {
+              "ptud": 3,
+              "non_ptud": 0
+            },
+            "Asian Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Development Studies": {
+              "ptud": 1,
+              "non_ptud": 2
+            },
+            "Magister Pengembangan Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "MSc Digital Economies": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Cyber Security": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Magister Kajian Ketahanan Nasional": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master in Public Administration in International Development": {
+              "ptud": 3,
+              "non_ptud": 0
+            },
+            "Master in Professional Accounting": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Project Management": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Media dan Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Professional Studies in Real Estate": {
+              "ptud": 3,
+              "non_ptud": 0
+            },
+            "Ilmu Manajemen": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Magister Ekonomi Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Economics and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Ekonomi Terapan": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "MPKP": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Economics Development": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Perencanaan Ekonomi dan Kebijakan Pembangunan (MPKP)": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Magister Ilmu Administrasi dan Kebijakan Perpajakan": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master in Accounting and Taxation": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Taxation Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "International Tax Law": {
+              "ptud": 1,
+              "non_ptud": 2
+            },
+            "MA in Development Studies, Major in Government and Development Policy Spec. Public Policy Management": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master Of Science In Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Business - Magister Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "MSc FT International Human Resource Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "MSc Computer Science": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Major Economics of Development - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Science in Public Policy": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of International Management and Design Innovation - Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of International Development Policy - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Master of Industrial and Labor Relations": {
+              "ptud": 3,
+              "non_ptud": 0
+            },
+            "Master Public Policy": {
+              "ptud": 1,
+              "non_ptud": 2
+            },
+            "Master of Public Administration - Magister Administrasi Publik": {
+              "ptud": 1,
+              "non_ptud": 1
+            },
+            "Magister Data Science": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Studi Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Teknik Informatika": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Sains Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Ilmu Hubungan Internasional": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Economic Policy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Kajian Intelejen": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Perencanaan Ekonomi Dan Kebijakan Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Ilmu Komunikas": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Manajemen–Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Marketing Communications": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Master of Cybersecurity": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Media dan Ilmu Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Environmental and Resource Economics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master Economics of Sustainability": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MA in Development Studies": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Administration in Development Practice": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Magister Kimia": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MSc Human Resource Management": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Master of Arts in International Public Policy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Intelijen Medik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Hukum Keadaan Darurat": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Ilmu Administrasi Publik - Economics, Planning, and Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Sustainable Energy (Management)": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science in Digital Economies": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science in Criminal Justice": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Information Systems": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Master of Public Economics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Statistika": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Policy And Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master Of Cyber Security": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Professional Accounting and Business Performance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Terapan Intelijen Medik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "INTERNATIONAL TAX LAW": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science in Urban Development": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Manajemen Properti dan Penilaian": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Informatika": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Policy (Public Economy)": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MA in Digital Transformation & Competitiveness": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in Human Resource Management": {
+              "ptud": 1,
+              "non_ptud": 1
+            },
+            "MS in Accounting": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in Business Analytics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Applied Finance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science in Information Systems": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Business Informations Systems": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master's Program  of Public Policy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Teknik Elektro konsentrasi Telematika": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Information Systems Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Manajemen Keamanan Jaringan Informasi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science: Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Policy Management": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Master of Professional Accountancy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in the Study of Tax Law": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Ilmu Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Manajemen Dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Ilmu Kimia": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of International Relation": {
+              "ptud": 1,
+              "non_ptud": 1
+            },
+            "Master of Social Policy - Magister Sosiologi": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Master of Accountancy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "LLM International Law and Global Governance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Finance - Tax Course": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Public Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MSc in Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science Data Science": {
+              "ptud": 1,
+              "non_ptud": 1
+            },
+            "Master of Finance and Tax Policy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Perencanaan dan Pengembangan Wilayah": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of International and European Tax Law": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Governance and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Finance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MSc Accounting and Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science Accounting, Governance, and Financial Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MANAJEMEN DAN KEBIJAKAN PUBLIK": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Environment and Sustainability": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Tax": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Economics and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science Finance": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Magister Magister Administrasi Publik - Master of Policy Studies": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Environmental Protection - Magister Perencanaan dan Pengembangan Wilayah": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Teknik Kekhususan Manajemen Keamanan Jaringan Informasi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "International and European Tax Law": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Manajemen Keuangan": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Manajemen Bisnis": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Network and Security": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in Public Finance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Islamic Finance": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Psikologi Terapan": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Magister Manajemen Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in MS Business Analytics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "International Tax": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Financial Management and Law": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Msc Management": {
+              "ptud": 1,
+              "non_ptud": 1
+            },
+            "LLM in Banking and Financial Law": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MSc Business Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science in Investment & Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Management - Master of Business Administration": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "MSc in Accounting, Audit and Control": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "M.Sc Business Management - Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MSc in International Human Resource Management and Development - Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Commerce (Professional Accounting) - Magister Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master Of Applied Economics - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Taxation Law - Magister Manajemen Konsentrasi Manajemen Stratejik Sektor Publik": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science (Financial Technology) - Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of IT Cybersecurity": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Customs Administration": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Public Administration Comparative Applied Social and Public Policy, Evaluation and Research": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MS in Human Resource Management": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master of Science in Computational Analysis and Public Policy": {
+              "ptud": 2,
+              "non_ptud": 0
+            },
+            "Tax Law LLM": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "MPA Comparative Applied Social & Public Policy, Evaluation and Research": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Master in ICT-Related Fields": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Economic Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Development Practice - Magister Studi Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Management and Policy Analysis Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Administration (International)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Economics and Business Administration, International Economic Consulting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Studi E-Government - Magister Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Intelligence": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in International Relation and Affairs": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Public Administration (International Development)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Ilmu Administrasi - Administrasi dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Information Systems": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Msc in Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy (Public Economic)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Project Management (Complex Systems)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ekonomi dan Studi Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister/Pengembangan Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economic (Policy Economics)-MS Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc. Climate Change Finance & Investment": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Ilmu Administrasi – Administrasi dan Kebijakan Perpajakan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MPA Innovation, Public Policy, and Public Value": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Electrical Engineering and Computer Science International Graduate Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Economics and Resource Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master's in Public Relation and Corporate Communication": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Public Policy and Management-Data Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Banking and International Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts Programs International Relations": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Public Private Partnership": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Education in Instructional Technology and Medial Teachers College": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Environment": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Full-time MBA Programme": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MPA in Development Practice": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MPA in Comparative Applied Social & Public Policy, Evaluation, and Research": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc International Relations": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc Human Resource Development (International Development)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Global Affairs": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Environmental Managementand Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Criminology": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc Accounting, Organisations and Institutions": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Science in Climate Finance": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc in Climate Finance": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Artificial Intelligence": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Analytics and Digital Transformation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Keamanan Siber dan ForensikDigital": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Commerce with a Specialisation in FinTech": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Teknologi Pendidikan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MA in International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Law & Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Banking and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Macroeconomic Policy Program (Master Degree)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Risk Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Logistics and Supply Chain Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Administration (Leadership and Enterprise)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Management (Accounting&Finance)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Public Policy, International Program": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Macroeconomic Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Economic Development and Policies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Development program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration (Finance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Strategic Communication": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Arts in International Studies (International Commerce)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Public Finance Program (Customs Course)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Human-Computer Interaction Master’s programme": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master’s Degree in Urban Development and Smart Infrastructure Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master's Program in Economics Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in International Human Resource Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Msc Public Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "LLM International Oil and Gas Law and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister in Graduate School of International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Management and Policy Analysis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Fiscal and Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu Administrasi Publik - Master of Development Studies": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Ilmu Administrasi - Master of Public Policy and Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Manajemen Pertahanan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Climate Change": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Philosophy (Economics)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen Dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Of Data Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Taxation": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Masters of International and Development Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Masters of Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Teknik Kimia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Digital Communication": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Inovasi dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Environmental Science – Environmental Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Ekonomi dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen - Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy anf Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Professional Accounting and Business Performance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu Lingkungan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu Administrasi Kebijakan Perpajakan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business (Information Systems)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administation": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of International Affairs": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Maguster Manajemen dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ekonomi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen SDM": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen Proyek": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan ekonomi dan Kebijakan Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Herbal": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Design": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Combined Studies in Laws/Intelligence": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Analitics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Technology Governance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MASTER OF PUBLIC POLICY": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Masterin (Coursework) Professional Accounting (Ext)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Governance and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master's Asian Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in International Development: Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Global Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Logistics and Supply Chain Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Real Estate Economics and Investment Analysis": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Software Systems Engineering": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in LLM International Law and Global Governance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy and Management-Data Analytics Tracks": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in MSc Public Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master Of Commerce (Extension)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Program Pengelola TIK": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Public Administration (AI and Governance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Fiscal Law and Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Ekonomi dan Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Sustainable and Green Finance": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Ilmu Administrasi dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Teknologi Pembelajaran": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen Sistem Informasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen-Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Strategic Public Relation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen Keuangan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Nuclear Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Global Bussiness": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "POLITICAL ECONOMY": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Strategic Communications Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Strategic Communications": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Islamic Management and Fianance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration (MPA)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Programme in Strategic Communication": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Communication": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Science Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Applied Economics and  Econometrics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Accountiancy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Teknologi Pendidikan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "INTERNATIONAL RELATIONS": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "PUBLIC ADMINISTRATION": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Information System": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Administrative Law and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Ekonomi dan Kebijakan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "DEVELOPMENT STUDIES": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Social Studies (Civil Society Leadership)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Science in Human Capital Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Science in Project Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Gender Leadership (ASIA)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Science in Applied Data Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master's Degree Program In Economics Development Policy for Sustainable and Inclusive Growth": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Maguster Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Information Technology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Administrative Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Cyber Security": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Onternational Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Public Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Commerce - Applied Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Global Media and Communication": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in International Trade, Strategy and Operations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Program in Economic Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Maritime": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc In Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Behavioural Finance MSc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Management With Human Resources": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Marketing and Digital Communications MSc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Sciencein Advanced Computer Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Finance Program (Tax Course)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc of Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Data Analytics for Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Finance Program (Custom Course)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Public Finance Program (Customs Course)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Accounting, Accountability, and Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy (Master of Public Economy)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Science in Data Science": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "LLM Master of International Tax": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master LLM FT International Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc FT Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc. Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Advanced Studies in International Civil and Commercial Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Design Informatics": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Public Service and Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "M.Sc. in Corporate Governance and Accountability": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Human Resource Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Law and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Management MSc": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Mater of Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Statistika Terapan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Commerce (Data Analytics for Business)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Business Taxation MBT": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MANAJEMEN KEBIJAKAN PUBLIK": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu dan Teknologi Pangan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Manajemen – Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Kesehatan dan Keselamatan Kerja": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Psikologi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Project Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Computer Science (Artificial Intelligence)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Engineering Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Commercial Law": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Commerce - Professional Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Real Estate Development": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Arts in International Affairs": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Laws": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister ilmu Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Fine Arts in Graphic Design": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Global Management – Global Digital Transformation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Pengembangan Sumber Daya Manusia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu Farmasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Environmental Law": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magsiter Ilmu Hukum": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "GENDER AND DEVELOPMENT": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "KEPEMIMPINAN DAN INOVASI KEBIJAKAN": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MAGISTER KEPEMIMPINAN DAN INOVASI KEBIJAKAN": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Environmental Sciences": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Masters of Applied Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Capacity Building for SDGs (Asia)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Global Education Leadership": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Management and Public Sector Reforms": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Commercial Law": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Arts in Development Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Information Technology in Business (Analytics)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "LLM in Corporate, Commercial, and Taxation Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Asia Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration Specialized in Data Analytics and Quantitative Analysis": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Economic Development for Sustainable and Inclusive Growth": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Trade and Industrial Policy for Sustainable and Inclusive Growth": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Public Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Education and Technology": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in MSc International Business": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Macroeconomic Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Human Resource Management and Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Accounting and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Public Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master’s Program in Economic Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Textile Technology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science of Investment and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Administration Master": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Of Commerce": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Social and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Finance - Customs Course": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Accounting and Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws, International Business Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in International Public Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MS in International Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Program Pascasarjana Ilmu Administrasi Fakultas Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Study of Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Asian and Pacific Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Administrasi\nBisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MS in International Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MS in Human Decision Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws - LLM, International and European Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Strategic Public Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration in Comparative Applied Social and Public Policy, Evaluation, and Research": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MS in Business Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Professional Accounting (Extension)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Two-Year LL.M": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws - LLM, Intellectual Property Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Degree Programme in Strategic Management and Intellectual Property Right (IPR)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Teknik Elektro opsi Layanan Teknologi Informasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu Perencanaan Wilayah": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Human Capital Capital Management and Analytics\nManagement \nand \nAnalytics": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Science in Criminal Justice, Cybercrime Investigation &amp; Cybersecurity Concentration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Development Policy Specialization in International Tax-Public Financial Management Programe": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration (enhanced)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Management (Accounting and Finance),": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Management (Human Resources)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Arts in Development Studies Major in Governance and Development Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Development Studies Major Governance and Development Policies (GDP)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MAcc International Accounting and Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Public Policy & Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister of Science on Data Science and Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Cyber Security and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Pengelola TIK": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Accounting &amp; Financial Management, MAcc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Accounting & Financial Management, MAcc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Accounting and Finance (MSc Accounting and Finance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Manajemen Properti dan Penilaian": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Accounting, Governance and Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Masters in Public Administration (Human Resources)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Policy (MSc)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Kimia": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "LLM International Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc - Behavioral Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc Behavioural Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Development Economics and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in MSc Innovation Management and Entrepreneurship,": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Hukum Bisnis dan Kenegaraan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu dan Teknologi Pangan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Dan Teknologi Pangan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Sains Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Big Data Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Data Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Global Strategy and Innovation Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Hukum": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Accounting and Finance Msc": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc Comparative Public Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Ilmu Pangan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Perencanaan ekonomi dan kebijakan pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy in Public Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Professional Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Studi Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Manajemen dan Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Management (Accounting),": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Tax (Tax Law)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Internationa Tax": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Cyber Security Analysis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master International and European Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws in Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MPA in Economic Policy Management)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Psikologi Profesi bidang psikologi Industri dan Organisasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Manajemen Aset dan Penilaian Properti/Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Administrasi Publik - Master of Arts in Policy Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Administrasi Publik - Public Management and Policy Analysis Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Commerce": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Teknologi Informasi e-Government": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws in Corporate, Commercial & Taxation Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Data Science and Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ekonomi Pembangungan - Master of Economics, Planning, and Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "- Magister Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Economic Development - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Regional Environmental Economics - Magister Perencanaan Wilayah": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ilmu Ekonomi - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Accounting and Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc IT Cyber Security": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Finance and Economic Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Management and Policy Analysis - Magister Ekonomi Terapan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ekonomi Terapan - Master of International Development Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Ekonomi - Master of International Economic Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Development Economics and Policy - Magister Ekonomika Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MPhil. in International Economics and Development Program - Magister Ekonomika Pembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Economics, Planning and Public Policy - Master in Development Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Economics, Planning and Public Policy - Magister Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Administrasi dan Kebijakan Perpajakan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Project Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in International Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Public Administration (Practice) FT": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Trade Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Real Estate": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Comparative and International Social Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Kebijakan Publik (sekarang Magister Perencaan Ekonomi dan Kebijakan Pembangunan)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Environmental Policy and Regulation": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Teknik Elektro Opsi Layanan Teknologi Informasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Megister Pengelola TIK Pemerintahan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Law and Society: Governance and Global Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Managemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Keamanan Maritim": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Administration and Governance Specialisation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy - Magister Sosiologi": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Ilmu Administrasi Publik - Master of Economics, Planning, and Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Applied Economics and Econometrics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Environmental Management and Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Human Resources and Employment Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ekonomi Pertahanan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public and International Law": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "KAJIAN TERORISME": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Professional Accounting (Leadership Stream Program)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Risk Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Urban and Regional Planning": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Internatioanl Money and Banking": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of System Design and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Business Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Accounting, Governance, and Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Data Science and Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "M.Sc. in Food Safety": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Public International Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Communication Customs Leadership": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration (Management)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business (Management)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Two-Year LL.M. Program in Banking and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Publik policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Komputer": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Education (Leadership and Management)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Administration and Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Ilmu Psikologi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Relations and Corporate Communication": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MA in Development Studies Major Governance and Development Policies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public International Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master International Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Development Policy (MIDP)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister e-Government": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Perencanaan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Health Economics and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration- Economic and Political Development": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Hukum Kenegaraan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Hukum-Hukum Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Management and Public Sectors Reforms": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Degree in Public Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Public Policy and Management MSc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Tax LLM": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc. Accounting, Finance, and Strategic investment": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MBA": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Digital Investigation & Forensic Computing": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Psikologi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Information Technology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economic, Banking and Finance MSc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Human Resources and Industrial Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master International Tax (Advanced)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Psikologi Profesi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Perencanaan dan Kebijkan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Hukum Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Information Technology Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Teknik Elektro - Informatika (CIO)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Artificial Intelligence": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Human Resources Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Information Systems and Operation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Business Administration (MBA)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Computer Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in International Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Management and Information System: Change and Development (MIS:CD)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Development: Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Of Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Public Policy Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws in Advanced Studies Programme in International Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Forensic Computing & Cybercrime Investigation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Human Resource Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Development Practice": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "International Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Science in Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Networks and Security": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration (Policy)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Sains Ilmu Pertahanan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Forensic Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Political Economy of Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc International Development: Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economic, Management and Governance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Accounting & Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Infrastructure Investment and Finance": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Advanced Computer Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of public Administration": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Teknik Sipil": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Computer Science (Cybersecurity)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Development Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Management and Organization": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Climate Change Finance and Investment": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc Human Capital Management and Analytics": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Information & Knowledge Strategy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in General LL.M (Master of Laws)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc in Maritime Economics and Logistics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Water Utility of The Future": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Applied Econometrics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration in Economic Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Msc of Economic Development (with Finance & Policy Pathways)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "LLM Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Data Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Data Science for Business - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International and Development Economics - Magister Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "LLM (Master of Laws)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economic and Business": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Public Policy and Management (Two-year Track)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Development Policy - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Information Technology (Management)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Computing and Information Systems with Industrial Experience": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc International Human Resource Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in International Development": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Public Policy and Global Affairs": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Accounting, Organisations and Institutions": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Business Administration - Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc FT International Financial Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Adminstration (Practice)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Of Science in Computer Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Policy Studies": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Arts in Development Studies Major Economics of Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Accounting & Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science and Business Spec. Policy Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Public Administration (Spec. Economics and Governance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MPA in Public and Nonprofit Management and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Accounting and Auditing and Control (spec. Accounting and Finance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "LLM in Banking & Financial Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Accounting and Auditing and Control": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International Business - Magister Perencanaan dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "E-Business and Innovation - Magister Teknologi Informasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in International Business Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Economic Growth, Population, and Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Global Finance - Magister Administrasi Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Public Policy and Human Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Education in Digital Learning": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Software Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Governance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc FT Public Policy - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Accounting and Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "M.Sc in Interational Business Taxation (Tax Economics)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Commerce - Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of International and Development Economic - Magister Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Information System": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Double Degree Programme in Economics of Development - Magister Ilmu Ekonomi Pertautan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Of Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Accounting and Finance - Master of Business Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Accounting and Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business (Human Resource Management)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MAcc International Accounting & Financial Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Human Resource Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Facility and Real Estate Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Real Estate": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Public Policy and Management (IPPAM)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in public Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Information Technology - Magister Teknologi Informasi": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of International Development Program - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Administration - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc. In Public Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Applied Economics - Magister Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc FT International Human Resource Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc in Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Regulation": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc International Economics with Integrated Pre-Masters": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Management, Economics and Consumer Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Of Accounting and Auditing and Control (spec. Accounting and Finance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Human Resource Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Economic Development - Magister Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Art in Teaching of English to Speakers of Other Languages (TESOL)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc. FT Investment and Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Human Resource Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy and Management - Magister Administrasi dan Kebijakan Publik": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Accounting and Control - Magister Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc in Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws-Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc FT International Business and Politics - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Commerce - Magister Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Management - Magister Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy Specialisation in Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration in Comparative Applied Social & Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Accounting and Finance - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc International Money and Banking Integrated Pre-Masters": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of TESOL": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Science in Criminology and Criminal Justice": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Professional Accounting (Ext)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Business Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Financial Technology": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Human Resources and Industrial Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Human Resource Management (International Development)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Management (Human Resource)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc Accounting, Auditing and Control": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Financial Management - Magister Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Two-Year LLM Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Taxation Law - Magister Manajemen Sektor Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MPA in Comparative Applied Social & Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MBA in International Business": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science – Computer Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magister Perencanaan Ekonomi dan Kebijakan\nPembangunan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Digital Communication and Culture": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master ofPublicAdministration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Comparative Applied Social & Public Policy, Evaluation & Research": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration Comparative Applied Social and \nPublic Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public\nPolicy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Education (Educational Management and Leadership)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economic and Policy MSc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws (Tax Law LL.M)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Msc International Development: Public Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration in Data Science for Publc Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Mid Career-Master of Public Administration": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Law & Professional Practice MSc": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Applied Data Analytics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Adminitration in Public and Nonprofit Management nad Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Real Estate Aset Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Biusiness Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MSc Real Estate Economics and Invesment Analysis": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Law (LLM)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Banking and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Public Of Administration": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "MSc in Business and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in Development Studies": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "LLM FT Laws": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Education": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Social-Organizational Psychology": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Global Business and Master of Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "LLM in Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master in the study of Tax Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Public of Administration in Comparative Applied Social and Public Policy, Evaluation, and Research": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Law - Taxation (LLM)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Human Relations and Employment Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "MS in Management and Systems": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Operations, Project, and Supply Chain Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Management (Human Resource Management)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Human Capital Management and Analytics": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Economic Behaviour and Governance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Social Design and Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Banking & Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Applied Project Management (Project Systems)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Governance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Governance and Development Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Magiser Ilmu Komunikasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Degree, Japan-IMF Scholarship, Program for Asia": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master in Master of International Development Policy (MIDP)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Development Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Accounting, Auditing and Control (Spesialisasi Accounting and Auditing)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Managemant": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Strategic Management and Intellectual Property Rights (IPR)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Masterv of Public Administration, Flinders University": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master Macroeconomic Policy Program(One Year Program)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Arts in Sustainable International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master International Business Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Energy Science and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of System Desgn and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business Process Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Business psychology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy In art and social science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Management(Accounting and Finance)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of data Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master's Degree Programme in Strategic Mangement and intellectual Property Risghs": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Fakultas Ekonomi dan Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Policy and Administration": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master Program in International Cooperation Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Economics, Banking, and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws in Corporate, Commercial, & Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Program Pascasarjana Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Laws (LLM)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Master of Science in Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science in Criminal Justice Cybercrime Investigation & Cybersecurity Concentration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Science Accountancy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration Comparative Applied Social and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Public Administration - International Finance and Economic Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Magister Keamanan Siber dan Forensik Digital": {
+              "ptud": 0,
+              "non_ptud": 1
+            }
+          },
+          "S3": {
+            "Doctor of Philosophy": {
+              "ptud": 0,
+              "non_ptud": 13
+            },
+            "Doktor Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 7
+            },
+            "PhD in Economics": {
+              "ptud": 0,
+              "non_ptud": 6
+            },
+            "PhD in Accounting": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Doktor Ilmu Manajemen": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Doktor Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 5
+            },
+            "Doctor of Philosophy in Economics": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Doktor Manajemen dan Kebijakan Publik": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "PhD in Public Policy": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 4
+            },
+            "Doktor Ilmu Komputer": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Doktor Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "PhD in Business Law and Taxation": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Doktor Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Ilmu Manajemen": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Public Policy": {
+              "ptud": 0,
+              "non_ptud": 3
+            },
+            "Doktoral Ilmu Ekonomi": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Doctor in Halal Industry": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "PhD in Business Administration": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "PhD Economics": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Doctor in Accounting": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "Economics": {
+              "ptud": 1,
+              "non_ptud": 1
+            },
+            "Doctor of Law": {
+              "ptud": 0,
+              "non_ptud": 2
+            },
+            "PhD of Doctor of Philosophy (Government)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Science": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "PhD in Economics and Commerce": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Business and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Business Studies-Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Philosophy in Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Business and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Business-School -  Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Business and Taxation Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Information and Communication Technology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Social and Political Sciences": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Philosophy (Economics)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D Economic History": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Doctor on Philosophy in Business Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Policy Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor of Science, Computer Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd in Risk and Disaster Reduction": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Doktor Statistika dan Sains Data": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Philosophy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktoral Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor Ilmu Ekonomi (Konsentrasi Akuntansi)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Business Informastion Systems": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Publc Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Tax Law": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Information Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Field Research: Management and Administration)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in PhD Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd in Politics and International Relations": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Human Resource Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy and Graduate Certificate of Research and Innovation Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd in Accounting, Finance, and Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Professional Doctoral in Business Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Development Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy - Business Law and Taxation Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Human Centred Computing": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Nijmegen School of Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Business Law and Taxation Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy-Information Technology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctorate Program of Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD pada School of Earth and Environment": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor Ilmu Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor Ilmu Hukum": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Development Studies with Reference to Emerging Economies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (School of Social Sciences)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Business Studies)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor Business Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in School of Business": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Politics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Public Policy & Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd. Accounting and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Development Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Queensland Alliance for Agriculture and Food Innovation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Political Economy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Public Affairs (Major Field: Public Finance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Education in Learning, Leadership, and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Islamic Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Accounting (Research)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Development Studies)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economics Phd Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Economics)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Business Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Public Policy and Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Law": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Phd Social Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "PhD in Business and Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd of Philosophy (Business)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Public Policy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "PhD in Informatics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (PhD) in Business, Discipline of Work and Organisational Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Centre for Energy, Petroleum and Mineral Law and Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Business and Management (Integrated)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Accounting and Auditing": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Business Law and Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Information Communication Technology": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Law": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D. International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Accounting": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Social Policy and Administration (Research)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Affairs": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Data Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Development Policy & Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Business and Management (Accounting and Finance)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economics (International Economic Development)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economics of Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctorate of Research Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Administrasi Publik": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Technology, Policy, and Management,": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd in Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in International and Rural Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Economic Development Program": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in School of Earth and Environmental Sciences": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Social and Human Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Komputer": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Philosophy, Crawford School of Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctoral Programme in Social Sciences": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Faculty of Social Sciences": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor Manajemen dan Bisnis": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy Computer Science and Informatics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in the International Economics Development Program of Graduate School of Humanities and Social Sciences": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor Kepemimpinan dan Inovasi Kebijakan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Engineering - Computer and Information Systems": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Phd FT Business and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor Of Philosophy (Centre of Customs and Excise Studies)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Business Information Systems": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Industrial Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Bartlett School of Construction and Project Management": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Sains Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD In Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "School of Agriculture and Environment": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Administrasi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economics at the Department of Development Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Business Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D. in Public Policy and Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D in Public Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (in Economics)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "School of Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Business": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Law)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Politics and International Relations, School of Social Sciences,": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor Department of Development Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy, Business Law & Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy School of Business": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Master of Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Human Resource Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Department of International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Hukum": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D. Research in Integrated Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Islamic Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D. Program in International Studies": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "International Development PhD with Integrated Study": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Pengelolaan Sumber Daya Alam Dan Lingkungan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D Management and Commerce": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Professional Doctorate in Public Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doktor Studi Kebijakan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Doctor of Business Administration": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "International Development/Policy Studies": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Phd International Development": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D in Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D Information Systems": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economics and Finance": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ph.D Program Graduate School of Asia Pacific Studies (GSAPS)": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Discipline of Politics and Public Policy": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Keuangan": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Industrial Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Economics / Public Policy on Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Philosophy in Geography": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctoral Degree in Global Political Economy": {
+              "ptud": 1,
+              "non_ptud": 0
+            },
+            "Kriminologi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd Program, Public Policy Program, National Graduate Institute for Policy Studies (GRIPS)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Environment Resource System": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Phd Ilmu Akuntansi": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy in Sustainability Studies": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Philosophy (PhD) in Taxation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Hukum": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public/ Environmetal Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Development Policy and Management": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Manajemen": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Islamic Economics": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "School of Applied Science": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Ilmu Ekonomi Pertanian": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD Management (Research)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Management, Work and Organisation": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Public Policy and Administration Doctoral": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "PhD in Accounting and Finance (Research)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Social Science)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor in Education (Curriculum and Teaching)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Accelerated Entry)": {
+              "ptud": 0,
+              "non_ptud": 1
+            },
+            "Doctor of Philosophy (Economics and Commerce)": {
+              "ptud": 0,
+              "non_ptud": 1
+            }
           }
         },
         "ue1": {
