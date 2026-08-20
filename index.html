@@ -240,8 +240,9 @@ html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Sego
 .funnel { display: flex; flex-direction: column; gap: 6px; }
 .funnel-row { display: flex; align-items: center; gap: 8px; }
 .funnel-lbl { font-size: 11px; color: var(--text2); min-width: 130px; }
-.funnel-bar-wrap { flex: 1; height: 20px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.funnel-bar-wrap { flex: 1; height: 20px; background: var(--border); border-radius: 4px; overflow: hidden; position: relative; }
 .funnel-bar-fill { height: 20px; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 10px; font-weight: 500; color: #fff; white-space: nowrap; }
+.funnel-note { position: absolute; left: 8px; top: 0; height: 20px; display: flex; align-items: center; font-size: 10px; font-style: italic; color: var(--text2); white-space: nowrap; pointer-events: none; }
 
 /* Batch table */
 .batch-tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
@@ -926,6 +927,7 @@ function funnelChart(steps, color) {
       <div class="funnel-lbl">${s.label}</div>
       <div class="funnel-bar-wrap">
         <div class="funnel-bar-fill" style="width:${Math.round(s.n/maxV*100)}%;background:${color}">${s.n>0?fmtN(s.n):''}</div>
+        ${s.note?`<div class="funnel-note">${s.note}</div>`:''}
       </div>
     </div>`).join('')}</div>`;
 }
@@ -1587,7 +1589,7 @@ async function _uskp(t,c,thn){
   // Distribusi kelulusan dinamis — hitung dari rows terfilter
   const kelDist={};
   fil.forEach(r=>{ const k=r.kelulusan||'(kosong)'; kelDist[k]=(kelDist[k]||0)+1; });
-  const kelEntries=Object.entries(kelDist).sort((a,b)=>b[1]-a[1]);
+  const kelEntries=Object.entries(kelDist).filter(([k])=>k!=='(kosong)').sort((a,b)=>b[1]-a[1]);
   const totalHadir=fil.length;
 
   // Warna per kategori kelulusan
@@ -1619,6 +1621,8 @@ async function _uskp(t,c,thn){
     hadir:            fil.length,
     lulus:            lulus,
   };
+  // Kolom kelulusan masih kosong utk semua yg hadir -> hasil belum ditetapkan
+  const belumPenetapanKelulusan = fil.length>0 && fil.every(r=>!r.kelulusan || !String(r.kelulusan).trim());
 
   // Tingkat stacked bar — tiap tingkat dipecah per kategori kelulusan (lulus vs lainnya)
   const tingm={};
@@ -1639,7 +1643,7 @@ async function _uskp(t,c,thn){
         {label:'Pendaftar',        n:fnFil.pendaftar},
         {label:'Lolos Verifikasi', n:fnFil.lolos_verifikasi},
         {label:'Hadir',            n:fnFil.hadir},
-        {label:'Lulus',            n:fnFil.lulus},
+        {label:'Lulus',            n:fnFil.lulus, note: belumPenetapanKelulusan?'dalam proses penetapan kelulusan':undefined},
       ],c.color))
     :'';
   b.innerHTML=`
