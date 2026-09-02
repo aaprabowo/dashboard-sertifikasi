@@ -1,18 +1,18 @@
 {
-  "generated_at": "20 August 2026, 10:17:34",
-  "generated_ts": "2026-08-20T10:17:34.132541",
+  "generated_at": "02 September 2026, 09:16:15",
+  "generated_ts": "2026-09-02T09:16:15.030565",
   "total_peserta": 21995,
   "total_lulus": 5650,
   "avg_pct_lulus": 25.7,
   "total_tim": 7,
-  "total_angkatan": 61,
-  "total_hadir": 39430,
+  "total_angkatan": 72,
+  "total_hadir": 42555,
   "total_target": 4329,
-  "pct_capaian": 910.8,
+  "pct_capaian": 983.0,
   "tim_mencapai": 6,
   "total_beasiswa": 1584,
   "total_beasiswa_selesai": 4703,
-  "total_ac": 321,
+  "total_ac": 356,
   "akreditasi": {
     "lembaga": 7,
     "program": 17,
@@ -187,17 +187,18 @@
       "8": 12,
       "10": 972,
       "11": 20,
-      "12": 10825
+      "12": 11144
     },
     "2026": {
       "1": 42,
       "2": 1959,
-      "3": 408,
+      "3": 1161,
       "4": 4344,
       "5": 1439,
-      "6": 3445,
-      "7": 62,
-      "8": 2951
+      "6": 4765,
+      "7": 208,
+      "8": 3055,
+      "10": 483
     }
   },
   "teams": [
@@ -442,12 +443,12 @@
     {
       "team": "AC",
       "type": "count",
-      "total": 321,
-      "total_hadir": 321,
+      "total": 356,
+      "total_hadir": 356,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 19,
+      "total_angkatan": 22,
       "targets": {
         "2026": 100
       },
@@ -498,12 +499,16 @@
           "7": {
             "total": 62,
             "lulus": 0
+          },
+          "8": {
+            "total": 35,
+            "lulus": 0
           }
         }
       },
       "hadir_by_year": {
         "2025": 111,
-        "2026": 210
+        "2026": 245
       },
       "detail": {
         "hasil_by_year": {
@@ -513,8 +518,8 @@
             "Kurang Optimal": 9
           },
           "2026": {
-            "Optimal": 123,
-            "Cukup Optimal": 48,
+            "Optimal": 158,
+            "Cukup Optimal": 57,
             "Kurang Optimal": 30
           }
         },
@@ -714,8 +719,29 @@
             {
               "batch": "Batch 19",
               "total": 9,
-              "optimal": 0,
+              "optimal": 9,
               "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 20",
+              "total": 6,
+              "optimal": 6,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 21",
+              "total": 12,
+              "optimal": 12,
+              "cukup": 0,
+              "kurang": 0
+            },
+            {
+              "batch": "Batch 22",
+              "total": 17,
+              "optimal": 8,
+              "cukup": 9,
               "kurang": 0
             }
           ]
@@ -764,16 +790,33 @@
             "Kepala Subbagian Pengelolaan Jabatan Fungsional": 1,
             "Dosen Lektor": 69,
             "Widyaiswara Ahli Muda": 27,
-            "Kepala Seksi Pengawasan I": 1,
-            "Kepala Seksi Pengawasan IV": 2,
+            "Kepala Seksi Pengawasan I": 3,
+            "Kepala Seksi Pengawasan IV": 6,
             "Kepala Seksi Administrasi dan Bimbingan Pemeriksaan": 1,
-            "Kepala Subbagian Umum dan Kepatuhan Internal": 1,
+            "Kepala Subbagian Umum dan Kepatuhan Internal": 2,
             "Pelaksana": 61,
             "Kepala Subbagian Pengelolaan Barang Milik Negara": 1,
             "PTP Ahli Pertama": 4,
             "Arsiparis Ahli Pertama": 2,
             "Pengembang Teknologi Pembelajaran Ahli Muda": 16,
-            "Pranata Komputer Ahli Pertama": 1
+            "Pranata Komputer Ahli Pertama": 1,
+            "Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan": 1,
+            "Kepala Seksi Pengawasan II": 1,
+            "Kepala Seksi Pengawasan VI": 4,
+            "Kepala Seksi Penjaminan Kualitas Data": 4,
+            "Kepala Seksi Analisis Data IV": 1,
+            "Kepala Seksi Pengelolaan Data Warehouse": 1,
+            "Kepala Seksi Pengendalian Mutu Data Eksternal": 1,
+            "Kepala Seksi Pemantauan Sistem": 1,
+            "Kepala Seksi Pengelolaan Perangkat Keras dan Aplikasi": 1,
+            "Kepala Seksi Pengembangan Sistem Perpajakan I": 1,
+            "Kepala Seksi Pengawasan III": 4,
+            "Kepala Seksi Analisis Data III": 1,
+            "Kepala Seksi Pencegahan dan Penanganan Sengketa Perpajakan Internasional IV": 1,
+            "Kepala Seksi Pengelolaan Basis Data": 1,
+            "Kepala Seksi Pengendalian Pengembangan Teknologi Informasi dan Komunikasi": 1,
+            "Kepala Seksi Perencanaan Teknologi Informasi dan Komunikasi": 1,
+            "Kepala Seksi Pelayanan": 3
           }
         }
       },
@@ -7574,12 +7617,12 @@
     {
       "team": "Tes Lain",
       "type": "count",
-      "total": 20684,
-      "total_hadir": 18335,
+      "total": 23774,
+      "total_hadir": 21425,
       "lulus": 0,
       "tidak_lulus": 0,
       "pct_lulus": 0,
-      "total_angkatan": 26,
+      "total_angkatan": 34,
       "targets": {
         "2026": 320
       },
@@ -7594,7 +7637,7 @@
             "lulus": 0
           },
           "3": {
-            "total": 379,
+            "total": 1132,
             "lulus": 0
           },
           "4": {
@@ -7606,35 +7649,43 @@
             "lulus": 0
           },
           "6": {
-            "total": 2263,
+            "total": 3583,
+            "lulus": 0
+          },
+          "7": {
+            "total": 146,
+            "lulus": 0
+          },
+          "10": {
+            "total": 483,
             "lulus": 0
           },
           "8": {
-            "total": 841,
+            "total": 910,
             "lulus": 0
           }
         },
         "2025": {
           "12": {
-            "total": 10799,
+            "total": 11118,
             "lulus": 0
           }
         }
       },
       "hadir_by_year": {
-        "2026": 7536,
-        "2025": 10799
+        "2026": 10307,
+        "2025": 11118
       },
       "funnel_by_year": {
         "2026": {
-          "terdaftar": 9885,
-          "mengikuti": 7536,
+          "terdaftar": 12656,
+          "mengikuti": 10307,
           "tidak_mengikuti": 85,
           "belum_diproses": 0
         },
         "2025": {
-          "terdaftar": 10799,
-          "mengikuti": 10799,
+          "terdaftar": 11118,
+          "mengikuti": 11118,
           "tidak_mengikuti": 0,
           "belum_diproses": 0
         }
@@ -7643,15 +7694,16 @@
         "2026": {
           "non profilling": {
             "Psikotes": 449,
-            "TBI": 966,
+            "TBI": 1003,
             "Lainnya": 77,
             "TPA": 60,
             "Mints Globe": 630,
+            "Ujian Lainnya": 2556,
             "TPA TBI & Psikotes": 841
           },
           "profilling": {
-            "Psikotes": 569,
-            "TBI": 3944
+            "Psikotes": 709,
+            "TBI": 3982
           }
         },
         "2025": {
@@ -7659,7 +7711,8 @@
             "TBI": 8924
           },
           "non profilling": {
-            "Psikotes": 1875
+            "Psikotes": 1875,
+            "Ujian Lainnya": 319
           }
         }
       },
