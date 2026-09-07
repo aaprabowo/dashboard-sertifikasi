@@ -1,9 +1,9 @@
 {
-  "generated_at": "02 September 2026, 09:16:15",
-  "generated_ts": "2026-09-02T09:16:15.030565",
+  "generated_at": "07 September 2026, 11:58:01",
+  "generated_ts": "2026-09-07T11:58:01.184308",
   "total_peserta": 21995,
-  "total_lulus": 5650,
-  "avg_pct_lulus": 25.7,
+  "total_lulus": 6802,
+  "avg_pct_lulus": 30.9,
   "total_tim": 7,
   "total_angkatan": 72,
   "total_hadir": 42555,
@@ -7513,19 +7513,18 @@
       "type": "pct",
       "total": 14916,
       "total_hadir": 13314,
-      "lulus": 3677,
-      "tidak_lulus": 9637,
+      "lulus": 4829,
+      "tidak_lulus": 8485,
       "kelulusan_dist_by_year": {
         "2026": {
-          "Lulus": 3677,
-          "Mengulang": 6145,
-          "Tidak Lulus": 1210,
+          "Lulus": 4829,
+          "Mengulang": 6855,
+          "Tidak Lulus": 1458,
           "Pembatalan": 9,
-          "Penalti": 163,
-          "(kosong)": 2110
+          "Penalti": 163
         }
       },
-      "pct_lulus": 27.6,
+      "pct_lulus": 36.3,
       "total_angkatan": 6,
       "targets": {
         "2026": 2450
@@ -7538,7 +7537,7 @@
           },
           "8": {
             "total": 2110,
-            "lulus": 0
+            "lulus": 1152
           }
         },
         "1905": {
@@ -7556,7 +7555,7 @@
           "pendaftar": 14916,
           "lolos_verifikasi": 13796,
           "hadir": 13314,
-          "lulus": 3677
+          "lulus": 4829
         }
       },
       "error": null
