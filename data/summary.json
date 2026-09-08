@@ -1,6 +1,6 @@
 {
-  "generated_at": "07 September 2026, 11:58:01",
-  "generated_ts": "2026-09-07T11:58:01.184308",
+  "generated_at": "08 September 2026, 11:28:37",
+  "generated_ts": "2026-09-08T11:28:37.716167",
   "total_peserta": 21995,
   "total_lulus": 6802,
   "avg_pct_lulus": 30.9,
@@ -14,9 +14,9 @@
   "total_beasiswa_selesai": 4703,
   "total_ac": 356,
   "akreditasi": {
-    "lembaga": 7,
-    "program": 17,
-    "dalam_proses": 2,
+    "lembaga": 8,
+    "program": 19,
+    "dalam_proses": 0,
     "items": [
       {
         "lembaga": "BPSDM PROVINSI DKI JAKARTA",
@@ -157,18 +157,18 @@
       {
         "lembaga": "BPSDMD PROVINSI SUMATERA SELATAN",
         "program": "BENDAHARA KEUANGAN DAERAH",
-        "status": "Tahap Pelaksanaan Akreditasi Program",
+        "status": "Terakreditasi",
         "keterangan": "Akreditasi Program Baru",
-        "is_terakreditasi": false,
-        "is_proses": true
+        "is_terakreditasi": true,
+        "is_proses": false
       },
       {
         "lembaga": "BPSDMD PROVINSI SUMATERA SELATAN",
         "program": "BENDAHARA SEKOLAH",
-        "status": "Tahap Pelaksanaan Akreditasi Program",
+        "status": "Terakreditasi",
         "keterangan": "Akreditasi Program Baru",
-        "is_terakreditasi": false,
-        "is_proses": true
+        "is_terakreditasi": true,
+        "is_proses": false
       }
     ]
   },
