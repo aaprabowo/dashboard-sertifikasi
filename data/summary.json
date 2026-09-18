@@ -1,14 +1,14 @@
 {
-  "generated_at": "08 September 2026, 11:28:37",
-  "generated_ts": "2026-09-08T11:28:37.716167",
-  "total_peserta": 21995,
+  "generated_at": "18 September 2026, 15:41:57",
+  "generated_ts": "2026-09-18T15:41:57.279138",
+  "total_peserta": 22112,
   "total_lulus": 6802,
-  "avg_pct_lulus": 30.9,
+  "avg_pct_lulus": 30.8,
   "total_tim": 7,
-  "total_angkatan": 72,
-  "total_hadir": 42555,
+  "total_angkatan": 75,
+  "total_hadir": 42672,
   "total_target": 4329,
-  "pct_capaian": 983.0,
+  "pct_capaian": 985.7,
   "tim_mencapai": 6,
   "total_beasiswa": 1584,
   "total_beasiswa_selesai": 4703,
@@ -195,9 +195,9 @@
       "3": 1161,
       "4": 4344,
       "5": 1439,
-      "6": 4765,
-      "7": 208,
-      "8": 3055,
+      "6": 4805,
+      "7": 245,
+      "8": 3095,
       "10": 483
     }
   },
@@ -7563,13 +7563,13 @@
     {
       "team": "PBJ",
       "type": "pct",
-      "total": 70,
-      "total_hadir": 70,
+      "total": 187,
+      "total_hadir": 187,
       "lulus": 36,
       "tidak_lulus": 3,
-      "belum_ada": 31,
-      "pct_lulus": 51.4,
-      "total_angkatan": 3,
+      "belum_ada": 148,
+      "pct_lulus": 19.3,
+      "total_angkatan": 6,
       "targets": {
         "2026": 280
       },
@@ -7588,12 +7588,24 @@
           "5": {
             "total": 31,
             "lulus": 0
+          },
+          "6": {
+            "total": 40,
+            "lulus": 0
+          },
+          "7": {
+            "total": 37,
+            "lulus": 0
+          },
+          "8": {
+            "total": 40,
+            "lulus": 0
           }
         }
       },
       "hadir_by_year": {
         "2025": 10,
-        "2026": 60
+        "2026": 177
       },
       "funnel_by_year": {
         "2025": {
@@ -7604,11 +7616,11 @@
           "belum_ada": 0
         },
         "2026": {
-          "pendaftar": 60,
-          "lolos_verifikasi": 60,
-          "hadir": 60,
+          "pendaftar": 177,
+          "lolos_verifikasi": 177,
+          "hadir": 177,
           "lulus": 26,
-          "belum_ada": 31
+          "belum_ada": 148
         }
       },
       "error": null
