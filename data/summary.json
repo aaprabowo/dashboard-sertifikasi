@@ -1,14 +1,14 @@
 {
-  "generated_at": "16 November 2026, 10:30:33",
-  "generated_ts": "2026-11-16T10:30:33.467028",
-  "total_peserta": 51878,
+  "generated_at": "16 November 2026, 11:58:06",
+  "generated_ts": "2026-11-16T11:58:06.870904",
+  "total_peserta": 60230,
   "total_lulus": 12961,
-  "avg_pct_lulus": 25.0,
+  "avg_pct_lulus": 21.5,
   "total_tim": 8,
-  "total_angkatan": 95,
-  "total_hadir": 76307,
+  "total_angkatan": 103,
+  "total_hadir": 84659,
   "total_target": 4329,
-  "pct_capaian": 1762.7,
+  "pct_capaian": 1955.6,
   "tim_mencapai": 6,
   "total_beasiswa": 1584,
   "total_beasiswa_selesai": 4703,
@@ -196,7 +196,8 @@
       "7": 245,
       "8": 3095,
       "9": 211,
-      "10": 30335
+      "10": 30335,
+      "11": 8352
     }
   },
   "teams": [
@@ -7594,27 +7595,31 @@
     {
       "team": "UKP",
       "type": "pct",
-      "total": 27791,
-      "total_hadir": 27791,
+      "total": 36143,
+      "total_hadir": 36143,
       "lulus": 5582,
-      "tidak_lulus": 22209,
-      "pct_lulus": 20.1,
-      "total_angkatan": 8,
+      "tidak_lulus": 30561,
+      "pct_lulus": 15.4,
+      "total_angkatan": 16,
       "targets": {},
       "months_by_year": {
         "2026": {
           "10": {
             "total": 27791,
             "lulus": 5582
+          },
+          "11": {
+            "total": 8352,
+            "lulus": 0
           }
         }
       },
       "hadir_by_year": {
-        "2026": 27791
+        "2026": 36143
       },
       "funnel_by_year": {
         "2026": {
-          "pendaftar": 27791,
+          "pendaftar": 36143,
           "lolos_verifikasi": 0,
           "lulus": 5582
         }
