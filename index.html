@@ -595,6 +595,7 @@ const TEAM_CONFIG = [
   { id:'AC',       color:'#059669', bg:'#ECFDF5', cb:'#A7F3D0' },
   { id:'Beasiswa', color:'#7C3AED', bg:'#F5F3FF', cb:'#DDD6FE' },
   { id:'USKP',     color:'#D97706', bg:'#FFFBEB', cb:'#FDE68A' },
+  { id:'UKP',      color:'#EA580C', bg:'#FFF7ED', cb:'#FED7AA' },
   { id:'PBJ',      color:'#DB2777', bg:'#FDF2F8', cb:'#FBCFE8' },
   { id:'Tes Lain', color:'#0D9488', bg:'#F0FDFA', cb:'#99F6E4' },
 ];
@@ -1657,6 +1658,153 @@ async function _uskp(t,c,thn){
 }
 
 // ============================================================
+//  POPUP: UKP (sama seperti USKP, tanpa konsep kehadiran)
+// ============================================================
+async function popupUKP(t,c){
+  const thn=selTahun();
+  document.getElementById('popup-sub').textContent=
+    `${fmtN(t.total||0)} pendaftar · ${fmtN(t.lulus)} lulus (${t.pct_lulus}%)`;
+  document.getElementById('popup-body').innerHTML=`
+    <div class="p-filter-row">
+      <span style="font-size:11px;color:var(--text3)">Filter:</span>
+      ${tahunSelect('ukp-f-thn',t,thn,'reloadUKP()')}
+      <select class="p-filter-sel" id="ukp-f-batch"   onchange="reloadUKP()"><option value="">Semua Batch</option></select>
+      <select class="p-filter-sel" id="ukp-f-tingkat" onchange="reloadUKP()"><option value="">Semua Tingkat</option></select>
+    </div>
+    <div id="ukp-body"><div class="p-loading">Memuat detail...</div></div>`;
+  await _ukp(t,c,thn);
+}
+window.reloadUKP=async()=>{
+  const t=dashData.teams.find(x=>x.team==='UKP'),c=cfg('UKP');
+  const raw=document.getElementById('ukp-f-thn')?.value||String(selTahun());
+  const thn=raw==='semua'?'semua':parseInt(raw);
+  const b=document.getElementById('ukp-body');if(!b)return;
+  b.innerHTML='<div class="p-loading">Memuat detail...</div>';
+  await _ukp(t,c,thn);
+};
+async function _ukp(t,c,thn){
+  const selBatch  =document.getElementById('ukp-f-batch')?.value||'';
+  const selTingkat=document.getElementById('ukp-f-tingkat')?.value||'';
+  const b=document.getElementById('ukp-body');if(!b)return;
+  const rows=await loadDetail(teamSlug('UKP'),thn);
+  const allYr=filterRows(rows,thn,-1);
+
+  const normTingkat=r=>(r.tingkat||'').replace(/tingkat\s*/i,'').trim().toUpperCase();
+
+  // Isi dropdown batch
+  const batchSel=document.getElementById('ukp-f-batch');
+  if(batchSel){
+    const batches=[...new Set(allYr.map(r=>r.batch).filter(Boolean))].sort();
+    const cur=batchSel.value;
+    batchSel.innerHTML='<option value="">Semua Batch</option>'+batches.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
+  }
+
+  // Isi dropdown tingkat
+  const tingkatSel=document.getElementById('ukp-f-tingkat');
+  if(tingkatSel){
+    const rawTingkats=[...new Set(allYr.map(normTingkat).filter(Boolean))];
+    const ORDER=['A','B','C'];
+    const tingkats=[...ORDER.filter(k=>rawTingkats.includes(k)),...rawTingkats.filter(k=>!ORDER.includes(k))];
+    const cur=tingkatSel.value;
+    tingkatSel.innerHTML='<option value="">Semua Tingkat</option>'+tingkats.map(v=>`<option value="${v}"${v===cur?' selected':''}>Tingkat ${v}</option>`).join('');
+  }
+
+  // Filter — semua rows adalah pendaftar (tidak ada konsep kehadiran)
+  const filAll=allYr.filter(r=>
+    (!selBatch   || r.batch===selBatch) &&
+    (!selTingkat || normTingkat(r)===selTingkat)
+  );
+  const lulus=filAll.filter(r=>r.lulus).length;
+
+  // Batch map — semua rows dihitung (tidak ada filter hadir)
+  const bMap={};
+  (allYr||[]).forEach(r=>{
+    const b=r.batch||'(tanpa batch)';
+    if(!bMap[b])bMap[b]={batch:b,hadir:0,lulus:0};
+    bMap[b].hadir++;
+    if(r.lulus)bMap[b].lulus++;
+  });
+  const bData=Object.values(bMap).sort((a,b)=>a.batch.localeCompare(b.batch));
+
+  // Distribusi kelulusan
+  const kelDist={};
+  filAll.forEach(r=>{ const k=r.kelulusan||'(kosong)'; kelDist[k]=(kelDist[k]||0)+1; });
+  const kelEntries=Object.entries(kelDist).filter(([k])=>k!=='(kosong)').sort((a,b)=>b[1]-a[1]);
+  const totalPendaftar=filAll.length;
+
+  const KEL_COLOR={
+    'lulus':       '#059669',
+    'tidak lulus': '#DC2626',
+    'batal':       '#9CA3AF',
+    'mengulang':   '#D97706',
+  };
+  function kelColor(k){ return KEL_COLOR[k.toLowerCase()] || '#6B7280'; }
+
+  const kelHTML=kelEntries.length
+    ? '<div class="p-dist">'+kelEntries.map(([k,n])=>{
+        const pct=totalPendaftar>0?Math.round(n/totalPendaftar*100):0;
+        const col=kelColor(k);
+        return '<div class="p-dist-row">'
+          +'<div class="p-dist-lbl">'+k+'</div>'
+          +'<div class="p-dist-bar" style="max-width:none;flex:1"><div class="p-dist-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'
+          +'<div class="p-dist-n" style="color:'+col+'">'+fmtN(n)+' ('+pct+'%)</div>'
+          +'</div>';
+      }).join('')+'</div>'
+    : '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+
+  // Funnel tanpa hadir: pendaftar → lolos verifikasi → lulus
+  const fnFil=thn==='semua'?null:{
+    pendaftar:        filAll.length,
+    lolos_verifikasi: filAll.filter(r=>r.lolos_verif).length,
+    lulus:            lulus,
+  };
+  const belumPenetapanKelulusan = filAll.length>0 && filAll.every(r=>!r.kelulusan || !String(r.kelulusan).trim());
+
+  // Tingkat stacked bar
+  const tingm={};
+  filAll.forEach(r=>{
+    const k=normTingkat(r); if(!k)return;
+    if(!tingm[k])tingm[k]={a:0,b:0};
+    r.lulus?tingm[k].a++:tingm[k].b++;
+  });
+  const ORDER_T=['A','B','C'];
+  const tingE=[...ORDER_T.filter(k=>tingm[k]),...Object.keys(tingm).filter(k=>!ORDER_T.includes(k))]
+    .map(k=>({label:'Tingkat '+k,a:tingm[k].a,b:tingm[k].b}));
+
+  const parts=[selBatch,selTingkat?'Tingkat '+selTingkat:''].filter(Boolean);
+  const filterLabel=parts.length?parts.join(' · '):(thn==='semua'?'Semua Tahun':String(thn));
+  const thnLabel=thn==='semua'?'Semua Tahun':String(thn);
+  const funnelBlock=fnFil
+    ?psBlock('Funnel — '+filterLabel,funnelChart([
+        {label:'Pendaftar',        n:fnFil.pendaftar},
+        {label:'Lolos Verifikasi', n:fnFil.lolos_verifikasi},
+        {label:'Lulus',            n:fnFil.lulus, note: belumPenetapanKelulusan?'dalam proses penetapan kelulusan':undefined},
+      ],c.color))
+    :'';
+  b.innerHTML=`
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${fmtN(filAll.length)} pendaftar — ${filterLabel}</div>
+    <div class="p-grid2">
+      ${psBlock('Distribusi Kelulusan — '+filterLabel, kelHTML)}
+      ${funnelBlock || '<div></div>'}
+    </div>
+    ${psBlock('Sebaran Tingkat — Lulus vs Lainnya ('+filterLabel+')',stackedBars(tingE,c.color,c.cb,'Lulus','Lainnya'))}
+    ${psBlock('Tabel Batch — '+thnLabel,batchTableUKP(bData))}`;
+}
+
+function batchTableUKP(rows) {
+  if(!rows||!rows.length) return '<div style="font-size:11px;color:var(--text3)">Tidak ada data</div>';
+  return `<table class="batch-tbl">
+    <thead><tr><th>Batch</th><th class="r">Pendaftar</th><th class="r">Lulus</th><th class="r">% Lulus</th></tr></thead>
+    <tbody>${rows.map(b=>`<tr>
+      <td>${b.batch}</td>
+      <td class="r">${fmtN(b.hadir)}</td>
+      <td class="r">${fmtN(b.lulus)}</td>
+      <td class="r">${b.hadir>0?(b.lulus/b.hadir*100).toFixed(1)+'%':'—'}</td>
+    </tr>`).join('')}</tbody>
+  </table>`;
+}
+
+// ============================================================
 //  TIDAK ada funnel
 // ============================================================
 async function popupPBJ(t,c){
@@ -2192,7 +2340,7 @@ function popupAkreditasi(t, c) {
 
 
 const POPUP_RENDERERS={
-  JFKN:popupJFKN, JFKNDetail:popupJFKNDetail, SAK:popupSAK, USKP:popupUSKP, PBJ:popupPBJ,
+  JFKN:popupJFKN, JFKNDetail:popupJFKNDetail, SAK:popupSAK, USKP:popupUSKP, UKP:popupUKP, PBJ:popupPBJ,
   AC:popupAC, Beasiswa:popupBeasiswa, 'Tes Lain':popupTesTes,
   Akreditasi:popupAkreditasi,
 };
